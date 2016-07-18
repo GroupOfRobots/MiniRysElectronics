@@ -13928,23 +13928,23 @@ DIN A4, landscape with location and doc. field</description>
 <pin name="SYS_5V@2" x="27.94" y="-12.7" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
 <pin name="PWR_BUT" x="-27.94" y="-15.24" visible="pin" length="short" direction="pas" function="dot"/>
 <pin name="SYS_RESETN" x="27.94" y="-15.24" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
-<pin name="UART4_RXD" x="-27.94" y="-17.78" visible="pin" length="short" direction="pas" function="dot"/>
-<pin name="GPIO1_28" x="27.94" y="-17.78" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
-<pin name="UART4_TXD" x="-27.94" y="-20.32" visible="pin" length="short" direction="pas" function="dot"/>
-<pin name="EHRPWM1A" x="27.94" y="-20.32" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
-<pin name="GPIO1_16" x="-27.94" y="-22.86" visible="pin" length="short" direction="pas" function="dot"/>
-<pin name="EHRPWM1B" x="27.94" y="-22.86" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="GPIO_30" x="-27.94" y="-17.78" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="GPIO_60" x="27.94" y="-17.78" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="GPIO_31" x="-27.94" y="-20.32" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="GPIO_50" x="27.94" y="-20.32" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="GPIO_48" x="-27.94" y="-22.86" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="GPIO_51" x="27.94" y="-22.86" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
 <pin name="I2C1_SCL" x="-27.94" y="-25.4" visible="pin" length="short" direction="pas" function="dot"/>
 <pin name="I2C1_SDA" x="27.94" y="-25.4" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
 <pin name="I2C2_SCL" x="-27.94" y="-27.94" visible="pin" length="short" direction="pas" function="dot"/>
 <pin name="I2C2_SDA" x="27.94" y="-27.94" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
 <pin name="UART2_TXD" x="-27.94" y="-30.48" visible="pin" length="short" direction="pas" function="dot"/>
 <pin name="UART2_RXD" x="27.94" y="-30.48" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
-<pin name="GPIO1_17" x="-27.94" y="-33.02" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="GPIO_49" x="-27.94" y="-33.02" visible="pin" length="short" direction="pas" function="dot"/>
 <pin name="UART1_TXD" x="27.94" y="-33.02" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
-<pin name="GPIO3_21" x="-27.94" y="-35.56" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="GPIO_117" x="-27.94" y="-35.56" visible="pin" length="short" direction="pas" function="dot"/>
 <pin name="UART1_RXD" x="27.94" y="-35.56" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
-<pin name="GPIO3_19" x="-27.94" y="-38.1" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="GPIO_115" x="-27.94" y="-38.1" visible="pin" length="short" direction="pas" function="dot"/>
 <pin name="SPI1_CS0" x="27.94" y="-38.1" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
 <pin name="SPI1_DO" x="-27.94" y="-40.64" visible="pin" length="short" direction="pas" function="dot"/>
 <pin name="SPI1_DI" x="27.94" y="-40.64" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
@@ -13958,58 +13958,58 @@ DIN A4, landscape with location and doc. field</description>
 <pin name="AIN3" x="27.94" y="-50.8" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
 <pin name="AIN0" x="-27.94" y="-53.34" visible="pin" length="short" direction="pwr" function="dot"/>
 <pin name="AIN1" x="27.94" y="-53.34" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
-<pin name="CLKOUT2" x="-27.94" y="-55.88" visible="pin" length="short" direction="in" function="dot"/>
-<pin name="GPIO0_7" x="27.94" y="-55.88" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="GPIO_20" x="-27.94" y="-55.88" visible="pin" length="short" direction="in" function="dot"/>
+<pin name="GPIO_7" x="27.94" y="-55.88" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
 <pin name="GND@3" x="-27.94" y="-58.42" visible="pin" length="short" direction="pwr" function="dot"/>
 <pin name="GND@5" x="27.94" y="-58.42" visible="pin" length="short" direction="pwr" function="dot" rot="R180"/>
 <pin name="GND@4" x="-27.94" y="-60.96" visible="pin" length="short" direction="pwr" function="dot"/>
 <pin name="GND@6" x="27.94" y="-60.96" visible="pin" length="short" direction="pwr" function="dot" rot="R180"/>
 <pin name="GND@7" x="-27.94" y="60.96" visible="pin" length="short" direction="pwr" function="dot"/>
 <pin name="GND@8" x="27.94" y="60.96" visible="pin" length="short" direction="pwr" function="dot" rot="R180"/>
-<pin name="GPIO1_6" x="-27.94" y="58.42" visible="pin" length="short" direction="pas" function="dot"/>
-<pin name="GPIO1_7" x="27.94" y="58.42" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
-<pin name="GPIO1_2" x="-27.94" y="55.88" visible="pin" length="short" direction="pas" function="dot"/>
-<pin name="GPIO1_3" x="27.94" y="55.88" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="GPIO_38" x="-27.94" y="58.42" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="GPIO_39" x="27.94" y="58.42" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="GPIO_34" x="-27.94" y="55.88" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="GPIO_35" x="27.94" y="55.88" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
 <pin name="TIMER4" x="-27.94" y="53.34" visible="pin" length="short" direction="pas" function="dot"/>
 <pin name="TIMER7" x="27.94" y="53.34" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
 <pin name="TIMER5" x="-27.94" y="50.8" visible="pin" length="short" direction="pas" function="dot"/>
 <pin name="TIMER6" x="27.94" y="50.8" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
-<pin name="GPIO1_13" x="-27.94" y="48.26" visible="pin" length="short" direction="pas" function="dot"/>
-<pin name="GPIO1_12" x="27.94" y="48.26" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
-<pin name="EHRPWM2B" x="-27.94" y="45.72" visible="pin" length="short" direction="pas" function="dot"/>
-<pin name="GPIO0_26" x="27.94" y="45.72" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
-<pin name="GPIO1_15" x="-27.94" y="43.18" visible="pin" length="short" direction="pas" function="dot"/>
-<pin name="GPIO1_14" x="27.94" y="43.18" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
-<pin name="GPIO0_27" x="-27.94" y="40.64" visible="pin" length="short" direction="pas" function="dot"/>
-<pin name="GPIO2_1" x="27.94" y="40.64" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
-<pin name="EHRPWM2A" x="-27.94" y="38.1" visible="pin" length="short" direction="pas" function="dot"/>
-<pin name="GPIO1_31" x="27.94" y="38.1" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
-<pin name="GPIO1_30" x="-27.94" y="35.56" visible="pin" length="short" direction="pas" function="dot"/>
-<pin name="GPIO1_5" x="27.94" y="35.56" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
-<pin name="GPIO1_4" x="-27.94" y="33.02" visible="pin" length="short" direction="pas" function="dot"/>
-<pin name="GPIO1_1" x="27.94" y="33.02" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
-<pin name="GPIO1_0" x="-27.94" y="30.48" visible="pin" length="short" direction="pas" function="dot"/>
-<pin name="GPIO1_29" x="27.94" y="30.48" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
-<pin name="GPIO2_22" x="-27.94" y="27.94" visible="pin" length="short" direction="pas" function="dot"/>
-<pin name="GPIO2_24" x="27.94" y="27.94" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
-<pin name="GPIO2_23" x="-27.94" y="25.4" visible="pin" length="short" direction="pas" function="dot"/>
-<pin name="GPIO2_25" x="27.94" y="25.4" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
-<pin name="UART5_CTSN" x="-27.94" y="22.86" visible="pin" length="short" direction="pas" function="dot"/>
-<pin name="UART5_RTSN" x="27.94" y="22.86" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
-<pin name="UART4_RTSN" x="-27.94" y="20.32" visible="pin" length="short" direction="pas" function="dot"/>
-<pin name="UART3_RTSN" x="27.94" y="20.32" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
-<pin name="UART4_CTSN" x="-27.94" y="17.78" visible="pin" length="short" direction="pas" function="dot"/>
-<pin name="UART3_CTSN" x="27.94" y="17.78" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
-<pin name="UART5_TXD" x="-27.94" y="15.24" visible="pin" length="short" direction="pas" function="dot"/>
-<pin name="UART5_RXD" x="27.94" y="15.24" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
-<pin name="GPIO2_12" x="-27.94" y="12.7" visible="pin" length="short" direction="pas" function="dot"/>
-<pin name="GPIO2_13" x="27.94" y="12.7" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
-<pin name="GPIO2_10" x="-27.94" y="10.16" visible="pin" length="short" direction="pas" function="dot"/>
-<pin name="GPIO2_11" x="27.94" y="10.16" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
-<pin name="GPIO2_8" x="-27.94" y="7.62" visible="pin" length="short" direction="pas" function="dot"/>
-<pin name="GPIO2_9" x="27.94" y="7.62" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
-<pin name="GPIO2_6" x="-27.94" y="5.08" visible="pin" length="short" direction="pas" function="dot"/>
-<pin name="GPIO2_7" x="27.94" y="5.08" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="GPIO_45" x="-27.94" y="48.26" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="GPIO_44" x="27.94" y="48.26" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="GPIO_23" x="-27.94" y="45.72" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="GPIO_26" x="27.94" y="45.72" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="GPIO_47" x="-27.94" y="43.18" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="GPIO_46" x="27.94" y="43.18" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="GPIO_27" x="-27.94" y="40.64" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="GPIO_65" x="27.94" y="40.64" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="GPIO_22" x="-27.94" y="38.1" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="GPIO_63" x="27.94" y="38.1" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="GPIO_62" x="-27.94" y="35.56" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="GPIO_37" x="27.94" y="35.56" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="GPIO_36" x="-27.94" y="33.02" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="GPIO_33" x="27.94" y="33.02" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="GPIO_32" x="-27.94" y="30.48" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="GPIO_61" x="27.94" y="30.48" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="GPIO_86" x="-27.94" y="27.94" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="GPIO_88" x="27.94" y="27.94" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="GPIO_87" x="-27.94" y="25.4" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="GPIO_89" x="27.94" y="25.4" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="GPIO_10" x="-27.94" y="22.86" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="GPIO_11" x="27.94" y="22.86" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="GPIO_9" x="-27.94" y="20.32" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="PWM1B" x="27.94" y="20.32" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="GPIO_8" x="-27.94" y="17.78" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="PWM1A" x="27.94" y="17.78" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="GPIO_78" x="-27.94" y="15.24" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="GPIO_79" x="27.94" y="15.24" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="GPIO_76" x="-27.94" y="12.7" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="GPIO_77" x="27.94" y="12.7" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="GPIO_74" x="-27.94" y="10.16" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="GPIO_75" x="27.94" y="10.16" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="GPIO_72" x="-27.94" y="7.62" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="GPIO_73" x="27.94" y="7.62" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
+<pin name="PWM2A" x="-27.94" y="5.08" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="PWM2B" x="27.94" y="5.08" visible="pin" length="short" direction="pas" function="dot" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -14028,11 +14028,6 @@ DIN A4, landscape with location and doc. field</description>
 <connect gate="G$1" pin="AIN4" pad="79"/>
 <connect gate="G$1" pin="AIN5" pad="82"/>
 <connect gate="G$1" pin="AIN6" pad="81"/>
-<connect gate="G$1" pin="CLKOUT2" pad="87"/>
-<connect gate="G$1" pin="EHRPWM1A" pad="60"/>
-<connect gate="G$1" pin="EHRPWM1B" pad="62"/>
-<connect gate="G$1" pin="EHRPWM2A" pad="19"/>
-<connect gate="G$1" pin="EHRPWM2B" pad="13"/>
 <connect gate="G$1" pin="GND@1" pad="47"/>
 <connect gate="G$1" pin="GND@2" pad="48"/>
 <connect gate="G$1" pin="GND@3" pad="89"/>
@@ -14042,46 +14037,61 @@ DIN A4, landscape with location and doc. field</description>
 <connect gate="G$1" pin="GND@7" pad="1"/>
 <connect gate="G$1" pin="GND@8" pad="2"/>
 <connect gate="G$1" pin="GNDA_ADC" pad="80"/>
-<connect gate="G$1" pin="GPIO0_26" pad="14"/>
-<connect gate="G$1" pin="GPIO0_27" pad="17"/>
-<connect gate="G$1" pin="GPIO0_7" pad="88"/>
-<connect gate="G$1" pin="GPIO1_0" pad="25"/>
-<connect gate="G$1" pin="GPIO1_1" pad="24"/>
-<connect gate="G$1" pin="GPIO1_12" pad="12"/>
-<connect gate="G$1" pin="GPIO1_13" pad="11"/>
-<connect gate="G$1" pin="GPIO1_14" pad="16"/>
-<connect gate="G$1" pin="GPIO1_15" pad="15"/>
-<connect gate="G$1" pin="GPIO1_16" pad="61"/>
-<connect gate="G$1" pin="GPIO1_17" pad="69"/>
-<connect gate="G$1" pin="GPIO1_2" pad="5"/>
-<connect gate="G$1" pin="GPIO1_28" pad="58"/>
-<connect gate="G$1" pin="GPIO1_29" pad="26"/>
-<connect gate="G$1" pin="GPIO1_3" pad="6"/>
-<connect gate="G$1" pin="GPIO1_30" pad="21"/>
-<connect gate="G$1" pin="GPIO1_31" pad="20"/>
-<connect gate="G$1" pin="GPIO1_4" pad="23"/>
-<connect gate="G$1" pin="GPIO1_5" pad="22"/>
-<connect gate="G$1" pin="GPIO1_6" pad="3"/>
-<connect gate="G$1" pin="GPIO1_7" pad="4"/>
-<connect gate="G$1" pin="GPIO2_1" pad="18"/>
-<connect gate="G$1" pin="GPIO2_10" pad="41"/>
-<connect gate="G$1" pin="GPIO2_11" pad="42"/>
-<connect gate="G$1" pin="GPIO2_12" pad="39"/>
-<connect gate="G$1" pin="GPIO2_13" pad="40"/>
-<connect gate="G$1" pin="GPIO2_22" pad="27"/>
-<connect gate="G$1" pin="GPIO2_23" pad="29"/>
-<connect gate="G$1" pin="GPIO2_24" pad="28"/>
-<connect gate="G$1" pin="GPIO2_25" pad="30"/>
-<connect gate="G$1" pin="GPIO2_6" pad="45"/>
-<connect gate="G$1" pin="GPIO2_7" pad="46"/>
-<connect gate="G$1" pin="GPIO2_8" pad="43"/>
-<connect gate="G$1" pin="GPIO2_9" pad="44"/>
-<connect gate="G$1" pin="GPIO3_19" pad="73"/>
-<connect gate="G$1" pin="GPIO3_21" pad="71"/>
+<connect gate="G$1" pin="GPIO_10" pad="31"/>
+<connect gate="G$1" pin="GPIO_11" pad="32"/>
+<connect gate="G$1" pin="GPIO_115" pad="73"/>
+<connect gate="G$1" pin="GPIO_117" pad="71"/>
+<connect gate="G$1" pin="GPIO_20" pad="87"/>
+<connect gate="G$1" pin="GPIO_22" pad="19"/>
+<connect gate="G$1" pin="GPIO_23" pad="13"/>
+<connect gate="G$1" pin="GPIO_26" pad="14"/>
+<connect gate="G$1" pin="GPIO_27" pad="17"/>
+<connect gate="G$1" pin="GPIO_30" pad="57"/>
+<connect gate="G$1" pin="GPIO_31" pad="59"/>
+<connect gate="G$1" pin="GPIO_32" pad="25"/>
+<connect gate="G$1" pin="GPIO_33" pad="24"/>
+<connect gate="G$1" pin="GPIO_34" pad="5"/>
+<connect gate="G$1" pin="GPIO_35" pad="6"/>
+<connect gate="G$1" pin="GPIO_36" pad="23"/>
+<connect gate="G$1" pin="GPIO_37" pad="22"/>
+<connect gate="G$1" pin="GPIO_38" pad="3"/>
+<connect gate="G$1" pin="GPIO_39" pad="4"/>
+<connect gate="G$1" pin="GPIO_44" pad="12"/>
+<connect gate="G$1" pin="GPIO_45" pad="11"/>
+<connect gate="G$1" pin="GPIO_46" pad="16"/>
+<connect gate="G$1" pin="GPIO_47" pad="15"/>
+<connect gate="G$1" pin="GPIO_48" pad="61"/>
+<connect gate="G$1" pin="GPIO_49" pad="69"/>
+<connect gate="G$1" pin="GPIO_50" pad="60"/>
+<connect gate="G$1" pin="GPIO_51" pad="62"/>
+<connect gate="G$1" pin="GPIO_60" pad="58"/>
+<connect gate="G$1" pin="GPIO_61" pad="26"/>
+<connect gate="G$1" pin="GPIO_62" pad="21"/>
+<connect gate="G$1" pin="GPIO_63" pad="20"/>
+<connect gate="G$1" pin="GPIO_65" pad="18"/>
+<connect gate="G$1" pin="GPIO_7" pad="88"/>
+<connect gate="G$1" pin="GPIO_72" pad="43"/>
+<connect gate="G$1" pin="GPIO_73" pad="44"/>
+<connect gate="G$1" pin="GPIO_74" pad="41"/>
+<connect gate="G$1" pin="GPIO_75" pad="42"/>
+<connect gate="G$1" pin="GPIO_76" pad="39"/>
+<connect gate="G$1" pin="GPIO_77" pad="40"/>
+<connect gate="G$1" pin="GPIO_78" pad="37"/>
+<connect gate="G$1" pin="GPIO_79" pad="38"/>
+<connect gate="G$1" pin="GPIO_8" pad="35"/>
+<connect gate="G$1" pin="GPIO_86" pad="27"/>
+<connect gate="G$1" pin="GPIO_87" pad="29"/>
+<connect gate="G$1" pin="GPIO_88" pad="28"/>
+<connect gate="G$1" pin="GPIO_89" pad="30"/>
+<connect gate="G$1" pin="GPIO_9" pad="33"/>
 <connect gate="G$1" pin="I2C1_SCL" pad="63"/>
 <connect gate="G$1" pin="I2C1_SDA" pad="64"/>
 <connect gate="G$1" pin="I2C2_SCL" pad="65"/>
 <connect gate="G$1" pin="I2C2_SDA" pad="66"/>
+<connect gate="G$1" pin="PWM1A" pad="36"/>
+<connect gate="G$1" pin="PWM1B" pad="34"/>
+<connect gate="G$1" pin="PWM2A" pad="45"/>
+<connect gate="G$1" pin="PWM2B" pad="46"/>
 <connect gate="G$1" pin="PWR_BUT" pad="55"/>
 <connect gate="G$1" pin="SPI1_CS0" pad="74"/>
 <connect gate="G$1" pin="SPI1_DI" pad="76"/>
@@ -14098,16 +14108,6 @@ DIN A4, landscape with location and doc. field</description>
 <connect gate="G$1" pin="UART1_TXD" pad="70"/>
 <connect gate="G$1" pin="UART2_RXD" pad="68"/>
 <connect gate="G$1" pin="UART2_TXD" pad="67"/>
-<connect gate="G$1" pin="UART3_CTSN" pad="36"/>
-<connect gate="G$1" pin="UART3_RTSN" pad="34"/>
-<connect gate="G$1" pin="UART4_CTSN" pad="35"/>
-<connect gate="G$1" pin="UART4_RTSN" pad="33"/>
-<connect gate="G$1" pin="UART4_RXD" pad="57"/>
-<connect gate="G$1" pin="UART4_TXD" pad="59"/>
-<connect gate="G$1" pin="UART5_CTSN" pad="31"/>
-<connect gate="G$1" pin="UART5_RTSN" pad="32"/>
-<connect gate="G$1" pin="UART5_RXD" pad="38"/>
-<connect gate="G$1" pin="UART5_TXD" pad="37"/>
 <connect gate="G$1" pin="VDD_3V3EXP@1" pad="49"/>
 <connect gate="G$1" pin="VDD_3V3EXP@2" pad="50"/>
 <connect gate="G$1" pin="VDD_5V@1" pad="51"/>
@@ -14116,6 +14116,72 @@ DIN A4, landscape with location and doc. field</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="con-molex">
+<description>&lt;b&gt;Molex Connectors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="5566-2">
+<description>&lt;b&gt;Mini FIT connector 2 pol&lt;/b&gt;&lt;p&gt;
+Source: http://www.molex.com</description>
+<wire x1="-2.6" y1="4.5" x2="2.6" y2="4.5" width="0.254" layer="21"/>
+<wire x1="2.6" y1="4.5" x2="2.6" y2="-2.2" width="0.254" layer="21"/>
+<wire x1="2.6" y1="-3.3" x2="2.6" y2="-4.9" width="0.254" layer="21"/>
+<wire x1="2.6" y1="-4.9" x2="-2.6" y2="-4.9" width="0.254" layer="21"/>
+<wire x1="-2.6" y1="-4.9" x2="-2.6" y2="4.5" width="0.254" layer="21"/>
+<wire x1="-6.1" y1="3.2" x2="-3.3" y2="3.2" width="0.254" layer="21" curve="-114.529547"/>
+<wire x1="-6.1" y1="1.4" x2="-3.3" y2="1.4" width="0.254" layer="21" curve="114.529547"/>
+<wire x1="-6.1" y1="3.2" x2="-6.1" y2="1.4" width="0.254" layer="21"/>
+<wire x1="-3.4" y1="3.3" x2="-2.7" y2="3.3" width="0.254" layer="21"/>
+<wire x1="-3.4" y1="1.3" x2="-2.7" y2="1.3" width="0.254" layer="21"/>
+<wire x1="3.3" y1="1.4" x2="6.1" y2="1.4" width="0.254" layer="21" curve="114.529547"/>
+<wire x1="3.3" y1="3.2" x2="6.1" y2="3.2" width="0.254" layer="21" curve="-114.529547"/>
+<wire x1="6.1" y1="1.4" x2="6.1" y2="3.2" width="0.254" layer="21"/>
+<wire x1="3.4" y1="1.3" x2="2.7" y2="1.3" width="0.254" layer="21"/>
+<wire x1="3.4" y1="3.3" x2="2.7" y2="3.3" width="0.254" layer="21"/>
+<wire x1="2.6" y1="-2.2" x2="2.6" y2="-3.3" width="0.254" layer="21" curve="-180"/>
+<pad name="1" x="0" y="-2.75" drill="1.4" shape="square"/>
+<pad name="2" x="0" y="2.75" drill="1.4" shape="square"/>
+<text x="-1.27" y="5.08" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
+<hole x="4.7" y="2.29" drill="3"/>
+<hole x="-4.7" y="2.29" drill="3"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MV">
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
+<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
+<text x="-0.762" y="1.397" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="5566-2" prefix="X">
+<description>&lt;b&gt;Mini FIT connector 2 pol&lt;/b&gt;&lt;p&gt;
+Source: http://www.molex.com</description>
+<gates>
+<gate name="-1" symbol="MV" x="0" y="2.54" addlevel="always"/>
+<gate name="-2" symbol="MV" x="0" y="-2.54" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="5566-2">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="1822072" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -14154,7 +14220,6 @@ DIN A4, landscape with location and doc. field</description>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="REGCON" library="pinhead" deviceset="PINHD-1X4" device=""/>
-<part name="POWCON" library="con-molex-micro-fit-3_0" deviceset="HEADER_POS4_?" device="43045-0412"/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="P+9" library="supply1" deviceset="+5V" device=""/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
@@ -14180,6 +14245,8 @@ DIN A4, landscape with location and doc. field</description>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
+<part name="X1" library="con-molex" deviceset="5566-2" device=""/>
+<part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14207,7 +14274,6 @@ DIN A4, landscape with location and doc. field</description>
 <instance part="+3V3" gate="G$1" x="27.94" y="132.08"/>
 <instance part="+3V5" gate="G$1" x="60.96" y="81.28"/>
 <instance part="REGCON" gate="A" x="7.62" y="127" rot="R90"/>
-<instance part="POWCON" gate="G$1" x="-17.78" y="104.14" rot="R180"/>
 <instance part="P+1" gate="1" x="-12.7" y="7.62"/>
 <instance part="P+9" gate="1" x="48.26" y="12.7"/>
 <instance part="R1" gate="G$1" x="0" y="53.34" rot="R90"/>
@@ -14233,6 +14299,9 @@ DIN A4, landscape with location and doc. field</description>
 <instance part="+3V1" gate="G$1" x="215.9" y="58.42"/>
 <instance part="P+6" gate="1" x="121.92" y="58.42"/>
 <instance part="+3V2" gate="G$1" x="129.54" y="58.42"/>
+<instance part="X1" gate="-1" x="-17.78" y="101.6" rot="R180"/>
+<instance part="X1" gate="-2" x="-17.78" y="106.68" rot="R180"/>
+<instance part="+3V4" gate="G$1" x="220.98" y="20.32"/>
 </instances>
 <busses>
 </busses>
@@ -14277,13 +14346,9 @@ DIN A4, landscape with location and doc. field</description>
 </segment>
 <segment>
 <pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="-10.16" y1="99.06" x2="-10.16" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="99.06" x2="-10.16" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="POWCON" gate="G$1" pin="1"/>
-<pinref part="POWCON" gate="G$1" pin="3"/>
-<wire x1="-12.7" y1="104.14" x2="-10.16" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="104.14" x2="-10.16" y2="99.06" width="0.1524" layer="91"/>
-<junction x="-10.16" y="99.06"/>
+<wire x1="-10.16" y1="101.6" x2="-10.16" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-1" pin="S"/>
+<wire x1="-10.16" y1="101.6" x2="-15.24" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="VSS@1"/>
@@ -14343,6 +14408,10 @@ DIN A4, landscape with location and doc. field</description>
 <junction x="218.44" y="-2.54"/>
 <wire x1="213.36" y1="53.34" x2="213.36" y2="0" width="0.1524" layer="91"/>
 <junction x="213.36" y="0"/>
+<pinref part="U$1" gate="G$1" pin="GNDA_ADC"/>
+<wire x1="200.66" y1="12.7" x2="218.44" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="12.7" x2="218.44" y2="0" width="0.1524" layer="91"/>
+<junction x="218.44" y="0"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND@3"/>
@@ -14366,12 +14435,9 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="REGCON" gate="A" pin="2"/>
 <wire x1="5.08" y1="124.46" x2="5.08" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="106.68" x2="-2.54" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="POWCON" gate="G$1" pin="4"/>
-<wire x1="-12.7" y1="106.68" x2="-2.54" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="106.68" x2="-2.54" y2="106.68" width="0.1524" layer="91"/>
 <junction x="-2.54" y="106.68"/>
-<pinref part="POWCON" gate="G$1" pin="2"/>
-<wire x1="-12.7" y1="101.6" x2="-2.54" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="101.6" x2="-2.54" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-2" pin="S"/>
 </segment>
 <segment>
 <wire x1="25.4" y1="0" x2="25.4" y2="7.62" width="0.1524" layer="91"/>
@@ -14659,6 +14725,12 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
 <wire x1="215.9" y1="50.8" x2="215.9" y2="55.88" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="VDD_ADC"/>
+<wire x1="200.66" y1="15.24" x2="220.98" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="15.24" x2="220.98" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="+3V4" gate="G$1" pin="+3V3"/>
+</segment>
 </net>
 <net name="WIPOWER" class="0">
 <segment>
@@ -14786,13 +14858,13 @@ DIN A4, landscape with location and doc. field</description>
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO1_7"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_39"/>
 <wire x1="200.66" y1="116.84" x2="210.82" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO1_3"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_35"/>
 <wire x1="200.66" y1="114.3" x2="210.82" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -14810,121 +14882,121 @@ DIN A4, landscape with location and doc. field</description>
 </net>
 <net name="N$24" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO1_12"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_44"/>
 <wire x1="200.66" y1="106.68" x2="210.82" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$25" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO0_26"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_26"/>
 <wire x1="200.66" y1="104.14" x2="210.82" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$26" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO1_14"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_46"/>
 <wire x1="200.66" y1="101.6" x2="210.82" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$27" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO2_1"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_65"/>
 <wire x1="200.66" y1="99.06" x2="210.82" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO1_31"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_63"/>
 <wire x1="200.66" y1="96.52" x2="210.82" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$29" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO1_5"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_37"/>
 <wire x1="200.66" y1="93.98" x2="210.82" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$30" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO1_1"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_33"/>
 <wire x1="200.66" y1="91.44" x2="210.82" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$31" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO1_29"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_61"/>
 <wire x1="200.66" y1="88.9" x2="210.82" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$32" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO2_24"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_88"/>
 <wire x1="200.66" y1="86.36" x2="210.82" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$33" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO2_25"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_89"/>
 <wire x1="200.66" y1="83.82" x2="210.82" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$34" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="UART5_RTSN"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_11"/>
 <wire x1="200.66" y1="81.28" x2="210.82" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$35" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="UART3_RTSN"/>
+<pinref part="U$1" gate="G$1" pin="PWM1B"/>
 <wire x1="200.66" y1="78.74" x2="210.82" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$36" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="UART3_CTSN"/>
+<pinref part="U$1" gate="G$1" pin="PWM1A"/>
 <wire x1="200.66" y1="76.2" x2="210.82" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$37" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="UART5_RXD"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_79"/>
 <wire x1="200.66" y1="73.66" x2="210.82" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$38" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO2_13"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_77"/>
 <wire x1="200.66" y1="71.12" x2="210.82" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$39" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO2_11"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_75"/>
 <wire x1="200.66" y1="68.58" x2="210.82" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$40" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO2_9"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_73"/>
 <wire x1="200.66" y1="66.04" x2="210.82" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$41" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO2_7"/>
+<pinref part="U$1" gate="G$1" pin="PWM2B"/>
 <wire x1="200.66" y1="63.5" x2="210.82" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$43" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO1_6"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_38"/>
 <wire x1="144.78" y1="116.84" x2="134.62" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$44" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO1_2"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_34"/>
 <wire x1="144.78" y1="114.3" x2="134.62" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -14942,109 +15014,109 @@ DIN A4, landscape with location and doc. field</description>
 </net>
 <net name="N$47" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO1_13"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_45"/>
 <wire x1="144.78" y1="106.68" x2="134.62" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$48" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="EHRPWM2B"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_23"/>
 <wire x1="144.78" y1="104.14" x2="134.62" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$49" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO1_15"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_47"/>
 <wire x1="144.78" y1="101.6" x2="134.62" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$50" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO0_27"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_27"/>
 <wire x1="144.78" y1="99.06" x2="134.62" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$51" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="EHRPWM2A"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_22"/>
 <wire x1="144.78" y1="96.52" x2="134.62" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$52" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO1_30"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_62"/>
 <wire x1="144.78" y1="93.98" x2="134.62" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$53" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO1_4"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_36"/>
 <wire x1="144.78" y1="91.44" x2="134.62" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$54" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO1_0"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_32"/>
 <wire x1="144.78" y1="88.9" x2="134.62" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$55" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO2_22"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_86"/>
 <wire x1="144.78" y1="86.36" x2="134.62" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$56" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO2_23"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_87"/>
 <wire x1="144.78" y1="83.82" x2="134.62" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$57" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="UART5_CTSN"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_10"/>
 <wire x1="144.78" y1="81.28" x2="134.62" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$58" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="UART4_RTSN"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_9"/>
 <wire x1="144.78" y1="78.74" x2="134.62" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$59" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="UART4_CTSN"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_8"/>
 <wire x1="144.78" y1="76.2" x2="134.62" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$60" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="UART5_TXD"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_78"/>
 <wire x1="144.78" y1="73.66" x2="134.62" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$61" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO2_12"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_76"/>
 <wire x1="144.78" y1="71.12" x2="134.62" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$62" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO2_10"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_74"/>
 <wire x1="144.78" y1="68.58" x2="134.62" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$63" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO2_8"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_72"/>
 <wire x1="144.78" y1="66.04" x2="134.62" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$64" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO2_6"/>
+<pinref part="U$1" gate="G$1" pin="PWM2A"/>
 <wire x1="144.78" y1="63.5" x2="134.62" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -15056,19 +15128,19 @@ DIN A4, landscape with location and doc. field</description>
 </net>
 <net name="N$70" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO1_28"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_60"/>
 <wire x1="200.66" y1="40.64" x2="210.82" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$71" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="EHRPWM1A"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_50"/>
 <wire x1="200.66" y1="38.1" x2="210.82" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$72" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="EHRPWM1B"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_51"/>
 <wire x1="200.66" y1="35.56" x2="210.82" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -15114,18 +15186,6 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="200.66" y1="17.78" x2="210.82" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$80" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="VDD_ADC"/>
-<wire x1="200.66" y1="15.24" x2="210.82" y2="15.24" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$81" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GNDA_ADC"/>
-<wire x1="200.66" y1="12.7" x2="210.82" y2="12.7" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$82" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="AIN5"/>
@@ -15146,7 +15206,7 @@ DIN A4, landscape with location and doc. field</description>
 </net>
 <net name="N$85" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO0_7"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_7"/>
 <wire x1="200.66" y1="2.54" x2="210.82" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -15158,19 +15218,19 @@ DIN A4, landscape with location and doc. field</description>
 </net>
 <net name="N$93" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="UART4_RXD"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_30"/>
 <wire x1="144.78" y1="40.64" x2="134.62" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$94" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="UART4_TXD"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_31"/>
 <wire x1="144.78" y1="38.1" x2="134.62" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$95" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO1_16"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_48"/>
 <wire x1="144.78" y1="35.56" x2="134.62" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -15194,19 +15254,19 @@ DIN A4, landscape with location and doc. field</description>
 </net>
 <net name="N$99" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO1_17"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_49"/>
 <wire x1="144.78" y1="25.4" x2="134.62" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$100" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO3_21"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_117"/>
 <wire x1="144.78" y1="22.86" x2="134.62" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$101" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO3_19"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_115"/>
 <wire x1="144.78" y1="20.32" x2="134.62" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -15248,7 +15308,7 @@ DIN A4, landscape with location and doc. field</description>
 </net>
 <net name="N$108" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="CLKOUT2"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_20"/>
 <wire x1="144.78" y1="2.54" x2="134.62" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
