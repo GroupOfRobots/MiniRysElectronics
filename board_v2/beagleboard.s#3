@@ -14524,13 +14524,14 @@ Source: http://www.molex.com</description>
 </net>
 <net name="CSN" class="0">
 <segment>
-<wire x1="93.98" y1="109.22" x2="106.68" y2="109.22" width="0.1524" layer="91"/>
-<label x="106.68" y="109.22" size="1.016" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U1" gate="G$1" pin="SPICSN"/>
 <wire x1="17.78" y1="73.66" x2="10.16" y2="73.66" width="0.1524" layer="91"/>
 <label x="10.16" y="73.66" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="SPI1_CS0"/>
+<wire x1="200.66" y1="20.32" x2="210.82" y2="20.32" width="0.1524" layer="91"/>
+<label x="210.82" y="20.32" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -14540,8 +14541,9 @@ Source: http://www.molex.com</description>
 <label x="10.16" y="71.12" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="93.98" y1="111.76" x2="106.68" y2="111.76" width="0.1524" layer="91"/>
-<label x="106.68" y="111.76" size="1.016" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="SPI1_SCLK"/>
+<wire x1="144.78" y1="15.24" x2="134.62" y2="15.24" width="0.1524" layer="91"/>
+<label x="134.62" y="15.24" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="MLEN" class="0">
@@ -14551,8 +14553,9 @@ Source: http://www.molex.com</description>
 <label x="-5.08" y="0" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="93.98" y1="104.14" x2="106.68" y2="104.14" width="0.1524" layer="91"/>
-<label x="106.68" y="104.14" size="1.016" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_30"/>
+<wire x1="144.78" y1="40.64" x2="134.62" y2="40.64" width="0.1524" layer="91"/>
+<label x="134.62" y="40.64" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -14562,8 +14565,9 @@ Source: http://www.molex.com</description>
 <label x="10.16" y="68.58" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="93.98" y1="116.84" x2="106.68" y2="116.84" width="0.1524" layer="91"/>
-<label x="106.68" y="116.84" size="1.016" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="SPI1_DI"/>
+<wire x1="200.66" y1="17.78" x2="210.82" y2="17.78" width="0.1524" layer="91"/>
+<label x="210.82" y="17.78" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MISO" class="0">
@@ -14573,8 +14577,9 @@ Source: http://www.molex.com</description>
 <label x="63.5" y="58.42" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="93.98" y1="114.3" x2="106.68" y2="114.3" width="0.1524" layer="91"/>
-<label x="106.68" y="114.3" size="1.016" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="SPI1_DO"/>
+<wire x1="144.78" y1="17.78" x2="134.62" y2="17.78" width="0.1524" layer="91"/>
+<label x="134.62" y="17.78" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -14612,8 +14617,9 @@ Source: http://www.molex.com</description>
 <label x="-5.08" y="-17.78" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="93.98" y1="93.98" x2="106.68" y2="93.98" width="0.1524" layer="91"/>
-<label x="106.68" y="93.98" size="1.016" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_48"/>
+<wire x1="144.78" y1="35.56" x2="134.62" y2="35.56" width="0.1524" layer="91"/>
+<label x="134.62" y="35.56" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="MLSTEP" class="0">
@@ -14623,8 +14629,9 @@ Source: http://www.molex.com</description>
 <label x="-5.08" y="-15.24" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="93.98" y1="101.6" x2="106.68" y2="101.6" width="0.1524" layer="91"/>
-<label x="106.68" y="101.6" size="1.016" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_31"/>
+<wire x1="144.78" y1="38.1" x2="134.62" y2="38.1" width="0.1524" layer="91"/>
+<label x="134.62" y="38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="MRSTEP" class="0">
@@ -14634,8 +14641,9 @@ Source: http://www.molex.com</description>
 <label x="55.88" y="-15.24" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="76.2" y1="96.52" x2="63.5" y2="96.52" width="0.1524" layer="91"/>
-<label x="63.5" y="96.52" size="1.016" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_50"/>
+<wire x1="200.66" y1="38.1" x2="210.82" y2="38.1" width="0.1524" layer="91"/>
+<label x="210.82" y="38.1" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MRDIR" class="0">
@@ -14645,8 +14653,9 @@ Source: http://www.molex.com</description>
 <label x="55.88" y="-17.78" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="76.2" y1="99.06" x2="63.5" y2="99.06" width="0.1524" layer="91"/>
-<label x="63.5" y="99.06" size="1.016" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_51"/>
+<wire x1="200.66" y1="35.56" x2="210.82" y2="35.56" width="0.1524" layer="91"/>
+<label x="210.82" y="35.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MREN" class="0">
@@ -14656,8 +14665,9 @@ Source: http://www.molex.com</description>
 <label x="55.88" y="0" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="76.2" y1="93.98" x2="63.5" y2="93.98" width="0.1524" layer="91"/>
-<label x="63.5" y="93.98" size="1.016" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_60"/>
+<wire x1="200.66" y1="40.64" x2="210.82" y2="40.64" width="0.1524" layer="91"/>
+<label x="210.82" y="40.64" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="DWMRES" class="0">
@@ -14666,8 +14676,9 @@ Source: http://www.molex.com</description>
 <wire x1="17.78" y1="63.5" x2="10.16" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="93.98" y1="119.38" x2="106.68" y2="119.38" width="0.1524" layer="91"/>
-<label x="106.68" y="119.38" size="1.016" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_7"/>
+<wire x1="200.66" y1="2.54" x2="210.82" y2="2.54" width="0.1524" layer="91"/>
+<label x="210.82" y="2.54" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -14764,8 +14775,9 @@ Source: http://www.molex.com</description>
 <wire x1="0" y1="60.96" x2="0" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="93.98" y1="106.68" x2="106.68" y2="106.68" width="0.1524" layer="91"/>
-<label x="106.68" y="106.68" size="1.016" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_20"/>
+<wire x1="144.78" y1="2.54" x2="134.62" y2="2.54" width="0.1524" layer="91"/>
+<label x="134.62" y="2.54" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -15126,24 +15138,6 @@ Source: http://www.molex.com</description>
 <wire x1="200.66" y1="43.18" x2="210.82" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$70" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GPIO_60"/>
-<wire x1="200.66" y1="40.64" x2="210.82" y2="40.64" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$71" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GPIO_50"/>
-<wire x1="200.66" y1="38.1" x2="210.82" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$72" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GPIO_51"/>
-<wire x1="200.66" y1="35.56" x2="210.82" y2="35.56" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$73" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="I2C1_SDA"/>
@@ -15174,18 +15168,6 @@ Source: http://www.molex.com</description>
 <wire x1="200.66" y1="22.86" x2="210.82" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$78" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="SPI1_CS0"/>
-<wire x1="200.66" y1="20.32" x2="210.82" y2="20.32" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$79" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="SPI1_DI"/>
-<wire x1="200.66" y1="17.78" x2="210.82" y2="17.78" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$82" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="AIN5"/>
@@ -15204,34 +15186,10 @@ Source: http://www.molex.com</description>
 <wire x1="200.66" y1="5.08" x2="210.82" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$85" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GPIO_7"/>
-<wire x1="200.66" y1="2.54" x2="210.82" y2="2.54" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$92" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PWR_BUT"/>
 <wire x1="144.78" y1="43.18" x2="134.62" y2="43.18" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$93" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GPIO_30"/>
-<wire x1="144.78" y1="40.64" x2="134.62" y2="40.64" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$94" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GPIO_31"/>
-<wire x1="144.78" y1="38.1" x2="134.62" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$95" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GPIO_48"/>
-<wire x1="144.78" y1="35.56" x2="134.62" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$96" class="0">
@@ -15270,18 +15228,6 @@ Source: http://www.molex.com</description>
 <wire x1="144.78" y1="20.32" x2="134.62" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$102" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="SPI1_DO"/>
-<wire x1="144.78" y1="17.78" x2="134.62" y2="17.78" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$103" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="SPI1_SCLK"/>
-<wire x1="144.78" y1="15.24" x2="134.62" y2="15.24" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$104" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="AIN4"/>
@@ -15304,12 +15250,6 @@ Source: http://www.molex.com</description>
 <segment>
 <pinref part="U$1" gate="G$1" pin="AIN0"/>
 <wire x1="144.78" y1="5.08" x2="134.62" y2="5.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$108" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GPIO_20"/>
-<wire x1="144.78" y1="2.54" x2="134.62" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
