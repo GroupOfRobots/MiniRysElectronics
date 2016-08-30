@@ -156,6 +156,7 @@
 </layers>
 <board>
 <plain>
+<text x="61.595" y="20.32" size="1.778" layer="16" rot="MR0">iRYS v2</text>
 </plain>
 <libraries>
 <library name="DWM1000">
