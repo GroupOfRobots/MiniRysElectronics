@@ -14358,9 +14358,7 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZH.pdf"&gt;http://ww
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
-<part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
-<part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="X1" library="con-molex" deviceset="5566-2" device=""/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="IMUCON" library="jst" deviceset="B4B-ZR" device=""/>
@@ -14417,9 +14415,7 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZH.pdf"&gt;http://ww
 <instance part="GND5" gate="1" x="127" y="-5.08"/>
 <instance part="GND7" gate="1" x="220.98" y="116.84"/>
 <instance part="GND8" gate="1" x="124.46" y="116.84"/>
-<instance part="+3V1" gate="G$1" x="215.9" y="58.42"/>
 <instance part="P+6" gate="1" x="121.92" y="58.42"/>
-<instance part="+3V2" gate="G$1" x="129.54" y="58.42"/>
 <instance part="X1" gate="-1" x="-17.78" y="101.6" rot="R180"/>
 <instance part="X1" gate="-2" x="-17.78" y="106.68" rot="R180"/>
 <instance part="+3V4" gate="G$1" x="220.98" y="20.32"/>
@@ -14836,18 +14832,6 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZH.pdf"&gt;http://ww
 <wire x1="55.88" y1="68.58" x2="60.96" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="68.58" x2="60.96" y2="71.12" width="0.1524" layer="91"/>
 <junction x="60.96" y="71.12"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="VDD_3V3EXP@1"/>
-<wire x1="144.78" y1="50.8" x2="129.54" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="50.8" x2="129.54" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="+3V2" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="VDD_3V3EXP@2"/>
-<wire x1="200.66" y1="50.8" x2="215.9" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="+3V1" gate="G$1" pin="+3V3"/>
-<wire x1="215.9" y1="50.8" x2="215.9" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="VDD_ADC"/>

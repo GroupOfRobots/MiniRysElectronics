@@ -2437,18 +2437,28 @@ design rules under a new name.</description>
 </signal>
 <signal name="CSN">
 <contactref element="U1" pad="17"/>
+<contactref element="U$1" pad="74"/>
+<wire x1="38.1" y1="5.08" x2="61.215" y2="29.795" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCK">
 <contactref element="U1" pad="20"/>
+<contactref element="U$1" pad="77"/>
+<wire x1="43.18" y1="2.54" x2="65.415" y2="29.795" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MLEN">
 <contactref element="MOTORL" pad="1"/>
+<contactref element="U$1" pad="57"/>
+<wire x1="17.78" y1="2.54" x2="25.4" y2="27.94" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MOSI">
 <contactref element="U1" pad="18"/>
+<contactref element="U$1" pad="76"/>
+<wire x1="40.64" y1="5.08" x2="62.615" y2="29.795" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MISO">
 <contactref element="U1" pad="19"/>
+<contactref element="U$1" pad="75"/>
+<wire x1="40.64" y1="2.54" x2="64.015" y2="29.795" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$12">
 <contactref element="MCONR" pad="P$1"/>
@@ -2468,21 +2478,33 @@ design rules under a new name.</description>
 </signal>
 <signal name="MLDIR">
 <contactref element="MOTORL" pad="8"/>
+<contactref element="U$1" pad="61"/>
+<wire x1="22.86" y1="2.54" x2="25.4" y2="10.16" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MLSTEP">
 <contactref element="MOTORL" pad="7"/>
+<contactref element="U$1" pad="59"/>
+<wire x1="20.32" y1="2.54" x2="25.4" y2="12.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MRSTEP">
 <contactref element="MOTOTR" pad="7"/>
+<contactref element="U$1" pad="60"/>
+<wire x1="20.32" y1="5.08" x2="17.78" y2="25.4" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MRDIR">
 <contactref element="MOTOTR" pad="8"/>
+<contactref element="U$1" pad="62"/>
+<wire x1="22.86" y1="5.08" x2="17.78" y2="27.94" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MREN">
 <contactref element="MOTOTR" pad="1"/>
+<contactref element="U$1" pad="58"/>
+<wire x1="17.78" y1="5.08" x2="17.78" y2="10.16" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DWMRES">
 <contactref element="U1" pad="3"/>
+<contactref element="U$1" pad="88"/>
+<wire x1="55.88" y1="5.08" x2="68.215" y2="42.595" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$19">
 <contactref element="MOTORR1" pad="4"/>
@@ -2527,7 +2549,9 @@ design rules under a new name.</description>
 <signal name="IRQ">
 <contactref element="U1" pad="22"/>
 <contactref element="R1" pad="2"/>
+<contactref element="U$1" pad="87"/>
 <wire x1="67.525" y1="24.765" x2="68.215" y2="29.795" width="0" layer="19" extent="1-1"/>
+<wire x1="55.88" y1="2.54" x2="67.525" y2="24.765" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$5">
 <contactref element="R3" pad="1"/>
@@ -2724,15 +2748,6 @@ design rules under a new name.</description>
 <signal name="N$69">
 <contactref element="U$1" pad="56"/>
 </signal>
-<signal name="N$70">
-<contactref element="U$1" pad="58"/>
-</signal>
-<signal name="N$71">
-<contactref element="U$1" pad="60"/>
-</signal>
-<signal name="N$72">
-<contactref element="U$1" pad="62"/>
-</signal>
 <signal name="N$73">
 <contactref element="U$1" pad="64"/>
 </signal>
@@ -2748,12 +2763,6 @@ design rules under a new name.</description>
 <signal name="N$77">
 <contactref element="U$1" pad="72"/>
 </signal>
-<signal name="N$78">
-<contactref element="U$1" pad="74"/>
-</signal>
-<signal name="N$79">
-<contactref element="U$1" pad="76"/>
-</signal>
 <signal name="N$82">
 <contactref element="U$1" pad="82"/>
 </signal>
@@ -2763,20 +2772,8 @@ design rules under a new name.</description>
 <signal name="N$84">
 <contactref element="U$1" pad="86"/>
 </signal>
-<signal name="N$85">
-<contactref element="U$1" pad="88"/>
-</signal>
 <signal name="N$92">
 <contactref element="U$1" pad="55"/>
-</signal>
-<signal name="N$93">
-<contactref element="U$1" pad="57"/>
-</signal>
-<signal name="N$94">
-<contactref element="U$1" pad="59"/>
-</signal>
-<signal name="N$95">
-<contactref element="U$1" pad="61"/>
 </signal>
 <signal name="N$96">
 <contactref element="U$1" pad="63"/>
@@ -2796,12 +2793,6 @@ design rules under a new name.</description>
 <signal name="N$101">
 <contactref element="U$1" pad="73"/>
 </signal>
-<signal name="N$102">
-<contactref element="U$1" pad="75"/>
-</signal>
-<signal name="N$103">
-<contactref element="U$1" pad="77"/>
-</signal>
 <signal name="N$104">
 <contactref element="U$1" pad="79"/>
 </signal>
@@ -2813,9 +2804,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$107">
 <contactref element="U$1" pad="85"/>
-</signal>
-<signal name="N$108">
-<contactref element="U$1" pad="87"/>
 </signal>
 <signal name="N$16">
 <contactref element="U$1" pad="48"/>
