@@ -14978,6 +14978,7 @@ W = angled&lt;p&gt;
 <segment>
 <pinref part="U1" gate="G$1" pin="RSTN"/>
 <wire x1="17.78" y1="63.5" x2="10.16" y2="63.5" width="0.1524" layer="91"/>
+<label x="10.16" y="63.5" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="GPIO_7"/>
@@ -15023,6 +15024,7 @@ W = angled&lt;p&gt;
 <wire x1="17.78" y1="60.96" x2="0" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="0" y1="60.96" x2="0" y2="58.42" width="0.1524" layer="91"/>
+<label x="0" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="GPIO_20"/>
@@ -15239,7 +15241,6 @@ W = angled&lt;p&gt;
 <segment>
 <pinref part="U$1" gate="G$1" pin="AIN2"/>
 <wire x1="144.78" y1="7.62" x2="134.62" y2="7.62" width="0.1524" layer="91"/>
-<label x="134.62" y="7.62" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="D2TRIG" class="0">
@@ -15287,7 +15288,6 @@ W = angled&lt;p&gt;
 <segment>
 <pinref part="U$1" gate="G$1" pin="AIN0"/>
 <wire x1="144.78" y1="5.08" x2="134.62" y2="5.08" width="0.1524" layer="91"/>
-<label x="134.62" y="5.08" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="D2ECHO" class="0">
@@ -15307,11 +15307,6 @@ W = angled&lt;p&gt;
 <pinref part="SENS3" gate="G$1" pin="4"/>
 <wire x1="96.52" y1="111.76" x2="96.52" y2="104.14" width="0.1524" layer="91"/>
 <label x="96.52" y="104.14" size="1.016" layer="95" rot="R270" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="AIN6"/>
-<wire x1="144.78" y1="10.16" x2="134.62" y2="10.16" width="0.1524" layer="91"/>
-<label x="134.62" y="10.16" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="D3ECHO" class="0">
@@ -15342,13 +15337,6 @@ W = angled&lt;p&gt;
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND@2"/>
 <wire x1="200.66" y1="53.34" x2="213.36" y2="53.34" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="SDA1" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="I2C1_SDA"/>
-<wire x1="200.66" y1="33.02" x2="210.82" y2="33.02" width="0.1524" layer="91"/>
-<label x="210.82" y="33.02" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SCL1" class="0">
@@ -15600,6 +15588,12 @@ W = angled&lt;p&gt;
 <pinref part="MOTOTR" gate="A" pin="4"/>
 <pinref part="SJ6" gate="1" pin="1"/>
 <wire x1="66.04" y1="-7.62" x2="63.5" y2="-7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$67" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="AIN6"/>
+<wire x1="144.78" y1="10.16" x2="134.62" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

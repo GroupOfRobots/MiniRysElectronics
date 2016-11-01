@@ -156,7 +156,7 @@
 </layers>
 <board>
 <plain>
-<text x="61.595" y="20.32" size="1.778" layer="16" rot="MR0">iRYS v2</text>
+<text x="61.2775" y="19.685" size="1.778" layer="16" rot="MR0">iRYS v2</text>
 </plain>
 <libraries>
 <library name="DWM1000">
@@ -2487,7 +2487,7 @@ design rules under a new name.</description>
 <wire x1="43.815" y1="15.24" x2="43.815" y2="17.885" width="0.8128" layer="1"/>
 <wire x1="58.74" y1="29.845" x2="58.74" y2="38.42" width="0.6096" layer="1"/>
 <wire x1="58.74" y1="38.42" x2="59.055" y2="38.735" width="0.6096" layer="1"/>
-<via x="59.055" y="38.735" extent="1-16" drill="0.5" shape="octagon"/>
+<via x="59.055" y="38.735" extent="1-16" drill="0.5"/>
 <wire x1="43.18" y1="14.605" x2="42.545" y2="14.605" width="0.8128" layer="1"/>
 <wire x1="42.545" y1="14.605" x2="41.275" y2="15.875" width="0.8128" layer="1"/>
 <via x="41.275" y="15.875" extent="1-16" drill="0.7"/>
@@ -2658,10 +2658,11 @@ design rules under a new name.</description>
 <wire x1="23.1775" y1="19.1125" x2="23.21" y2="19.08" width="0.8128" layer="16"/>
 <wire x1="32.735" y1="10.825" x2="32.735" y2="10.51" width="0.8128" layer="16"/>
 <wire x1="32.735" y1="10.51" x2="31.75" y2="9.525" width="0.8128" layer="16"/>
-<wire x1="31.75" y1="9.525" x2="25.145" y2="9.525" width="0.8128" layer="16"/>
-<wire x1="25.145" y1="9.525" x2="23.21" y2="11.46" width="0.8128" layer="16"/>
+<wire x1="31.75" y1="9.525" x2="24.1925" y2="9.525" width="0.8128" layer="16"/>
 <wire x1="23.21" y1="19.08" x2="23.21" y2="15.27" width="0.8128" layer="16"/>
 <wire x1="23.21" y1="15.27" x2="23.21" y2="11.46" width="0.8128" layer="16"/>
+<wire x1="23.21" y1="11.46" x2="23.21" y2="10.5075" width="0.8128" layer="16"/>
+<wire x1="23.21" y1="10.5075" x2="24.1925" y2="9.525" width="0.8128" layer="16"/>
 </signal>
 <signal name="CSN">
 <contactref element="U1" pad="17"/>
