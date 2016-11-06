@@ -14453,9 +14453,6 @@ W = angled&lt;p&gt;
 <part name="SENS1" library="libsjst_eph" deviceset="4PIN" device=""/>
 <part name="P+10" library="supply1" deviceset="+5V" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
-<part name="SENS4" library="libsjst_eph" deviceset="4PIN" device=""/>
-<part name="P+11" library="supply1" deviceset="+5V" device=""/>
-<part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="SENS3" library="libsjst_eph" deviceset="4PIN" device=""/>
 <part name="P+12" library="supply1" deviceset="+5V" device=""/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
@@ -14466,6 +14463,15 @@ W = angled&lt;p&gt;
 <part name="SJ4" library="jumper" deviceset="SJ" device=""/>
 <part name="SJ5" library="jumper" deviceset="SJ" device=""/>
 <part name="SJ6" library="jumper" deviceset="SJ" device=""/>
+<part name="R10" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="R11" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="R12" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="R13" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="R14" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="R15" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="GND15" library="supply1" deviceset="GND" device=""/>
+<part name="GND17" library="supply1" deviceset="GND" device=""/>
+<part name="GND18" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14510,9 +14516,9 @@ W = angled&lt;p&gt;
 <instance part="P+6" gate="1" x="121.92" y="58.42"/>
 <instance part="X1" gate="-1" x="-17.78" y="101.6" rot="R180"/>
 <instance part="X1" gate="-2" x="-17.78" y="106.68" rot="R180"/>
-<instance part="SENS2" gate="G$1" x="71.12" y="116.84" rot="R90"/>
-<instance part="P+7" gate="1" x="63.5" y="106.68"/>
-<instance part="GND6" gate="1" x="71.12" y="93.98"/>
+<instance part="SENS2" gate="G$1" x="81.28" y="124.46" rot="R90"/>
+<instance part="P+7" gate="1" x="73.66" y="119.38"/>
+<instance part="GND6" gate="1" x="81.28" y="99.06"/>
 <instance part="X2" gate="-1" x="114.3" y="73.66"/>
 <instance part="X2" gate="-2" x="114.3" y="71.12"/>
 <instance part="X2" gate="-3" x="114.3" y="68.58"/>
@@ -14525,15 +14531,12 @@ W = angled&lt;p&gt;
 <instance part="R8" gate="G$1" x="91.44" y="66.04" rot="R90"/>
 <instance part="R9" gate="G$1" x="96.52" y="63.5" rot="R90"/>
 <instance part="P+8" gate="1" x="27.94" y="132.08"/>
-<instance part="SENS1" gate="G$1" x="50.8" y="116.84" rot="R90"/>
-<instance part="P+10" gate="1" x="43.18" y="106.68"/>
-<instance part="GND14" gate="1" x="50.8" y="93.98"/>
-<instance part="SENS4" gate="G$1" x="111.76" y="116.84" rot="R90"/>
-<instance part="P+11" gate="1" x="104.14" y="106.68"/>
-<instance part="GND15" gate="1" x="111.76" y="93.98"/>
-<instance part="SENS3" gate="G$1" x="91.44" y="116.84" rot="R90"/>
-<instance part="P+12" gate="1" x="83.82" y="106.68"/>
-<instance part="GND16" gate="1" x="91.44" y="93.98"/>
+<instance part="SENS1" gate="G$1" x="60.96" y="124.46" rot="R90"/>
+<instance part="P+10" gate="1" x="53.34" y="119.38"/>
+<instance part="GND14" gate="1" x="60.96" y="96.52"/>
+<instance part="SENS3" gate="G$1" x="101.6" y="124.46" rot="R90"/>
+<instance part="P+12" gate="1" x="93.98" y="119.38"/>
+<instance part="GND16" gate="1" x="101.6" y="99.06"/>
 <instance part="SV1" gate="G$1" x="5.08" y="132.08" rot="R270"/>
 <instance part="SJ1" gate="1" x="-2.54" y="-2.54" rot="MR0"/>
 <instance part="SJ2" gate="1" x="-2.54" y="-5.08" rot="MR0"/>
@@ -14541,6 +14544,15 @@ W = angled&lt;p&gt;
 <instance part="SJ4" gate="1" x="58.42" y="-2.54" rot="MR0"/>
 <instance part="SJ5" gate="1" x="58.42" y="-5.08" rot="MR0"/>
 <instance part="SJ6" gate="1" x="58.42" y="-7.62" rot="MR0"/>
+<instance part="R10" gate="G$1" x="66.04" y="104.14" rot="R90"/>
+<instance part="R11" gate="G$1" x="66.04" y="91.44" rot="R90"/>
+<instance part="R12" gate="G$1" x="86.36" y="104.14" rot="R90"/>
+<instance part="R13" gate="G$1" x="86.36" y="91.44" rot="R90"/>
+<instance part="R14" gate="G$1" x="106.68" y="104.14" rot="R90"/>
+<instance part="R15" gate="G$1" x="106.68" y="91.44" rot="R90"/>
+<instance part="GND15" gate="1" x="66.04" y="83.82"/>
+<instance part="GND17" gate="1" x="86.36" y="83.82"/>
+<instance part="GND18" gate="1" x="106.68" y="83.82"/>
 </instances>
 <busses>
 </busses>
@@ -14684,22 +14696,29 @@ W = angled&lt;p&gt;
 <segment>
 <pinref part="SENS1" gate="G$1" pin="2"/>
 <pinref part="GND14" gate="1" pin="GND"/>
-<wire x1="50.8" y1="111.76" x2="50.8" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="119.38" x2="60.96" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SENS2" gate="G$1" pin="2"/>
 <pinref part="GND6" gate="1" pin="GND"/>
-<wire x1="71.12" y1="111.76" x2="71.12" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="119.38" x2="81.28" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SENS3" gate="G$1" pin="2"/>
 <pinref part="GND16" gate="1" pin="GND"/>
-<wire x1="91.44" y1="111.76" x2="91.44" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="119.38" x2="101.6" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SENS4" gate="G$1" pin="2"/>
+<pinref part="R11" gate="G$1" pin="1"/>
 <pinref part="GND15" gate="1" pin="GND"/>
-<wire x1="111.76" y1="111.76" x2="111.76" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R13" gate="G$1" pin="1"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R15" gate="G$1" pin="1"/>
+<pinref part="GND18" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -14791,31 +14810,24 @@ W = angled&lt;p&gt;
 </segment>
 <segment>
 <pinref part="SENS1" gate="G$1" pin="1"/>
-<wire x1="48.26" y1="111.76" x2="48.26" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="119.38" x2="58.42" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="P+10" gate="1" pin="+5V"/>
-<wire x1="48.26" y1="101.6" x2="43.18" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="101.6" x2="43.18" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="114.3" x2="53.34" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="114.3" x2="53.34" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SENS2" gate="G$1" pin="1"/>
-<wire x1="68.58" y1="111.76" x2="68.58" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="119.38" x2="78.74" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="P+7" gate="1" pin="+5V"/>
-<wire x1="68.58" y1="101.6" x2="63.5" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="101.6" x2="63.5" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="114.3" x2="73.66" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="114.3" x2="73.66" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SENS3" gate="G$1" pin="1"/>
-<wire x1="88.9" y1="111.76" x2="88.9" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="119.38" x2="99.06" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="P+12" gate="1" pin="+5V"/>
-<wire x1="88.9" y1="101.6" x2="83.82" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="101.6" x2="83.82" y2="104.14" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SENS4" gate="G$1" pin="1"/>
-<wire x1="109.22" y1="111.76" x2="109.22" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="P+11" gate="1" pin="+5V"/>
-<wire x1="109.22" y1="101.6" x2="104.14" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="101.6" x2="104.14" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="114.3" x2="93.98" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="114.3" x2="93.98" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="MOTORL" gate="A" pin="6"/>
@@ -14870,11 +14882,6 @@ W = angled&lt;p&gt;
 <wire x1="5.08" y1="0" x2="-5.08" y2="0" width="0.1524" layer="91"/>
 <label x="-5.08" y="0" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="GPIO_30"/>
-<wire x1="144.78" y1="40.64" x2="134.62" y2="40.64" width="0.1524" layer="91"/>
-<label x="134.62" y="40.64" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
 </net>
 <net name="MOSI" class="0">
 <segment>
@@ -14921,9 +14928,9 @@ W = angled&lt;p&gt;
 <label x="-5.08" y="-17.78" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO_48"/>
-<wire x1="144.78" y1="35.56" x2="134.62" y2="35.56" width="0.1524" layer="91"/>
-<label x="134.62" y="35.56" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_76"/>
+<wire x1="144.78" y1="71.12" x2="134.62" y2="71.12" width="0.1524" layer="91"/>
+<label x="134.62" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="MLSTEP" class="0">
@@ -14933,9 +14940,9 @@ W = angled&lt;p&gt;
 <label x="-5.08" y="-15.24" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO_31"/>
-<wire x1="144.78" y1="38.1" x2="134.62" y2="38.1" width="0.1524" layer="91"/>
-<label x="134.62" y="38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="PWM2A"/>
+<wire x1="144.78" y1="63.5" x2="134.62" y2="63.5" width="0.1524" layer="91"/>
+<label x="134.62" y="63.5" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="MRSTEP" class="0">
@@ -14945,9 +14952,9 @@ W = angled&lt;p&gt;
 <label x="55.88" y="-15.24" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO_50"/>
-<wire x1="200.66" y1="38.1" x2="210.82" y2="38.1" width="0.1524" layer="91"/>
-<label x="210.82" y="38.1" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="PWM2B"/>
+<wire x1="200.66" y1="63.5" x2="210.82" y2="63.5" width="0.1524" layer="91"/>
+<label x="210.82" y="63.5" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MRDIR" class="0">
@@ -14957,9 +14964,9 @@ W = angled&lt;p&gt;
 <label x="55.88" y="-17.78" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO_60"/>
-<wire x1="200.66" y1="40.64" x2="210.82" y2="40.64" width="0.1524" layer="91"/>
-<label x="210.82" y="40.64" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="GPIO_77"/>
+<wire x1="200.66" y1="71.12" x2="210.82" y2="71.12" width="0.1524" layer="91"/>
+<label x="210.82" y="71.12" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MREN" class="0">
@@ -14967,11 +14974,6 @@ W = angled&lt;p&gt;
 <pinref part="MOTOTR" gate="A" pin="1"/>
 <wire x1="66.04" y1="0" x2="55.88" y2="0" width="0.1524" layer="91"/>
 <label x="55.88" y="0" size="1.016" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="GPIO_51"/>
-<wire x1="200.66" y1="35.56" x2="210.82" y2="35.56" width="0.1524" layer="91"/>
-<label x="210.82" y="35.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="DWMRES" class="0">
@@ -15024,6 +15026,7 @@ W = angled&lt;p&gt;
 <wire x1="17.78" y1="60.96" x2="0" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="0" y1="60.96" x2="0" y2="58.42" width="0.1524" layer="91"/>
+<label x="0" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="GPIO_20"/>
@@ -15147,36 +15150,6 @@ W = angled&lt;p&gt;
 <wire x1="200.66" y1="76.2" x2="210.82" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$37" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GPIO_79"/>
-<wire x1="200.66" y1="73.66" x2="210.82" y2="73.66" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$38" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GPIO_77"/>
-<wire x1="200.66" y1="71.12" x2="210.82" y2="71.12" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$39" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GPIO_75"/>
-<wire x1="200.66" y1="68.58" x2="210.82" y2="68.58" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$40" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GPIO_73"/>
-<wire x1="200.66" y1="66.04" x2="210.82" y2="66.04" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$41" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="PWM2B"/>
-<wire x1="200.66" y1="63.5" x2="210.82" y2="63.5" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$56" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="GPIO_87"/>
@@ -15201,123 +15174,33 @@ W = angled&lt;p&gt;
 <wire x1="144.78" y1="76.2" x2="134.62" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$60" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GPIO_78"/>
-<wire x1="144.78" y1="73.66" x2="134.62" y2="73.66" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$61" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GPIO_76"/>
-<wire x1="144.78" y1="71.12" x2="134.62" y2="71.12" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$62" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GPIO_74"/>
-<wire x1="144.78" y1="68.58" x2="134.62" y2="68.58" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$63" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GPIO_72"/>
-<wire x1="144.78" y1="66.04" x2="134.62" y2="66.04" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$64" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="PWM2A"/>
-<wire x1="144.78" y1="63.5" x2="134.62" y2="63.5" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="D4TRIG" class="0">
-<segment>
-<pinref part="SENS4" gate="G$1" pin="4"/>
-<wire x1="116.84" y1="111.76" x2="116.84" y2="104.14" width="0.1524" layer="91"/>
-<label x="116.84" y="104.14" size="1.016" layer="95" rot="R270" xref="yes"/>
-</segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="AIN2"/>
 <wire x1="144.78" y1="7.62" x2="134.62" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="D2TRIG" class="0">
+<net name="TRIG" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="UART2_RXD"/>
-<wire x1="200.66" y1="27.94" x2="210.82" y2="27.94" width="0.1524" layer="91"/>
-<label x="210.82" y="27.94" size="1.016" layer="95" xref="yes"/>
+<pinref part="SENS1" gate="G$1" pin="4"/>
+<wire x1="66.04" y1="119.38" x2="66.04" y2="116.84" width="0.1524" layer="91"/>
+<label x="66.04" y="116.84" size="1.016" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
 <pinref part="SENS2" gate="G$1" pin="4"/>
-<wire x1="76.2" y1="111.76" x2="76.2" y2="104.14" width="0.1524" layer="91"/>
-<label x="76.2" y="104.14" size="1.016" layer="95" rot="R270" xref="yes"/>
-</segment>
-</net>
-<net name="D1ECHO" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="UART1_TXD"/>
-<wire x1="200.66" y1="25.4" x2="210.82" y2="25.4" width="0.1524" layer="91"/>
-<label x="210.82" y="25.4" size="1.016" layer="95" xref="yes"/>
-<label x="210.82" y="22.86" size="1.016" layer="95" xref="yes"/>
+<wire x1="86.36" y1="119.38" x2="86.36" y2="116.84" width="0.1524" layer="91"/>
+<label x="86.36" y="116.84" size="1.016" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="SENS1" gate="G$1" pin="3"/>
-<wire x1="53.34" y1="111.76" x2="53.34" y2="104.14" width="0.1524" layer="91"/>
-<label x="53.34" y="104.14" size="1.016" layer="95" rot="R270" xref="yes"/>
-</segment>
-</net>
-<net name="D1TRIG" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="UART1_RXD"/>
-<wire x1="200.66" y1="22.86" x2="210.82" y2="22.86" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SENS1" gate="G$1" pin="4"/>
-<wire x1="55.88" y1="111.76" x2="55.88" y2="104.14" width="0.1524" layer="91"/>
-<label x="55.88" y="104.14" size="1.016" layer="95" rot="R270" xref="yes"/>
+<pinref part="SENS3" gate="G$1" pin="4"/>
+<wire x1="106.68" y1="119.38" x2="106.68" y2="116.84" width="0.1524" layer="91"/>
+<label x="106.68" y="116.84" size="1.016" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="D4ECHO" class="0">
 <segment>
-<pinref part="SENS4" gate="G$1" pin="3"/>
-<wire x1="114.3" y1="111.76" x2="114.3" y2="104.14" width="0.1524" layer="91"/>
-<label x="114.3" y="104.14" size="1.016" layer="95" rot="R270" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U$1" gate="G$1" pin="AIN0"/>
 <wire x1="144.78" y1="5.08" x2="134.62" y2="5.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="D2ECHO" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="UART2_TXD"/>
-<wire x1="144.78" y1="27.94" x2="134.62" y2="27.94" width="0.1524" layer="91"/>
-<label x="134.62" y="27.94" size="1.016" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="SENS2" gate="G$1" pin="3"/>
-<wire x1="73.66" y1="111.76" x2="73.66" y2="104.14" width="0.1524" layer="91"/>
-<label x="73.66" y="104.14" size="1.016" layer="95" rot="R270" xref="yes"/>
-</segment>
-</net>
-<net name="D3TRIG" class="0">
-<segment>
-<pinref part="SENS3" gate="G$1" pin="4"/>
-<wire x1="96.52" y1="111.76" x2="96.52" y2="104.14" width="0.1524" layer="91"/>
-<label x="96.52" y="104.14" size="1.016" layer="95" rot="R270" xref="yes"/>
-</segment>
-</net>
-<net name="D3ECHO" class="0">
-<segment>
-<pinref part="SENS3" gate="G$1" pin="3"/>
-<wire x1="93.98" y1="111.76" x2="93.98" y2="104.14" width="0.1524" layer="91"/>
-<label x="93.98" y="104.14" size="1.016" layer="95" rot="R270" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="GPIO_49"/>
-<wire x1="144.78" y1="25.4" x2="134.62" y2="25.4" width="0.1524" layer="91"/>
-<label x="134.62" y="25.4" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$101" class="0">
@@ -15554,32 +15437,56 @@ W = angled&lt;p&gt;
 <wire x1="5.08" y1="-7.62" x2="2.54" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$53" class="0">
+<net name="LM1" class="0">
 <segment>
 <pinref part="MOTORL" gate="A" pin="3"/>
 <pinref part="SJ2" gate="1" pin="1"/>
 <wire x1="5.08" y1="-5.08" x2="2.54" y2="-5.08" width="0.1524" layer="91"/>
+<label x="7.62" y="-5.08" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GPIO_72"/>
+<wire x1="144.78" y1="66.04" x2="134.62" y2="66.04" width="0.1524" layer="91"/>
+<label x="134.62" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$54" class="0">
+<net name="LM0" class="0">
 <segment>
 <pinref part="MOTORL" gate="A" pin="2"/>
 <pinref part="SJ1" gate="1" pin="1"/>
 <wire x1="5.08" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="91"/>
+<label x="7.62" y="-2.54" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GPIO_74"/>
+<wire x1="144.78" y1="68.58" x2="134.62" y2="68.58" width="0.1524" layer="91"/>
+<label x="134.62" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$55" class="0">
+<net name="RM0" class="0">
 <segment>
 <pinref part="MOTOTR" gate="A" pin="2"/>
 <pinref part="SJ4" gate="1" pin="1"/>
 <wire x1="66.04" y1="-2.54" x2="63.5" y2="-2.54" width="0.1524" layer="91"/>
+<label x="68.58" y="-2.54" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GPIO_75"/>
+<wire x1="200.66" y1="68.58" x2="210.82" y2="68.58" width="0.1524" layer="91"/>
+<label x="210.82" y="68.58" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$65" class="0">
+<net name="RM1" class="0">
 <segment>
 <pinref part="MOTOTR" gate="A" pin="3"/>
 <pinref part="SJ5" gate="1" pin="1"/>
 <wire x1="66.04" y1="-5.08" x2="63.5" y2="-5.08" width="0.1524" layer="91"/>
+<label x="68.58" y="-5.08" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GPIO_73"/>
+<wire x1="200.66" y1="66.04" x2="210.82" y2="66.04" width="0.1524" layer="91"/>
+<label x="210.82" y="66.04" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$66" class="0">
@@ -15587,6 +15494,192 @@ W = angled&lt;p&gt;
 <pinref part="MOTOTR" gate="A" pin="4"/>
 <pinref part="SJ6" gate="1" pin="1"/>
 <wire x1="66.04" y1="-7.62" x2="63.5" y2="-7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$67" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="AIN6"/>
+<wire x1="144.78" y1="10.16" x2="134.62" y2="10.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$37" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="GPIO_78"/>
+<wire x1="144.78" y1="73.66" x2="134.62" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$38" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="GPIO_79"/>
+<wire x1="200.66" y1="73.66" x2="210.82" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$39" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PWR_BUT"/>
+<wire x1="144.78" y1="43.18" x2="134.62" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$40" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="VDD_3V3EXP@1"/>
+<wire x1="144.78" y1="50.8" x2="134.62" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$41" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="GPIO_30"/>
+<wire x1="144.78" y1="40.64" x2="134.62" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$53" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="GPIO_31"/>
+<wire x1="144.78" y1="38.1" x2="134.62" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$54" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="GPIO_48"/>
+<wire x1="144.78" y1="35.56" x2="134.62" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$55" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="GPIO_117"/>
+<wire x1="144.78" y1="22.86" x2="134.62" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$60" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="I2C2_SCL"/>
+<wire x1="144.78" y1="30.48" x2="134.62" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$61" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="VDD_3V3EXP@2"/>
+<wire x1="200.66" y1="50.8" x2="210.82" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$62" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="SYS_RESETN"/>
+<wire x1="200.66" y1="43.18" x2="210.82" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$63" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="GPIO_60"/>
+<wire x1="200.66" y1="40.64" x2="210.82" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$64" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="GPIO_50"/>
+<wire x1="200.66" y1="38.1" x2="210.82" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$65" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="GPIO_51"/>
+<wire x1="200.66" y1="35.56" x2="210.82" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$68" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="I2C1_SDA"/>
+<wire x1="200.66" y1="33.02" x2="210.82" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$69" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="I2C2_SDA"/>
+<wire x1="200.66" y1="30.48" x2="210.82" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$70" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="VDD_ADC"/>
+<wire x1="200.66" y1="15.24" x2="210.82" y2="15.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$71" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="UART2_RXD"/>
+<wire x1="200.66" y1="27.94" x2="210.82" y2="27.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$72" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="UART1_TXD"/>
+<wire x1="200.66" y1="25.4" x2="210.82" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$73" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="UART1_RXD"/>
+<wire x1="200.66" y1="22.86" x2="210.82" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$74" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="UART2_TXD"/>
+<wire x1="144.78" y1="27.94" x2="134.62" y2="27.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$75" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="GPIO_49"/>
+<wire x1="144.78" y1="25.4" x2="134.62" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$76" class="0">
+<segment>
+<pinref part="SENS1" gate="G$1" pin="3"/>
+<wire x1="63.5" y1="119.38" x2="63.5" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="63.5" y1="109.22" x2="66.04" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="D1ECHO" class="0">
+<segment>
+<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="66.04" y1="99.06" x2="66.04" y2="96.52" width="0.1524" layer="91"/>
+<label x="66.04" y="96.52" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$78" class="0">
+<segment>
+<pinref part="SENS2" gate="G$1" pin="3"/>
+<wire x1="83.82" y1="119.38" x2="83.82" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="R12" gate="G$1" pin="2"/>
+<wire x1="83.82" y1="109.22" x2="86.36" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="D2ECHO" class="0">
+<segment>
+<pinref part="R12" gate="G$1" pin="1"/>
+<pinref part="R13" gate="G$1" pin="2"/>
+<wire x1="86.36" y1="99.06" x2="86.36" y2="96.52" width="0.1524" layer="91"/>
+<label x="86.36" y="96.52" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$80" class="0">
+<segment>
+<pinref part="SENS3" gate="G$1" pin="3"/>
+<wire x1="104.14" y1="119.38" x2="104.14" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="R14" gate="G$1" pin="2"/>
+<wire x1="104.14" y1="109.22" x2="106.68" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="D3ECHO" class="0">
+<segment>
+<pinref part="R14" gate="G$1" pin="1"/>
+<pinref part="R15" gate="G$1" pin="2"/>
+<wire x1="106.68" y1="99.06" x2="106.68" y2="96.52" width="0.1524" layer="91"/>
+<label x="106.68" y="96.52" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
