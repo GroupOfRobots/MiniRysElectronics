@@ -14443,12 +14443,12 @@ W = angled&lt;p&gt;
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="X2" library="bt_con-jst-xh" deviceset="04-JST" device="-B4B-XH-A"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
-<part name="R4" library="rcl" deviceset="R-EU_" device="R0805"/>
-<part name="R5" library="rcl" deviceset="R-EU_" device="R0805"/>
-<part name="R6" library="rcl" deviceset="R-EU_" device="R0805"/>
-<part name="R7" library="rcl" deviceset="R-EU_" device="R0805"/>
-<part name="R8" library="rcl" deviceset="R-EU_" device="R0805"/>
-<part name="R9" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="R4" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
+<part name="R5" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
+<part name="R6" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
+<part name="R7" library="rcl" deviceset="R-EU_" device="R0805" value="1,5k"/>
+<part name="R8" library="rcl" deviceset="R-EU_" device="R0805" value="1,5k"/>
+<part name="R9" library="rcl" deviceset="R-EU_" device="R0805" value="1,5k"/>
 <part name="P+8" library="supply1" deviceset="+5V" device=""/>
 <part name="SENS1" library="libsjst_eph" deviceset="4PIN" device=""/>
 <part name="P+10" library="supply1" deviceset="+5V" device=""/>
@@ -14463,12 +14463,12 @@ W = angled&lt;p&gt;
 <part name="SJ4" library="jumper" deviceset="SJ" device=""/>
 <part name="SJ5" library="jumper" deviceset="SJ" device=""/>
 <part name="SJ6" library="jumper" deviceset="SJ" device=""/>
-<part name="R10" library="rcl" deviceset="R-EU_" device="R0805"/>
-<part name="R11" library="rcl" deviceset="R-EU_" device="R0805"/>
-<part name="R12" library="rcl" deviceset="R-EU_" device="R0805"/>
-<part name="R13" library="rcl" deviceset="R-EU_" device="R0805"/>
-<part name="R14" library="rcl" deviceset="R-EU_" device="R0805"/>
-<part name="R15" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="R10" library="rcl" deviceset="R-EU_" device="R0805" value="1,1k"/>
+<part name="R11" library="rcl" deviceset="R-EU_" device="R0805" value="2k"/>
+<part name="R12" library="rcl" deviceset="R-EU_" device="R0805" value="1,1k"/>
+<part name="R13" library="rcl" deviceset="R-EU_" device="R0805" value="2k"/>
+<part name="R14" library="rcl" deviceset="R-EU_" device="R0805" value="1,1k"/>
+<part name="R15" library="rcl" deviceset="R-EU_" device="R0805" value="2k"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>

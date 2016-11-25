@@ -2444,12 +2444,12 @@ design rules under a new name.</description>
 </element>
 <element name="SENS2" library="libsjst_eph" package="B4B-PH-K-S" value="4PIN" x="20.32" y="43.18" rot="R180"/>
 <element name="X2" library="bt_con-jst-xh" package="B4B-XH" value="04-JST-B4B-XH-A" x="69.85" y="34.925" rot="R90"/>
-<element name="R4" library="rcl" package="R0805" value="" x="60.0075" y="33.655"/>
-<element name="R5" library="rcl" package="R0805" value="" x="60.0075" y="31.75"/>
-<element name="R6" library="rcl" package="R0805" value="" x="58.1025" y="27.94"/>
-<element name="R7" library="rcl" package="R0805" value="" x="64.77" y="29.845"/>
-<element name="R8" library="rcl" package="R0805" value="" x="64.77" y="31.75"/>
-<element name="R9" library="rcl" package="R0805" value="" x="64.77" y="33.655"/>
+<element name="R4" library="rcl" package="R0805" value="1k" x="60.0075" y="33.655"/>
+<element name="R5" library="rcl" package="R0805" value="1k" x="60.0075" y="31.75"/>
+<element name="R6" library="rcl" package="R0805" value="1k" x="58.1025" y="27.94"/>
+<element name="R7" library="rcl" package="R0805" value="1,5k" x="64.77" y="29.845"/>
+<element name="R8" library="rcl" package="R0805" value="1,5k" x="64.77" y="31.75"/>
+<element name="R9" library="rcl" package="R0805" value="1,5k" x="64.77" y="33.655"/>
 <element name="SENS1" library="libsjst_eph" package="B4B-PH-K-S" value="4PIN" x="8.5725" y="43.18" rot="R180"/>
 <element name="SENS3" library="libsjst_eph" package="B4B-PH-K-S" value="4PIN" x="32.0675" y="43.18" rot="R180"/>
 <element name="SV1" library="con-lstb" package="MA05-1" value="" x="54.61" y="38.4175">
@@ -2464,12 +2464,12 @@ design rules under a new name.</description>
 <element name="SJ4" library="jumper" package="SJ" value="" x="26.3525" y="22.5425" rot="R180"/>
 <element name="SJ5" library="jumper" package="SJ" value="" x="26.3525" y="25.0825" rot="R180"/>
 <element name="SJ6" library="jumper" package="SJ" value="" x="26.3525" y="27.6225" rot="R180"/>
-<element name="R10" library="rcl" package="R0805" value="" x="9.525" y="46.99" rot="R270"/>
-<element name="R11" library="rcl" package="R0805" value="" x="7.62" y="46.99" rot="R90"/>
-<element name="R12" library="rcl" package="R0805" value="" x="21.2725" y="46.99" rot="R270"/>
-<element name="R13" library="rcl" package="R0805" value="" x="19.3675" y="46.99" rot="R90"/>
-<element name="R14" library="rcl" package="R0805" value="" x="33.02" y="46.99" rot="R270"/>
-<element name="R15" library="rcl" package="R0805" value="" x="31.115" y="46.99" rot="R90"/>
+<element name="R10" library="rcl" package="R0805" value="1,1k" x="9.525" y="46.99" rot="R270"/>
+<element name="R11" library="rcl" package="R0805" value="2k" x="7.62" y="46.99" rot="R90"/>
+<element name="R12" library="rcl" package="R0805" value="1,1k" x="21.2725" y="46.99" rot="R270"/>
+<element name="R13" library="rcl" package="R0805" value="2k" x="19.3675" y="46.99" rot="R90"/>
+<element name="R14" library="rcl" package="R0805" value="1,1k" x="33.02" y="46.99" rot="R270"/>
+<element name="R15" library="rcl" package="R0805" value="2k" x="31.115" y="46.99" rot="R90"/>
 <element name="R16" library="rcl" package="R0805" value="10k" x="26.3525" y="20.0025" rot="R180"/>
 <element name="R17" library="rcl" package="R0805" value="10k" x="16.51" y="37.1475" rot="R270"/>
 </elements>
