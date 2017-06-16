@@ -3241,8 +3241,6 @@ design rules under a new name.</description>
 <wire x1="32.7025" y1="35.5575" x2="32.7025" y2="35.56" width="0.3048" layer="1"/>
 <wire x1="32.7025" y1="35.56" x2="34.925" y2="37.7825" width="0.3048" layer="1"/>
 <wire x1="34.925" y1="37.7825" x2="35.8775" y2="37.7825" width="0.3048" layer="1"/>
-<contactref element="R13" pad="2"/>
-<wire x1="40.9575" y1="37.7825" x2="39.4725" y2="37.465" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$23">
 <contactref element="U$1" pad="37"/>
@@ -3369,6 +3367,9 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="44"/>
 <contactref element="R13" pad="1"/>
 <wire x1="41.1725" y1="37.465" x2="58.42" y2="53.34" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="EN">
+<contactref element="R13" pad="2"/>
 </signal>
 <signal name="N$38">
 <contactref element="U$1" pad="11"/>
