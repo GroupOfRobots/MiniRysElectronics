@@ -14729,57 +14729,9 @@ W = angled&lt;p&gt;
 <pinref part="R8" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="AIN3"/>
-<wire x1="195.58" y1="7.62" x2="205.74" y2="7.62" width="0.1524" layer="91"/>
-<label x="205.74" y="7.62" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="N$17" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GPIO_38"/>
-<wire x1="139.7" y1="116.84" x2="134.62" y2="116.84" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$19" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GPIO_34"/>
-<wire x1="139.7" y1="114.3" x2="134.62" y2="114.3" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$44" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GPIO_23"/>
-<wire x1="139.7" y1="104.14" x2="134.62" y2="104.14" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$46" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GPIO_27"/>
-<wire x1="139.7" y1="99.06" x2="134.62" y2="99.06" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$47" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GPIO_22"/>
-<wire x1="139.7" y1="96.52" x2="134.62" y2="96.52" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$48" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GPIO_62"/>
-<wire x1="139.7" y1="93.98" x2="134.62" y2="93.98" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$49" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GPIO_36"/>
-<wire x1="139.7" y1="91.44" x2="134.62" y2="91.44" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$50" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GPIO_32"/>
-<wire x1="139.7" y1="88.9" x2="134.62" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="AIN1"/>
+<wire x1="195.58" y1="5.08" x2="205.74" y2="5.08" width="0.1524" layer="91"/>
+<label x="205.74" y="5.08" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="I2C2_SCL" class="0">
@@ -14862,12 +14814,6 @@ W = angled&lt;p&gt;
 <pinref part="U1" gate="G$1" pin="SPIMISO"/>
 <wire x1="93.98" y1="55.88" x2="96.52" y2="55.88" width="0.1524" layer="91"/>
 <label x="96.52" y="55.88" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="N$26" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GPIO_47"/>
-<wire x1="139.7" y1="101.6" x2="134.62" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TOF1" class="0">
@@ -15112,12 +15058,6 @@ W = angled&lt;p&gt;
 <label x="15.24" y="45.72" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$38" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GPIO_45"/>
-<wire x1="139.7" y1="106.68" x2="134.62" y2="106.68" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="SPI0_CS0" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="I2C1_SCL"/>
@@ -15167,28 +15107,28 @@ W = angled&lt;p&gt;
 </net>
 <net name="BAT_CELL3" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="AIN1"/>
-<wire x1="195.58" y1="5.08" x2="205.74" y2="5.08" width="0.1524" layer="91"/>
-<label x="205.74" y="5.08" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <wire x1="-12.7" y1="38.1" x2="-12.7" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 <label x="-12.7" y="38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="R7" gate="G$1" pin="1"/>
 </segment>
-</net>
-<net name="BAT_CELL1" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="AIN6"/>
 <wire x1="139.7" y1="10.16" x2="129.54" y2="10.16" width="0.1524" layer="91"/>
 <label x="129.54" y="10.16" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+</net>
+<net name="BAT_CELL1" class="0">
 <segment>
 <wire x1="2.54" y1="33.02" x2="2.54" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <label x="2.54" y="33.02" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="R9" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="AIN3"/>
+<wire x1="195.58" y1="7.62" x2="205.74" y2="7.62" width="0.1524" layer="91"/>
+<label x="205.74" y="7.62" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="DWM_RES" class="0">
