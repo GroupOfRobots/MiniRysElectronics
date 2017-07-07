@@ -13432,24 +13432,6 @@ W = angled&lt;p&gt;
 <wire x1="12.7" y1="-15.24" x2="22.86" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="MOTORL1" gate="A" pin="4"/>
-<wire x1="12.7" y1="-17.78" x2="15.24" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="-17.78" x2="17.78" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="-17.78" x2="17.78" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="MOTORL_CONN" gate="G$1" pin="4"/>
-<wire x1="17.78" y1="-20.32" x2="22.86" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="MOTORL_CONN" gate="G$1" pin="3"/>
-<wire x1="22.86" y1="-17.78" x2="17.78" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="-17.78" x2="15.24" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="-17.78" x2="15.24" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="MOTORL1" gate="A" pin="3"/>
-<wire x1="15.24" y1="-20.32" x2="12.7" y2="-20.32" width="0.1524" layer="91"/>
-<junction x="15.24" y="-17.78"/>
-<junction x="17.78" y="-17.78"/>
-</segment>
-</net>
 <net name="N$12" class="0">
 <segment>
 <pinref part="MOTORR1" gate="A" pin="6"/>
@@ -13462,24 +13444,6 @@ W = angled&lt;p&gt;
 <pinref part="MOTORR1" gate="A" pin="5"/>
 <pinref part="MOTORR_CONN" gate="G$1" pin="2"/>
 <wire x1="73.66" y1="-15.24" x2="83.82" y2="-15.24" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="MOTORR1" gate="A" pin="4"/>
-<wire x1="73.66" y1="-17.78" x2="76.2" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="-17.78" x2="78.74" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="-17.78" x2="78.74" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="MOTORR_CONN" gate="G$1" pin="4"/>
-<wire x1="78.74" y1="-20.32" x2="83.82" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="MOTORR_CONN" gate="G$1" pin="3"/>
-<wire x1="83.82" y1="-17.78" x2="78.74" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="-17.78" x2="76.2" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="-17.78" x2="76.2" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="MOTORR1" gate="A" pin="3"/>
-<wire x1="76.2" y1="-20.32" x2="73.66" y2="-20.32" width="0.1524" layer="91"/>
-<junction x="76.2" y="-17.78"/>
-<junction x="78.74" y="-17.78"/>
 </segment>
 </net>
 <net name="TEMPSENS" class="0">
@@ -13602,9 +13566,53 @@ W = angled&lt;p&gt;
 <label x="86.36" y="58.42" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="MOTORL1" gate="A" pin="3"/>
+<wire x1="12.7" y1="-20.32" x2="17.78" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="-20.32" x2="20.32" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="MOTORL_CONN" gate="G$1" pin="3"/>
+<wire x1="20.32" y1="-17.78" x2="22.86" y2="-17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="MOTORL_CONN" gate="G$1" pin="4"/>
+<wire x1="22.86" y1="-20.32" x2="20.32" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-20.32" x2="17.78" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="MOTORL1" gate="A" pin="4"/>
+<wire x1="17.78" y1="-17.78" x2="12.7" y2="-17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="MOTORR1" gate="A" pin="3"/>
+<wire x1="73.66" y1="-20.32" x2="78.74" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="-20.32" x2="81.28" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="MOTORR_CONN" gate="G$1" pin="3"/>
+<wire x1="81.28" y1="-17.78" x2="83.82" y2="-17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="MOTORR_CONN" gate="G$1" pin="4"/>
+<wire x1="83.82" y1="-20.32" x2="81.28" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="-20.32" x2="78.74" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="MOTORR1" gate="A" pin="4"/>
+<wire x1="78.74" y1="-17.78" x2="73.66" y2="-17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,139.7,50.8,BBGW_CONN,VDD_3V3EXP,+3V3,,,"/>
+<approved hash="104,1,195.58,50.8,BBGW_CONN,VDD_3V3EXP,+3V3,,,"/>
+<approved hash="104,1,139.7,48.26,BBGW_CONN,VDD_5V,+5V,,,"/>
+<approved hash="104,1,195.58,48.26,BBGW_CONN,VDD_5V,+5V,,,"/>
+<approved hash="104,1,139.7,45.72,BBGW_CONN,SYS_5V,+5V,,,"/>
+<approved hash="204,1,139.7,5.08,BBGW_CONN,AIN0,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
