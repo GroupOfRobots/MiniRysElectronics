@@ -5648,6 +5648,20 @@ DIN A4, landscape with extra doc field</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,63.5,60.96,U1,VDDAON,+3V3,,,"/>
+<approved hash="104,1,63.5,66.04,U1,VDD3V3,+3V3,,,"/>
+<approved hash="104,1,63.5,63.5,U1,VDD3V3,+3V3,,,"/>
+<approved hash="104,1,63.5,40.64,U1,VSS,GND,,,"/>
+<approved hash="104,1,63.5,38.1,U1,VSS,GND,,,"/>
+<approved hash="104,1,63.5,35.56,U1,VSS,GND,,,"/>
+<approved hash="104,1,63.5,33.02,U1,VSS,GND,,,"/>
+<approved hash="104,1,63.5,30.48,U1,VSS,GND,,,"/>
+<approved hash="113,1,43.18,91.6347,SV1,,,,,"/>
+<approved hash="113,1,3.81,40.3183,LED1,,,,,"/>
+<approved hash="113,1,3.81,32.6983,LED2,,,,,"/>
+<approved hash="113,1,53.236,67.206,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
