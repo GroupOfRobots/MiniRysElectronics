@@ -165,6 +165,8 @@
 <hole x="71.755" y="43.815" drill="2.8"/>
 <text x="70.8025" y="32.0675" size="1.778" layer="1" rot="R90">RysLoc</text>
 <text x="76.835" y="10.16" size="1.778" layer="1"> BIONIK</text>
+<dimension x1="67.945" y1="7.62" x2="93.98" y2="7.62" x3="80.9625" y3="4.445" textsize="1.778" layer="1"/>
+<dimension x1="93.98" y1="7.62" x2="93.98" y2="69.85" x3="97.79" y3="38.735" textsize="1.778" layer="1"/>
 </plain>
 <libraries>
 <library name="pinhead">

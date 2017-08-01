@@ -160,6 +160,8 @@
 <wire x1="10.795" y1="38.1" x2="38.735" y2="38.1" width="0.0762" layer="20"/>
 <wire x1="38.735" y1="38.1" x2="38.735" y2="18.415" width="0.0762" layer="20"/>
 <wire x1="38.735" y1="18.415" x2="10.795" y2="18.415" width="0.0762" layer="20"/>
+<dimension x1="10.795" y1="18.415" x2="38.735" y2="18.415" x3="24.765" y3="15.24" textsize="1.778" layer="1"/>
+<dimension x1="10.795" y1="38.1" x2="10.795" y2="18.415" x3="8.89" y3="28.2575" textsize="1.778" layer="1"/>
 </plain>
 <libraries>
 <library name="led" urn="urn:adsk.eagle:library:259">
