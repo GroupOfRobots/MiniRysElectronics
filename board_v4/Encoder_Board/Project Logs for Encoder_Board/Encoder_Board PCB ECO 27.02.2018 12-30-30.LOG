@@ -1,0 +1,37 @@
+Added Component: Designator=U1(KTIR0711S)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Supplier"; Value = "TME"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = "https://www.tme.eu/pl/details/ktir0711s/czujniki-fotoelektryczne-do-druku/kingbright-electronic/"; VariantName = "[No Variations]"
+Added Component: Designator=U2(KTIR0711S)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Supplier"; Value = "TME"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = "https://www.tme.eu/pl/details/ktir0711s/czujniki-fotoelektryczne-do-druku/kingbright-electronic/"; VariantName = "[No Variations]"
+Added Component: Designator=U3(KTIR0711S)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Supplier"; Value = "TME"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = "https://www.tme.eu/pl/details/ktir0711s/czujniki-fotoelektryczne-do-druku/kingbright-electronic/"; VariantName = "[No Variations]"
+Added Component: Designator=U4(KTIR0711S)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Supplier"; Value = "TME"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = "https://www.tme.eu/pl/details/ktir0711s/czujniki-fotoelektryczne-do-druku/kingbright-electronic/"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetR1_8 Pin=U1-1
+Added Pin To Net: NetName=GND Pin=U1-2
+Added Pin To Net: NetName=NetJ1_4 Pin=U1-3
+Added Pin To Net: NetName=GND Pin=U1-4
+Added Pin To Net: NetName=NetR1_7 Pin=U2-1
+Added Pin To Net: NetName=GND Pin=U2-2
+Added Pin To Net: NetName=NetJ1_2 Pin=U2-3
+Added Pin To Net: NetName=GND Pin=U2-4
+Added Pin To Net: NetName=NetR1_6 Pin=U3-1
+Added Pin To Net: NetName=GND Pin=U3-2
+Added Pin To Net: NetName=NetJ1_3 Pin=U3-3
+Added Pin To Net: NetName=GND Pin=U3-4
+Added Pin To Net: NetName=NetR1_5 Pin=U4-1
+Added Pin To Net: NetName=GND Pin=U4-2
+Added Pin To Net: NetName=NetJ1_5 Pin=U4-3
+Added Pin To Net: NetName=GND Pin=U4-4
+Added Member To Class: ClassName=Encoder_Baord Member=Component U1 KTIR0711S
+Added Member To Class: ClassName=Encoder_Baord Member=Component U2 KTIR0711S
+Added Member To Class: ClassName=Encoder_Baord Member=Component U3 KTIR0711S
+Added Member To Class: ClassName=Encoder_Baord Member=Component U4 KTIR0711S
+Added Room: Name=Encoder_Baord

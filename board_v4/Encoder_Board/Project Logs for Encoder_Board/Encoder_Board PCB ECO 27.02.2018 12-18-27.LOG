@@ -1,0 +1,40 @@
+Added Component: Designator=J1(2mmEdgePCB6Pin)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R1(1206_4R)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R2(1206_4R)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=J1-6
+Added Net: Name=GND
+Added Pin To Net: NetName=NetJ1_2 Pin=J1-2
+Added Pin To Net: NetName=NetJ1_2 Pin=R2-2
+Added Net: Name=NetJ1_2
+Added Pin To Net: NetName=NetJ1_3 Pin=J1-3
+Added Pin To Net: NetName=NetJ1_3 Pin=R2-3
+Added Net: Name=NetJ1_3
+Added Pin To Net: NetName=NetJ1_4 Pin=J1-4
+Added Pin To Net: NetName=NetJ1_4 Pin=R2-1
+Added Net: Name=NetJ1_4
+Added Pin To Net: NetName=NetJ1_5 Pin=J1-5
+Added Pin To Net: NetName=NetJ1_5 Pin=R2-4
+Added Net: Name=NetJ1_5
+Added Pin To Net: NetName=NetR1_5 Pin=R1-5
+Added Net: Name=NetR1_5
+Added Pin To Net: NetName=NetR1_6 Pin=R1-6
+Added Net: Name=NetR1_6
+Added Pin To Net: NetName=NetR1_7 Pin=R1-7
+Added Net: Name=NetR1_7
+Added Pin To Net: NetName=NetR1_8 Pin=R1-8
+Added Net: Name=NetR1_8
+Added Pin To Net: NetName=VCC Pin=J1-1
+Added Pin To Net: NetName=VCC Pin=R1-1
+Added Pin To Net: NetName=VCC Pin=R1-2
+Added Pin To Net: NetName=VCC Pin=R1-3
+Added Pin To Net: NetName=VCC Pin=R1-4
+Added Pin To Net: NetName=VCC Pin=R2-5
+Added Pin To Net: NetName=VCC Pin=R2-6
+Added Pin To Net: NetName=VCC Pin=R2-7
+Added Pin To Net: NetName=VCC Pin=R2-8
+Added Net: Name=VCC
+Added Class: Name=Encoder_Baord
+Added Room: Name=Encoder_Baord
