@@ -1,0 +1,165 @@
+Removed Pin From Net: NetName=3V3 Pin=C3-N
+Removed Pin From Net: NetName=3V3 Pin=C4-2
+Removed Pin From Net: NetName=3V3 Pin=C5-2
+Removed Pin From Net: NetName=3V3 Pin=C8-N
+Removed Pin From Net: NetName=3V3 Pin=C9-2
+Removed Pin From Net: NetName=3V3 Pin=C10-2
+Removed Pin From Net: NetName=3V3 Pin=C12-1
+Removed Pin From Net: NetName=3V3 Pin=C13-1
+Removed Pin From Net: NetName=3V3 Pin=C13-2
+Removed Pin From Net: NetName=3V3 Pin=C14-1
+Removed Pin From Net: NetName=3V3 Pin=C14-2
+Removed Pin From Net: NetName=3V3 Pin=C15-1
+Removed Pin From Net: NetName=3V3 Pin=C15-2
+Removed Pin From Net: NetName=3V3 Pin=C16-2
+Removed Pin From Net: NetName=3V3 Pin=DRV1-14
+Removed Pin From Net: NetName=3V3 Pin=DRV1-28
+Removed Pin From Net: NetName=3V3 Pin=DRV1-28
+Removed Pin From Net: NetName=3V3 Pin=DRV8825-14
+Removed Pin From Net: NetName=3V3 Pin=DRV8825-28
+Removed Pin From Net: NetName=3V3 Pin=DRV8825-28
+Removed Pin From Net: NetName=VMOT Pin=J?-4
+Removed Pin From Net: NetName=3V3 Pin=LSM9DS1-1
+Removed Pin From Net: NetName=3V3 Pin=LSM9DS1-3
+Removed Pin From Net: NetName=3V3 Pin=LSM9DS1-14
+Removed Pin From Net: NetName=3V3 Pin=LSM9DS1-15
+Removed Pin From Net: NetName=3V3 Pin=LSM9DS1-16
+Removed Pin From Net: NetName=3V3 Pin=LSM9DS1-17
+Removed Pin From Net: NetName=3V3 Pin=LSM9DS1-18
+Removed Pin From Net: NetName=3V3 Pin=LSM9DS1-19
+Removed Pin From Net: NetName=3V3 Pin=LSM9DS1-20
+Removed Pin From Net: NetName=3V3 Pin=LSM9DS1-22
+Removed Pin From Net: NetName=3V3 Pin=LSM9DS1-23
+Removed Pin From Net: NetName=3V3 Pin=P2-1
+Removed Pin From Net: NetName=3V3 Pin=R2-1
+Removed Pin From Net: NetName=3V3 Pin=R3-1
+Removed Pin From Net: NetName=3V3 Pin=R9-1
+Removed Pin From Net: NetName=3V3 Pin=R10-1
+Removed Pin From Net: NetName=3V3 Pin=R18-2
+Removed Member From Class: ClassName=rys_PCB Member=C12
+Removed Member From Class: ClassName=rys_PCB Member=C13
+Removed Member From Class: ClassName=rys_PCB Member=C14
+Removed Member From Class: ClassName=rys_PCB Member=C15
+Removed Member From Class: ClassName=rys_PCB Member=C16
+Removed Member From Class: ClassName=rys_PCB Member=LSM9DS1
+Removed Member From Class: ClassName=rys_PCB Member=R18
+Change Component Footprint: Designator=J? Old Footprint=MICROFIT 2x2 Vertical New Footprint=PicoBlade_THT_1x5_HEADER
+Change Component Comment : Designator=J? Old Comment=Molex Microfit New Comment=PICO_BLADE_5
+Change component parameters: Designator = "J?"; Footprint = "PicoBlade_THT_1x5_HEADER"; UniqueID = "\FVCJFTJQ"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "URL"; Value = "https://www.tme.eu/pl/details/mx-53047-0510/zlacza-sygnalowe-raster-125mm/molex/530470510/"; VariantName = "[No Variations]"
+Added Component: Designator=J?(PicoBlade_THT_1x5_HEADER)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "URL"; Value = "https://www.tme.eu/pl/details/mx-53047-0510/zlacza-sygnalowe-raster-125mm/molex/530470510/"; VariantName = "[No Variations]"
+Added Component: Designator=J?(PicoBlade_THT_1x5_HEADER)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "URL"; Value = "https://www.tme.eu/pl/details/mx-53047-0510/zlacza-sygnalowe-raster-125mm/molex/530470510/"; VariantName = "[No Variations]"
+Added Component: Designator=J?(MICROFIT 1x2 Vertical)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Supplier"; Value = "TME"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Symbol"; Value = "Molex 430450212"; VariantName = "[No Variations]"
+Added Component: Designator=J?(MICROFIT 1x2 Vertical)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Supplier"; Value = "TME"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Symbol"; Value = "Molex 430450212"; VariantName = "[No Variations]"
+Added Component: Designator=J?(MICROFIT 1x2 Vertical)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Supplier"; Value = "TME"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Symbol"; Value = "Molex 430450212"; VariantName = "[No Variations]"
+Added Component: Designator=J?(PicoBlade_THT_1x5_HEADER)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "URL"; Value = "https://www.tme.eu/pl/details/mx-53047-0510/zlacza-sygnalowe-raster-125mm/molex/530470510/"; VariantName = "[No Variations]"
+Added Component: Designator=J?(PicoBlade_THT_1x5_HEADER)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "URL"; Value = "https://www.tme.eu/pl/details/mx-53047-0510/zlacza-sygnalowe-raster-125mm/molex/530470510/"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC17_N Pin=C3-N
+Added Pin To Net: NetName=NetC17_N Pin=C4-2
+Added Pin To Net: NetName=NetC17_N Pin=C5-2
+Added Pin To Net: NetName=NetC17_N Pin=C8-N
+Added Pin To Net: NetName=NetC17_N Pin=C9-2
+Added Pin To Net: NetName=NetC17_N Pin=C10-2
+Added Pin To Net: NetName=NetC17_N Pin=DRV1-14
+Added Pin To Net: NetName=NetC17_N Pin=DRV1-28
+Added Pin To Net: NetName=NetC17_N Pin=DRV1-28
+Added Pin To Net: NetName=NetC17_N Pin=DRV8825-14
+Added Pin To Net: NetName=NetC17_N Pin=DRV8825-28
+Added Pin To Net: NetName=NetC17_N Pin=DRV8825-28
+Added Pin To Net: NetName=VMOT Pin=J?-1
+Added Pin To Net: NetName=NetC17_N Pin=J?-2
+Added Pin To Net: NetName=NetC17_N Pin=M1-P8_1
+Added Pin To Net: NetName=NetC17_N Pin=M1-P8_2
+Added Pin To Net: NetName=NetC17_N Pin=M1-P9_1
+Added Pin To Net: NetName=NetC17_N Pin=M1-P9_2
+Added Pin To Net: NetName=3V3 Pin=M1-P9_3
+Added Pin To Net: NetName=5V Pin=M1-P9_5
+Added Pin To Net: NetName=5V Pin=M1-P9_7
+Added Pin To Net: NetName=NetC17_N Pin=M1-P9_34
+Added Pin To Net: NetName=NetC17_N Pin=M1-P9_43
+Added Pin To Net: NetName=NetC17_N Pin=M1-P9_44
+Added Pin To Net: NetName=NetC17_N Pin=M1-P9_45
+Added Pin To Net: NetName=NetC17_N Pin=M1-P9_46
+Added Pin To Net: NetName=NetC17_N Pin=P2-1
+Added Pin To Net: NetName=NetC17_N Pin=R2-1
+Added Pin To Net: NetName=NetC17_N Pin=R3-1
+Added Pin To Net: NetName=NetC17_N Pin=R9-1
+Added Pin To Net: NetName=NetC17_N Pin=R10-1
+Change Net Name : Old Net Name=NetC17_N New Net Name=GND
+Added Pin To Net: NetName=BAT_CELL1 Pin=M1-P9_38
+Added Net: Name=BAT_CELL1
+Added Pin To Net: NetName=BAT_CELL2 Pin=M1-P9_40
+Added Net: Name=BAT_CELL2
+Added Pin To Net: NetName=BAT_CELL3 Pin=M1-P9_35
+Added Net: Name=BAT_CELL3
+Added Pin To Net: NetName=DWM_RES Pin=M1-P9_27
+Added Net: Name=DWM_RES
+Added Pin To Net: NetName=I2C2_SCL Pin=M1-P9_19
+Added Net: Name=I2C2_SCL
+Added Pin To Net: NetName=I2C2_SDA Pin=M1-P9_20
+Added Net: Name=I2C2_SDA
+Added Pin To Net: NetName=M0 Pin=M1-P8_30
+Added Net: Name=M0
+Added Pin To Net: NetName=M1 Pin=M1-P8_31
+Added Net: Name=M1
+Added Pin To Net: NetName=M2 Pin=M1-P8_32
+Added Net: Name=M2
+Added Pin To Net: NetName=MEN Pin=M1-P8_29
+Added Net: Name=MEN
+Added Pin To Net: NetName=MLDIR Pin=M1-P8_43
+Added Net: Name=MLDIR
+Added Pin To Net: NetName=MLSTEP Pin=M1-P8_44
+Added Net: Name=MLSTEP
+Added Pin To Net: NetName=MRDIR Pin=M1-P8_45
+Added Net: Name=MRDIR
+Added Pin To Net: NetName=NetJ?_1 Pin=J?-1
+Added Pin To Net: NetName=NetJ?_1 Pin=J?-2
+Added Net: Name=NetJ?_1
+Added Pin To Net: NetName=SPI0_CLK Pin=M1-P9_22
+Added Net: Name=SPI0_CLK
+Added Pin To Net: NetName=SPI0_CS0 Pin=M1-P9_17
+Added Net: Name=SPI0_CS0
+Added Pin To Net: NetName=SPI0_MOSI Pin=M1-P9_18
+Added Net: Name=SPI0_MOSI
+Added Pin To Net: NetName=SPIO_MISO Pin=M1-P9_21
+Added Net: Name=SPIO_MISO
+Added Pin To Net: NetName=TEMP_SENS Pin=M1-P9_36
+Added Net: Name=TEMP_SENS
+Added Pin To Net: NetName=TOF1 Pin=M1-P9_16
+Added Net: Name=TOF1
+Added Pin To Net: NetName=TOF2 Pin=M1-P9_14
+Added Net: Name=TOF2
+Added Pin To Net: NetName=TOF3 Pin=M1-P8_7
+Added Net: Name=TOF3
+Added Pin To Net: NetName=TOF4 Pin=M1-P8_8
+Added Net: Name=TOF4
+Added Pin To Net: NetName=TOF5 Pin=M1-P8_9
+Added Net: Name=TOF5
+Added Member To Class: ClassName=rys_PCB Member=Component J? PICO_BLADE_5
+Added Member To Class: ClassName=rys_PCB Member=Component J? PICO_BLADE_5
+Added Member To Class: ClassName=rys_PCB Member=Component J? PICO_BLADE_5
+Added Member To Class: ClassName=rys_PCB Member=Component J? Molex Microfit
+Added Member To Class: ClassName=rys_PCB Member=Component J? Molex Microfit
+Added Member To Class: ClassName=rys_PCB Member=Component J? Molex Microfit
+Added Member To Class: ClassName=rys_PCB Member=Component J? Molex Microfit
+Added Member To Class: ClassName=rys_PCB Member=Component J? Molex Microfit
+Added Member To Class: ClassName=rys_PCB Member=Component J? PICO_BLADE_5
+Added Room: Name=rys_PCB
