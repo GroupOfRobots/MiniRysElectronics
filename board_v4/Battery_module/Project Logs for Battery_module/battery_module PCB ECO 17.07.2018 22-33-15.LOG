@@ -1,4 +1,0 @@
-Removed Pin From Net: NetName=Net18650_1 Pin=18650-1
-Added Pin To Net: NetName=Net18650_0 Pin=18650-1
-Added Pin To Net: NetName=Net18650_1 Pin=18650-2
-Added Room: Name=battery_module

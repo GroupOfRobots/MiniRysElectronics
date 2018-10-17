@@ -1,7 +1,0 @@
-Removed Pin From Net: NetName=GND Pin=J1-6
-Added Pin To Net: NetName=GND Pin=J1-5
-Added Pin To Net: NetName=NetJ1_6 Pin=J1-6
-Added Pin To Net: NetName=NetJ1_6 Pin=R2-5
-Added Pin To Net: NetName=NetJ1_6 Pin=U4-3
-Added Net: Name=NetJ1_6
-Added Member To Class: ClassName=Encoder_Baord Member=Component J1 6x2
