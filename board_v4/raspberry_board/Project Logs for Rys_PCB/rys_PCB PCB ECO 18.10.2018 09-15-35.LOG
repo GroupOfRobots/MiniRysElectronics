@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=GND Pin=J5-2
+Added Component: Designator=J18(MICROFIT 1x2 Vertical)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Supplier"; Value = "TME"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Symbol"; Value = "Molex 430450212"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=J18-2
+Added Pin To Net: NetName=VBOOT0 Pin=U1-11
+Added Pin To Net: NetName=VBOOT1 Pin=U2-11
+Added Pin To Net: NetName=NetJ5_2 Pin=J5-2
+Added Pin To Net: NetName=NetJ5_2 Pin=J18-1
+Added Net: Name=NetJ5_2
+Added Member To Class: ClassName=rys_PCB Member=Component J1 PICO_BLADE_7
+Added Member To Class: ClassName=rys_PCB Member=Component J18 Molex Microfit
