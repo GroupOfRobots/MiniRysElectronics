@@ -1,0 +1,31 @@
+Removed Pin From Net: NetName=NetB1_1 Pin=J1-1
+Removed Pin From Net: NetName=NetB1_2 Pin=J1-2
+Change Component Footprint: Designator=J1 Old Footprint=MICROFIT 1x2 Vertical New Footprint=HOLE_M3
+Change Component Comment : Designator=J1 Old Comment=Molex Microfit New Comment=M3
+Change Component Designator: OldDesignator= NewDesignator=B1
+Added Component: Designator=J6(PAD_2X2MM)
+Add component. Clean all parameters for all variants
+Added Component: Designator=J7(PAD_2X2MM)
+Add component. Clean all parameters for all variants
+Added Component: Designator=J8(PAD_2X2MM)
+Add component. Clean all parameters for all variants
+Added Component: Designator=J9(PAD_2X2MM)
+Add component. Clean all parameters for all variants
+Added Component: Designator=J10(PAD_2X2MM)
+Add component. Clean all parameters for all variants
+Added Component: Designator=J11(PAD_2X2MM)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=J1-1
+Added Pin To Net: NetName=NetB1_1 Pin=J6-1
+Added Pin To Net: NetName=NetB1_1 Pin=J7-1
+Added Pin To Net: NetName=NetB1_1 Pin=J8-1
+Added Pin To Net: NetName=NetB1_2 Pin=J9-1
+Added Pin To Net: NetName=NetB1_2 Pin=J10-1
+Added Pin To Net: NetName=NetB1_2 Pin=J11-1
+Added Member To Class: ClassName=battery_module Member=Component B1 18650
+Added Member To Class: ClassName=battery_module Member=Component J6 Pad
+Added Member To Class: ClassName=battery_module Member=Component J7 Pad
+Added Member To Class: ClassName=battery_module Member=Component J8 Pad
+Added Member To Class: ClassName=battery_module Member=Component J9 Pad
+Added Member To Class: ClassName=battery_module Member=Component J10 Pad
+Added Member To Class: ClassName=battery_module Member=Component J11 Pad
