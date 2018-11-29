@@ -110,42 +110,54 @@ DocumentPath=Project Outputs for Rys_PCB\rys_PCB.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=Project Outputs for Rys_PCB\rys_PCB.GBL
+DocumentPath=Project Outputs for Rys_PCB\rys_PCB.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=Project Outputs for Rys_PCB\rys_PCB.GBO
+DocumentPath=Project Outputs for Rys_PCB\rys_PCB.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=Project Outputs for Rys_PCB\rys_PCB.GBS
+DocumentPath=Project Outputs for Rys_PCB\rys_PCB.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=Project Outputs for Rys_PCB\rys_PCB.GM2
+DocumentPath=Project Outputs for Rys_PCB\rys_PCB.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=Project Outputs for Rys_PCB\rys_PCB.GM11
+DocumentPath=Project Outputs for Rys_PCB\rys_PCB.GM2
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=Project Outputs for Rys_PCB\rys_PCB.GTL
+DocumentPath=Project Outputs for Rys_PCB\rys_PCB.GM11
 DItemRevisionGUID=
 
 [GeneratedDocument8]
-DocumentPath=Project Outputs for Rys_PCB\rys_PCB.GTO
+DocumentPath=Project Outputs for Rys_PCB\rys_PCB.GTL
 DItemRevisionGUID=
 
 [GeneratedDocument9]
-DocumentPath=Project Outputs for Rys_PCB\rys_PCB.GTS
+DocumentPath=Project Outputs for Rys_PCB\rys_PCB.GTO
 DItemRevisionGUID=
 
 [GeneratedDocument10]
-DocumentPath=Project Outputs for Rys_PCB\rys_PCB.LDP
+DocumentPath=Project Outputs for Rys_PCB\rys_PCB.GTS
 DItemRevisionGUID=
 
 [GeneratedDocument11]
+DocumentPath=Project Outputs for Rys_PCB\rys_PCB.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument12]
+DocumentPath=Project Outputs for Rys_PCB\rys_PCB.REP
+DItemRevisionGUID=
+
+[GeneratedDocument13]
+DocumentPath=Project Outputs for Rys_PCB\rys_PCB.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument14]
 DocumentPath=Project Outputs for Rys_PCB\rys_PCB.TXT
 DItemRevisionGUID=
 
@@ -362,7 +374,7 @@ OutputDefault3=0
 [OutputGroup5]
 Name=Fabrication Outputs
 Description=
-TargetPrinter=Brother DCP-J315W Printer
+TargetPrinter=Brother DCP-9020CDW Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=CompositeDrill
 OutputName1=Composite Drill Drawing
