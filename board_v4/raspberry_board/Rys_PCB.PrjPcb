@@ -110,54 +110,38 @@ DocumentPath=Project Outputs for Rys_PCB\rys_PCB.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=Project Outputs for Rys_PCB\rys_PCB.EXTREP
-DItemRevisionGUID=
-
-[GeneratedDocument3]
 DocumentPath=Project Outputs for Rys_PCB\rys_PCB.GBL
 DItemRevisionGUID=
 
-[GeneratedDocument4]
+[GeneratedDocument3]
 DocumentPath=Project Outputs for Rys_PCB\rys_PCB.GBO
 DItemRevisionGUID=
 
-[GeneratedDocument5]
+[GeneratedDocument4]
 DocumentPath=Project Outputs for Rys_PCB\rys_PCB.GBS
 DItemRevisionGUID=
 
-[GeneratedDocument6]
+[GeneratedDocument5]
 DocumentPath=Project Outputs for Rys_PCB\rys_PCB.GM2
 DItemRevisionGUID=
 
-[GeneratedDocument7]
+[GeneratedDocument6]
 DocumentPath=Project Outputs for Rys_PCB\rys_PCB.GM11
 DItemRevisionGUID=
 
-[GeneratedDocument8]
+[GeneratedDocument7]
 DocumentPath=Project Outputs for Rys_PCB\rys_PCB.GTL
 DItemRevisionGUID=
 
-[GeneratedDocument9]
+[GeneratedDocument8]
 DocumentPath=Project Outputs for Rys_PCB\rys_PCB.GTO
 DItemRevisionGUID=
 
-[GeneratedDocument10]
+[GeneratedDocument9]
 DocumentPath=Project Outputs for Rys_PCB\rys_PCB.GTS
 DItemRevisionGUID=
 
-[GeneratedDocument11]
-DocumentPath=Project Outputs for Rys_PCB\rys_PCB.LDP
-DItemRevisionGUID=
-
-[GeneratedDocument12]
-DocumentPath=Project Outputs for Rys_PCB\rys_PCB.REP
-DItemRevisionGUID=
-
-[GeneratedDocument13]
-DocumentPath=Project Outputs for Rys_PCB\rys_PCB.RUL
-DItemRevisionGUID=
-
-[GeneratedDocument14]
+[GeneratedDocument10]
 DocumentPath=Project Outputs for Rys_PCB\rys_PCB.TXT
 DItemRevisionGUID=
 
