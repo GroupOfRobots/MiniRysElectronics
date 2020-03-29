@@ -18,48 +18,48 @@ Step-down converter
 Text Notes 3250 6075 0    100  ~ 0
 I2C ADC
 $Comp
-L rysboard:Microfit_2x1 J7
+L Connector_Generic:Conn_01x02 J7
 U 1 1 5EC1A298
-P 2375 3050
-F 0 "J7" H 2325 3150 50  0000 L BNN
-F 1 "SW" H 2325 2950 50  0000 L TNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0212_2x01_P3.00mm_Vertical" H 2375 3050 50  0001 C CNN
-F 3 "" H 2375 3050 50  0001 C CNN
-	1    2375 3050
-	1    0    0    -1  
+P 2425 3100
+F 0 "J7" H 2425 2925 50  0000 C CNN
+F 1 "SW" H 2425 3200 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0212_2x01_P3.00mm_Vertical" H 2425 3100 50  0001 C CNN
+F 3 "" H 2425 3100 50  0001 C CNN
+	1    2425 3100
+	-1   0    0    1   
 $EndComp
 $Comp
-L rysboard:Microfit_2x1 J5
+L Connector_Generic:Conn_01x02 J5
 U 1 1 5EC1A31D
-P 2375 2250
-F 0 "J5" H 2325 2350 60  0000 L BNN
-F 1 "CELL2" H 2325 2150 60  0000 L TNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0212_2x01_P3.00mm_Vertical" H 2625 2300 60  0001 C CNN
-F 3 "" H 2625 2300 60  0000 C CNN
-	1    2375 2250
-	1    0    0    -1  
+P 2425 2300
+F 0 "J5" H 2425 2125 50  0000 C CNN
+F 1 "CELL2" H 2425 2400 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0212_2x01_P3.00mm_Vertical" H 2675 2350 50  0001 C CNN
+F 3 "" H 2675 2350 50  0000 C CNN
+	1    2425 2300
+	-1   0    0    1   
 $EndComp
 $Comp
-L rysboard:Microfit_2x1 J6
+L Connector_Generic:Conn_01x02 J6
 U 1 1 5EC1A311
-P 2375 2650
-F 0 "J6" H 2325 2750 50  0000 L BNN
-F 1 "CELL1" H 2325 2550 50  0000 L TNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0212_2x01_P3.00mm_Vertical" H 2625 2700 60  0001 C CNN
-F 3 "" H 2625 2700 60  0001 C CNN
-	1    2375 2650
-	1    0    0    -1  
+P 2425 2700
+F 0 "J6" H 2425 2525 50  0000 C CNN
+F 1 "CELL1" H 2425 2800 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0212_2x01_P3.00mm_Vertical" H 2675 2750 50  0001 C CNN
+F 3 "" H 2675 2750 50  0001 C CNN
+	1    2425 2700
+	-1   0    0    1   
 $EndComp
 $Comp
-L rysboard:Microfit_2x1 J4
+L Connector_Generic:Conn_01x02 J4
 U 1 1 5EC1A323
-P 2375 1850
-F 0 "J4" H 2325 1950 60  0000 L BNN
-F 1 "CELL3" H 2325 1750 60  0000 L TNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0212_2x01_P3.00mm_Vertical" H 2625 1900 60  0001 C CNN
-F 3 "" H 2625 1900 60  0000 C CNN
-	1    2375 1850
-	1    0    0    -1  
+P 2425 1900
+F 0 "J4" H 2425 1725 50  0000 C CNN
+F 1 "CELL3" H 2425 2000 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0212_2x01_P3.00mm_Vertical" H 2675 1950 50  0001 C CNN
+F 3 "" H 2675 1950 50  0000 C CNN
+	1    2425 1900
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	2625 3000 2625 2700
