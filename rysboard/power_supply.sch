@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 3 4
 Title "rysboard"
 Date "2020-03-29"
 Rev "4.2"
@@ -13,603 +13,591 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text Notes 4200 3550 0    100  ~ 0
+Step-down converter
+Text Notes 3250 6075 0    100  ~ 0
+I2C ADC
 $Comp
-L power:+BATT #VMOT_01
-U 1 1 5EC1A1E0
-P 3550 2735
-F 0 "#VMOT_01" H 3550 2735 20  0000 C CNN
-F 1 "Vdrive" H 3550 2665 30  0000 C CNN
-F 2 "" H 3550 2735 70  0000 C CNN
-F 3 "" H 3550 2735 70  0000 C CNN
-	1    3550 2735
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #5V_01
-U 1 1 5EC1A1EC
-P 7550 2535
-F 0 "#5V_01" H 7550 2535 20  0000 C CNN
-F 1 "5V" H 7550 2465 30  0000 C CNN
-F 2 "" H 7550 2535 70  0000 C CNN
-F 3 "" H 7550 2535 70  0000 C CNN
-	1    7550 2535
-	1    0    0    -1  
-$EndComp
-Text Notes 1350 3835 0    60   ~ 0
-SW
-Text Label 6350 2635 0    70   ~ 0
-HPI0624-3R3
-Text Notes 3650 4250 0    108  ~ 0
-Przetwornica STEP-DOWN
-$Comp
-L power:+3V3 #3V3_06
-U 1 1 5EC1A1F5
-P 9225 2110
-F 0 "#3V3_06" H 9225 2110 20  0000 C CNN
-F 1 "3V3" H 9225 2040 30  0000 C CNN
-F 2 "" H 9225 2110 70  0000 C CNN
-F 3 "" H 9225 2110 70  0000 C CNN
-	1    9225 2110
-	1    0    0    -1  
-$EndComp
-Text Label 10625 2710 0    60   ~ 0
-SDA1
-Text Label 10625 2810 0    60   ~ 0
-SCL1
-$Comp
-L power:GND #GND_08
-U 1 1 5EC1A1FD
-P 8825 3510
-F 0 "#GND_08" H 8825 3650 20  0000 C CNN
-F 1 "GND" H 8825 3620 30  0000 C CNN
-F 2 "" H 8825 3510 70  0000 C CNN
-F 3 "" H 8825 3510 70  0000 C CNN
-	1    8825 3510
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3350 3835 3350 3435
-Wire Wire Line
-	3750 3035 3750 2735
-Wire Wire Line
-	3750 3835 3750 3435
-Wire Wire Line
-	4150 3835 4150 3435
-Wire Wire Line
-	4150 2935 4150 3035
-Wire Wire Line
-	4150 2735 4150 2935
-Wire Wire Line
-	4650 2935 4550 2935
-Wire Wire Line
-	4650 3135 4650 2935
-Wire Wire Line
-	5450 3835 5450 3435
-Wire Wire Line
-	5350 3835 5350 3435
-Wire Wire Line
-	5250 3835 5250 3435
-Wire Wire Line
-	5150 3835 5150 3435
-Wire Wire Line
-	5250 3835 5150 3835
-Wire Wire Line
-	7950 2735 7550 2735
-Wire Wire Line
-	7950 2935 7950 2735
-Wire Wire Line
-	7950 3835 7950 3335
-Wire Wire Line
-	7550 3835 7950 3835
-Wire Wire Line
-	7550 3335 7550 3835
-Wire Wire Line
-	7150 3835 7150 3335
-Wire Wire Line
-	7550 3835 7150 3835
-Wire Wire Line
-	7550 2735 7150 2735
-Wire Wire Line
-	7550 2535 7550 2735
-Wire Wire Line
-	7550 2935 7550 2735
-Wire Wire Line
-	6650 2735 6450 2735
-Wire Wire Line
-	5950 2735 6050 2735
-Wire Wire Line
-	4550 2835 4550 2735
-Wire Wire Line
-	4650 2835 4550 2835
-Wire Wire Line
-	7150 2735 7150 2935
-Wire Wire Line
-	6650 2735 7150 2735
-Wire Wire Line
-	6650 2935 6650 2735
-Wire Wire Line
-	6250 2935 6650 2935
-Wire Wire Line
-	6050 3135 5950 3135
-Wire Wire Line
-	6050 3335 6050 3135
-Wire Wire Line
-	6250 3335 6050 3335
-Wire Wire Line
-	6650 3335 6250 3335
-Wire Wire Line
-	6650 3435 6650 3335
-Wire Wire Line
-	4150 2735 3750 2735
-Wire Wire Line
-	4550 2735 4150 2735
-Wire Wire Line
-	4650 2735 4550 2735
-Wire Wire Line
-	5350 3835 5250 3835
-Wire Wire Line
-	5450 3835 5350 3835
-Wire Wire Line
-	6650 3835 5450 3835
-Wire Wire Line
-	7150 3835 6650 3835
-Wire Wire Line
-	3350 3035 3350 2735
-Wire Wire Line
-	2150 2735 1950 2735
-Wire Wire Line
-	2150 3035 2150 2735
-Wire Wire Line
-	1550 2735 1350 2735
-Wire Wire Line
-	3050 3035 2950 3035
-Wire Wire Line
-	3050 3835 3050 3800
-Wire Wire Line
-	2750 2735 2150 2735
-Wire Wire Line
-	3350 2735 3150 2735
-Wire Wire Line
-	3350 3835 3050 3835
-Wire Wire Line
-	3750 3835 3350 3835
-Wire Wire Line
-	4150 3835 3750 3835
-Wire Wire Line
-	5150 3835 4150 3835
-Wire Wire Line
-	10525 2810 10225 2810
-Wire Wire Line
-	10925 2810 10525 2810
-Wire Wire Line
-	10225 2710 10225 2700
-Wire Wire Line
-	10925 2710 10225 2710
-Wire Wire Line
-	10525 2810 10525 2610
-Wire Wire Line
-	10225 2210 10525 2210
-Wire Wire Line
-	9225 2210 10225 2210
-Wire Wire Line
-	9225 2110 9225 2210
-Wire Wire Line
-	8825 2210 8825 2310
-Wire Wire Line
-	9225 2210 8825 2210
-Wire Wire Line
-	9225 2710 9225 2700
-Wire Wire Line
-	8825 2810 9225 2810
-Wire Wire Line
-	8825 2710 8825 2810
-Wire Wire Line
-	9225 3310 9225 2910
-Wire Wire Line
-	8825 3310 8825 2810
-Wire Wire Line
-	8825 3510 8825 3310
-$Comp
-L power:+BATT #VMOT_02
-U 1 1 5EC1A256
-P 10525 3210
-F 0 "#VMOT_02" H 10525 3210 20  0000 C CNN
-F 1 "Vdrive" H 10525 3140 30  0000 C CNN
-F 2 "" H 10525 3210 70  0000 C CNN
-F 3 "" H 10525 3210 70  0000 C CNN
-	1    10525 3210
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10525 3310 10525 3210
-Wire Wire Line
-	9625 3310 10525 3310
-Text Notes 8825 3875 0    108  ~ 0
-Przetwornik A/D I2C
-Connection ~ 2150 3035
-Connection ~ 2150 2735
-Connection ~ 3350 3835
-Connection ~ 3350 2735
-Connection ~ 3750 3835
-Connection ~ 3750 2735
-Connection ~ 4150 3835
-Connection ~ 4150 2935
-Connection ~ 4150 2735
-Connection ~ 4550 2735
-Connection ~ 5150 3835
-Connection ~ 5250 3835
-Connection ~ 5350 3835
-Connection ~ 5450 3835
-Connection ~ 6250 3335
-Connection ~ 6650 3835
-Connection ~ 6650 3335
-Connection ~ 6650 2935
-Connection ~ 6650 2735
-Connection ~ 7150 3835
-Connection ~ 7150 2735
-Connection ~ 7550 3835
-Connection ~ 7550 2735
-Connection ~ 8825 3310
-Connection ~ 8825 2810
-Connection ~ 9225 3310
-Connection ~ 9225 2210
-Connection ~ 10225 2210
-Connection ~ 10525 2810
-$Comp
-L rysboard:C_CER--rys_PCB-SchDoc-rescue-rysboard-rescue C22
-U 1 1 5EC1A280
-P 3350 3235
-F 0 "C22" H 3250 3225 60  0000 R TNN
-F 1 "10u" H 3250 3325 60  0000 R TNN
-F 2 "" H 3250 3325 60  0000 C CNN
-F 3 "" H 3250 3325 60  0000 C CNN
-	1    3350 3235
-	-1   0    0    1   
-$EndComp
-$Comp
-L rysboard:C_CER--rys_PCB-SchDoc-rescue-rysboard-rescue C24
-U 1 1 5EC1A286
-P 4150 3235
-F 0 "C24" H 4050 3225 60  0000 R TNN
-F 1 "100n" H 4050 3325 60  0000 R TNN
-F 2 "" H 4050 3325 60  0000 C CNN
-F 3 "" H 4050 3325 60  0000 C CNN
-	1    4150 3235
-	-1   0    0    1   
-$EndComp
-$Comp
-L rysboard:C_CER--rys_PCB-SchDoc-rescue-rysboard-rescue C20
-U 1 1 5EC1A28C
-P 7550 3135
-F 0 "C20" H 7450 3125 60  0000 R TNN
-F 1 "10u" H 7450 3225 60  0000 R TNN
-F 2 "" H 7450 3225 60  0000 C CNN
-F 3 "" H 7450 3225 60  0000 C CNN
-	1    7550 3135
-	-1   0    0    1   
-$EndComp
-$Comp
-L rysboard:R--rys_PCB-SchDoc-rescue-rysboard-rescue R15
-U 1 1 5EC1A292
-P 6650 3635
-F 0 "R15" V 6660 3585 60  0000 R TNN
-F 1 "2k1%" V 6560 3585 60  0000 R TNN
-F 2 "" H 6560 3585 60  0000 C CNN
-F 3 "" H 6560 3585 60  0000 C CNN
-	1    6650 3635
-	0    -1   -1   0   
-$EndComp
-$Comp
-L rysboard:Microfit_2x1 J17
+L rysboard:Microfit_2x1 J7
 U 1 1 5EC1A298
-P 1600 3500
-F 0 "J17" V 1550 3400 60  0000 L BNN
-F 1 "~" H 1600 3500 50  0001 C CNN
-F 2 "" H 1600 3500 50  0001 C CNN
-F 3 "" H 1600 3500 50  0001 C CNN
-	1    1600 3500
+P 2375 3050
+F 0 "J7" H 2325 3150 50  0000 L BNN
+F 1 "SW" H 2325 2950 50  0000 L TNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0212_2x01_P3.00mm_Vertical" H 2375 3050 50  0001 C CNN
+F 3 "" H 2375 3050 50  0001 C CNN
+	1    2375 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L rysboard:Microfit_2x1 J5
+U 1 1 5EC1A31D
+P 2375 2250
+F 0 "J5" H 2325 2350 60  0000 L BNN
+F 1 "CELL2" H 2325 2150 60  0000 L TNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0212_2x01_P3.00mm_Vertical" H 2625 2300 60  0001 C CNN
+F 3 "" H 2625 2300 60  0000 C CNN
+	1    2375 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L rysboard:Microfit_2x1 J6
+U 1 1 5EC1A311
+P 2375 2650
+F 0 "J6" H 2325 2750 50  0000 L BNN
+F 1 "CELL1" H 2325 2550 50  0000 L TNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0212_2x01_P3.00mm_Vertical" H 2625 2700 60  0001 C CNN
+F 3 "" H 2625 2700 60  0001 C CNN
+	1    2375 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L rysboard:Microfit_2x1 J4
+U 1 1 5EC1A323
+P 2375 1850
+F 0 "J4" H 2325 1950 60  0000 L BNN
+F 1 "CELL3" H 2325 1750 60  0000 L TNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0212_2x01_P3.00mm_Vertical" H 2625 1900 60  0001 C CNN
+F 3 "" H 2625 1900 60  0000 C CNN
+	1    2375 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2625 3000 2625 2700
+Wire Wire Line
+	2625 2200 2625 1900
+Wire Wire Line
+	2625 2600 2625 2300
+$Comp
+L Device:Fuse F1
+U 1 1 5EC1A2C9
+P 3000 2300
+F 0 "F1" V 3080 2300 50  0000 C CNN
+F 1 "2.5A" V 2925 2300 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" V 2930 2300 50  0001 C CNN
+F 3 "~" H 3000 2300 50  0001 C CNN
+	1    3000 2300
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	3500 2300 3150 2300
+Connection ~ 3500 2300
 $Comp
-L rysboard:ST1S10PHR U4
-U 1 1 5EC1A29E
-P 4850 2735
-F 0 "U4" H 4850 2835 60  0000 L BNN
-F 1 "ST1S10PHR" H 4550 2035 60  0000 L BNN
-F 2 "" H 4550 2035 60  0000 C CNN
-F 3 "" H 4550 2035 60  0000 C CNN
-	1    4850 2735
+L Device:R R8
+U 1 1 5EC1A2DB
+P 3000 2600
+F 0 "R8" V 3080 2600 50  0000 C CNN
+F 1 "10k" V 3000 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2930 2600 50  0001 C CNN
+F 3 "~" H 3000 2600 50  0001 C CNN
+	1    3000 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 2300 2850 2600
+Wire Wire Line
+	3450 2600 3500 2600
+Wire Wire Line
+	3500 2600 3500 2300
+$Comp
+L power:GND #PWR018
+U 1 1 5E91776C
+P 2850 3100
+F 0 "#PWR018" H 2850 2850 50  0001 C CNN
+F 1 "GND" H 2855 2927 50  0000 C CNN
+F 2 "" H 2850 3100 50  0001 C CNN
+F 3 "" H 2850 3100 50  0001 C CNN
+	1    2850 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2625 3100 2850 3100
+Wire Wire Line
+	2625 1800 2850 1800
+Wire Wire Line
+	2850 1800 2850 2300
+Connection ~ 2850 2300
+Connection ~ 2850 3100
+$Comp
+L Device:LED D3
+U 1 1 5EC1A2E1
+P 3300 2600
+F 0 "D3" H 3300 2525 50  0000 C CNN
+F 1 "RED" H 3300 2700 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 3300 2600 50  0001 C CNN
+F 3 "~" H 3300 2600 50  0001 C CNN
+	1    3300 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 5EB1358C
+P 3300 2900
+F 0 "D4" H 3300 2975 50  0000 C CNN
+F 1 "GREEN" H 3300 2800 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 3300 2900 50  0001 C CNN
+F 3 "~" H 3300 2900 50  0001 C CNN
+	1    3300 2900
 	1    0    0    -1  
 $EndComp
 $Comp
-L rysboard:C_CER--rys_PCB-SchDoc-rescue-rysboard-rescue C23
-U 1 1 5EC1A2A4
-P 3750 3235
-F 0 "C23" H 3650 3225 60  0000 R TNN
-F 1 "10u" H 3650 3325 60  0000 R TNN
-F 2 "" H 3650 3325 60  0000 C CNN
-F 3 "" H 3650 3325 60  0000 C CNN
-	1    3750 3235
+L Device:R R9
+U 1 1 5EB3C88A
+P 3000 2900
+F 0 "R9" V 3075 2900 50  0000 C CNN
+F 1 "10k" V 3000 2900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2930 2900 50  0001 C CNN
+F 3 "~" H 3000 2900 50  0001 C CNN
+	1    3000 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3500 2600 3500 2900
+Wire Wire Line
+	3500 2900 3450 2900
+Connection ~ 3500 2600
+Wire Wire Line
+	2850 2900 2850 3100
+$Comp
+L Device:D_Schottky D5
+U 1 1 5EC1A2D5
+P 3700 2300
+F 0 "D5" H 3700 2400 50  0000 C CNN
+F 1 "SK52" H 3700 2200 50  0000 C CNN
+F 2 "Diode_SMD:D_SMB" H 3700 2300 50  0001 C CNN
+F 3 "~" H 3700 2300 50  0001 C CNN
+	1    3700 2300
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	3550 2300 3500 2300
 $Comp
-L rysboard:R--rys_PCB-SchDoc-rescue-rysboard-rescue R9
-U 1 1 5EC1A2AA
-P 4350 2935
-F 0 "R9" H 4460 2885 60  0000 R TNN
-F 1 "1k" H 4460 3085 60  0000 R TNN
-F 2 "" H 4460 3085 60  0000 C CNN
-F 3 "" H 4460 3085 60  0000 C CNN
-	1    4350 2935
-	-1   0    0    1   
+L power:Vdrive #PWR020
+U 1 1 5EB4E85D
+P 3900 2250
+F 0 "#PWR020" H 3700 2100 50  0001 C CNN
+F 1 "Vdrive" H 3917 2423 50  0000 C CNN
+F 2 "" H 3900 2250 50  0001 C CNN
+F 3 "" H 3900 2250 50  0001 C CNN
+	1    3900 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2300 3900 2300
+Wire Wire Line
+	3900 2300 3900 2250
+$Comp
+L Regulator_Switching:ST1S10PHR U3
+U 1 1 5E89E53A
+P 5425 2400
+F 0 "U3" H 5425 2742 50  0000 C CNN
+F 1 "ST1S10PHR" H 5425 2651 50  0000 C CNN
+F 2 "Package_SO:TI_SO-PowerPAD-8" H 5550 2050 50  0001 L CIN
+F 3 "http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00169322.pdf" H 5425 2400 50  0001 C CNN
+	1    5425 2400
+	1    0    0    -1  
+$EndComp
+Connection ~ 3900 2300
+$Comp
+L Device:C C?
+U 1 1 5EB7A8C9
+P 3900 2750
+AR Path="/5EB7428E/5EB7A8C9" Ref="C?"  Part="1" 
+AR Path="/5E8FCBC6/5EB7A8C9" Ref="C16"  Part="1" 
+F 0 "C16" H 3900 2875 60  0000 R TNN
+F 1 "10u" H 3900 2700 60  0000 R TNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3800 2840 60  0001 C CNN
+F 3 "" H 3800 2840 60  0000 C CNN
+	1    3900 2750
+	1    0    0    -1  
 $EndComp
 $Comp
-L rysboard:R--rys_PCB-SchDoc-rescue-rysboard-rescue R12
-U 1 1 5EC1A2B0
-P 6650 3135
-F 0 "R12" V 6660 3085 60  0000 R TNN
-F 1 "11k1%" V 6560 3085 60  0000 R TNN
-F 2 "" H 6560 3085 60  0000 C CNN
-F 3 "" H 6560 3085 60  0000 C CNN
-	1    6650 3135
+L Device:C C?
+U 1 1 5EB7C944
+P 4200 2750
+AR Path="/5EB7428E/5EB7C944" Ref="C?"  Part="1" 
+AR Path="/5E8FCBC6/5EB7C944" Ref="C17"  Part="1" 
+F 0 "C17" H 4200 2875 60  0000 R TNN
+F 1 "10u" H 4200 2700 60  0000 R TNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 4100 2840 60  0001 C CNN
+F 3 "" H 4100 2840 60  0000 C CNN
+	1    4200 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EB81372
+P 4500 2750
+AR Path="/5EB7428E/5EB81372" Ref="C?"  Part="1" 
+AR Path="/5E8FCBC6/5EB81372" Ref="C18"  Part="1" 
+F 0 "C18" H 4500 2875 60  0000 R TNN
+F 1 "100n" H 4500 2700 60  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4400 2840 60  0001 C CNN
+F 3 "" H 4400 2840 60  0001 C CNN
+	1    4500 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2600 3900 2300
+Wire Wire Line
+	4200 2600 4200 2300
+Wire Wire Line
+	3900 2300 4200 2300
+Connection ~ 4200 2300
+Wire Wire Line
+	4500 2600 4500 2300
+Wire Wire Line
+	4200 2300 4500 2300
+Connection ~ 4500 2300
+Wire Wire Line
+	3900 2900 3900 3100
+Wire Wire Line
+	2850 3100 3900 3100
+Connection ~ 3900 3100
+Wire Wire Line
+	4200 3100 4200 2900
+Wire Wire Line
+	3900 3100 4200 3100
+Wire Wire Line
+	4200 3100 4500 3100
+Wire Wire Line
+	4500 3100 4500 2900
+Connection ~ 4200 3100
+Wire Wire Line
+	5525 2800 5425 2800
+Wire Wire Line
+	5325 2800 5425 2800
+Connection ~ 5425 2800
+Wire Wire Line
+	4925 2500 4875 2500
+Wire Wire Line
+	4875 2500 4875 2800
+Wire Wire Line
+	4875 2800 5325 2800
+Connection ~ 5325 2800
+Wire Wire Line
+	5325 2800 5325 3100
+Wire Wire Line
+	5325 3100 4500 3100
+Connection ~ 4500 3100
+Wire Wire Line
+	4925 2400 4750 2400
+Wire Wire Line
+	4750 2400 4750 2300
+Wire Wire Line
+	4500 2300 4750 2300
+Wire Wire Line
+	4750 2300 4925 2300
+Connection ~ 4750 2300
+Wire Wire Line
+	4925 2600 4750 2600
+Wire Wire Line
+	4750 2600 4750 2400
+Connection ~ 4750 2400
+Wire Wire Line
+	5925 2300 6025 2300
+$Comp
+L Device:L_Core_Iron L1
+U 1 1 5EB77B7B
+P 6175 2300
+F 0 "L1" V 6350 2300 50  0000 C CNN
+F 1 "3.3uH" V 6275 2300 50  0000 C CNN
+F 2 "Inductor_SMD:L_6.3x6.3_H3" H 6175 2300 50  0001 C CNN
+F 3 "https://www.tme.eu/pl/details/hpi0624-3r3/dlawiki-smd-mocy/ferrocore/" H 6175 2300 50  0001 C CNN
+F 4 "HPI0624-3R3" V 6125 2275 50  0000 C CNN "Model"
+	1    6175 2300
 	0    -1   -1   0   
 $EndComp
+Connection ~ 5325 3100
 $Comp
-L rysboard:C_CER--rys_PCB-SchDoc-rescue-rysboard-rescue C21
-U 1 1 5EC1A2B6
-P 7950 3135
-F 0 "C21" H 7850 3125 60  0000 R TNN
-F 1 "100n" H 7850 3225 60  0000 R TNN
-F 2 "" H 7850 3225 60  0000 C CNN
-F 3 "" H 7850 3225 60  0000 C CNN
-	1    7950 3135
-	-1   0    0    1   
-$EndComp
-$Comp
-L rysboard:C_CER--rys_PCB-SchDoc-rescue-rysboard-rescue C19
-U 1 1 5EC1A2BC
-P 7150 3135
-F 0 "C19" H 7050 3125 60  0000 R TNN
-F 1 "10u" H 7050 3225 60  0000 R TNN
-F 2 "" H 7050 3225 60  0000 C CNN
-F 3 "" H 7050 3225 60  0000 C CNN
-	1    7150 3135
-	-1   0    0    1   
-$EndComp
-$Comp
-L rysboard:L_IND_HPI0624-3R3--rys_PCB-SchDoc-rescue-rysboard-rescue L1
-U 1 1 5EC1A2C3
-P 6250 2735
-F 0 "L1" H 6140 2815 60  0000 L BNN
-F 1 "3.3uH" H 6140 2605 60  0000 L BNN
-F 2 "" H 6140 2605 60  0000 C CNN
-F 3 "" H 6140 2605 60  0000 C CNN
-F 4 "HPI0624-3R3" V 1850 -9600 60  0001 C CNN "Symbol"
-	1    6250 2735
+L Device:C C?
+U 1 1 5EC0EC4E
+P 6550 2750
+AR Path="/5EB7428E/5EC0EC4E" Ref="C?"  Part="1" 
+AR Path="/5E8FCBC6/5EC0EC4E" Ref="C19"  Part="1" 
+F 0 "C19" H 6450 2825 50  0000 L CNN
+F 1 "10n" H 6525 2700 50  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6588 2600 50  0001 C CNN
+F 3 "~" H 6550 2750 50  0001 C CNN
+	1    6550 2750
 	1    0    0    -1  
 $EndComp
 $Comp
-L rysboard:F--rys_PCB-SchDoc-rescue-rysboard-rescue F1
-U 1 1 5EC1A2C9
-P 1750 2735
-F 0 "F1" H 1860 2685 60  0000 R TNN
-F 1 "2.5A" H 1860 2885 60  0000 R TNN
-F 2 "" H 1860 2885 60  0000 C CNN
-F 3 "" H 1860 2885 60  0000 C CNN
-	1    1750 2735
+L Device:C C?
+U 1 1 5EC37974
+P 6850 2750
+AR Path="/5EB7428E/5EC37974" Ref="C?"  Part="1" 
+AR Path="/5E8FCBC6/5EC37974" Ref="C20"  Part="1" 
+F 0 "C20" H 6850 2875 60  0000 R TNN
+F 1 "10u" H 6850 2700 60  0000 R TNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 6750 2840 60  0001 C CNN
+F 3 "" H 6750 2840 60  0000 C CNN
+	1    6850 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EC3797A
+P 7150 2750
+AR Path="/5EB7428E/5EC3797A" Ref="C?"  Part="1" 
+AR Path="/5E8FCBC6/5EC3797A" Ref="C21"  Part="1" 
+F 0 "C21" H 7150 2875 60  0000 R TNN
+F 1 "10u" H 7150 2700 60  0000 R TNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 7050 2840 60  0001 C CNN
+F 3 "" H 7050 2840 60  0000 C CNN
+	1    7150 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EC37980
+P 7450 2750
+AR Path="/5EB7428E/5EC37980" Ref="C?"  Part="1" 
+AR Path="/5E8FCBC6/5EC37980" Ref="C22"  Part="1" 
+F 0 "C22" H 7450 2875 60  0000 R TNN
+F 1 "100n" H 7450 2700 60  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7350 2840 60  0001 C CNN
+F 3 "" H 7350 2840 60  0001 C CNN
+	1    7450 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 5EC4EACF
+P 6175 2500
+F 0 "R13" V 6255 2500 50  0000 C CNN
+F 1 "11k1%" V 6075 2500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6105 2500 50  0001 C CNN
+F 3 "~" H 6175 2500 50  0001 C CNN
+	1    6175 2500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6025 2500 5975 2500
+$Comp
+L Device:R R14
+U 1 1 5EC56A16
+P 6175 2775
+F 0 "R14" V 6255 2775 50  0000 C CNN
+F 1 "2k1%" V 6075 2775 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6105 2775 50  0001 C CNN
+F 3 "~" H 6175 2775 50  0001 C CNN
+	1    6175 2775
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6025 2775 5975 2775
+Wire Wire Line
+	5975 2775 5975 2500
+Connection ~ 5975 2500
+Wire Wire Line
+	5975 2500 5925 2500
+Wire Wire Line
+	6325 2775 6325 3100
+Wire Wire Line
+	5325 3100 6325 3100
+Wire Wire Line
+	6325 2500 6550 2500
+Wire Wire Line
+	6550 2500 6550 2300
+Wire Wire Line
+	6550 2300 6325 2300
+Wire Wire Line
+	6550 2600 6550 2500
+Connection ~ 6550 2500
+Wire Wire Line
+	6550 2300 6850 2300
+Wire Wire Line
+	6850 2300 6850 2600
+Connection ~ 6550 2300
+Wire Wire Line
+	6850 2300 7150 2300
+Wire Wire Line
+	7150 2300 7150 2600
+Connection ~ 6850 2300
+Wire Wire Line
+	7150 2300 7450 2300
+Wire Wire Line
+	7450 2300 7450 2600
+Connection ~ 7150 2300
+Wire Wire Line
+	6325 3100 6550 3100
+Wire Wire Line
+	6550 3100 6550 2900
+Connection ~ 6325 3100
+Wire Wire Line
+	6550 3100 6850 3100
+Wire Wire Line
+	6850 3100 6850 2900
+Connection ~ 6550 3100
+Wire Wire Line
+	6850 3100 7150 3100
+Wire Wire Line
+	7150 3100 7150 2900
+Connection ~ 6850 3100
+Wire Wire Line
+	7150 3100 7450 3100
+Wire Wire Line
+	7450 3100 7450 2900
+Connection ~ 7150 3100
+$Comp
+L power:+5V #PWR022
+U 1 1 5EC8C1D4
+P 6850 2250
+F 0 "#PWR022" H 6850 2100 50  0001 C CNN
+F 1 "+5V" H 6865 2423 50  0000 C CNN
+F 2 "" H 6850 2250 50  0001 C CNN
+F 3 "" H 6850 2250 50  0001 C CNN
+	1    6850 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 2300 6850 2250
+$Comp
+L Device:R R11
+U 1 1 5EC9EC01
+P 3925 4975
+F 0 "R11" H 3875 4925 50  0000 R CNN
+F 1 "4k7" H 3875 5025 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3855 4975 50  0001 C CNN
+F 3 "~" H 3925 4975 50  0001 C CNN
+	1    3925 4975
 	-1   0    0    1   
 $EndComp
 $Comp
-L rysboard:C_CER--rys_PCB-SchDoc-rescue-rysboard-rescue C18
-U 1 1 5EC1A2CF
-P 6250 3135
-F 0 "C18" H 6150 3125 60  0000 R TNN
-F 1 "10n" H 6150 3225 60  0000 R TNN
-F 2 "" H 6150 3225 60  0000 C CNN
-F 3 "" H 6150 3225 60  0000 C CNN
-	1    6250 3135
-	-1   0    0    1   
+L power:+3V3 #PWR019
+U 1 1 5ECAC784
+P 2875 4725
+F 0 "#PWR019" H 2875 4575 50  0001 C CNN
+F 1 "+3V3" H 2890 4898 50  0000 C CNN
+F 2 "" H 2875 4725 50  0001 C CNN
+F 3 "" H 2875 4725 50  0001 C CNN
+	1    2875 4725
+	1    0    0    -1  
 $EndComp
 $Comp
-L rysboard:SK26 D3
-U 1 1 5EC1A2D5
-P 2950 2735
-F 0 "D3" H 3060 2675 60  0000 R TNN
-F 1 "SK52" H 3060 2895 60  0000 R TNN
-F 2 "" H 3060 2895 60  0000 C CNN
-F 3 "" H 3060 2895 60  0000 C CNN
-	1    2950 2735
-	-1   0    0    1   
-$EndComp
-$Comp
-L rysboard:R--rys_PCB-SchDoc-rescue-rysboard-rescue R10
-U 1 1 5EC1A2DB
-P 1550 3035
-F 0 "R10" H 1660 2985 60  0000 R TNN
-F 1 "10k" H 1660 3185 60  0000 R TNN
-F 2 "" H 1660 3185 60  0000 C CNN
-F 3 "" H 1660 3185 60  0000 C CNN
-	1    1550 3035
-	-1   0    0    1   
-$EndComp
-$Comp
-L rysboard:LED1--rys_PCB-SchDoc-rescue-rysboard-rescue DL1
-U 1 1 5EC1A2E1
-P 1950 3035
-F 0 "DL1" H 2060 2975 60  0000 R TNN
-F 1 "RED" H 2060 3265 60  0000 R TNN
-F 2 "" H 2060 3265 60  0000 C CNN
-F 3 "" H 2060 3265 60  0000 C CNN
-	1    1950 3035
-	-1   0    0    1   
-$EndComp
-$Comp
-L rysboard:LED1--rys_PCB-SchDoc-rescue-rysboard-rescue DL2
-U 1 1 5EC1A2E7
-P 2350 3035
-F 0 "DL2" H 2460 2975 60  0000 R TNN
-F 1 "GREEN" H 2460 3265 60  0000 R TNN
-F 2 "" H 2460 3265 60  0000 C CNN
-F 3 "" H 2460 3265 60  0000 C CNN
-	1    2350 3035
-	-1   0    0    1   
-$EndComp
-$Comp
-L rysboard:R--rys_PCB-SchDoc-rescue-rysboard-rescue R11
-U 1 1 5EC1A2ED
-P 2750 3035
-F 0 "R11" H 2860 2985 60  0000 R TNN
-F 1 "10k" H 2860 3185 60  0000 R TNN
-F 2 "" H 2860 3185 60  0000 C CNN
-F 3 "" H 2860 3185 60  0000 C CNN
-	1    2750 3035
-	-1   0    0    1   
+L Device:C C?
+U 1 1 5ECAEA35
+P 2575 4925
+AR Path="/5EB7428E/5ECAEA35" Ref="C?"  Part="1" 
+AR Path="/5E8FCBC6/5ECAEA35" Ref="C15"  Part="1" 
+F 0 "C15" H 2575 5050 60  0000 R TNN
+F 1 "100n" H 2575 4875 60  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2475 5015 60  0001 C CNN
+F 3 "" H 2475 5015 60  0001 C CNN
+	1    2575 4925
+	1    0    0    -1  
 $EndComp
 $Comp
 L rysboard:MCP3221A5T-E_OT IC1
-U 1 1 5EC1A2F3
-P 9725 2800
-F 0 "IC1" H 9925 2900 60  0000 L BNN
-F 1 "MCP3221A5T-E_OT" H 9925 2400 60  0000 L BNN
-F 2 "" H 9925 2400 60  0000 C CNN
-F 3 "" H 9925 2400 60  0000 C CNN
-	1    9725 2800
+U 1 1 5ECB2C2D
+P 3375 5225
+F 0 "IC1" H 3075 5575 50  0000 L CNN
+F 1 "MCP3221A5T-E_OT" H 3075 5475 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 3375 4975 50  0001 C CNN
+F 3 "https://www.tme.eu/pl/details/mcp3221a5t-e_ot/przetworniki-a-d-uklady-scalone/microchip-technology/" H 2875 5325 50  0001 C CNN
+	1    3375 5225
 	1    0    0    -1  
 $EndComp
 $Comp
-L rysboard:R--rys_PCB-SchDoc-rescue-rysboard-rescue R7
-U 1 1 5EC1A2F9
-P 10225 2410
-F 0 "R7" V 10235 2360 60  0000 R TNN
-F 1 "4k7" V 10135 2360 60  0000 R TNN
-F 2 "" H 10135 2360 60  0000 C CNN
-F 3 "" H 10135 2360 60  0000 C CNN
-	1    10225 2410
-	0    -1   -1   0   
-$EndComp
-$Comp
-L rysboard:R--rys_PCB-SchDoc-rescue-rysboard-rescue R8
-U 1 1 5EC1A2FF
-P 10525 2410
-F 0 "R8" V 10535 2360 60  0000 R TNN
-F 1 "4k7" V 10435 2360 60  0000 R TNN
-F 2 "" H 10435 2360 60  0000 C CNN
-F 3 "" H 10435 2360 60  0000 C CNN
-	1    10525 2410
-	0    -1   -1   0   
-$EndComp
-$Comp
-L rysboard:C_CER--rys_PCB-SchDoc-rescue-rysboard-rescue C17
-U 1 1 5EC1A305
-P 8825 2510
-F 0 "C17" H 8725 2500 60  0000 R TNN
-F 1 "100n" H 8725 2600 60  0000 R TNN
-F 2 "" H 8725 2600 60  0000 C CNN
-F 3 "" H 8725 2600 60  0000 C CNN
-	1    8825 2510
+L Device:R R12
+U 1 1 5ECB748F
+P 4175 4925
+F 0 "R12" H 4125 4875 50  0000 R CNN
+F 1 "4k7" H 4125 4975 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4105 4925 50  0001 C CNN
+F 3 "~" H 4175 4925 50  0001 C CNN
+	1    4175 4925
 	-1   0    0    1   
 $EndComp
-$Comp
-L rysboard:R--rys_PCB-SchDoc-rescue-rysboard-rescue R14
-U 1 1 5EC1A30B
-P 9425 3310
-F 0 "R14" H 9315 3360 60  0000 L BNN
-F 1 "27k1%" H 9315 3160 60  0000 L BNN
-F 2 "" H 9315 3160 60  0000 C CNN
-F 3 "" H 9315 3160 60  0000 C CNN
-	1    9425 3310
-	1    0    0    -1  
-$EndComp
-$Comp
-L rysboard:R--rys_PCB-SchDoc-rescue-rysboard-rescue R13
-U 1 1 5EC1A317
-P 9025 3310
-F 0 "R13" H 8915 3360 60  0000 L BNN
-F 1 "10k1%" H 8915 3160 60  0000 L BNN
-F 2 "" H 8915 3160 60  0000 C CNN
-F 3 "" H 8915 3160 60  0000 C CNN
-	1    9025 3310
-	1    0    0    -1  
-$EndComp
-$Comp
-L rysboard:Microfit_2x1 J19
-U 1 1 5EC1A31D
-P 2400 3500
-F 0 "J19" V 2350 3400 60  0000 L BNN
-F 1 "~" H 2400 3500 50  0001 C CNN
-F 2 "" H 2400 3500 50  0001 C CNN
-F 3 "" H 2400 3500 50  0001 C CNN
-	1    2400 3500
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	3350 2735 3750 2735
-Connection ~ 9225 2700
+	4175 4775 3925 4775
 Wire Wire Line
-	9225 2700 9225 2210
-Connection ~ 10225 2700
+	2875 5125 2875 4775
 Wire Wire Line
-	10225 2700 10225 2610
+	2875 4725 2875 4775
+Connection ~ 2875 4775
 $Comp
-L power:GND #PWR015
-U 1 1 5E91776C
-P 2550 3900
-F 0 "#PWR015" H 2550 3650 50  0001 C CNN
-F 1 "GND" H 2555 3727 50  0000 C CNN
-F 2 "" H 2550 3900 50  0001 C CNN
-F 3 "" H 2550 3900 50  0001 C CNN
-	1    2550 3900
+L power:Vdrive #PWR021
+U 1 1 5ECC5A17
+P 4650 4725
+F 0 "#PWR021" H 4450 4575 50  0001 C CNN
+F 1 "Vdrive" H 4667 4898 50  0000 C CNN
+F 2 "" H 4650 4725 50  0001 C CNN
+F 3 "" H 4650 4725 50  0001 C CNN
+	1    4650 4725
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1550 3800 2550 3800
-Connection ~ 3050 3800
+	3875 5125 3925 5125
 Wire Wire Line
-	3050 3800 3050 3035
+	3925 5125 4225 5125
+Connection ~ 3925 5125
 Wire Wire Line
-	1550 3750 1550 3800
+	3925 4825 3925 4775
+Connection ~ 3925 4775
 Wire Wire Line
-	2550 3900 2550 3800
-Connection ~ 2550 3800
+	3925 4775 2875 4775
 Wire Wire Line
-	2550 3800 3050 3800
+	3875 5225 4175 5225
+Wire Wire Line
+	4175 5075 4175 5225
+Connection ~ 4175 5225
+Wire Wire Line
+	4175 5225 4225 5225
+Text HLabel 4225 5125 2    50   BiDi ~ 0
+I2C_SDA
+Text HLabel 4225 5225 2    50   Input ~ 0
+I2C_SCL
 $Comp
-L rysboard:Microfit_2x1 J18
-U 1 1 5EC1A311
-P 2000 3500
-F 0 "J18" V 1950 3400 60  0000 L BNN
-F 1 "~" H 2000 3500 50  0001 C CNN
-F 2 "" H 2000 3500 50  0001 C CNN
-F 3 "" H 2000 3500 50  0001 C CNN
-	1    2000 3500
-	0    1    1    0   
-$EndComp
-$Comp
-L rysboard:Microfit_2x1 J20
-U 1 1 5EC1A323
-P 2800 3500
-F 0 "J20" V 2750 3400 60  0000 L BNN
-F 1 "~" H 2800 3500 50  0001 C CNN
-F 2 "" H 2800 3500 50  0001 C CNN
-F 3 "" H 2800 3500 50  0001 C CNN
-	1    2800 3500
-	0    1    1    0   
+L Device:R R10
+U 1 1 5ECD4AE4
+P 3025 5575
+F 0 "R10" V 3105 5575 50  0000 C CNN
+F 1 "27k1%" V 2925 5575 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2955 5575 50  0001 C CNN
+F 3 "~" H 3025 5575 50  0001 C CNN
+	1    3025 5575
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1650 3750 1950 3750
+	4650 4725 4650 5575
 Wire Wire Line
-	2050 3750 2350 3750
+	3175 5575 4650 5575
 Wire Wire Line
-	2450 3750 2750 3750
+	2875 5575 2875 5325
+$Comp
+L Device:R R7
+U 1 1 5ECF14C9
+P 2725 5575
+F 0 "R7" V 2805 5575 50  0000 C CNN
+F 1 "10k1%" V 2625 5575 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2655 5575 50  0001 C CNN
+F 3 "~" H 2725 5575 50  0001 C CNN
+	1    2725 5575
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
-	2850 3750 2950 3750
+	2875 4775 2575 4775
 Wire Wire Line
-	2950 3750 2950 3350
+	2875 5225 2575 5225
 Wire Wire Line
-	2950 3350 1350 3350
+	2575 5225 2575 5075
 Wire Wire Line
-	1350 2735 1350 3035
-Connection ~ 1350 3035
+	2575 5225 2575 5575
+Connection ~ 2575 5225
 Wire Wire Line
-	1350 3035 1350 3350
+	2575 5575 2575 5750
+Connection ~ 2575 5575
+$Comp
+L power:GND #PWR017
+U 1 1 5ED00E12
+P 2575 5750
+F 0 "#PWR017" H 2575 5500 50  0001 C CNN
+F 1 "GND" H 2580 5577 50  0000 C CNN
+F 2 "" H 2575 5750 50  0001 C CNN
+F 3 "" H 2575 5750 50  0001 C CNN
+	1    2575 5750
+	1    0    0    -1  
+$EndComp
+Connection ~ 2875 5575
 $EndSCHEMATC
