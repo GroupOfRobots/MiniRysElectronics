@@ -1,3 +1,14 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP MCP3221A5T-E_OT
+D I2C ADC, 1ch 12bit 100ksps 2.7-5.5V
+F https://www.tme.eu/pl/details/mcp3221a5t-e_ot/przetworniki-a-d-uklady-scalone/microchip-technology/
+$ENDCMP
+#
+$CMP ST_L6470_HTSSOP28
+D ST L6470 Fully integrated microstepping motor driver with motion engine and SPI, HTSSOP28 package
+K ST L6470 stepper microstepping motor driver
+F https://www.st.com/resource/en/datasheet/l6470.pdf
+$ENDCMP
+#
 #End Doc Library

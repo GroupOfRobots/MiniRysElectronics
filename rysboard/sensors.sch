@@ -13,481 +13,408 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text Notes 5000 2600 0    100  ~ 0
+External SPI connector
+Text Notes 4575 4700 0    100  ~ 0
+I2C temperature sensor connector
+Text Notes 1450 6250 0    100  ~ 0
+6x ToF I2C connector
 $Comp
-L rysboard:PICO_BLADE_7 J?
-U 1 1 5EA9C587
-P 1000 1475
-AR Path="/5EA9C587" Ref="J?"  Part="1" 
-AR Path="/5EA6D11C/5EA9C587" Ref="J4"  Part="1" 
-F 0 "J4" H 1000 1950 60  0000 R TNN
-F 1 "PICO_BLADE_7" V 801 1770 60  0000 R TNN
-F 2 "" V 1300 1175 60  0000 C CNN
-F 3 "" V 1300 1175 60  0000 C CNN
-	1    1000 1475
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2025 1685 1325 1685
-Wire Wire Line
-	1325 1285 2025 1285
-Wire Wire Line
-	1325 1385 2025 1385
-Wire Wire Line
-	1325 1485 2025 1485
-Wire Wire Line
-	1325 1585 2025 1585
-Wire Wire Line
-	2025 1085 2025 1185
-Wire Wire Line
-	2025 1185 1325 1185
-Wire Wire Line
-	2025 1985 2025 1785
-Wire Wire Line
-	2025 1785 1325 1785
-$Comp
-L power:GND #GND_?
-U 1 1 5EA9C596
-P 2025 1985
-AR Path="/5EA9C596" Ref="#GND_?"  Part="1" 
-AR Path="/5EA6D11C/5EA9C596" Ref="#GND_05"  Part="1" 
-F 0 "#GND_05" H 2025 2125 20  0000 C CNN
-F 1 "GND" H 2025 2095 30  0000 C CNN
-F 2 "" H 2025 1985 70  0000 C CNN
-F 3 "" H 2025 1985 70  0000 C CNN
-	1    2025 1985
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #3V3_?
-U 1 1 5EA9C59C
-P 2025 1085
-AR Path="/5EA9C59C" Ref="#3V3_?"  Part="1" 
-AR Path="/5EA6D11C/5EA9C59C" Ref="#3V3_03"  Part="1" 
-F 0 "#3V3_03" H 2025 1085 20  0000 C CNN
-F 1 "3V3" H 2025 1015 30  0000 C CNN
-F 2 "" H 2025 1085 70  0000 C CNN
-F 3 "" H 2025 1085 70  0000 C CNN
-	1    2025 1085
-	1    0    0    -1  
-$EndComp
-Text Label 1625 1685 0    60   ~ 0
-IRQ
-Text Label 1625 1585 0    60   ~ 0
-CE1
-Text Label 1625 1485 0    60   ~ 0
-SCLK
-Text Label 1625 1385 0    60   ~ 0
-MISO
-Text Label 1625 1285 0    60   ~ 0
-MOSI
-Text Label 3300 1385 0    60   ~ 0
-SDA1
-Text Label 3300 1485 0    60   ~ 0
-SCL1
-$Comp
-L power:+3V3 #3V3_?
-U 1 1 5EAE56B6
-P 3700 985
-AR Path="/5EAE56B6" Ref="#3V3_?"  Part="1" 
-AR Path="/5EA6D11C/5EAE56B6" Ref="#3V3_01"  Part="1" 
-F 0 "#3V3_01" H 3700 985 20  0000 C CNN
-F 1 "3V3" H 3700 915 30  0000 C CNN
-F 2 "" H 3700 985 70  0000 C CNN
-F 3 "" H 3700 985 70  0000 C CNN
-	1    3700 985 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #GND_?
-U 1 1 5EAE56BC
-P 3700 1885
-AR Path="/5EAE56BC" Ref="#GND_?"  Part="1" 
-AR Path="/5EA6D11C/5EAE56BC" Ref="#GND_03"  Part="1" 
-F 0 "#GND_03" H 3700 2025 20  0000 C CNN
-F 1 "GND" H 3700 1995 30  0000 C CNN
-F 2 "" H 3700 1885 70  0000 C CNN
-F 3 "" H 3700 1885 70  0000 C CNN
-	1    3700 1885
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3700 1385 3300 1385
-Wire Wire Line
-	3700 1485 3300 1485
-Wire Wire Line
-	3700 1685 3300 1685
-Wire Wire Line
-	3700 1885 3700 1685
-Wire Wire Line
-	3700 1285 3300 1285
-Wire Wire Line
-	3700 985  3700 1285
-$Comp
-L rysboard:PICO_BLADE_5 J?
-U 1 1 5EAE56C8
-P 3000 1500
-AR Path="/5EAE56C8" Ref="J?"  Part="1" 
-AR Path="/5EA6D11C/5EAE56C8" Ref="J2"  Part="1" 
-F 0 "J2" V 3492 1893 60  0000 R TNN
-F 1 "PICO_BLADE_5" V 2801 1893 60  0000 R TNN
-F 2 "" H 2801 1893 60  0000 C CNN
-F 3 "" H 2801 1893 60  0000 C CNN
-	1    3000 1500
-	1    0    0    -1  
-$EndComp
-Text Label 5200 1535 0    60   ~ 0
-SDA1
-Text Label 5200 1635 0    60   ~ 0
-SCL1
-Text Label 5200 1735 0    60   ~ 0
-O~D~
-$Comp
-L power:+3V3 #3V3_?
-U 1 1 5EB37087
-P 5600 1135
-AR Path="/5EB37087" Ref="#3V3_?"  Part="1" 
-AR Path="/5EA6D11C/5EB37087" Ref="#3V3_02"  Part="1" 
-F 0 "#3V3_02" H 5600 1135 20  0000 C CNN
-F 1 "3V3" H 5600 1065 30  0000 C CNN
-F 2 "" H 5600 1135 70  0000 C CNN
-F 3 "" H 5600 1135 70  0000 C CNN
-	1    5600 1135
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #GND_?
-U 1 1 5EB3708D
-P 5600 2035
-AR Path="/5EB3708D" Ref="#GND_?"  Part="1" 
-AR Path="/5EA6D11C/5EB3708D" Ref="#GND_04"  Part="1" 
-F 0 "#GND_04" H 5600 2175 20  0000 C CNN
-F 1 "GND" H 5600 2145 30  0000 C CNN
-F 2 "" H 5600 2035 70  0000 C CNN
-F 3 "" H 5600 2035 70  0000 C CNN
-	1    5600 2035
-	1    0    0    -1  
-$EndComp
-Text Label 5800 1635 0    60   ~ 0
-BUSY
-Text Label 5800 1735 0    60   ~ 0
-FLAG
-Wire Notes Line
-	2450 635  2450 2935
-Text Notes 4950 2800 0    108  ~ 0
-Złącze I2C IMU
-Text Notes 950  2800 0    108  ~ 0
-Złącze SPI
-Wire Notes Line
-	4275 610  4275 2910
-Text Notes 2750 2800 0    108  ~ 0
-Złącze I2C TEMP
-Wire Wire Line
-	5600 1535 5200 1535
-Wire Wire Line
-	5600 1635 5200 1635
-Wire Wire Line
-	5600 1735 5200 1735
-Wire Wire Line
-	5600 1835 5200 1835
-Wire Wire Line
-	5600 2035 5600 1835
-Wire Wire Line
-	6500 1735 6500 1535
-Wire Wire Line
-	5800 1735 6500 1735
-Wire Wire Line
-	6200 1635 6200 1535
-Wire Wire Line
-	5800 1635 6200 1635
-Wire Wire Line
-	6200 1135 6500 1135
-Wire Wire Line
-	5600 1135 6200 1135
-Wire Wire Line
-	5600 1435 5600 1135
-Wire Wire Line
-	5200 1435 5600 1435
-Connection ~ 5600 1135
-Connection ~ 6200 1135
-$Comp
-L rysboard:PICO_BLADE_5 J?
-U 1 1 5EB370A9
-P 4900 1625
-AR Path="/5EB370A9" Ref="J?"  Part="1" 
-AR Path="/5EA6D11C/5EB370A9" Ref="J3"  Part="1" 
-F 0 "J3" V 5392 2018 60  0000 R TNN
-F 1 "PICO_BLADE_5" V 4701 2018 60  0000 R TNN
-F 2 "" H 4701 2018 60  0000 C CNN
-F 3 "" H 4701 2018 60  0000 C CNN
-	1    4900 1625
-	1    0    0    -1  
-$EndComp
-$Comp
-L rysboard:R--rys_PCB-SchDoc-rescue-rysboard-rescue R?
-U 1 1 5EB370AF
-P 6500 1335
-AR Path="/5EB370AF" Ref="R?"  Part="1" 
-AR Path="/5EA6D11C/5EB370AF" Ref="R2"  Part="1" 
-F 0 "R2" V 6510 1285 60  0000 R TNN
-F 1 "10k" V 6410 1285 60  0000 R TNN
-F 2 "" H 6410 1285 60  0000 C CNN
-F 3 "" H 6410 1285 60  0000 C CNN
-	1    6500 1335
-	0    -1   -1   0   
-$EndComp
-$Comp
-L rysboard:R--rys_PCB-SchDoc-rescue-rysboard-rescue R?
-U 1 1 5EB370B5
-P 6200 1335
-AR Path="/5EB370B5" Ref="R?"  Part="1" 
-AR Path="/5EA6D11C/5EB370B5" Ref="R1"  Part="1" 
-F 0 "R1" V 6210 1285 60  0000 R TNN
-F 1 "10k" V 6110 1285 60  0000 R TNN
-F 2 "" H 6110 1285 60  0000 C CNN
-F 3 "" H 6110 1285 60  0000 C CNN
-	1    6200 1335
-	0    -1   -1   0   
-$EndComp
-Wire Notes Line
-	550  2935 11150 2935
-$Comp
-L power:+3V3 #3V3_04
-U 1 1 5EB6D7E4
-P 2450 3310
-F 0 "#3V3_04" H 2450 3310 20  0000 C CNN
-F 1 "3V3" H 2450 3240 30  0000 C CNN
-F 2 "" H 2450 3310 70  0000 C CNN
-F 3 "" H 2450 3310 70  0000 C CNN
-	1    2450 3310
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #GND_06
-U 1 1 5EB6D7EA
-P 2350 7410
-F 0 "#GND_06" H 2350 7550 20  0000 C CNN
-F 1 "GND" H 2350 7520 30  0000 C CNN
-F 2 "" H 2350 7410 70  0000 C CNN
-F 3 "" H 2350 7410 70  0000 C CNN
-	1    2350 7410
-	1    0    0    -1  
-$EndComp
-Text Label 1850 3510 0    60   ~ 0
-SDA
-Text Label 1850 5110 0    60   ~ 0
-SDA
-Text Label 1850 5910 0    60   ~ 0
-SDA
-Text Label 1850 6710 0    60   ~ 0
-SDA
-Text Label 1850 6810 0    60   ~ 0
-SCL
-Text Label 1850 6010 0    60   ~ 0
-SCL
-Text Label 1850 5210 0    60   ~ 0
-SCL
-Text Label 1850 3610 0    60   ~ 0
-SCL
-Text Label 1850 3710 0    60   ~ 0
-TOF0
-Text Label 1850 4510 0    60   ~ 0
-TOF1
-Text Label 1850 5310 0    60   ~ 0
-TOF2
-Text Label 1850 6110 0    60   ~ 0
-TOF3
-Text Label 1850 6910 0    60   ~ 0
-TOF4
-$Comp
-L power:+3V3 #3V3_05
-U 1 1 5EB6D7FD
-P 4350 3310
-F 0 "#3V3_05" H 4350 3310 20  0000 C CNN
-F 1 "3V3" H 4350 3240 30  0000 C CNN
-F 2 "" H 4350 3310 70  0000 C CNN
-F 3 "" H 4350 3310 70  0000 C CNN
-	1    4350 3310
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #GND_07
-U 1 1 5EB6D803
-P 4250 3935
-F 0 "#GND_07" H 4250 4075 20  0000 C CNN
-F 1 "GND" H 4250 4045 30  0000 C CNN
-F 2 "" H 4250 3935 70  0000 C CNN
-F 3 "" H 4250 3935 70  0000 C CNN
-	1    4250 3935
-	1    0    0    -1  
-$EndComp
-Text Label 3850 3510 0    60   ~ 0
-SDA
-Text Label 3850 3610 0    60   ~ 0
-SCL
-Text Label 3850 3710 0    60   ~ 0
-TOF5
-Text Label 1850 4310 0    60   ~ 0
-SDA
-Text Label 1850 4410 0    60   ~ 0
-SCL
-Text Notes 4675 4900 0    108  ~ 0
-Złącze I2C ToF 6x
-Wire Wire Line
-	2250 3510 1850 3510
-Wire Wire Line
-	2250 5110 1850 5110
-Wire Wire Line
-	2250 5910 1850 5910
-Wire Wire Line
-	2450 6610 1850 6610
-Wire Wire Line
-	2450 5810 2450 6610
-Wire Wire Line
-	2250 6710 1850 6710
-Wire Wire Line
-	2350 4610 2350 3810
-Wire Wire Line
-	2350 7410 2350 7010
-Wire Wire Line
-	2350 6210 2350 5410
-Wire Wire Line
-	2350 5410 2350 4610
-Wire Wire Line
-	2350 6210 2350 7010
-Wire Wire Line
-	2450 5810 1850 5810
-Wire Wire Line
-	2450 5010 2450 5810
-Wire Wire Line
-	4150 3510 3850 3510
-Wire Wire Line
-	2450 4210 1850 4210
-Wire Wire Line
-	2250 4310 1850 4310
-Wire Wire Line
-	2450 3410 1850 3410
-Wire Wire Line
-	4350 3410 3850 3410
-Wire Wire Line
-	2450 5010 1850 5010
-Wire Wire Line
-	2450 4210 2450 5010
-Wire Wire Line
-	2450 3410 2450 4210
-Wire Wire Line
-	2450 3310 2450 3410
-Wire Wire Line
-	4350 3310 4350 3410
-Connection ~ 2350 7010
-Connection ~ 2350 6210
-Connection ~ 2350 5410
-Connection ~ 2350 4610
-Connection ~ 2450 5810
-Connection ~ 2450 5010
-Connection ~ 2450 4210
-Connection ~ 2450 3410
-$Comp
-L rysboard:PICO_BLADE_5 J6
-U 1 1 5EB6D88F
-P 3550 3610
-F 0 "J6" V 4042 4003 60  0000 R TNN
-F 1 "PICO_BLADE_5" V 3351 4003 60  0000 R TNN
-F 2 "" H 3351 4003 60  0000 C CNN
-F 3 "" H 3351 4003 60  0000 C CNN
-	1    3550 3610
-	1    0    0    -1  
-$EndComp
-$Comp
-L rysboard:PICO_BLADE_5 J11
-U 1 1 5EB6D883
-P 1550 6010
-F 0 "J11" V 2042 6403 60  0000 R TNN
-F 1 "PICO_BLADE_5" V 1351 6403 60  0000 R TNN
-F 2 "" H 1351 6403 60  0000 C CNN
-F 3 "" H 1351 6403 60  0000 C CNN
-	1    1550 6010
-	1    0    0    -1  
-$EndComp
-$Comp
-L rysboard:PICO_BLADE_5 J9
-U 1 1 5EB6D87D
-P 1550 5210
-F 0 "J9" V 2042 5603 60  0000 R TNN
-F 1 "PICO_BLADE_5" V 1351 5603 60  0000 R TNN
-F 2 "" H 1351 5603 60  0000 C CNN
-F 3 "" H 1351 5603 60  0000 C CNN
-	1    1550 5210
-	1    0    0    -1  
-$EndComp
-$Comp
-L rysboard:PICO_BLADE_5 J7
-U 1 1 5EB6D877
-P 1550 4410
-F 0 "J7" V 2042 4803 60  0000 R TNN
-F 1 "PICO_BLADE_5" V 1351 4803 60  0000 R TNN
-F 2 "" H 1351 4803 60  0000 C CNN
-F 3 "" H 1351 4803 60  0000 C CNN
-	1    1550 4410
-	1    0    0    -1  
-$EndComp
-$Comp
-L rysboard:PICO_BLADE_5 J5
+L Connector_Generic:Conn_01x05 J8
 U 1 1 5EB6D871
-P 1550 3610
-F 0 "J5" V 2042 4003 60  0000 R TNN
-F 1 "PICO_BLADE_5" V 1351 4003 60  0000 R TNN
-F 2 "" H 1351 4003 60  0000 C CNN
-F 3 "" H 1351 4003 60  0000 C CNN
-	1    1550 3610
+P 1775 1775
+F 0 "J8" H 1775 1475 50  0000 C CNN
+F 1 "ToF1" H 1775 2075 50  0000 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53047-0510_1x05_P1.25mm_Vertical" H 1775 1775 50  0001 C CNN
+F 3 "~" H 1775 1775 50  0001 C CNN
+	1    1775 1775
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1975 1575 2175 1575
+Wire Wire Line
+	2175 1575 2175 1525
+$Comp
+L power:+3V3 #PWR024
+U 1 1 5ED4B7A8
+P 2175 1525
+F 0 "#PWR024" H 2175 1375 50  0001 C CNN
+F 1 "+3V3" H 2190 1698 50  0000 C CNN
+F 2 "" H 2175 1525 50  0001 C CNN
+F 3 "" H 2175 1525 50  0001 C CNN
+	1    2175 1525
 	1    0    0    -1  
 $EndComp
 $Comp
-L rysboard:PICO_BLADE_5 J13
-U 1 1 5EB6D889
-P 1550 6810
-F 0 "J13" V 2042 7203 60  0000 R TNN
-F 1 "PICO_BLADE_5" V 1351 7203 60  0000 R TNN
-F 2 "" H 1351 7203 60  0000 C CNN
-F 3 "" H 1351 7203 60  0000 C CNN
-	1    1550 6810
+L Connector_Generic:Conn_01x05 J9
+U 1 1 5ED64AFD
+P 1775 2500
+F 0 "J9" H 1775 2200 50  0000 C CNN
+F 1 "ToF2" H 1775 2800 50  0000 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53047-0510_1x05_P1.25mm_Vertical" H 1775 2500 50  0001 C CNN
+F 3 "~" H 1775 2500 50  0001 C CNN
+	1    1775 2500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1975 2300 2175 2300
+$Comp
+L Connector_Generic:Conn_01x05 J10
+U 1 1 5ED67D31
+P 1775 3225
+F 0 "J10" H 1775 2925 50  0000 C CNN
+F 1 "ToF3" H 1775 3525 50  0000 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53047-0510_1x05_P1.25mm_Vertical" H 1775 3225 50  0001 C CNN
+F 3 "~" H 1775 3225 50  0001 C CNN
+	1    1775 3225
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1975 3025 2175 3025
+$Comp
+L Connector_Generic:Conn_01x05 J11
+U 1 1 5ED92371
+P 1775 3950
+F 0 "J11" H 1775 3650 50  0000 C CNN
+F 1 "ToF4" H 1775 4250 50  0000 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53047-0510_1x05_P1.25mm_Vertical" H 1775 3950 50  0001 C CNN
+F 3 "~" H 1775 3950 50  0001 C CNN
+	1    1775 3950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1975 3750 2175 3750
+$Comp
+L Connector_Generic:Conn_01x05 J12
+U 1 1 5ED92385
+P 1775 4675
+F 0 "J12" H 1775 4375 50  0000 C CNN
+F 1 "ToF5" H 1775 4975 50  0000 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53047-0510_1x05_P1.25mm_Vertical" H 1775 4675 50  0001 C CNN
+F 3 "~" H 1775 4675 50  0001 C CNN
+	1    1775 4675
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1975 4475 2175 4475
+$Comp
+L Connector_Generic:Conn_01x05 J13
+U 1 1 5ED92399
+P 1775 5400
+F 0 "J13" H 1775 5100 50  0000 C CNN
+F 1 "ToF6" H 1775 5700 50  0000 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53047-0510_1x05_P1.25mm_Vertical" H 1775 5400 50  0001 C CNN
+F 3 "~" H 1775 5400 50  0001 C CNN
+	1    1775 5400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1975 5200 2175 5200
+Wire Wire Line
+	2175 4475 2175 5200
+Connection ~ 2175 4475
+Wire Wire Line
+	2175 3750 2175 4475
+Connection ~ 2175 3750
+Wire Wire Line
+	2175 3025 2175 3750
+Connection ~ 2175 3025
+Wire Wire Line
+	2175 2300 2175 3025
+Connection ~ 2175 2300
+Wire Wire Line
+	2175 1575 2175 2300
+Connection ~ 2175 1575
+Wire Wire Line
+	1975 5600 2125 5600
+Wire Wire Line
+	2125 5600 2125 5750
+$Comp
+L power:GND #PWR023
+U 1 1 5EDB83B4
+P 2125 5750
+F 0 "#PWR023" H 2125 5500 50  0001 C CNN
+F 1 "GND" H 2130 5577 50  0000 C CNN
+F 2 "" H 2125 5750 50  0001 C CNN
+F 3 "" H 2125 5750 50  0001 C CNN
+	1    2125 5750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1850 3610 2250 3610
+	1975 4875 2125 4875
 Wire Wire Line
-	1850 3710 2250 3710
+	2125 4875 2125 5600
+Connection ~ 2125 5600
 Wire Wire Line
-	1850 4410 2250 4410
+	1975 4150 2125 4150
 Wire Wire Line
-	1850 4510 2250 4510
+	2125 4150 2125 4875
+Connection ~ 2125 4875
 Wire Wire Line
-	1850 5210 2250 5210
+	1975 3425 2125 3425
 Wire Wire Line
-	1850 5310 2250 5310
+	2125 3425 2125 4150
+Connection ~ 2125 4150
 Wire Wire Line
-	1850 6110 2250 6110
+	1975 2700 2125 2700
 Wire Wire Line
-	1850 6010 2250 6010
+	2125 2700 2125 3425
+Connection ~ 2125 3425
 Wire Wire Line
-	1850 6810 2250 6810
+	1975 1975 2125 1975
 Wire Wire Line
-	1850 6910 2250 6910
+	2125 1975 2125 2700
+Connection ~ 2125 2700
+Text HLabel 2325 5500 2    50   Input ~ 0
+TOF6_EN
 Wire Wire Line
-	1850 3810 2350 3810
+	1975 5500 2325 5500
 Wire Wire Line
-	1850 4610 2350 4610
+	1975 5400 2275 5400
 Wire Wire Line
-	1850 5410 2350 5410
+	1975 5300 2225 5300
+Text HLabel 2325 4775 2    50   Input ~ 0
+TOF5_EN
 Wire Wire Line
-	1850 7010 2350 7010
+	1975 4775 2325 4775
 Wire Wire Line
-	1850 6210 2350 6210
+	1975 4675 2275 4675
 Wire Wire Line
-	3850 3610 4150 3610
+	1975 4575 2225 4575
+Text HLabel 2325 4050 2    50   Input ~ 0
+TOF4_EN
 Wire Wire Line
-	3850 3710 4150 3710
+	1975 4050 2325 4050
 Wire Wire Line
-	3850 3810 4250 3810
+	1975 3950 2275 3950
 Wire Wire Line
-	4250 3810 4250 3935
+	1975 3850 2225 3850
+Wire Wire Line
+	1975 3325 2325 3325
+Wire Wire Line
+	1975 3225 2275 3225
+Wire Wire Line
+	1975 3125 2225 3125
+Text HLabel 2325 2600 2    50   Input ~ 0
+TOF2_EN
+Wire Wire Line
+	1975 2600 2325 2600
+Wire Wire Line
+	1975 2500 2275 2500
+Wire Wire Line
+	1975 2400 2225 2400
+Text HLabel 2325 1875 2    50   Input ~ 0
+TOF1_EN
+Text HLabel 2325 1775 2    50   Input ~ 0
+I2C1_CLK
+Text HLabel 2325 1675 2    50   BiDi ~ 0
+I2C1_SDA
+Wire Wire Line
+	1975 1875 2325 1875
+Wire Wire Line
+	1975 1775 2275 1775
+Wire Wire Line
+	1975 1675 2225 1675
+Wire Wire Line
+	2225 5300 2225 4575
+Connection ~ 2225 4575
+Wire Wire Line
+	2225 4575 2225 3850
+Connection ~ 2225 3850
+Wire Wire Line
+	2225 3850 2225 3125
+Connection ~ 2225 3125
+Wire Wire Line
+	2225 2400 2225 3125
+Connection ~ 2225 2400
+Wire Wire Line
+	2225 2400 2225 1675
+Connection ~ 2225 1675
+Wire Wire Line
+	2225 1675 2325 1675
+Wire Wire Line
+	2275 1775 2275 2500
+Connection ~ 2275 1775
+Wire Wire Line
+	2275 1775 2325 1775
+Connection ~ 2275 2500
+Wire Wire Line
+	2275 2500 2275 3225
+Connection ~ 2275 3225
+Wire Wire Line
+	2275 3225 2275 3950
+Connection ~ 2275 3950
+Wire Wire Line
+	2275 4675 2275 3950
+Connection ~ 2275 4675
+Wire Wire Line
+	2275 4675 2275 5400
+Text HLabel 2325 3325 2    50   Input ~ 0
+TOF3_EN
+$Comp
+L Connector_Generic:Conn_01x07 J14
+U 1 1 5EE60C8D
+P 5550 1850
+F 0 "J14" H 5550 1450 50  0000 C CNN
+F 1 "SPI" H 5550 2250 50  0000 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53047-0710_1x07_P1.25mm_Vertical" H 5550 1850 50  0001 C CNN
+F 3 "~" H 5550 1850 50  0001 C CNN
+	1    5550 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR025
+U 1 1 5EE65D43
+P 5800 1500
+F 0 "#PWR025" H 5800 1350 50  0001 C CNN
+F 1 "+3V3" H 5815 1673 50  0000 C CNN
+F 2 "" H 5800 1500 50  0001 C CNN
+F 3 "" H 5800 1500 50  0001 C CNN
+	1    5800 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR026
+U 1 1 5EE683DA
+P 5800 2200
+F 0 "#PWR026" H 5800 1950 50  0001 C CNN
+F 1 "GND" H 5805 2027 50  0000 C CNN
+F 2 "" H 5800 2200 50  0001 C CNN
+F 3 "" H 5800 2200 50  0001 C CNN
+	1    5800 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 2200 5800 2150
+Wire Wire Line
+	5800 2150 5750 2150
+Wire Wire Line
+	5750 1550 5800 1550
+Wire Wire Line
+	5800 1550 5800 1500
+Wire Wire Line
+	5750 2050 5850 2050
+Wire Wire Line
+	5750 1950 5850 1950
+Wire Wire Line
+	5750 1850 5850 1850
+Wire Wire Line
+	5750 1750 5850 1750
+Wire Wire Line
+	5750 1650 5850 1650
+Text HLabel 5850 1650 2    50   Input ~ 0
+SPI_MOSI
+Text HLabel 5850 1750 2    50   Output ~ 0
+SPI_MISO
+Text HLabel 5850 1850 2    50   Input ~ 0
+SPI_CLK
+Text HLabel 5850 1950 2    50   Input ~ 0
+SPI_CS
+Text HLabel 5850 2050 2    50   Output ~ 0
+SPI_IRQ
+$Comp
+L Connector_Generic:Conn_01x05 J15
+U 1 1 5EE7DCB5
+P 5550 4000
+F 0 "J15" H 5550 3700 50  0000 C CNN
+F 1 "Temp" H 5550 4300 50  0000 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53047-0510_1x05_P1.25mm_Vertical" H 5550 4000 50  0001 C CNN
+F 3 "~" H 5550 4000 50  0001 C CNN
+	1    5550 4000
+	-1   0    0    1   
+$EndComp
+Text HLabel 5850 4000 2    50   Input ~ 0
+I2C2_CLK
+Text HLabel 5850 3900 2    50   BiDi ~ 0
+I2C2_SDA
+$Comp
+L power:+3V3 #PWR027
+U 1 1 5EE81C29
+P 5800 3750
+F 0 "#PWR027" H 5800 3600 50  0001 C CNN
+F 1 "+3V3" H 5815 3923 50  0000 C CNN
+F 2 "" H 5800 3750 50  0001 C CNN
+F 3 "" H 5800 3750 50  0001 C CNN
+	1    5800 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3800 5800 3800
+Wire Wire Line
+	5800 3800 5800 3750
+$Comp
+L power:GND #PWR028
+U 1 1 5EE83D16
+P 5800 4250
+F 0 "#PWR028" H 5800 4000 50  0001 C CNN
+F 1 "GND" H 5805 4077 50  0000 C CNN
+F 2 "" H 5800 4250 50  0001 C CNN
+F 3 "" H 5800 4250 50  0001 C CNN
+	1    5800 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 4250 5800 4200
+Wire Wire Line
+	5800 4200 5750 4200
+Wire Wire Line
+	5750 4000 5850 4000
+Wire Wire Line
+	5750 3900 5850 3900
+NoConn ~ 5750 4100
+Text Notes 5075 6675 0    100  ~ 0
+I2C IMU connector
+$Comp
+L Connector_Generic:Conn_01x05 J16
+U 1 1 5EE95D68
+P 5550 6000
+F 0 "J16" H 5550 5700 50  0000 C CNN
+F 1 "IMU" H 5550 6300 50  0000 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53047-0510_1x05_P1.25mm_Vertical" H 5550 6000 50  0001 C CNN
+F 3 "~" H 5550 6000 50  0001 C CNN
+	1    5550 6000
+	-1   0    0    1   
+$EndComp
+Text HLabel 5850 6000 2    50   Input ~ 0
+I2C2_CLK
+Text HLabel 5850 5900 2    50   BiDi ~ 0
+I2C2_SDA
+$Comp
+L power:+3V3 #PWR029
+U 1 1 5EE95D70
+P 5800 5750
+F 0 "#PWR029" H 5800 5600 50  0001 C CNN
+F 1 "+3V3" H 5815 5923 50  0000 C CNN
+F 2 "" H 5800 5750 50  0001 C CNN
+F 3 "" H 5800 5750 50  0001 C CNN
+	1    5800 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 5800 5800 5800
+Wire Wire Line
+	5800 5800 5800 5750
+$Comp
+L power:GND #PWR030
+U 1 1 5EE95D78
+P 5800 6250
+F 0 "#PWR030" H 5800 6000 50  0001 C CNN
+F 1 "GND" H 5805 6077 50  0000 C CNN
+F 2 "" H 5800 6250 50  0001 C CNN
+F 3 "" H 5800 6250 50  0001 C CNN
+	1    5800 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 6250 5800 6200
+Wire Wire Line
+	5800 6200 5750 6200
+Wire Wire Line
+	5750 6000 5850 6000
+Wire Wire Line
+	5750 5900 5850 5900
+Wire Wire Line
+	5750 6100 5850 6100
+Text HLabel 5850 6100 2    50   Output ~ 0
+IMU_IRQ
 $EndSCHEMATC
