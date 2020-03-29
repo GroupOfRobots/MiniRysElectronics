@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name rysboard-rescue)(type Legacy)(uri ${KIPRJMOD}/rysboard-rescue.lib)(options "")(descr ""))
-)
