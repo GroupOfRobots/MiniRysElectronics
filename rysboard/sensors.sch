@@ -115,10 +115,6 @@ Wire Wire Line
 Connection ~ 2175 4475
 Wire Wire Line
 	2175 3750 2175 4475
-Connection ~ 2175 3750
-Wire Wire Line
-	2175 3025 2175 3750
-Connection ~ 2175 3025
 Wire Wire Line
 	2175 2300 2175 3025
 Connection ~ 2175 2300
@@ -153,13 +149,9 @@ Connection ~ 2125 4875
 Wire Wire Line
 	1975 3425 2125 3425
 Wire Wire Line
-	2125 3425 2125 4150
-Connection ~ 2125 4150
-Wire Wire Line
 	1975 2700 2125 2700
 Wire Wire Line
 	2125 2700 2125 3425
-Connection ~ 2125 3425
 Wire Wire Line
 	1975 1975 2125 1975
 Wire Wire Line
@@ -206,9 +198,9 @@ Wire Wire Line
 Text HLabel 2325 1875 2    50   Input ~ 0
 TOF1_EN
 Text HLabel 2325 1775 2    50   Input ~ 0
-I2C1_CLK
+I2C_SCL_TOF0
 Text HLabel 2325 1675 2    50   BiDi ~ 0
-I2C1_SDA
+I2C_SDA_TOF0
 Wire Wire Line
 	1975 1875 2325 1875
 Wire Wire Line
@@ -220,10 +212,6 @@ Wire Wire Line
 Connection ~ 2225 4575
 Wire Wire Line
 	2225 4575 2225 3850
-Connection ~ 2225 3850
-Wire Wire Line
-	2225 3850 2225 3125
-Connection ~ 2225 3125
 Wire Wire Line
 	2225 2400 2225 3125
 Connection ~ 2225 2400
@@ -240,10 +228,6 @@ Wire Wire Line
 Connection ~ 2275 2500
 Wire Wire Line
 	2275 2500 2275 3225
-Connection ~ 2275 3225
-Wire Wire Line
-	2275 3225 2275 3950
-Connection ~ 2275 3950
 Wire Wire Line
 	2275 4675 2275 3950
 Connection ~ 2275 4675
@@ -324,9 +308,9 @@ F 3 "~" H 5550 4000 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text HLabel 5850 4000 2    50   Input ~ 0
-I2C2_CLK
+I2C_SCL_TIMU
 Text HLabel 5850 3900 2    50   BiDi ~ 0
-I2C2_SDA
+I2C_SDA_TIMU
 $Comp
 L power:+3V3 #PWR027
 U 1 1 5EE81C29
@@ -376,9 +360,9 @@ F 3 "~" H 5550 6000 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text HLabel 5850 6000 2    50   Input ~ 0
-I2C2_CLK
+I2C_SCL_TIMU
 Text HLabel 5850 5900 2    50   BiDi ~ 0
-I2C2_SDA
+I2C_SDA_TIMU
 $Comp
 L power:+3V3 #PWR029
 U 1 1 5EE95D70
@@ -413,8 +397,29 @@ Wire Wire Line
 	5750 6000 5850 6000
 Wire Wire Line
 	5750 5900 5850 5900
+Text HLabel 2325 3950 2    50   Input ~ 0
+I2C_SCL_TOF1
+Text HLabel 2325 3850 2    50   BiDi ~ 0
+I2C_SDA_TOF1
+$Comp
+L power:+3V3 #PWR0109
+U 1 1 5E9EC114
+P 2175 3700
+F 0 "#PWR0109" H 2175 3550 50  0001 C CNN
+F 1 "+3V3" H 2190 3873 50  0000 C CNN
+F 2 "" H 2175 3700 50  0001 C CNN
+F 3 "" H 2175 3700 50  0001 C CNN
+	1    2175 3700
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	5750 6100 5850 6100
-Text HLabel 5850 6100 2    50   Output ~ 0
-IMU_IRQ
+	2175 3750 2175 3700
+Connection ~ 2175 3750
+Wire Wire Line
+	2225 3850 2325 3850
+Connection ~ 2225 3850
+Wire Wire Line
+	2275 3950 2325 3950
+Connection ~ 2275 3950
+NoConn ~ 5750 6100
 $EndSCHEMATC
