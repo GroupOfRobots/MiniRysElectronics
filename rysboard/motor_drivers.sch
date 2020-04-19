@@ -70,15 +70,13 @@ Wire Wire Line
 	2350 3500 2450 3500
 Connection ~ 2350 3600
 Text HLabel 4050 3200 2    50   Output ~ 0
-~FLAG
+~FLAG_1
 Text HLabel 4050 3300 2    50   Output ~ 0
-~BUSY
+~BUSY_1
 Text HLabel 4050 2600 2    50   Input ~ 0
 ~SPI_CS
 Text HLabel 4050 2700 2    50   Input ~ 0
 SPI_CLK
-Text HLabel 4050 2800 2    50   Output ~ 0
-SPI_MISO
 Text HLabel 4050 2900 2    50   Input ~ 0
 SPI_MOSI
 $Comp
@@ -248,16 +246,16 @@ $EndComp
 $Comp
 L power:+3V3 #PWR08
 U 1 1 5E813E65
-P 3175 5800
-F 0 "#PWR08" H 3175 5650 50  0001 C CNN
-F 1 "+3V3" H 3190 5973 50  0000 C CNN
-F 2 "" H 3175 5800 50  0001 C CNN
-F 3 "" H 3175 5800 50  0001 C CNN
-	1    3175 5800
+P 3325 5800
+F 0 "#PWR08" H 3325 5650 50  0001 C CNN
+F 1 "+3V3" H 3340 5973 50  0000 C CNN
+F 2 "" H 3325 5800 50  0001 C CNN
+F 3 "" H 3325 5800 50  0001 C CNN
+	1    3325 5800
 	1    0    0    -1  
 $EndComp
 Text HLabel 3325 6250 3    50   Output ~ 0
-~BUSY
+~BUSY_1
 Text HLabel 3025 6250 3    50   Input ~ 0
 ~STBY
 $Comp
@@ -283,17 +281,12 @@ F 3 "" H 3235 5950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3025 5850 3175 5850
-Wire Wire Line
-	3175 5850 3175 5800
-Wire Wire Line
-	3325 5850 3175 5850
-Connection ~ 3175 5850
+	3325 5850 3325 5800
 Wire Wire Line
 	3325 6150 3325 6250
 Wire Wire Line
 	3025 6150 3025 6250
-Text Notes 2250 6650 0    50   ~ 0
+Text Notes 2375 6700 0    50   ~ 0
 Pull-ups for STANDBY and BUSY flags (active low)
 $Comp
 L rysboard:ST_L6470_HTSSOP28 U1
@@ -469,17 +462,15 @@ Wire Wire Line
 	6850 3500 6950 3500
 Connection ~ 6850 3600
 Text HLabel 8550 3200 2    50   Output ~ 0
-~FLAG
+~FLAG_2
 Text HLabel 8550 3300 2    50   Output ~ 0
-~BUSY
+~BUSY_2
 Text HLabel 8550 2600 2    50   Input ~ 0
 ~SPI_CS
 Text HLabel 8550 2700 2    50   Input ~ 0
 SPI_CLK
 Text HLabel 8550 2800 2    50   Output ~ 0
 SPI_MISO
-Text HLabel 8550 2900 2    50   Input ~ 0
-SPI_MOSI
 $Comp
 L Device:R R5
 U 1 1 5EAE3CD2
@@ -761,4 +752,32 @@ Wire Wire Line
 NoConn ~ 8550 3500
 NoConn ~ 8550 3600
 NoConn ~ 8550 3700
+Wire Wire Line
+	4050 2800 4500 2800
+Text Label 4500 2800 2    50   ~ 0
+SPI_BRIDGE
+Wire Wire Line
+	8550 2900 9000 2900
+Text Label 9000 2900 2    50   ~ 0
+SPI_BRIDGE
+Text HLabel 3625 6250 3    50   Output ~ 0
+~BUSY_2
+$Comp
+L Device:R R26
+U 1 1 5ECB66DC
+P 3625 6000
+F 0 "R26" H 3675 6035 60  0000 L BNN
+F 1 "10k" H 3675 5910 60  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3535 5950 60  0001 C CNN
+F 3 "" H 3535 5950 60  0000 C CNN
+	1    3625 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3625 6150 3625 6250
+Wire Wire Line
+	3325 5850 3625 5850
+Connection ~ 3325 5850
+Wire Wire Line
+	3025 5850 3325 5850
 $EndSCHEMATC
