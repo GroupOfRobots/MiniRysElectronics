@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 4 4
 Title "rysboard"
 Date "2020-03-29"
 Rev "4.2"
@@ -69,10 +69,6 @@ Wire Wire Line
 Wire Wire Line
 	2350 3500 2450 3500
 Connection ~ 2350 3600
-Text HLabel 4050 3200 2    50   Output ~ 0
-~FLAG_1
-Text HLabel 4050 3300 2    50   Output ~ 0
-~BUSY_1
 Text HLabel 4050 2600 2    50   Input ~ 0
 ~SPI_CS
 Text HLabel 4050 2700 2    50   Input ~ 0
@@ -246,48 +242,46 @@ $EndComp
 $Comp
 L power:+3V3 #PWR08
 U 1 1 5E813E65
-P 3325 5800
-F 0 "#PWR08" H 3325 5650 50  0001 C CNN
-F 1 "+3V3" H 3340 5973 50  0000 C CNN
-F 2 "" H 3325 5800 50  0001 C CNN
-F 3 "" H 3325 5800 50  0001 C CNN
-	1    3325 5800
+P 2075 5925
+F 0 "#PWR08" H 2075 5775 50  0001 C CNN
+F 1 "+3V3" H 2090 6098 50  0000 C CNN
+F 2 "" H 2075 5925 50  0001 C CNN
+F 3 "" H 2075 5925 50  0001 C CNN
+	1    2075 5925
 	1    0    0    -1  
 $EndComp
-Text HLabel 3325 6250 3    50   Output ~ 0
-~BUSY_1
-Text HLabel 3025 6250 3    50   Input ~ 0
+Text HLabel 1475 6325 3    50   Input ~ 0
 ~STBY
 $Comp
 L Device:R R1
 U 1 1 5E81E277
-P 3025 6000
-F 0 "R1" H 3075 6035 60  0000 L BNN
-F 1 "10k" H 3075 5910 60  0000 L BNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2935 5950 60  0001 C CNN
-F 3 "" H 2935 5950 60  0000 C CNN
-	1    3025 6000
+P 1475 6125
+F 0 "R1" H 1525 6160 60  0000 L BNN
+F 1 "40k" H 1525 6035 60  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1385 6075 60  0001 C CNN
+F 3 "" H 1385 6075 60  0000 C CNN
+	1    1475 6125
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R2
 U 1 1 5E829DAD
-P 3325 6000
-F 0 "R2" H 3375 6035 60  0000 L BNN
-F 1 "10k" H 3375 5910 60  0000 L BNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 3235 5950 60  0001 C CNN
-F 3 "" H 3235 5950 60  0000 C CNN
-	1    3325 6000
+P 1775 6125
+F 0 "R2" H 1825 6160 60  0000 L BNN
+F 1 "40k" H 1825 6035 60  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1685 6075 60  0001 C CNN
+F 3 "" H 1685 6075 60  0000 C CNN
+	1    1775 6125
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3325 5850 3325 5800
+	2075 5975 2075 5925
 Wire Wire Line
-	3325 6150 3325 6250
+	1775 6275 1775 6575
 Wire Wire Line
-	3025 6150 3025 6250
-Text Notes 2375 6700 0    50   ~ 0
-Pull-ups for STANDBY and BUSY flags (active low)
+	1475 6275 1475 6325
+Text Notes 975  6725 0    50   ~ 0
+Pull-ups for ~STANDBY~, ~BUSY~ and ~FLAG~ flags (active low)
 $Comp
 L rysboard:ST_L6470_HTSSOP28 U1
 U 1 1 5EB9B7B6
@@ -461,10 +455,6 @@ Wire Wire Line
 Wire Wire Line
 	6850 3500 6950 3500
 Connection ~ 6850 3600
-Text HLabel 8550 3200 2    50   Output ~ 0
-~FLAG_2
-Text HLabel 8550 3300 2    50   Output ~ 0
-~BUSY_2
 Text HLabel 8550 2600 2    50   Input ~ 0
 ~SPI_CS
 Text HLabel 8550 2700 2    50   Input ~ 0
@@ -753,31 +743,224 @@ NoConn ~ 8550 3500
 NoConn ~ 8550 3600
 NoConn ~ 8550 3700
 Wire Wire Line
-	4050 2800 4500 2800
-Text Label 4500 2800 2    50   ~ 0
+	4050 2800 4575 2800
+Text Label 4575 2800 2    50   ~ 0
 SPI_BRIDGE
 Wire Wire Line
-	8550 2900 9000 2900
-Text Label 9000 2900 2    50   ~ 0
+	8550 2900 9075 2900
+Text Label 9075 2900 2    50   ~ 0
 SPI_BRIDGE
-Text HLabel 3625 6250 3    50   Output ~ 0
-~BUSY_2
+Wire Wire Line
+	2075 6275 2075 6575
+Wire Wire Line
+	1775 5975 2075 5975
+Connection ~ 1775 5975
+Wire Wire Line
+	1475 5975 1775 5975
 $Comp
 L Device:R R26
 U 1 1 5ECB66DC
-P 3625 6000
-F 0 "R26" H 3675 6035 60  0000 L BNN
-F 1 "10k" H 3675 5910 60  0000 L BNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 3535 5950 60  0001 C CNN
-F 3 "" H 3535 5950 60  0000 C CNN
-	1    3625 6000
+P 2075 6125
+F 0 "R26" H 2125 6160 60  0000 L BNN
+F 1 "40k" H 2125 6035 60  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1985 6075 60  0001 C CNN
+F 3 "" H 1985 6075 60  0000 C CNN
+	1    2075 6125
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3625 6150 3625 6250
+	8550 3200 9075 3200
 Wire Wire Line
-	3325 5850 3625 5850
-Connection ~ 3325 5850
+	8550 3300 9075 3300
+Text Label 9075 3300 2    50   ~ 0
+~BUSY_2
+Text Label 9075 3200 2    50   ~ 0
+~FLAG_2
 Wire Wire Line
-	3025 5850 3325 5850
+	4050 3200 4575 3200
+Wire Wire Line
+	4050 3300 4575 3300
+Text Label 4575 3300 2    50   ~ 0
+~BUSY_1
+Text Label 4575 3200 2    50   ~ 0
+~FLAG_1
+$Comp
+L Device:R R28
+U 1 1 5ECCFFE4
+P 2375 6125
+F 0 "R28" H 2425 6160 60  0000 L BNN
+F 1 "40k" H 2425 6035 60  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2285 6075 60  0001 C CNN
+F 3 "" H 2285 6075 60  0000 C CNN
+	1    2375 6125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2375 6275 2375 6575
+Wire Wire Line
+	2675 6275 2675 6575
+$Comp
+L Device:R R29
+U 1 1 5ECCFFEC
+P 2675 6125
+F 0 "R29" H 2725 6160 60  0000 L BNN
+F 1 "40k" H 2725 6035 60  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2585 6075 60  0001 C CNN
+F 3 "" H 2585 6075 60  0000 C CNN
+	1    2675 6125
+	1    0    0    -1  
+$EndComp
+Connection ~ 2075 5975
+Wire Wire Line
+	2075 5975 2375 5975
+Wire Wire Line
+	2375 5975 2675 5975
+Connection ~ 2375 5975
+Text Label 1775 6575 1    50   ~ 0
+~BUSY_1
+Text Label 2375 6575 1    50   ~ 0
+~FLAG_1
+Text Label 2075 6575 1    50   ~ 0
+~BUSY_2
+Text Label 2675 6575 1    50   ~ 0
+~FLAG_2
+Text Notes 3100 4150 0    50   ~ 0
+Motor 1
+Text Notes 7575 4150 0    50   ~ 0
+Motor 2
+$Comp
+L power:GND #PWR022
+U 1 1 5EDBA6E6
+P 5825 6475
+F 0 "#PWR022" H 5825 6225 50  0001 C CNN
+F 1 "GND" H 5830 6302 50  0000 C CNN
+F 2 "" H 5825 6475 50  0001 C CNN
+F 3 "" H 5825 6475 50  0001 C CNN
+	1    5825 6475
+	1    0    0    -1  
+$EndComp
+Connection ~ 5825 6425
+Wire Wire Line
+	5825 6425 5825 6475
+Connection ~ 5825 6225
+Wire Wire Line
+	5825 6425 5875 6425
+Wire Wire Line
+	5825 6225 5825 6425
+Connection ~ 5825 6075
+Wire Wire Line
+	5825 6225 5875 6225
+Wire Wire Line
+	5825 6075 5825 6225
+Wire Wire Line
+	5825 6075 5875 6075
+Wire Wire Line
+	5825 5875 5825 6075
+Wire Wire Line
+	5875 5875 5825 5875
+Text Notes 4650 7075 0    50   ~ 0
+Quad-NAND for output flags (2 unused)
+Text Label 3925 5950 0    50   ~ 0
+~FLAG_2
+Text Label 3925 6525 0    50   ~ 0
+~BUSY_2
+Wire Wire Line
+	4225 6525 3925 6525
+Wire Wire Line
+	4225 5950 3925 5950
+Text Label 3925 5750 0    50   ~ 0
+~FLAG_1
+Text Label 3925 6325 0    50   ~ 0
+~BUSY_1
+Wire Wire Line
+	4225 6325 3925 6325
+Wire Wire Line
+	4225 5750 3925 5750
+NoConn ~ 6475 5975
+NoConn ~ 6475 6325
+Wire Wire Line
+	5400 6700 5400 6650
+$Comp
+L power:GND #PWR021
+U 1 1 5EC696A7
+P 5400 6700
+F 0 "#PWR021" H 5400 6450 50  0001 C CNN
+F 1 "GND" H 5405 6527 50  0000 C CNN
+F 2 "" H 5400 6700 50  0001 C CNN
+F 3 "" H 5400 6700 50  0001 C CNN
+	1    5400 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 5600 5400 5650
+$Comp
+L power:+3V3 #PWR019
+U 1 1 5EC5D3A7
+P 5400 5600
+F 0 "#PWR019" H 5400 5450 50  0001 C CNN
+F 1 "+3V3" H 5415 5773 50  0000 C CNN
+F 2 "" H 5400 5600 50  0001 C CNN
+F 3 "" H 5400 5600 50  0001 C CNN
+	1    5400 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC00 U5
+U 5 1 5EC2B932
+P 5400 6150
+F 0 "U5" H 5450 6575 50  0000 L CNN
+F 1 "74HC00" H 5450 6500 50  0000 L CNN
+F 2 "" H 5400 6150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 5400 6150 50  0001 C CNN
+	5    5400 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC00 U5
+U 4 1 5EC295FB
+P 6175 6325
+F 0 "U5" H 6175 6125 50  0000 C CNN
+F 1 "74HC00" H 6175 6050 50  0000 C CNN
+F 2 "" H 6175 6325 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 6175 6325 50  0001 C CNN
+	4    6175 6325
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC00 U5
+U 3 1 5EC27BBA
+P 6175 5975
+F 0 "U5" H 6175 6300 50  0000 C CNN
+F 1 "74HC00" H 6175 6209 50  0000 C CNN
+F 2 "" H 6175 5975 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 6175 5975 50  0001 C CNN
+	3    6175 5975
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC00 U5
+U 2 1 5EC23E03
+P 4525 6425
+F 0 "U5" H 4525 6750 50  0000 C CNN
+F 1 "74HC00" H 4525 6659 50  0000 C CNN
+F 2 "" H 4525 6425 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 4525 6425 50  0001 C CNN
+	2    4525 6425
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC00 U5
+U 1 1 5EC22288
+P 4525 5850
+F 0 "U5" H 4525 6175 50  0000 C CNN
+F 1 "74HC00" H 4525 6084 50  0000 C CNN
+F 2 "" H 4525 5850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 4525 5850 50  0001 C CNN
+	1    4525 5850
+	1    0    0    -1  
+$EndComp
+Text HLabel 4825 6425 2    50   Output ~ 0
+BUSY
+Text HLabel 4825 5850 2    50   Output ~ 0
+FLAG
 $EndSCHEMATC
