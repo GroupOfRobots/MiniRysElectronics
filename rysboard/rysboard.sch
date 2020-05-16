@@ -415,9 +415,9 @@ Wire Wire Line
 	2025 6700 1700 6700
 Wire Wire Line
 	2025 7025 1700 7025
-Text Label 1700 6700 0    50   ~ 0
-LED1
 Text Label 1700 7025 0    50   ~ 0
+LED1
+Text Label 1700 6700 0    50   ~ 0
 LED2
 $Comp
 L Transistor_BJT:MBT3946DW1T1 Q1
