@@ -16,21 +16,6 @@ $EndDescr
 Text Notes 2000 1325 0    100  ~ 0
 Raspberry Pi 4 connector
 $Sheet
-S 8250 1500 975  600 
-U 5EB7428E
-F0 "Motor Drivers" 50
-F1 "motor_drivers.sch" 50
-F2 "~STBY" I L 8250 1575 50 
-F3 "~SPI_CS" I R 9225 1875 50 
-F4 "SPI_CLK" I R 9225 1775 50 
-F5 "SPI_MISO" O R 9225 1575 50 
-F6 "SPI_MOSI" I R 9225 1675 50 
-F7 "~FLAG_1" O L 8250 1675 50 
-F8 "~BUSY_1" O L 8250 1775 50 
-F9 "~FLAG_2" O L 8250 1875 50 
-F10 "~BUSY_2" O L 8250 1975 50 
-$EndSheet
-$Sheet
 S 8250 2350 975  375 
 U 5E8FCBC6
 F0 "Power Supply" 50
@@ -120,25 +105,25 @@ Wire Wire Line
 Wire Wire Line
 	2275 3150 1700 3150
 Text Label 1700 2450 0    50   ~ 0
-~MOTOR_FLAG
+MOTOR_FLAG
 Text Label 1700 3150 0    50   ~ 0
 ~MOTOR_STBY
 Text Label 1700 3650 0    50   ~ 0
-~MOTOR_BUSY
+MOTOR_BUSY
 Wire Wire Line
 	3875 3750 4325 3750
 Wire Wire Line
-	8250 1675 7675 1675
-Text Label 7675 1675 0    50   ~ 0
-~MOTOR_FLAG
+	8250 1775 7675 1775
+Text Label 7675 1775 0    50   ~ 0
+MOTOR_FLAG
 Wire Wire Line
 	8250 1575 7675 1575
 Text Label 7675 1575 0    50   ~ 0
 ~MOTOR_STBY
 Wire Wire Line
-	8250 1775 7675 1775
-Text Label 7675 1775 0    50   ~ 0
-~MOTOR_BUSY
+	8250 1675 7675 1675
+Text Label 7675 1675 0    50   ~ 0
+MOTOR_BUSY
 Wire Wire Line
 	9225 1575 9675 1575
 Text Label 9675 1575 2    50   ~ 0
@@ -576,14 +561,6 @@ Text Notes 5175 5675 0    100  ~ 0
 UART connector
 Text Notes 8125 5325 0    100  ~ 0
 I2C pullups
-Wire Wire Line
-	8250 1875 7675 1875
-Text Label 7675 1875 0    50   ~ 0
-~MOTOR_FLAG
-Wire Wire Line
-	8250 1975 7675 1975
-Text Label 7675 1975 0    50   ~ 0
-~MOTOR_BUSY
 Text Label 1700 3450 0    50   ~ 0
 SPI_IRQEXT
 Wire Wire Line
@@ -619,4 +596,31 @@ F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/r
 	1    0    0    -1  
 $EndComp
 NoConn ~ 2275 2550
+$Sheet
+S 8250 1500 975  600 
+U 5EB7428E
+F0 "Motor Drivers" 50
+F1 "motor_drivers.sch" 50
+F2 "~STBY" I L 8250 1575 50 
+F3 "~SPI_CS" I R 9225 1875 50 
+F4 "SPI_CLK" I R 9225 1775 50 
+F5 "SPI_MISO" O R 9225 1575 50 
+F6 "SPI_MOSI" I R 9225 1675 50 
+F7 "BUSY" O L 8250 1675 50 
+F8 "FLAG" O L 8250 1775 50 
+$EndSheet
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5EE863F0
+P 3875 1650
+F 0 "#FLG0103" H 3875 1725 50  0001 C CNN
+F 1 "PWR_FLAG" H 3875 1823 50  0000 C CNN
+F 2 "" H 3875 1650 50  0001 C CNN
+F 3 "~" H 3875 1650 50  0001 C CNN
+	1    3875 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3525 1650 3875 1650
+Connection ~ 3525 1650
 $EndSCHEMATC
