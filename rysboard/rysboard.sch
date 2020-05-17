@@ -623,4 +623,72 @@ $EndComp
 Wire Wire Line
 	3525 1650 3875 1650
 Connection ~ 3525 1650
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5F1ECD3F
+P 5450 1650
+F 0 "H1" V 5404 1800 50  0000 L CNN
+F 1 "MountingHole_Pad" V 5495 1800 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 5450 1650 50  0001 C CNN
+F 3 "~" H 5450 1650 50  0001 C CNN
+	1    5450 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5F1EDBBD
+P 5450 1825
+F 0 "H2" V 5404 1975 50  0000 L CNN
+F 1 "MountingHole_Pad" V 5495 1975 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 5450 1825 50  0001 C CNN
+F 3 "~" H 5450 1825 50  0001 C CNN
+	1    5450 1825
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5F1F15EF
+P 5450 2000
+F 0 "H3" V 5404 2150 50  0000 L CNN
+F 1 "MountingHole_Pad" V 5495 2150 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 5450 2000 50  0001 C CNN
+F 3 "~" H 5450 2000 50  0001 C CNN
+	1    5450 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR022
+U 1 1 5F1F8BA9
+P 5250 2175
+F 0 "#PWR022" H 5250 1925 50  0001 C CNN
+F 1 "GND" H 5255 2002 50  0000 C CNN
+F 2 "" H 5250 2175 50  0001 C CNN
+F 3 "" H 5250 2175 50  0001 C CNN
+	1    5250 2175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5F22CDB3
+P 5450 2175
+F 0 "H4" V 5404 2325 50  0000 L CNN
+F 1 "MountingHole_Pad" V 5495 2325 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 5450 2175 50  0001 C CNN
+F 3 "~" H 5450 2175 50  0001 C CNN
+	1    5450 2175
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 2175 5350 2175
+Wire Wire Line
+	5350 2175 5350 2000
+Connection ~ 5350 2175
+Wire Wire Line
+	5350 1825 5350 2000
+Connection ~ 5350 2000
+Wire Wire Line
+	5350 1650 5350 1825
+Connection ~ 5350 1825
+Text Notes 5025 1450 0    100  ~ 0
+Raspberry Pi 4\nmounting holes (GND)
 $EndSCHEMATC
