@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name rysboard)(type KiCad)(uri ${KIPRJMOD}/rysboard.pretty)(options "")(descr ""))
+)
