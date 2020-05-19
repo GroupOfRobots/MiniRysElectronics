@@ -420,24 +420,26 @@ LED1
 Text Label 1700 6700 0    50   ~ 0
 LED2
 $Comp
-L Transistor_BJT:MBT3946DW1T1 Q1
+L Transistor_BJT:BC847BS Q1
 U 1 1 5EAE7377
 P 3400 7025
 F 0 "Q1" H 3590 7071 50  0000 L CNN
-F 1 "MBT3946DW1T1" H 3590 6980 50  0000 L CNN
+F 1 "BC847BS" H 3590 6980 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 3600 7125 50  0001 C CNN
-F 3 "http://www.onsemi.com/pub_link/Collateral/MBT3946DW1T1-D.PDF" H 3400 7025 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BC847BS.pdf" H 3400 7025 50  0001 C CNN
+F 4 "https://www.tme.eu/pl/details/bc847bs.115/tranzystory-npn-smd/nexperia/" H 3400 7025 50  0001 C CNN "URL"
 	1    3400 7025
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT:MBT3946DW1T1 Q1
+L Transistor_BJT:BC847BS Q1
 U 2 1 5EAE858D
 P 2575 6700
 F 0 "Q1" H 2765 6746 50  0000 L CNN
-F 1 "MBT3946DW1T1" H 2765 6655 50  0000 L CNN
+F 1 "BC847BS" H 2765 6655 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 2775 6800 50  0001 C CNN
-F 3 "http://www.onsemi.com/pub_link/Collateral/MBT3946DW1T1-D.PDF" H 2575 6700 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BC847BS.pdf" H 2575 6700 50  0001 C CNN
+F 4 "https://www.tme.eu/pl/details/bc847bs.115/tranzystory-npn-smd/nexperia/" H 2575 6700 50  0001 C CNN "URL"
 	2    2575 6700
 	1    0    0    -1  
 $EndComp
