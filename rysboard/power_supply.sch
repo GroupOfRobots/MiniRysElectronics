@@ -299,9 +299,11 @@ $Comp
 L Device:L_Core_Iron L1
 U 1 1 5EB77B7B
 P 6175 2300
+AR Path="/5E8FCBC6/5EB77B7B" Ref="L1"  Part="1" 
+AR Path="/5EB7428E/5EB77B7B" Ref="L1"  Part="1" 
 F 0 "L1" V 6350 2300 50  0000 C CNN
 F 1 "3.3uH" V 6275 2300 50  0000 C CNN
-F 2 "Inductor_SMD:L_6.3x6.3_H3" H 6175 2300 50  0001 C CNN
+F 2 "rysboard:L_6.7x6.7_H2.2" H 6175 2300 50  0001 C CNN
 F 3 "https://www.tme.eu/pl/details/hpi0624-3r3/dlawiki-smd-mocy/ferrocore/" H 6175 2300 50  0001 C CNN
 F 4 "HPI0624-3R3" V 6125 2275 50  0000 C CNN "Model"
 	1    6175 2300
