@@ -296,90 +296,6 @@ I2C5_SDA
 Text Label 9975 3375 2    50   ~ 0
 I2C5_SCL
 Wire Wire Line
-	8225 5975 8225 6325
-Wire Wire Line
-	9050 5975 9050 6325
-Text Label 8225 6325 1    50   ~ 0
-I2C3_SDA
-Text Label 9050 6325 1    50   ~ 0
-I2C3_SCL
-Wire Wire Line
-	8500 5975 8500 6325
-Wire Wire Line
-	8775 5975 8775 6325
-Text Label 8775 6325 1    50   ~ 0
-I2C5_SDA
-Text Label 8500 6325 1    50   ~ 0
-I2C5_SCL
-$Comp
-L Device:R R15
-U 1 1 5EA6930C
-P 8225 5825
-F 0 "R15" H 8295 5871 50  0000 L CNN
-F 1 "3K3" H 8295 5780 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 8155 5825 50  0001 C CNN
-F 3 "~" H 8225 5825 50  0001 C CNN
-	1    8225 5825
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R16
-U 1 1 5EA716CA
-P 8500 5825
-F 0 "R16" H 8570 5871 50  0000 L CNN
-F 1 "3K3" H 8570 5780 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 8430 5825 50  0001 C CNN
-F 3 "~" H 8500 5825 50  0001 C CNN
-	1    8500 5825
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R17
-U 1 1 5EA764DB
-P 8775 5825
-F 0 "R17" H 8845 5871 50  0000 L CNN
-F 1 "3K3" H 8845 5780 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 8705 5825 50  0001 C CNN
-F 3 "~" H 8775 5825 50  0001 C CNN
-	1    8775 5825
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R18
-U 1 1 5EA764E1
-P 9050 5825
-F 0 "R18" H 9120 5871 50  0000 L CNN
-F 1 "3K3" H 9120 5780 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 8980 5825 50  0001 C CNN
-F 3 "~" H 9050 5825 50  0001 C CNN
-	1    9050 5825
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8225 5675 8500 5675
-Wire Wire Line
-	8500 5675 8650 5675
-Connection ~ 8500 5675
-Wire Wire Line
-	8775 5675 9050 5675
-Connection ~ 8775 5675
-Wire Wire Line
-	8650 5675 8650 5625
-Connection ~ 8650 5675
-Wire Wire Line
-	8650 5675 8775 5675
-$Comp
-L power:+3V3 #PWR0102
-U 1 1 5EA8A6C8
-P 8650 5625
-F 0 "#PWR0102" H 8650 5475 50  0001 C CNN
-F 1 "+3V3" H 8665 5798 50  0000 C CNN
-F 2 "" H 8650 5625 50  0001 C CNN
-F 3 "" H 8650 5625 50  0001 C CNN
-	1    8650 5625
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	2275 2950 1700 2950
 Wire Wire Line
 	2275 2850 1700 2850
@@ -561,8 +477,6 @@ Text Notes 2450 5425 0    100  ~ 0
 Status LEDs
 Text Notes 5175 5675 0    100  ~ 0
 UART connector
-Text Notes 8125 5325 0    100  ~ 0
-I2C pullups
 Text Label 1700 3450 0    50   ~ 0
 SPI_IRQEXT
 Wire Wire Line
@@ -693,4 +607,6 @@ Wire Wire Line
 Connection ~ 5350 1825
 Text Notes 5025 1450 0    100  ~ 0
 Raspberry Pi 4\nmounting holes (GND)
+Text Notes 7950 5450 0    50   ~ 0
+I2C Note:\nRPi4 has internal pull-ups for I2C-1 bus\nand the ToF sensor boards used have a set of pull-ups\neach for their respective buses (I2C-3 and -5);\nTherefore no additional pullups are required
 $EndSCHEMATC
