@@ -348,23 +348,11 @@ F 4 "https://www.tme.eu/pl/details/bc847bs.115/tranzystory-npn-smd/nexperia/" H 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT:BC847BS Q1
-U 2 1 5EAE858D
-P 2575 6700
-F 0 "Q1" H 2765 6746 50  0000 L CNN
-F 1 "BC847BS" H 2765 6655 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 2775 6800 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BC847BS.pdf" H 2575 6700 50  0001 C CNN
-F 4 "https://www.tme.eu/pl/details/bc847bs.115/tranzystory-npn-smd/nexperia/" H 2575 6700 50  0001 C CNN "URL"
-	2    2575 6700
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:LED D7
 U 1 1 5EAEADD4
 P 3500 6625
-F 0 "D7" V 3600 6700 50  0000 C CNN
-F 1 "LED_RED" V 3600 6450 50  0000 C CNN
+F 0 "D7" V 3525 6525 50  0000 C CNN
+F 1 "RED" V 3450 6500 50  0000 C CNN
 F 2 "LED_SMD:LED_0805_2012Metric" H 3500 6625 50  0001 C CNN
 F 3 "~" H 3500 6625 50  0001 C CNN
 	1    3500 6625
@@ -374,8 +362,8 @@ $Comp
 L Device:LED D6
 U 1 1 5EAEBD9B
 P 2675 6300
-F 0 "D6" V 2775 6375 50  0000 C CNN
-F 1 "LED_GREEN" V 2775 6075 50  0000 C CNN
+F 0 "D6" V 2700 6200 50  0000 C CNN
+F 1 "GREEN" V 2625 6125 50  0000 C CNN
 F 2 "LED_SMD:LED_0805_2012Metric" H 2675 6300 50  0001 C CNN
 F 3 "~" H 2675 6300 50  0001 C CNN
 	1    2675 6300
@@ -386,7 +374,7 @@ L Device:R R12
 U 1 1 5EAEEEEB
 P 3500 6275
 F 0 "R12" H 3570 6321 50  0000 L CNN
-F 1 "82R" H 3570 6230 50  0000 L CNN
+F 1 "680R" H 3570 6230 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3430 6275 50  0001 C CNN
 F 3 "~" H 3500 6275 50  0001 C CNN
 	1    3500 6275
@@ -397,7 +385,7 @@ L Device:R R11
 U 1 1 5EAEFDFA
 P 2675 5950
 F 0 "R11" H 2605 5904 50  0000 R CNN
-F 1 "43R" H 2605 5995 50  0000 R CNN
+F 1 "680R" H 2605 5995 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2605 5950 50  0001 C CNN
 F 3 "~" H 2675 5950 50  0001 C CNN
 	1    2675 5950
@@ -415,22 +403,11 @@ F 3 "" H 2675 7275 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR0104
-U 1 1 5EB07778
-P 3500 5750
-F 0 "#PWR0104" H 3500 5600 50  0001 C CNN
-F 1 "+3V3" H 3515 5923 50  0000 C CNN
-F 2 "" H 3500 5750 50  0001 C CNN
-F 3 "" H 3500 5750 50  0001 C CNN
-	1    3500 5750
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R7
 U 1 1 5EB16B2C
 P 2175 6700
 F 0 "R7" V 1968 6700 50  0000 C CNN
-F 1 "4K7" V 2059 6700 50  0000 C CNN
+F 1 "10k" V 2059 6700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2105 6700 50  0001 C CNN
 F 3 "~" H 2175 6700 50  0001 C CNN
 	1    2175 6700
@@ -441,7 +418,7 @@ L Device:R R10
 U 1 1 5EB19E72
 P 2175 7025
 F 0 "R10" V 1968 7025 50  0000 C CNN
-F 1 "4K7" V 2059 7025 50  0000 C CNN
+F 1 "10k" V 2059 7025 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2105 7025 50  0001 C CNN
 F 3 "~" H 2175 7025 50  0001 C CNN
 	1    2175 7025
@@ -609,4 +586,27 @@ Text Notes 5025 1450 0    100  ~ 0
 Raspberry Pi 4\nmounting holes (GND)
 Text Notes 7950 5450 0    50   ~ 0
 I2C Note:\nRPi4 has internal pull-ups for I2C-1 bus\nand the ToF sensor boards used have a set of pull-ups\neach for their respective buses (I2C-3 and -5);\nTherefore no additional pullups are required
+$Comp
+L Transistor_BJT:BC847BS Q1
+U 2 1 5EAE858D
+P 2575 6700
+F 0 "Q1" H 2765 6746 50  0000 L CNN
+F 1 "BC847BS" H 2765 6655 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 2775 6800 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BC847BS.pdf" H 2575 6700 50  0001 C CNN
+F 4 "https://www.tme.eu/pl/details/bc847bs.115/tranzystory-npn-smd/nexperia/" H 2575 6700 50  0001 C CNN "URL"
+	2    2575 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR031
+U 1 1 5ECBA57D
+P 3500 5750
+F 0 "#PWR031" H 3500 5600 50  0001 C CNN
+F 1 "+5V" H 3515 5923 50  0000 C CNN
+F 2 "" H 3500 5750 50  0001 C CNN
+F 3 "" H 3500 5750 50  0001 C CNN
+	1    3500 5750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
