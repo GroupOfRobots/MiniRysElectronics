@@ -24,6 +24,8 @@ fp-info-cache
 
 ## Ignores for FreeCAD
 *.FCStd[0-9]*
+# Output step files (use WRLs)
+*.step
 
 ## output files
 gerbers
