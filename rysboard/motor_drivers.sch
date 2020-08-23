@@ -5,10 +5,10 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 4
 Title "rysboard"
-Date "2020-03-29"
+Date "2020-08-23"
 Rev "4.2"
 Comp "Koło Naukowe Robotyki Bionik"
-Comment1 ""
+Comment1 "RPi4 hat for MiniRyś robot"
 Comment2 ""
 Comment3 ""
 Comment4 ""
