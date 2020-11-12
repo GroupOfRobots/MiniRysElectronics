@@ -290,6 +290,8 @@ F 0 "U1" H 2800 4550 50  0000 L CNN
 F 1 "L6470" H 2800 4450 50  0000 L CNN
 F 2 "Package_SO:HTSSOP-28-1EP_4.4x9.7mm_P0.65mm_EP3.4x9.5mm_ThermalVias" H 3250 2350 50  0001 C CNN
 F 3 "https://www.st.com/resource/en/datasheet/l6470.pdf" H 3250 3200 50  0001 C CNN
+F 4 "L6470H" H 3250 3200 50  0001 C CNN "PartID"
+F 5 "https://www.tme.eu/pl/details/l6470h/drivery-silnikowe-i-pwm/stmicroelectronics/" H 3250 3200 50  0001 C CNN "TME"
 	1    3250 3200
 	1    0    0    -1  
 $EndComp
@@ -633,6 +635,8 @@ F 0 "U2" H 7300 4550 50  0000 L CNN
 F 1 "L6470" H 7300 4450 50  0000 L CNN
 F 2 "Package_SO:HTSSOP-28-1EP_4.4x9.7mm_P0.65mm_EP3.4x9.5mm_ThermalVias" H 7750 2350 50  0001 C CNN
 F 3 "https://www.st.com/resource/en/datasheet/l6470.pdf" H 7750 3200 50  0001 C CNN
+F 4 "L6470H" H 7750 3200 50  0001 C CNN "PartID"
+F 5 "https://www.tme.eu/pl/details/l6470h/drivery-silnikowe-i-pwm/stmicroelectronics/" H 7750 3200 50  0001 C CNN "TME"
 	1    7750 3200
 	1    0    0    -1  
 $EndComp
@@ -866,32 +870,10 @@ L power:+3V3 #PWR019
 U 1 1 5EC5D3A7
 P 4525 5625
 F 0 "#PWR019" H 4525 5475 50  0001 C CNN
-F 1 "+3V3" H 4540 5798 50  0000 C CNN
+F 1 "+3V3" H 4525 5775 50  0000 C CNN
 F 2 "" H 4525 5625 50  0001 C CNN
 F 3 "" H 4525 5625 50  0001 C CNN
 	1    4525 5625
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xGxx:74AHC2G00 U5
-U 2 1 5EC23E03
-P 4525 6125
-F 0 "U5" H 4600 5975 50  0000 C CNN
-F 1 "74AHC2G00" H 4750 5900 50  0000 C CNN
-F 2 "Package_SO:TSSOP-8_3x3mm_P0.65mm" H 4525 6125 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT2G00.pdf" H 4525 6125 50  0001 C CNN
-	2    4525 6125
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xGxx:74AHC2G00 U5
-U 1 1 5EC22288
-P 4525 5850
-F 0 "U5" H 4600 6075 50  0000 C CNN
-F 1 "74AHC2G00" H 4750 6000 50  0000 C CNN
-F 2 "Package_SO:TSSOP-8_3x3mm_P0.65mm" H 4525 5850 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT2G00.pdf" H 4525 5850 50  0001 C CNN
-	1    4525 5850
 	1    0    0    -1  
 $EndComp
 Text HLabel 4775 6125 2    50   Output ~ 0
@@ -926,4 +908,28 @@ $EndComp
 Connection ~ 2425 3200
 Wire Wire Line
 	2425 3200 2450 3200
+$Comp
+L rysboard:74HC2G00 U5
+U 1 1 5FB5A7BC
+P 4525 5850
+F 0 "U5" H 4600 6075 50  0000 C CNN
+F 1 "74HC2G00" H 4725 6000 50  0000 C CNN
+F 2 "Package_SO:TSSOP-8_3x3mm_P0.65mm" H 4525 5850 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT2G00.pdf" H 4525 5850 50  0001 C CNN
+	1    4525 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L rysboard:74HC2G00 U5
+U 2 1 5FB5B2B0
+P 4525 6125
+F 0 "U5" H 4600 5975 50  0000 C CNN
+F 1 "74HC2G00" H 4725 5900 50  0000 C CNN
+F 2 "Package_SO:TSSOP-8_3x3mm_P0.65mm" H 4525 6125 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT2G00.pdf" H 4525 6125 50  0001 C CNN
+F 4 " 74HC2G00DP.125" H 4525 6125 50  0001 C CNN "PartID"
+F 5 "https://www.tme.eu/pl/details/74hc2g00dp.125/bramki-inwertery/nexperia/" H 4525 6125 50  0001 C CNN "TME"
+	2    4525 6125
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

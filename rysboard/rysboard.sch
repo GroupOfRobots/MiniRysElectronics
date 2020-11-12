@@ -34,8 +34,6 @@ F 3 "" H 2625 1650 50  0001 C CNN
 	1    2625 1650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2975 1650 2875 1650
 $Comp
 L power:+3V3 #PWR03
 U 1 1 5EB8D8B6
@@ -47,29 +45,6 @@ F 3 "" H 3525 1650 50  0001 C CNN
 	1    3525 1650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3175 1650 3275 1650
-$Comp
-L power:GND #PWR01
-U 1 1 5EB9309D
-P 2575 4250
-F 0 "#PWR01" H 2575 4000 50  0001 C CNN
-F 1 "GND" H 2580 4077 50  0000 C CNN
-F 2 "" H 2575 4250 50  0001 C CNN
-F 3 "" H 2575 4250 50  0001 C CNN
-	1    2575 4250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2875 4250 2975 4250
-Connection ~ 2875 4250
-Connection ~ 2975 4250
-Wire Wire Line
-	3175 4250 3275 4250
-Connection ~ 3175 4250
-Wire Wire Line
-	3275 4250 3375 4250
-Connection ~ 3275 4250
 Wire Wire Line
 	3875 3150 4325 3150
 Text Label 4325 3150 2    50   ~ 0
@@ -458,36 +433,6 @@ Text Label 1700 3450 0    50   ~ 0
 SPI_IRQEXT
 Wire Wire Line
 	1700 3450 2275 3450
-Connection ~ 2875 1650
-Connection ~ 3275 1650
-Wire Wire Line
-	2575 4250 2675 4250
-Connection ~ 2675 4250
-Wire Wire Line
-	2675 4250 2775 4250
-Wire Wire Line
-	2875 4250 2775 4250
-Connection ~ 2775 4250
-Wire Wire Line
-	2975 4250 3075 4250
-Wire Wire Line
-	3075 4250 3175 4250
-Connection ~ 3075 4250
-Wire Wire Line
-	3275 1650 3525 1650
-Wire Wire Line
-	2625 1650 2875 1650
-$Comp
-L Connector:Raspberry_Pi_2_3 J1
-U 1 1 5EA5D2E2
-P 3075 2950
-F 0 "J1" H 3075 4431 50  0000 C CNN
-F 1 "RPi4" H 3075 4340 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 3075 2950 50  0001 C CNN
-F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 3075 2950 50  0001 C CNN
-	1    3075 2950
-	1    0    0    -1  
-$EndComp
 $Sheet
 S 8250 1500 975  600 
 U 5EB7428E
@@ -706,4 +651,71 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5650 
 	1    5650 5925
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	3175 1650 3275 1650
+Wire Wire Line
+	2975 1650 2875 1650
+$Comp
+L power:GND #PWR01
+U 1 1 5EB9309D
+P 2625 4300
+F 0 "#PWR01" H 2625 4050 50  0001 C CNN
+F 1 "GND" H 2630 4127 50  0000 C CNN
+F 2 "" H 2625 4300 50  0001 C CNN
+F 3 "" H 2625 4300 50  0001 C CNN
+	1    2625 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2625 4300 2675 4300
+Wire Wire Line
+	2675 4300 2675 4250
+Connection ~ 2875 1650
+Connection ~ 3275 1650
+Wire Wire Line
+	3275 1650 3525 1650
+Wire Wire Line
+	2625 1650 2875 1650
+$Comp
+L Connector:Raspberry_Pi_2_3 J1
+U 1 1 5EA5D2E2
+P 3075 2950
+F 0 "J1" H 3075 4431 50  0000 C CNN
+F 1 "RPi4" H 3075 4340 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 3075 2950 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 3075 2950 50  0001 C CNN
+	1    3075 2950
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3275 4250
+Wire Wire Line
+	3375 4250 3375 4300
+Wire Wire Line
+	3375 4300 3175 4300
+Connection ~ 2675 4300
+Wire Wire Line
+	2775 4250 2775 4300
+Connection ~ 2775 4300
+Wire Wire Line
+	2775 4300 2675 4300
+Wire Wire Line
+	2875 4250 2875 4300
+Connection ~ 2875 4300
+Wire Wire Line
+	2875 4300 2775 4300
+Wire Wire Line
+	2975 4250 2975 4300
+Connection ~ 2975 4300
+Wire Wire Line
+	2975 4300 2875 4300
+Wire Wire Line
+	3075 4250 3075 4300
+Connection ~ 3075 4300
+Wire Wire Line
+	3075 4300 2975 4300
+Wire Wire Line
+	3175 4250 3175 4300
+Connection ~ 3175 4300
+Wire Wire Line
+	3175 4300 3075 4300
 $EndSCHEMATC
