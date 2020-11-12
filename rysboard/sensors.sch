@@ -436,4 +436,6 @@ F 3 "" H 5800 5750 50  0001 C CNN
 	1    5800 5750
 	1    0    0    -1  
 $EndComp
+Text Notes 6350 1300 0    50   ~ 0
+Note: external sensor logic must be 3V3-level!
 $EndSCHEMATC

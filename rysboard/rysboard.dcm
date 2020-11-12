@@ -1,5 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 74HC2G00
+D Dual NAND Gate, Low-Voltage CMOS
+K Dual Gate NAND CMOS
+F https://assets.nexperia.com/documents/data-sheet/74HC_HCT2G00.pdf
+$ENDCMP
+#
 $CMP MCP3221A5T-E_OT
 D I2C ADC, 1ch 12bit 100ksps 2.7-5.5V
 F https://www.tme.eu/pl/details/mcp3221a5t-e_ot/przetworniki-a-d-uklady-scalone/microchip-technology/

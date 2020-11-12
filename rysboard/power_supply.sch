@@ -190,9 +190,11 @@ L Regulator_Switching:ST1S10PHR U3
 U 1 1 5E89E53A
 P 5425 2400
 F 0 "U3" H 5425 2742 50  0000 C CNN
-F 1 "ST1S10PHR" H 5425 2651 50  0000 C CNN
+F 1 "ST1S10" H 5425 2651 50  0000 C CNN
 F 2 "Package_SO:TI_SO-PowerPAD-8" H 5550 2050 50  0001 L CIN
 F 3 "http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00169322.pdf" H 5425 2400 50  0001 C CNN
+F 4 " ST1S10PHR" H 5425 2400 50  0001 C CNN "PartID"
+F 5 "https://www.tme.eu/pl/details/st1s10phr/regulatory-napiecia-uklady-dc-dc/stmicroelectronics/" H 5425 2400 50  0001 C CNN "TME"
 	1    5425 2400
 	1    0    0    -1  
 $EndComp
@@ -311,63 +313,11 @@ F 4 "HPI0624-3R3" V 6125 2275 50  0000 C CNN "Model"
 $EndComp
 Connection ~ 5325 3100
 $Comp
-L Device:C C?
-U 1 1 5EC0EC4E
-P 6550 2750
-AR Path="/5EB7428E/5EC0EC4E" Ref="C?"  Part="1" 
-AR Path="/5E8FCBC6/5EC0EC4E" Ref="C19"  Part="1" 
-F 0 "C19" H 6450 2825 50  0000 L CNN
-F 1 "10n" H 6525 2700 50  0000 R TNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6588 2600 50  0001 C CNN
-F 3 "~" H 6550 2750 50  0001 C CNN
-	1    6550 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5EC37974
-P 6850 2750
-AR Path="/5EB7428E/5EC37974" Ref="C?"  Part="1" 
-AR Path="/5E8FCBC6/5EC37974" Ref="C20"  Part="1" 
-F 0 "C20" H 6850 2875 60  0000 R TNN
-F 1 "10u" H 6850 2700 60  0000 R TNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 6750 2840 60  0001 C CNN
-F 3 "" H 6750 2840 60  0000 C CNN
-	1    6850 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5EC3797A
-P 7150 2750
-AR Path="/5EB7428E/5EC3797A" Ref="C?"  Part="1" 
-AR Path="/5E8FCBC6/5EC3797A" Ref="C21"  Part="1" 
-F 0 "C21" H 7150 2875 60  0000 R TNN
-F 1 "10u" H 7150 2700 60  0000 R TNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 7050 2840 60  0001 C CNN
-F 3 "" H 7050 2840 60  0000 C CNN
-	1    7150 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5EC37980
-P 7450 2750
-AR Path="/5EB7428E/5EC37980" Ref="C?"  Part="1" 
-AR Path="/5E8FCBC6/5EC37980" Ref="C22"  Part="1" 
-F 0 "C22" H 7450 2875 60  0000 R TNN
-F 1 "100n" H 7450 2700 60  0000 R TNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 7350 2840 60  0001 C CNN
-F 3 "" H 7350 2840 60  0001 C CNN
-	1    7450 2750
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R13
 U 1 1 5EC4EACF
 P 6175 2500
 F 0 "R13" V 6255 2500 50  0000 C CNN
-F 1 "130k1%" V 6075 2500 50  0000 C CNN
+F 1 "110k1%" V 6075 2500 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 6105 2500 50  0001 C CNN
 F 3 "~" H 6175 2500 50  0001 C CNN
 	1    6175 2500
@@ -380,7 +330,7 @@ L Device:R R14
 U 1 1 5EC56A16
 P 6175 2775
 F 0 "R14" V 6255 2775 50  0000 C CNN
-F 1 "22k1%" V 6075 2775 50  0000 C CNN
+F 1 "21k1%" V 6075 2775 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 6105 2775 50  0001 C CNN
 F 3 "~" H 6175 2775 50  0001 C CNN
 	1    6175 2775
@@ -397,50 +347,7 @@ Wire Wire Line
 	6325 2775 6325 3100
 Wire Wire Line
 	5325 3100 6325 3100
-Wire Wire Line
-	6325 2500 6550 2500
-Wire Wire Line
-	6550 2500 6550 2300
-Wire Wire Line
-	6550 2300 6325 2300
-Wire Wire Line
-	6550 2600 6550 2500
-Connection ~ 6550 2500
-Wire Wire Line
-	6550 2300 6850 2300
-Wire Wire Line
-	6850 2300 6850 2600
-Connection ~ 6550 2300
-Wire Wire Line
-	6850 2300 7150 2300
-Wire Wire Line
-	7150 2300 7150 2600
-Connection ~ 6850 2300
-Wire Wire Line
-	7150 2300 7450 2300
-Wire Wire Line
-	7450 2300 7450 2600
-Connection ~ 7150 2300
-Wire Wire Line
-	6325 3100 6550 3100
-Wire Wire Line
-	6550 3100 6550 2900
 Connection ~ 6325 3100
-Wire Wire Line
-	6550 3100 6850 3100
-Wire Wire Line
-	6850 3100 6850 2900
-Connection ~ 6550 3100
-Wire Wire Line
-	6850 3100 7150 3100
-Wire Wire Line
-	7150 3100 7150 2900
-Connection ~ 6850 3100
-Wire Wire Line
-	7150 3100 7450 3100
-Wire Wire Line
-	7450 3100 7450 2900
-Connection ~ 7150 3100
 Wire Wire Line
 	2325 2450 2675 2450
 Connection ~ 2325 2450
@@ -518,9 +425,9 @@ F 3 "" H 3650 5975 50  0001 C CNN
 	1    3650 5975
 	1    0    0    -1  
 $EndComp
-Text HLabel 4150 5375 2    50   BiDi ~ 0
+Text HLabel 4150 5475 2    50   BiDi ~ 0
 I2C_SDA
-Text HLabel 4150 5475 2    50   Input ~ 0
+Text HLabel 4150 5375 2    50   Input ~ 0
 I2C_SCL
 $Comp
 L Device:R R19
@@ -541,6 +448,8 @@ F 0 "U4" H 3725 5950 50  0000 C CNN
 F 1 "MAX11613" H 3875 5850 50  0000 C CNN
 F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 4100 5125 50  0001 L CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/MAX11612-MAX11617.pdf" H 3750 5975 50  0001 C CNN
+F 4 "MAX11613EUA+" H 3650 5475 50  0001 C CNN "PartID"
+F 5 "https://www.tme.eu/pl/details/max11613eua+/przetworniki-a-d-uklady-scalone/maxim-integrated/" H 3650 5475 50  0001 C CNN "TME"
 	1    3650 5475
 	1    0    0    -1  
 $EndComp
@@ -595,12 +504,12 @@ Connection ~ 2725 5475
 $Comp
 L Device:D_Schottky D8
 U 1 1 5EC07545
-P 7650 2300
-F 0 "D8" H 7650 2400 50  0000 C CNN
-F 1 "SK52" H 7650 2200 50  0000 C CNN
-F 2 "Diode_SMD:D_SMB" H 7650 2300 50  0001 C CNN
-F 3 "~" H 7650 2300 50  0001 C CNN
-	1    7650 2300
+P 6525 2300
+F 0 "D8" H 6525 2400 50  0000 C CNN
+F 1 "SK52" H 6525 2200 50  0000 C CNN
+F 2 "Diode_SMD:D_SMB" H 6525 2300 50  0001 C CNN
+F 3 "~" H 6525 2300 50  0001 C CNN
+	1    6525 2300
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -615,14 +524,9 @@ F 3 "" H 8150 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7450 2300 7500 2300
-Connection ~ 7450 2300
-Wire Wire Line
 	7850 2250 7850 2300
-Wire Wire Line
-	7850 2300 7800 2300
 Text Notes 5775 2000 0    50   ~ 0
-V_out = V_FB * (1 + R1/R2)\nR1 = R2 x (V_out - V_FB) / V_FB\nV_out = 5.5V\nV_FB = 0.8V (typ); +-24mV\nR2 = 22k\nR1 = 129.25k -> 130k\nR2->R14; R1->R13
+V_out = V_FB * (1 + R13/R14)\nR13 = R14 x (V_out - V_FB) / V_FB\nV_out ~= 5.0V\nV_FB = 0.8V (typ); +-24mV\nR14 = 21k & R13 = 110k -> V_out = 4.99V
 $Comp
 L Device:R R27
 U 1 1 5EE4159D
@@ -634,23 +538,8 @@ F 3 "~" H 7850 2900 50  0001 C CNN
 	1    7850 2900
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:LED D9
-U 1 1 5EE415A5
-P 7850 2500
-F 0 "D9" H 7850 2425 50  0000 C CNN
-F 1 "GREEN" H 7850 2600 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 7850 2500 50  0001 C CNN
-F 3 "~" H 7850 2500 50  0001 C CNN
-F 4 "5VGOOD" H 7850 2350 50  0000 C CNN "Comment"
-	1    7850 2500
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7450 3100 7850 3100
 Wire Wire Line
 	7850 3100 7850 3050
-Connection ~ 7450 3100
 Wire Wire Line
 	7850 2350 7850 2300
 Connection ~ 7850 2300
@@ -772,4 +661,119 @@ F 3 "~" H 2725 5725 50  0001 C CNN
 	1    2725 5725
 	-1   0    0    1   
 $EndComp
+$Comp
+L Device:LED D9
+U 1 1 5EE415A5
+P 7850 2500
+F 0 "D9" H 7850 2425 50  0000 C CNN
+F 1 "GREEN" H 7850 2600 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 7850 2500 50  0001 C CNN
+F 3 "~" H 7850 2500 50  0001 C CNN
+F 4 "5VGOOD" H 7850 2350 50  0000 C CNN "Comment"
+	1    7850 2500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7625 3100 7625 2900
+Wire Wire Line
+	7325 3100 7325 2900
+Wire Wire Line
+	7025 3100 7025 2900
+Wire Wire Line
+	6725 3100 6725 2900
+Wire Wire Line
+	7625 2300 7625 2600
+Wire Wire Line
+	7325 2300 7325 2600
+Wire Wire Line
+	7025 2300 7025 2600
+Connection ~ 6725 2500
+Wire Wire Line
+	6725 2600 6725 2500
+Wire Wire Line
+	6725 2500 6725 2300
+$Comp
+L Device:C C?
+U 1 1 5EC37980
+P 7625 2750
+AR Path="/5EB7428E/5EC37980" Ref="C?"  Part="1" 
+AR Path="/5E8FCBC6/5EC37980" Ref="C22"  Part="1" 
+F 0 "C22" H 7625 2875 60  0000 R TNN
+F 1 "100n" H 7625 2700 60  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7525 2840 60  0001 C CNN
+F 3 "" H 7525 2840 60  0001 C CNN
+	1    7625 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EC3797A
+P 7325 2750
+AR Path="/5EB7428E/5EC3797A" Ref="C?"  Part="1" 
+AR Path="/5E8FCBC6/5EC3797A" Ref="C21"  Part="1" 
+F 0 "C21" H 7325 2875 60  0000 R TNN
+F 1 "10u" H 7325 2700 60  0000 R TNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 7225 2840 60  0001 C CNN
+F 3 "" H 7225 2840 60  0000 C CNN
+	1    7325 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EC37974
+P 7025 2750
+AR Path="/5EB7428E/5EC37974" Ref="C?"  Part="1" 
+AR Path="/5E8FCBC6/5EC37974" Ref="C20"  Part="1" 
+F 0 "C20" H 7025 2875 60  0000 R TNN
+F 1 "10u" H 7025 2700 60  0000 R TNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 6925 2840 60  0001 C CNN
+F 3 "" H 6925 2840 60  0000 C CNN
+	1    7025 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EC0EC4E
+P 6725 2750
+AR Path="/5EB7428E/5EC0EC4E" Ref="C?"  Part="1" 
+AR Path="/5E8FCBC6/5EC0EC4E" Ref="C19"  Part="1" 
+F 0 "C19" H 6625 2825 50  0000 L CNN
+F 1 "10n" H 6700 2700 50  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6763 2600 50  0001 C CNN
+F 3 "~" H 6725 2750 50  0001 C CNN
+	1    6725 2750
+	1    0    0    -1  
+$EndComp
+Connection ~ 6725 3100
+Connection ~ 7025 2300
+Connection ~ 7025 3100
+Connection ~ 7325 2300
+Wire Wire Line
+	7325 2300 7625 2300
+Connection ~ 7325 3100
+Connection ~ 7625 3100
+Wire Wire Line
+	7625 3100 7850 3100
+Wire Wire Line
+	6325 3100 6725 3100
+Wire Wire Line
+	7325 3100 7625 3100
+Wire Wire Line
+	7025 3100 7325 3100
+Wire Wire Line
+	7025 2300 7325 2300
+Wire Wire Line
+	6725 3100 7025 3100
+Wire Wire Line
+	6725 2300 7025 2300
+Wire Wire Line
+	6325 2300 6375 2300
+Wire Wire Line
+	6675 2300 6725 2300
+Connection ~ 6725 2300
+Wire Wire Line
+	6325 2500 6725 2500
+Connection ~ 7625 2300
+Wire Wire Line
+	7625 2300 7850 2300
 $EndSCHEMATC
