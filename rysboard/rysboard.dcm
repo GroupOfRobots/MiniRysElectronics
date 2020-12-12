@@ -17,4 +17,8 @@ K ST L6470 stepper microstepping motor driver
 F https://www.st.com/resource/en/datasheet/l6470.pdf
 $ENDCMP
 #
+$CMP bionik_logo
+D BIONIK logo (silkscreen only)
+$ENDCMP
+#
 #End Doc Library
