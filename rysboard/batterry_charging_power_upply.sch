@@ -1,0 +1,173 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Battery_Management:LTC4007 U?
+U 1 1 5FEF9298
+P 5550 2550
+F 0 "U?" H 5550 3617 50  0000 C CNN
+F 1 "LTC4007" H 5550 3526 50  0000 C CNN
+F 2 "Package_SO:SSOP-24_3.9x8.7mm_P0.635mm" H 5550 1550 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/4007fc.pdf" H 5550 2550 50  0001 C CNN
+	1    5550 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5FEFA283
+P 1500 2000
+F 0 "J?" H 1418 1675 50  0000 C CNN
+F 1 "Conn_01x02" H 1418 1766 50  0000 C CNN
+F 2 "" H 1500 2000 50  0001 C CNN
+F 3 "~" H 1500 2000 50  0001 C CNN
+	1    1500 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:AO3401A Q?
+U 1 1 5FEFE6A6
+P 2850 1850
+F 0 "Q?" V 3192 1850 50  0000 C CNN
+F 1 "Si7450DP" V 3101 1850 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3050 1775 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 2850 1850 50  0001 L CNN
+	1    2850 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FF01323
+P 2850 2300
+F 0 "R?" H 2920 2346 50  0000 L CNN
+F 1 "R" H 2920 2255 50  0000 L CNN
+F 2 "" V 2780 2300 50  0001 C CNN
+F 3 "~" H 2850 2300 50  0001 C CNN
+	1    2850 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener D?
+U 1 1 5FF01868
+P 3200 1900
+F 0 "D?" V 3154 1980 50  0000 L CNN
+F 1 "D_Zener" V 3245 1980 50  0000 L CNN
+F 2 "" H 3200 1900 50  0001 C CNN
+F 3 "~" H 3200 1900 50  0001 C CNN
+	1    3200 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3200 1750 3050 1750
+Wire Wire Line
+	3200 2050 3200 2100
+Wire Wire Line
+	3200 2100 2850 2100
+Wire Wire Line
+	2850 2100 2850 2150
+Wire Wire Line
+	2850 2100 2850 2050
+Connection ~ 2850 2100
+Wire Wire Line
+	2850 2450 2200 2450
+Wire Wire Line
+	1700 2450 1700 2000
+Wire Wire Line
+	1700 1900 1700 1750
+$Comp
+L power:GND #PWR?
+U 1 1 5FF032F4
+P 2200 2450
+F 0 "#PWR?" H 2200 2200 50  0001 C CNN
+F 1 "GND" H 2205 2277 50  0000 C CNN
+F 2 "" H 2200 2450 50  0001 C CNN
+F 3 "" H 2200 2450 50  0001 C CNN
+	1    2200 2450
+	1    0    0    -1  
+$EndComp
+Connection ~ 2200 2450
+Wire Wire Line
+	2200 2450 1700 2450
+$Comp
+L Device:C C?
+U 1 1 5FF05212
+P 3700 1900
+F 0 "C?" H 3815 1946 50  0000 L CNN
+F 1 "C" H 3815 1855 50  0000 L CNN
+F 2 "" H 3738 1750 50  0001 C CNN
+F 3 "~" H 3700 1900 50  0001 C CNN
+	1    3700 1900
+	1    0    0    -1  
+$EndComp
+Connection ~ 3200 1750
+Wire Wire Line
+	3200 1750 3700 1750
+Wire Wire Line
+	3700 2050 3700 2450
+Wire Wire Line
+	3700 2450 2850 2450
+Connection ~ 2850 2450
+Wire Wire Line
+	3700 1750 4850 1750
+Connection ~ 3700 1750
+$Comp
+L Transistor_FET:AO3401A Q?
+U 1 1 5FF071AD
+P 6550 1350
+F 0 "Q?" V 6892 1350 50  0000 C CNN
+F 1 "Si7450DP" V 6801 1350 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6750 1275 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 6550 1350 50  0001 L CNN
+	1    6550 1350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6550 1850 6050 1850
+Connection ~ 4850 1750
+Wire Wire Line
+	4850 1750 5050 1750
+Wire Wire Line
+	6550 1550 6550 1850
+Wire Wire Line
+	6350 1250 4850 1250
+Wire Wire Line
+	4850 1250 4850 1750
+$Comp
+L power:GND #PWR?
+U 1 1 5FF0BE8F
+P 5050 1950
+F 0 "#PWR?" H 5050 1700 50  0001 C CNN
+F 1 "GND" V 5055 1822 50  0000 R CNN
+F 2 "" H 5050 1950 50  0001 C CNN
+F 3 "" H 5050 1950 50  0001 C CNN
+	1    5050 1950
+	0    1    1    0   
+$EndComp
+NoConn ~ 5050 2050
+$Comp
+L Device:Fuse F?
+U 1 1 5FF0CA02
+P 2150 1750
+F 0 "F?" V 1953 1750 50  0000 C CNN
+F 1 "Fuse" V 2044 1750 50  0000 C CNN
+F 2 "" V 2080 1750 50  0001 C CNN
+F 3 "~" H 2150 1750 50  0001 C CNN
+	1    2150 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2300 1750 2650 1750
+Wire Wire Line
+	2000 1750 1700 1750
+$EndSCHEMATC

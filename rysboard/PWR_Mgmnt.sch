@@ -1,0 +1,267 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_FET:IRLML6402 Q?
+U 1 1 5FF14716
+P 2250 1500
+F 0 "Q?" V 2592 1500 50  0000 C CNN
+F 1 "IRLML6402" V 2501 1500 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2450 1425 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/irlml6402pbf.pdf?fileId=5546d462533600a401535668d5c2263c" H 2250 1500 50  0001 L CNN
+	1    2250 1500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2050 1400 1800 1400
+$Comp
+L Device:R R?
+U 1 1 5FF163D0
+P 2000 1800
+F 0 "R?" V 2100 1800 50  0000 C CNN
+F 1 "10KR" V 2000 1800 50  0000 C CNN
+F 2 "" V 1930 1800 50  0001 C CNN
+F 3 "~" H 2000 1800 50  0001 C CNN
+	1    2000 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FF17308
+P 1800 1550
+F 0 "R?" H 2050 1550 50  0000 R CNN
+F 1 "110KR" H 2100 1650 50  0000 R CNN
+F 2 "" V 1730 1550 50  0001 C CNN
+F 3 "~" H 1800 1550 50  0001 C CNN
+	1    1800 1550
+	-1   0    0    1   
+$EndComp
+Connection ~ 1800 1400
+Wire Wire Line
+	1800 1400 1700 1400
+Wire Wire Line
+	2250 1700 2250 1800
+Wire Wire Line
+	2250 1800 2150 1800
+Wire Wire Line
+	1850 1800 1800 1800
+Wire Wire Line
+	1800 1800 1800 1700
+Text GLabel 1800 1800 0    50   Output ~ 0
+ENABLE_5V_RAIL
+$Comp
+L Transistor_FET:IRLML6402 Q?
+U 1 1 5FF1B166
+P 2250 2500
+F 0 "Q?" V 2592 2500 50  0000 C CNN
+F 1 "IRLML6402" V 2501 2500 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2450 2425 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/irlml6402pbf.pdf?fileId=5546d462533600a401535668d5c2263c" H 2250 2500 50  0001 L CNN
+	1    2250 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FF1B724
+P 2000 2700
+F 0 "R?" V 2100 2700 50  0000 C CNN
+F 1 "10KR" V 2000 2700 50  0000 C CNN
+F 2 "" V 1930 2700 50  0001 C CNN
+F 3 "~" H 2000 2700 50  0001 C CNN
+	1    2000 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FF1BA45
+P 1800 2550
+F 0 "R?" H 2050 2550 50  0000 R CNN
+F 1 "110KR" H 2100 2600 50  0000 R CNN
+F 2 "" V 1730 2550 50  0001 C CNN
+F 3 "~" H 1800 2550 50  0001 C CNN
+	1    1800 2550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1700 2400 1800 2400
+Connection ~ 1800 2400
+Wire Wire Line
+	1800 2400 2050 2400
+Wire Wire Line
+	1800 2700 1850 2700
+Wire Wire Line
+	2150 2700 2250 2700
+Text GLabel 1300 2700 0    50   Output ~ 0
+ENABLE_STMOT
+$Comp
+L Transistor_FET:IRLML6402 Q?
+U 1 1 5FF1C5A5
+P 2250 3350
+F 0 "Q?" V 2592 3350 50  0000 C CNN
+F 1 "IRLML6402" V 2501 3350 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2450 3275 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/irlml6402pbf.pdf?fileId=5546d462533600a401535668d5c2263c" H 2250 3350 50  0001 L CNN
+	1    2250 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FF1D639
+P 2050 3550
+F 0 "R?" V 2150 3550 50  0000 C CNN
+F 1 "10KR" V 2050 3550 50  0000 C CNN
+F 2 "" V 1980 3550 50  0001 C CNN
+F 3 "~" H 2050 3550 50  0001 C CNN
+	1    2050 3550
+	0    1    1    0   
+$EndComp
+Text GLabel 1750 3550 0    50   Output ~ 0
+PWM_FAN
+$Comp
+L Device:R R?
+U 1 1 5FF1DBBE
+P 1850 3400
+F 0 "R?" H 2100 3400 50  0000 R CNN
+F 1 "110KR" H 2150 3450 50  0000 R CNN
+F 2 "" V 1780 3400 50  0001 C CNN
+F 3 "~" H 1850 3400 50  0001 C CNN
+	1    1850 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1700 3250 1850 3250
+Connection ~ 1850 3250
+Wire Wire Line
+	1850 3250 2050 3250
+Wire Wire Line
+	1750 3550 1850 3550
+Connection ~ 1850 3550
+Wire Wire Line
+	1850 3550 1900 3550
+Wire Wire Line
+	2200 3550 2250 3550
+$Comp
+L Connector_Generic:Conn_01x02 FAN
+U 1 1 5FF2B8C7
+P 2850 3250
+F 0 "FAN" H 2930 3242 50  0000 L CNN
+F 1 "Conn_01x02" H 2930 3151 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2850 3250 50  0001 C CNN
+F 3 "~" H 2850 3250 50  0001 C CNN
+	1    2850 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3250 2450 3250
+$Comp
+L power:GND #PWR?
+U 1 1 5FF2C212
+P 2650 3550
+F 0 "#PWR?" H 2650 3300 50  0001 C CNN
+F 1 "GND" H 2655 3377 50  0000 C CNN
+F 2 "" H 2650 3550 50  0001 C CNN
+F 3 "" H 2650 3550 50  0001 C CNN
+	1    2650 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3550 2650 3350
+$Comp
+L Device:R R?
+U 1 1 5FF30F90
+P 1750 4300
+F 0 "R?" H 2000 4300 50  0000 R CNN
+F 1 "110KR" H 2050 4350 50  0000 R CNN
+F 2 "" V 1680 4300 50  0001 C CNN
+F 3 "~" H 1750 4300 50  0001 C CNN
+	1    1750 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:IRLML6402 Q?
+U 1 1 5FF32987
+P 2250 4250
+F 0 "Q?" V 2592 4250 50  0000 C CNN
+F 1 "IRLML6402" V 2501 4250 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2450 4175 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/irlml6402pbf.pdf?fileId=5546d462533600a401535668d5c2263c" H 2250 4250 50  0001 L CNN
+	1    2250 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FF344CB
+P 2000 4500
+F 0 "R?" V 2100 4500 50  0000 C CNN
+F 1 "10KR" V 2000 4500 50  0000 C CNN
+F 2 "" V 1930 4500 50  0001 C CNN
+F 3 "~" H 2000 4500 50  0001 C CNN
+	1    2000 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1850 4500 1750 4500
+Wire Wire Line
+	1750 4500 1750 4450
+Wire Wire Line
+	2150 4500 2250 4500
+Wire Wire Line
+	2250 4500 2250 4450
+Wire Wire Line
+	2050 4150 1750 4150
+Text Label 1500 4500 2    50   ~ 0
+ENABLE_TOFS
+Wire Wire Line
+	1500 4500 1750 4500
+Connection ~ 1750 4500
+Connection ~ 1750 4150
+Text Label 2650 4150 0    50   ~ 0
+TOFS_POWER
+Text Label 1550 4150 2    50   ~ 0
+MAIN_5V
+Wire Wire Line
+	1550 4150 1750 4150
+Text Notes 2450 2700 0    50   ~ 0
+TODO\nte mosfety muszą być na 14A
+Text Label 2700 2400 0    50   ~ 0
+ST_MOT_V
+Wire Wire Line
+	2700 2400 2450 2400
+Text Label 2700 1400 0    50   ~ 0
+REGULATOR_VIN
+Wire Wire Line
+	2700 1400 2450 1400
+Wire Wire Line
+	2650 4150 2450 4150
+Text HLabel 1700 1400 0    50   Output ~ 0
+V_BAT
+Text HLabel 1700 2400 0    50   Output ~ 0
+V_BAT
+Text HLabel 1700 3250 0    50   Output ~ 0
+V_BAT
+Text Label 2600 5300 0    50   ~ 0
+CHARGER_POWER
+$Comp
+L Transistor_FET:IRLML6402 Q?
+U 1 1 5FE2B951
+P 2250 5400
+F 0 "Q?" V 2592 5400 50  0000 C CNN
+F 1 "IRLML6402" V 2501 5400 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2450 5325 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/irlml6402pbf.pdf?fileId=5546d462533600a401535668d5c2263c" H 2250 5400 50  0001 L CNN
+	1    2250 5400
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC

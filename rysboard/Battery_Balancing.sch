@@ -1,0 +1,1041 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 8268 11693 portrait
+encoding utf-8
+Sheet 4 7
+Title ""
+Date "2020-12-24"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 4800 1550 2    50   BiDi ~ 0
+V_CELL_3
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 5FE31971
+P 1200 1700
+F 0 "J4" H 1118 1375 50  0000 C CNN
+F 1 "Cell3" H 1118 1466 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0212_2x01_P3.00mm_Vertical" H 1200 1700 50  0001 C CNN
+F 3 "~" H 1200 1700 50  0001 C CNN
+	1    1200 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 5FE31E47
+P 1200 2550
+F 0 "J5" H 1118 2225 50  0000 C CNN
+F 1 "Cell2" H 1118 2316 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0212_2x01_P3.00mm_Vertical" H 1200 2550 50  0001 C CNN
+F 3 "~" H 1200 2550 50  0001 C CNN
+	1    1200 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 5FE3211D
+P 1200 3350
+F 0 "J6" H 1118 3025 50  0000 C CNN
+F 1 "Cell1" H 1118 3116 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0212_2x01_P3.00mm_Vertical" H 1200 3350 50  0001 C CNN
+F 3 "~" H 1200 3350 50  0001 C CNN
+	1    1200 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J7
+U 1 1 5FE3248E
+P 4950 1000
+F 0 "J7" H 4868 675 50  0000 C CNN
+F 1 "Power_SW" H 4868 766 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0212_2x01_P3.00mm_Vertical" H 4950 1000 50  0001 C CNN
+F 3 "~" H 4950 1000 50  0001 C CNN
+	1    4950 1000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L rysboard:DMP3036SSD U?
+U 1 1 5FE3F414
+P 2700 3200
+F 0 "U?" H 2700 2435 50  0000 C CNN
+F 1 "DMP3036SSD" H 2700 2526 50  0000 C CNN
+F 2 "" H 2700 3200 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/115/DMP3036SSD-526266.pdf" H 2700 3200 50  0001 C CNN
+	1    2700 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FE43196
+P 2150 3300
+F 0 "R?" V 1943 3300 50  0000 C CNN
+F 1 "10KR" V 2034 3300 50  0000 C CNN
+F 2 "" V 2080 3300 50  0001 C CNN
+F 3 "~" H 2150 3300 50  0001 C CNN
+	1    2150 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L rysboard:DMP3036SSD U?
+U 1 1 5FE44620
+P 2700 1650
+F 0 "U?" H 2700 885 50  0000 C CNN
+F 1 "DMP3036SSD" H 2700 976 50  0000 C CNN
+F 2 "" H 2700 1650 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/115/DMP3036SSD-526266.pdf" H 2700 1650 50  0001 C CNN
+	1    2700 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2400 1400 2400 1450
+Wire Wire Line
+	2400 1350 2400 1400
+Connection ~ 2400 1400
+$Comp
+L Device:D_Zener D?
+U 1 1 5FE47BF7
+P 3500 3450
+F 0 "D?" H 3500 3233 50  0000 C CNN
+F 1 "D_Zener" H 3500 3324 50  0000 C CNN
+F 2 "" H 3500 3450 50  0001 C CNN
+F 3 "~" H 3500 3450 50  0001 C CNN
+	1    3500 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D_Zener D?
+U 1 1 5FE55708
+P 3500 1700
+F 0 "D?" H 3500 1917 50  0000 C CNN
+F 1 "D_Zener" H 3500 1826 50  0000 C CNN
+F 2 "" H 3500 1700 50  0001 C CNN
+F 3 "~" H 3500 1700 50  0001 C CNN
+	1    3500 1700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2400 1250 2400 1150
+Wire Wire Line
+	3000 1450 3050 1450
+Wire Wire Line
+	3050 1450 3050 1250
+Wire Wire Line
+	3050 1250 3000 1250
+Connection ~ 3050 1450
+Text HLabel 2850 1700 0    50   Input ~ 0
+V_CELL_2
+Text HLabel 4300 3000 2    50   BiDi ~ 0
+V_CELL_1
+$Comp
+L Device:D_TVS D?
+U 1 1 5FE5D3E1
+P 1600 1650
+F 0 "D?" V 1554 1730 50  0000 L CNN
+F 1 "D_TVS" V 1645 1730 50  0000 L CNN
+F 2 "" H 1600 1650 50  0001 C CNN
+F 3 "~" H 1600 1650 50  0001 C CNN
+	1    1600 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_TVS D?
+U 1 1 5FE5EC60
+P 1600 2500
+F 0 "D?" V 1554 2580 50  0000 L CNN
+F 1 "D_TVS" V 1645 2580 50  0000 L CNN
+F 2 "" H 1600 2500 50  0001 C CNN
+F 3 "~" H 1600 2500 50  0001 C CNN
+	1    1600 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2400 1250 2400 1350
+Connection ~ 2400 1250
+Connection ~ 2400 1350
+$Comp
+L Device:D_TVS D?
+U 1 1 5FE6C2AF
+P 1600 3300
+F 0 "D?" V 1554 3380 50  0000 L CNN
+F 1 "D_TVS" V 1645 3380 50  0000 L CNN
+F 2 "" H 1600 3300 50  0001 C CNN
+F 3 "~" H 1600 3300 50  0001 C CNN
+	1    1600 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1400 3250 1400 3150
+Wire Wire Line
+	1400 3150 1600 3150
+Wire Wire Line
+	1400 3350 1400 3450
+Wire Wire Line
+	1400 3450 1600 3450
+Wire Wire Line
+	1600 1500 1400 1500
+Wire Wire Line
+	1400 1500 1400 1600
+Wire Wire Line
+	1400 1700 1400 1800
+Wire Wire Line
+	1400 1800 1600 1800
+Wire Wire Line
+	1400 2450 1400 2350
+Wire Wire Line
+	1400 2350 1600 2350
+Wire Wire Line
+	1600 2650 1400 2650
+Wire Wire Line
+	1400 2650 1400 2550
+Wire Wire Line
+	2400 2900 2400 3000
+Wire Wire Line
+	1600 3150 2150 3150
+Wire Wire Line
+	2400 3150 2400 3000
+Connection ~ 1600 3150
+Connection ~ 2400 3000
+Wire Wire Line
+	3000 2900 3250 2900
+Wire Wire Line
+	3250 3450 3150 3450
+Wire Wire Line
+	3250 3450 3350 3450
+Connection ~ 3250 3450
+Wire Wire Line
+	3650 3450 3650 3000
+Wire Wire Line
+	3650 3000 3000 3000
+Wire Wire Line
+	3250 2900 3250 3450
+Wire Wire Line
+	2850 3450 2700 3450
+Wire Wire Line
+	4300 3000 3650 3000
+Connection ~ 3650 3000
+Wire Wire Line
+	1400 2650 1400 3150
+Connection ~ 1400 2650
+Connection ~ 1400 3150
+Wire Wire Line
+	1400 2350 1400 1800
+Connection ~ 1400 2350
+Connection ~ 1400 1800
+Wire Wire Line
+	1600 2350 2400 2350
+Wire Wire Line
+	2400 2350 2400 2700
+Connection ~ 1600 2350
+Connection ~ 2400 2700
+Wire Wire Line
+	2400 2700 2400 2800
+Text HLabel 2850 2300 0    50   Input ~ 0
+V_CELL_1
+$Comp
+L Device:D_Zener D?
+U 1 1 5FE8268E
+P 3500 2300
+F 0 "D?" H 3500 2083 50  0000 C CNN
+F 1 "D_Zener" H 3500 2174 50  0000 C CNN
+F 2 "" H 3500 2300 50  0001 C CNN
+F 3 "~" H 3500 2300 50  0001 C CNN
+	1    3500 2300
+	-1   0    0    1   
+$EndComp
+Text HLabel 4300 2800 2    50   BiDi ~ 0
+V_CELL_2
+Wire Wire Line
+	4300 2800 3650 2800
+Wire Wire Line
+	3650 2300 3650 2800
+Connection ~ 3650 2800
+Wire Wire Line
+	3650 2800 3000 2800
+Wire Wire Line
+	3150 2300 3250 2300
+Wire Wire Line
+	3000 2700 3250 2700
+Wire Wire Line
+	3250 2700 3250 2300
+Connection ~ 3250 2300
+Wire Wire Line
+	3250 2300 3350 2300
+Wire Wire Line
+	3150 1700 3250 1700
+Wire Wire Line
+	3250 1700 3250 1350
+Connection ~ 3250 1350
+Wire Wire Line
+	3250 1350 3250 1250
+Wire Wire Line
+	3000 1150 3250 1150
+Wire Wire Line
+	3000 1350 3250 1350
+Wire Wire Line
+	3350 1700 3250 1700
+Connection ~ 3250 1700
+Wire Wire Line
+	3650 1450 3650 1700
+$Comp
+L rysboard:DMP3036SSD U?
+U 1 1 5FE98C40
+P 4050 950
+F 0 "U?" H 4050 185 50  0000 C CNN
+F 1 "DMP3036SSD" H 4050 276 50  0000 C CNN
+F 2 "" H 4050 950 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/115/DMP3036SSD-526266.pdf" H 4050 950 50  0001 C CNN
+	1    4050 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 1250 3700 1250
+Connection ~ 3250 1250
+Wire Wire Line
+	3250 1250 3250 1150
+Wire Wire Line
+	3750 1450 3700 1450
+Wire Wire Line
+	3700 1450 3700 1250
+Connection ~ 3700 1250
+Wire Wire Line
+	3700 1250 3250 1250
+Wire Wire Line
+	3750 1350 3500 1350
+Wire Wire Line
+	3500 1350 3500 1450
+Connection ~ 3500 1450
+Wire Wire Line
+	3500 1450 3650 1450
+Wire Wire Line
+	3500 1350 3500 1150
+Wire Wire Line
+	3500 1150 3750 1150
+Connection ~ 3500 1350
+Wire Wire Line
+	4350 1150 4350 1250
+Connection ~ 4350 1250
+Wire Wire Line
+	4350 1250 4350 1350
+Connection ~ 4350 1350
+Wire Wire Line
+	4350 1350 4350 1450
+Wire Wire Line
+	3050 1450 3500 1450
+Wire Wire Line
+	1600 1400 1600 1500
+Wire Wire Line
+	1600 1400 2400 1400
+Connection ~ 1600 1500
+Text Notes 2550 750  0    50   ~ 0
+for lower resistance 2 mosfets on parrarel\n
+Wire Wire Line
+	4350 1350 4750 1350
+Wire Wire Line
+	4950 1350 4950 1200
+Wire Wire Line
+	5050 1200 5050 1350
+Wire Wire Line
+	5050 1350 5400 1350
+Wire Wire Line
+	2700 3750 2700 3450
+$Comp
+L Transistor_FET:2N7000 Q?
+U 1 1 5FEAEC1E
+P 2150 3650
+F 0 "Q?" V 2399 3650 50  0000 C CNN
+F 1 "PLACEHOLDER" V 2490 3650 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2350 3575 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 2150 3650 50  0001 L CNN
+	1    2150 3650
+	0    -1   1    0   
+$EndComp
+Connection ~ 2150 3150
+Wire Wire Line
+	2150 3150 2400 3150
+Wire Wire Line
+	1950 3750 1600 3750
+Wire Wire Line
+	1600 3750 1600 3450
+Connection ~ 1600 3450
+Wire Wire Line
+	2350 3750 2700 3750
+$Comp
+L Device:R R?
+U 1 1 5FEB3A45
+P 3000 3450
+F 0 "R?" V 2793 3450 50  0000 C CNN
+F 1 "10KR" V 2884 3450 50  0000 C CNN
+F 2 "" V 2930 3450 50  0001 C CNN
+F 3 "~" H 3000 3450 50  0001 C CNN
+	1    3000 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FEB3C5B
+P 3000 2300
+F 0 "R?" V 2793 2300 50  0000 C CNN
+F 1 "10KR" V 2884 2300 50  0000 C CNN
+F 2 "" V 2930 2300 50  0001 C CNN
+F 3 "~" H 3000 2300 50  0001 C CNN
+	1    3000 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FEB3E6A
+P 3000 1700
+F 0 "R?" V 2793 1700 50  0000 C CNN
+F 1 "10KR" V 2884 1700 50  0000 C CNN
+F 2 "" V 2930 1700 50  0001 C CNN
+F 3 "~" H 3000 1700 50  0001 C CNN
+	1    3000 1700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4800 1550 4750 1550
+Wire Wire Line
+	4750 1550 4750 1350
+Connection ~ 4750 1350
+Wire Wire Line
+	4750 1350 4950 1350
+Text Notes 3650 4300 0    50   ~ 0
+Battery Balancing\n
+$Comp
+L rysboard:bq77915 U?
+U 1 1 5FEC7025
+P 4050 5750
+F 0 "U?" H 4050 6915 50  0000 C CNN
+F 1 "bq77915" H 4050 6824 50  0000 C CNN
+F 2 "" H 4150 5650 50  0001 C CNN
+F 3 "" H 4150 5650 50  0001 C CNN
+	1    4050 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FECA473
+P 3050 7750
+F 0 "R?" V 2843 7750 50  0000 C CNN
+F 1 "R" V 2934 7750 50  0000 C CNN
+F 2 "" V 2980 7750 50  0001 C CNN
+F 3 "~" H 3050 7750 50  0001 C CNN
+	1    3050 7750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FECAD8C
+P 4550 7600
+F 0 "R?" H 4480 7554 50  0000 R CNN
+F 1 "1MR5%" H 4480 7645 50  0000 R CNN
+F 2 "" V 4480 7600 50  0001 C CNN
+F 3 "~" H 4550 7600 50  0001 C CNN
+	1    4550 7600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FECB6AA
+P 3300 7200
+F 0 "R?" H 3230 7154 50  0000 R CNN
+F 1 "R" H 3230 7245 50  0000 R CNN
+F 2 "" V 3230 7200 50  0001 C CNN
+F 3 "~" H 3300 7200 50  0001 C CNN
+	1    3300 7200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FECB8EF
+P 4800 7200
+F 0 "R?" H 4730 7154 50  0000 R CNN
+F 1 "R" H 4730 7245 50  0000 R CNN
+F 2 "" V 4730 7200 50  0001 C CNN
+F 3 "~" H 4800 7200 50  0001 C CNN
+	1    4800 7200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:2N7000 Q?
+U 1 1 5FECC417
+P 4350 7650
+F 0 "Q?" V 4599 7650 50  0000 C CNN
+F 1 "PLACEHOLDER" V 4690 7650 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4550 7575 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 4350 7650 50  0001 L CNN
+	1    4350 7650
+	0    -1   1    0   
+$EndComp
+$Comp
+L Transistor_FET:2N7000 Q?
+U 1 1 5FECD814
+P 3750 7650
+F 0 "Q?" V 3999 7650 50  0000 C CNN
+F 1 "PLACEHOLDER" V 4090 7650 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3950 7575 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 3750 7650 50  0001 L CNN
+	1    3750 7650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 7450 3300 7350
+Wire Wire Line
+	3300 7050 3300 6700
+Wire Wire Line
+	3300 6700 3400 6700
+Wire Wire Line
+	4350 7450 4550 7450
+Wire Wire Line
+	4800 7450 4800 7350
+Connection ~ 4550 7450
+Wire Wire Line
+	4550 7450 4800 7450
+Wire Wire Line
+	4800 6700 4700 6700
+Wire Wire Line
+	4800 6700 4800 7050
+Wire Wire Line
+	4150 7750 3950 7750
+Wire Wire Line
+	3550 7750 3200 7750
+Wire Wire Line
+	3200 6550 3400 6550
+Wire Wire Line
+	3400 6400 2900 6400
+Wire Wire Line
+	2900 7750 2800 7750
+Wire Wire Line
+	2800 7750 2800 6250
+Wire Wire Line
+	2800 6250 3400 6250
+Connection ~ 2800 7750
+Text Notes 3950 6250 0    50   ~ 0
+Strona 29\n\n
+$Comp
+L Device:R R?
+U 1 1 5FEE4FBA
+P 5250 7200
+F 0 "R?" H 5180 7154 50  0000 R CNN
+F 1 "470KR5%" H 5180 7245 50  0000 R CNN
+F 2 "" V 5180 7200 50  0001 C CNN
+F 3 "~" H 5250 7200 50  0001 C CNN
+	1    5250 7200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4550 7750 4800 7750
+Wire Wire Line
+	5250 7750 5250 7350
+Connection ~ 4550 7750
+Wire Wire Line
+	5250 7050 5250 6550
+Wire Wire Line
+	5250 6550 4700 6550
+NoConn ~ 4700 6400
+NoConn ~ 4700 6250
+Text Label 850  7750 0    50   ~ 0
+V_BAT_AF_PROT-
+Wire Wire Line
+	5250 7750 5600 7750
+Connection ~ 5250 7750
+Text Notes 3800 3650 0    50   ~ 0
+Battery voltage after protection\n circuits - negative terminal\n\n
+Text Notes 5500 1150 0    50   ~ 0
+Battery voltage after protection\n circuits - positive terminal\n\n
+$Comp
+L Device:R R?
+U 1 1 5FEF37CC
+P 2000 5500
+F 0 "R?" V 1793 5500 50  0000 C CNN
+F 1 "33R5%" V 1884 5500 50  0000 C CNN
+F 2 "" V 1930 5500 50  0001 C CNN
+F 3 "~" H 2000 5500 50  0001 C CNN
+	1    2000 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FEF3ACA
+P 2000 4700
+F 0 "R?" V 1793 4700 50  0000 C CNN
+F 1 "1KR1%" V 1884 4700 50  0000 C CNN
+F 2 "" V 1930 4700 50  0001 C CNN
+F 3 "~" H 2000 4700 50  0001 C CNN
+	1    2000 4700
+	0    1    1    0   
+$EndComp
+Text Label 3700 3750 0    50   ~ 0
+V_BAT_AF_PROT-
+Wire Wire Line
+	3700 3750 2700 3750
+Connection ~ 2700 3750
+Wire Wire Line
+	3400 5350 3400 5500
+Connection ~ 3400 5500
+Wire Wire Line
+	3400 5500 3400 5650
+Wire Wire Line
+	2150 4700 2350 4700
+Wire Wire Line
+	3050 4700 3050 5050
+Wire Wire Line
+	3050 5050 3400 5050
+Connection ~ 2350 4700
+Wire Wire Line
+	2350 4700 3050 4700
+Wire Wire Line
+	2350 5000 2350 5200
+Text Label 2350 5200 0    50   ~ 0
+V_BAT_AF_PROT-
+Wire Wire Line
+	3300 5200 3400 5200
+Wire Wire Line
+	2350 5200 3000 5200
+Text Label 1750 6800 0    50   ~ 0
+V_BAT_AF_PROT-
+Wire Wire Line
+	1750 6800 2450 6800
+Wire Wire Line
+	2450 6500 2150 6500
+Wire Wire Line
+	2450 6500 2450 6400
+Connection ~ 2450 6500
+Wire Wire Line
+	2150 6000 2450 6000
+Wire Wire Line
+	2450 6000 2450 6100
+Wire Wire Line
+	2450 5600 2450 5500
+Wire Wire Line
+	2450 5500 2150 5500
+Wire Wire Line
+	2450 5900 2450 6000
+Connection ~ 2450 6000
+Wire Wire Line
+	2750 7100 2750 6100
+Wire Wire Line
+	2750 6100 3400 6100
+Wire Wire Line
+	2450 6500 2700 6500
+Wire Wire Line
+	2700 6500 2700 5950
+Wire Wire Line
+	2700 5950 3400 5950
+Wire Wire Line
+	2650 6000 2650 5800
+Wire Wire Line
+	2450 6000 2650 6000
+Wire Wire Line
+	2650 5800 3400 5800
+Wire Wire Line
+	2450 5500 3400 5500
+Connection ~ 2450 5500
+Wire Wire Line
+	850  7750 1600 7750
+Wire Wire Line
+	1600 7750 1600 7100
+Wire Wire Line
+	1600 7100 1850 7100
+Connection ~ 1600 7750
+Wire Wire Line
+	1600 7750 2800 7750
+Text HLabel 1550 6500 0    50   BiDi ~ 0
+V_CELL_1
+Wire Wire Line
+	1550 6500 1850 6500
+Text HLabel 1550 6000 0    50   BiDi ~ 0
+V_CELL_2
+Wire Wire Line
+	1550 6000 1850 6000
+Text HLabel 1550 5500 0    50   BiDi ~ 0
+V_CELL_3
+Wire Wire Line
+	1550 5500 1850 5500
+Text HLabel 1550 4700 0    50   BiDi ~ 0
+V_CELL_3
+Wire Wire Line
+	1550 4700 1850 4700
+$Comp
+L Device:R R?
+U 1 1 5FF7078B
+P 5100 6100
+F 0 "R?" V 4900 6100 50  0000 C CNN
+F 1 "470KR1%" V 5000 6100 50  0000 C CNN
+F 2 "" V 5030 6100 50  0001 C CNN
+F 3 "~" H 5100 6100 50  0001 C CNN
+	1    5100 6100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4950 6100 4700 6100
+Text Label 5350 6400 0    50   ~ 0
+V_BAT_AF_PROT-
+Wire Wire Line
+	5350 6400 5350 6100
+Wire Wire Line
+	5350 6100 5250 6100
+$Comp
+L Device:R R?
+U 1 1 5FF7C0AB
+P 5100 5800
+F 0 "R?" V 4893 5800 50  0000 C CNN
+F 1 "R" V 4984 5800 50  0000 C CNN
+F 2 "" V 5030 5800 50  0001 C CNN
+F 3 "~" H 5100 5800 50  0001 C CNN
+	1    5100 5800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4700 5800 4950 5800
+$Comp
+L Device:Thermistor_NTC TH?
+U 1 1 5FF82DAD
+P 5550 5950
+F 0 "TH?" V 5260 5950 50  0000 C CNN
+F 1 "Thermistor_NTC" V 5351 5950 50  0000 C CNN
+F 2 "" H 5550 6000 50  0001 C CNN
+F 3 "~" H 5550 6000 50  0001 C CNN
+	1    5550 5950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5400 5950 5250 5950
+Wire Wire Line
+	5250 5950 5250 5800
+Wire Wire Line
+	5250 5950 4700 5950
+Connection ~ 5250 5950
+Text Label 5800 6200 0    50   ~ 0
+V_BAT_AF_PROT-
+Wire Wire Line
+	5800 6200 5800 5950
+Wire Wire Line
+	5800 5950 5700 5950
+Wire Wire Line
+	4700 5650 5800 5650
+Wire Wire Line
+	5800 5650 5800 5950
+Connection ~ 5800 5950
+NoConn ~ 4700 5500
+$Comp
+L Device:R R?
+U 1 1 5FFA7BA0
+P 5100 5350
+F 0 "R?" V 4893 5350 50  0000 C CNN
+F 1 "10KR" V 4984 5350 50  0000 C CNN
+F 2 "" V 5030 5350 50  0001 C CNN
+F 3 "~" H 5100 5350 50  0001 C CNN
+	1    5100 5350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 5350 4700 5350
+Wire Wire Line
+	5250 5350 5650 5350
+Wire Wire Line
+	5650 5350 5650 4400
+Wire Wire Line
+	5650 4400 2350 4400
+Wire Wire Line
+	2350 4400 2350 4700
+Text Label 5450 5050 2    50   ~ 0
+V_BAT_AF_PROT-
+Wire Wire Line
+	5450 5050 4800 5050
+Wire Wire Line
+	4700 5200 4800 5200
+Wire Wire Line
+	4800 5200 4800 5050
+Connection ~ 4800 5050
+Wire Wire Line
+	4800 5050 4700 5050
+$Comp
+L Device:D_Zener D?
+U 1 1 5FFC3668
+P 4800 7600
+F 0 "D?" V 5200 7600 50  0000 C CNN
+F 1 "D_Zener" V 5100 7600 50  0000 C CNN
+F 2 "" H 4800 7600 50  0001 C CNN
+F 3 "~" H 4800 7600 50  0001 C CNN
+	1    4800 7600
+	0    1    1    0   
+$EndComp
+Connection ~ 4800 7450
+Connection ~ 4800 7750
+Wire Wire Line
+	4800 7750 5250 7750
+$Comp
+L Device:R R?
+U 1 1 5FFCDDDB
+P 2900 6950
+F 0 "R?" H 2850 6900 50  0000 R CNN
+F 1 "100R" H 3000 7150 50  0000 R CNN
+F 2 "" V 2830 6950 50  0001 C CNN
+F 3 "~" H 2900 6950 50  0001 C CNN
+	1    2900 6950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FFCE02A
+P 3200 6950
+F 0 "R?" H 3350 6900 50  0000 R CNN
+F 1 "100R" H 3300 7100 50  0000 R CNN
+F 2 "" V 3130 6950 50  0001 C CNN
+F 3 "~" H 3200 6950 50  0001 C CNN
+	1    3200 6950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3200 7100 3200 7750
+Connection ~ 3200 7750
+Wire Wire Line
+	2900 7750 2900 7100
+Connection ~ 2900 7750
+Wire Wire Line
+	2900 6800 2900 6400
+Wire Wire Line
+	3200 6800 3200 6550
+Text Label 2900 6400 0    50   ~ 0
+SRP_C
+Text Label 3200 6750 1    50   ~ 0
+SRN_C
+Text Label 1150 9500 0    50   ~ 0
+SRP_C
+Text Label 1750 9500 2    50   ~ 0
+SRN_C
+$Comp
+L Device:C C?
+U 1 1 5FFEBB2D
+P 1450 9650
+F 0 "C?" V 1702 9650 50  0000 C CNN
+F 1 "0.1uF" V 1900 9650 50  0000 C CNN
+F 2 "" H 1488 9500 50  0001 C CNN
+F 3 "~" H 1450 9650 50  0001 C CNN
+	1    1450 9650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1150 9500 1150 9650
+Wire Wire Line
+	1150 9650 1300 9650
+Wire Wire Line
+	1600 9650 1750 9650
+Wire Wire Line
+	1750 9650 1750 9500
+$Comp
+L Device:C C?
+U 1 1 5FFFB708
+P 1150 9800
+F 0 "C?" H 1000 9800 50  0000 C CNN
+F 1 "0.1uF" H 1000 9650 50  0000 C CNN
+F 2 "" H 1188 9650 50  0001 C CNN
+F 3 "~" H 1150 9800 50  0001 C CNN
+	1    1150 9800
+	1    0    0    -1  
+$EndComp
+Connection ~ 1150 9650
+$Comp
+L Device:C C?
+U 1 1 5FFFC289
+P 1750 9800
+F 0 "C?" H 1900 9800 50  0000 C CNN
+F 1 "0.1uF" H 1900 9650 50  0000 C CNN
+F 2 "" H 1788 9650 50  0001 C CNN
+F 3 "~" H 1750 9800 50  0001 C CNN
+	1    1750 9800
+	1    0    0    -1  
+$EndComp
+Connection ~ 1750 9650
+Wire Wire Line
+	1150 9950 1750 9950
+Text Label 1350 9950 0    20   ~ 0
+V_BAT_AF_PROT-
+Text Notes 900  9100 0    50   ~ 0
+Current Measurement Filters\n
+Text GLabel 3750 9550 2    50   Input ~ 0
+Bat_Current_Pos
+$Comp
+L Device:C C?
+U 1 1 6000F403
+P 2350 4850
+F 0 "C?" H 2235 4804 50  0000 R CNN
+F 1 "1uF10%" H 2235 4895 50  0000 R CNN
+F 2 "" H 2388 4700 50  0001 C CNN
+F 3 "~" H 2350 4850 50  0001 C CNN
+	1    2350 4850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2150 7100 2450 7100
+$Comp
+L Device:C C?
+U 1 1 6000F787
+P 2450 5750
+F 0 "C?" H 2335 5704 50  0000 R CNN
+F 1 "1uF10%" H 2335 5795 50  0000 R CNN
+F 2 "" H 2488 5600 50  0001 C CNN
+F 3 "~" H 2450 5750 50  0001 C CNN
+	1    2450 5750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6000F9FE
+P 2450 6250
+F 0 "C?" H 2335 6204 50  0000 R CNN
+F 1 "1uF10%" H 2335 6295 50  0000 R CNN
+F 2 "" H 2488 6100 50  0001 C CNN
+F 3 "~" H 2450 6250 50  0001 C CNN
+	1    2450 6250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6000FC4F
+P 2450 6650
+F 0 "C?" H 2335 6604 50  0000 R CNN
+F 1 "1uF10%" H 2335 6695 50  0000 R CNN
+F 2 "" H 2488 6500 50  0001 C CNN
+F 3 "~" H 2450 6650 50  0001 C CNN
+	1    2450 6650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6000FF27
+P 2450 6950
+F 0 "C?" H 2335 6904 50  0000 R CNN
+F 1 "1uF10%" H 2335 6995 50  0000 R CNN
+F 2 "" H 2488 6800 50  0001 C CNN
+F 3 "~" H 2450 6950 50  0001 C CNN
+	1    2450 6950
+	-1   0    0    1   
+$EndComp
+Connection ~ 2450 7100
+Wire Wire Line
+	2450 7100 2750 7100
+Connection ~ 2450 6800
+$Comp
+L Device:C C?
+U 1 1 600100A1
+P 3150 5200
+F 0 "C?" V 3402 5200 50  0000 C CNN
+F 1 "1uF10%" V 3311 5200 50  0000 C CNN
+F 2 "" H 3188 5050 50  0001 C CNN
+F 3 "~" H 3150 5200 50  0001 C CNN
+	1    3150 5200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6001115A
+P 2000 6000
+F 0 "R?" V 1793 6000 50  0000 C CNN
+F 1 "33R5%" V 1884 6000 50  0000 C CNN
+F 2 "" V 1930 6000 50  0001 C CNN
+F 3 "~" H 2000 6000 50  0001 C CNN
+	1    2000 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 600112E8
+P 2000 6500
+F 0 "R?" V 1793 6500 50  0000 C CNN
+F 1 "33R5%" V 1884 6500 50  0000 C CNN
+F 2 "" V 1930 6500 50  0001 C CNN
+F 3 "~" H 2000 6500 50  0001 C CNN
+	1    2000 6500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6001144C
+P 2000 7100
+F 0 "R?" V 1793 7100 50  0000 C CNN
+F 1 "33R5%" V 1884 7100 50  0000 C CNN
+F 2 "" V 1930 7100 50  0001 C CNN
+F 3 "~" H 2000 7100 50  0001 C CNN
+	1    2000 7100
+	0    1    1    0   
+$EndComp
+Text Notes 1200 5200 0    50   ~ 0
+Balancing set at 50mA\n
+Wire Wire Line
+	3300 7450 3550 7450
+$Comp
+L Device:R R?
+U 1 1 60012439
+P 3550 7600
+F 0 "R?" H 3750 7550 50  0000 R CNN
+F 1 "1MR5%" H 3850 7650 50  0000 R CNN
+F 2 "" V 3480 7600 50  0001 C CNN
+F 3 "~" H 3550 7600 50  0001 C CNN
+	1    3550 7600
+	-1   0    0    1   
+$EndComp
+Connection ~ 3550 7750
+Connection ~ 3550 7450
+Wire Wire Line
+	3550 7450 3750 7450
+Text Notes 5350 6300 0    50   ~ 0
+Table 9-3 \nPage 17
+$Comp
+L Amplifier_Current:INA181 U?
+U 1 1 60015B2B
+P 3050 9550
+F 0 "U?" H 3394 9596 50  0000 L CNN
+F 1 "INA181" H 3394 9505 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 3100 9600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ina181.pdf" H 3200 9700 50  0001 C CNN
+	1    3050 9550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 9550 3350 9550
+Text GLabel 3350 9250 2    50   Output ~ 0
+MCU_3.3V
+Text Label 2950 10000 3    50   ~ 0
+V_BAT_AF_PROT-
+Wire Wire Line
+	2950 10000 2950 9850
+$Comp
+L Device:C C?
+U 1 1 600598E6
+P 3200 9100
+F 0 "C?" H 3085 9054 50  0000 R CNN
+F 1 "0.1uF10%" H 3085 9145 50  0000 R CNN
+F 2 "" H 3238 8950 50  0001 C CNN
+F 3 "~" H 3200 9100 50  0001 C CNN
+	1    3200 9100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3350 9250 3200 9250
+Connection ~ 3200 9250
+Wire Wire Line
+	3200 9250 2950 9250
+Text Label 3200 8950 0    50   ~ 0
+V_BAT_AF_PROT-
+Text Label 2450 9650 0    50   ~ 0
+SRN_C
+Text Label 2450 9450 0    50   ~ 0
+SRP_C
+Wire Wire Line
+	2450 9450 2750 9450
+Wire Wire Line
+	2450 9650 2750 9650
+NoConn ~ 3150 9850
+Text HLabel 5600 7750 2    50   Output ~ 0
+PACK-
+Text HLabel 5400 1350 2    50   Output ~ 0
+PACK+
+$EndSCHEMATC
