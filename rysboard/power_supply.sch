@@ -446,7 +446,7 @@ U 1 1 5EBD9101
 P 3650 5475
 F 0 "U4" H 3725 5950 50  0000 C CNN
 F 1 "MAX11613" H 3875 5850 50  0000 C CNN
-F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 4100 5125 50  0001 L CNN
+F 2 "rysboard:8-uMAX" H 4100 5125 50  0001 L CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/MAX11612-MAX11617.pdf" H 3750 5975 50  0001 C CNN
 F 4 "MAX11613EUA+" H 3650 5475 50  0001 C CNN "PartID"
 F 5 "https://www.tme.eu/pl/details/max11613eua+/przetworniki-a-d-uklady-scalone/maxim-integrated/" H 3650 5475 50  0001 C CNN "TME"

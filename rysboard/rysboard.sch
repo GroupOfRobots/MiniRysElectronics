@@ -719,10 +719,10 @@ Connection ~ 3175 4300
 Wire Wire Line
 	3175 4300 3075 4300
 $Comp
-L rysboard:bionik_logo #LOGO1
+L rysboard:bionik_logo LOGO1
 U 1 1 5FD6CC06
 P 8725 6150
-F 0 "#LOGO1" H 8725 6365 50  0000 C CNN
+F 0 "LOGO1" H 8725 6365 50  0000 C CNN
 F 1 "bionik_logo" H 8725 6274 50  0000 C CNN
 F 2 "rysboard:bionik_logo" H 8725 6150 50  0001 C CNN
 F 3 "" H 8725 6150 50  0001 C CNN
