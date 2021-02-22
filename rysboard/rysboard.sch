@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 6
 Title "rysboard"
 Date "2020-12-19"
 Rev "5.01"
@@ -16,12 +16,13 @@ $EndDescr
 Text Notes 1500 825  0    100  ~ 0
 Raspberry Pi 4 connector
 $Sheet
-S 8250 2550 975  375 
+S 8250 2550 900  450 
 U 5E8FCBC6
 F0 "Power Supply" 50
 F1 "power_supply.sch" 50
-F2 "I2C_SDA" B L 8250 2625 50 
-F3 "I2C_SCL" I L 8250 2725 50 
+F2 "ENABLE_RAIL_5V" I L 8250 2700 50 
+F3 "PWM_FAN" I L 8250 2800 50 
+F4 "ENABLE_DC_IN" I L 8250 2900 50 
 $EndSheet
 Text Label 3575 2700 2    50   ~ 0
 ~SPI_CS0
@@ -147,6 +148,7 @@ F15 "I2C_SCL_TIMU" I L 8250 3525 50
 F16 "I2C_SDA_TIMU" B L 8250 3425 50 
 F17 "I2C_SCL_TOF1" I R 9500 3725 50 
 F18 "I2C_SDA_TOF1" B R 9500 3625 50 
+F19 "EN_TOFS" I L 8250 4500 50 
 $EndSheet
 $Comp
 L Connector_Generic:Conn_01x03 J17
@@ -179,14 +181,6 @@ Wire Wire Line
 	7775 3425 8250 3425
 Wire Wire Line
 	7775 3525 8250 3525
-Wire Wire Line
-	7775 2625 8250 2625
-Wire Wire Line
-	7775 2725 8250 2725
-Text Label 7775 2625 0    50   ~ 0
-I2C1_SDA
-Text Label 7775 2725 0    50   ~ 0
-I2C1_SCL
 Text Label 7775 3425 0    50   ~ 0
 I2C1_SDA
 Text Label 7775 3525 0    50   ~ 0
@@ -391,20 +385,20 @@ Wire Wire Line
 NoConn ~ 1500 2900
 NoConn ~ 1500 2800
 $Comp
-L rysboard:STM32G030K8Tx U?
+L rysboard:STM32G030K8Tx U4
 U 1 1 6035F242
-P 2200 5800
-F 0 "U?" H 2150 6000 50  0000 C CNN
-F 1 "STM32G030K8Tx" H 2100 6350 50  0000 C CNN
-F 2 "Package_QFP:LQFP-32_7x7mm_P0.8mm" H 2900 4400 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00088500.pdf" H 2200 5800 50  0001 C CNN
-	1    2200 5800
+P 2350 6050
+F 0 "U4" H 2300 6250 50  0000 C CNN
+F 1 "STM32G030K8Tx" H 2250 6600 50  0000 C CNN
+F 2 "Package_QFP:LQFP-32_7x7mm_P0.8mm" H 3050 4650 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00088500.pdf" H 2350 6050 50  0001 C CNN
+	1    2350 6050
 	1    0    0    -1  
 $EndComp
-Text GLabel 2150 4700 0    50   Input ~ 0
+Text GLabel 2300 4950 0    50   Input ~ 0
 MCU_3.3V
 Wire Wire Line
-	2150 4700 2150 4900
+	2300 4950 2300 5150
 Wire Wire Line
 	1900 3800 2000 3800
 Connection ~ 2000 3800
@@ -426,10 +420,10 @@ Connection ~ 2500 3800
 Wire Wire Line
 	2500 3800 2600 3800
 $Comp
-L power:GND #PWR?
+L power:GND #PWR02
 U 1 1 6036E13E
 P 2600 3950
-F 0 "#PWR?" H 2600 3700 50  0001 C CNN
+F 0 "#PWR02" H 2600 3700 50  0001 C CNN
 F 1 "GND" H 2605 3777 50  0000 C CNN
 F 2 "" H 2600 3950 50  0001 C CNN
 F 3 "" H 2600 3950 50  0001 C CNN
@@ -439,122 +433,120 @@ $EndComp
 Wire Wire Line
 	2600 3950 2600 3800
 Connection ~ 2600 3800
-Text Label 3600 6500 2    50   ~ 0
+Text Label 3750 6750 2    50   ~ 0
 SWCLK
-Text Label 3600 6400 2    50   ~ 0
+Text Label 3750 6650 2    50   ~ 0
 SWDIO
-Text Label 1250 5100 0    50   ~ 0
+Text Label 1400 5350 0    50   ~ 0
 MCU_RST
 Wire Wire Line
-	1250 5100 1600 5100
-Text Label 550  6300 0    50   ~ 0
+	1400 5350 1750 5350
+Text Label 700  6550 0    50   ~ 0
 LED_INFO
-Text Label 550  6600 0    50   ~ 0
+Text Label 700  6850 0    50   ~ 0
 LED_WARNING
-Text Label 550  6700 0    50   ~ 0
+Text Label 700  6950 0    50   ~ 0
 LED_ERROR
-Text Label 3600 5100 2    50   ~ 0
+Text Label 3750 5350 2    50   ~ 0
 CURRENT_SENSE
-Text Label 3600 5200 2    50   ~ 0
+Text Label 3750 5450 2    50   ~ 0
 VBAT_1
-Text Label 3600 5300 2    50   ~ 0
+Text Label 3750 5550 2    50   ~ 0
 VBAT_2
-Text Label 3600 5400 2    50   ~ 0
+Text Label 3750 5650 2    50   ~ 0
 VBAT_3
-Text Label 3600 5500 2    50   ~ 0
+Text Label 3750 5750 2    50   ~ 0
 BAT_TEMP_1
-Text Label 3600 5600 2    50   ~ 0
+Text Label 3750 5850 2    50   ~ 0
 BAT_TEMP_2
-Text Label 3600 5700 2    50   ~ 0
+Text Label 3750 5950 2    50   ~ 0
 BAT_TEMP_3
-Text Label 3600 5800 2    50   ~ 0
+Text Label 3750 6050 2    50   ~ 0
 BOARD_TEMP_PROBE_1
-Text Label 550  5400 0    50   ~ 0
+Text Label 700  5650 0    50   ~ 0
 BOARD_TEMP_PROBE_2
-Text Label 550  5500 0    50   ~ 0
+Text Label 700  5750 0    50   ~ 0
 BOARD_TEMP_PROBE_3
-Text Label 550  5600 0    50   ~ 0
+Text Label 700  5850 0    50   ~ 0
 VOLTAGE_PROBE_5V
-Text Label 3600 5900 2    50   ~ 0
+Text Label 3750 6150 2    50   ~ 0
 ENABLE_RAIL_5V
-Text Label 3600 6000 2    50   ~ 0
+Text Label 3750 6250 2    50   ~ 0
 MCU_USART_TX
-Text Label 3600 6100 2    50   ~ 0
+Text Label 3750 6350 2    50   ~ 0
 MCU_USART_RX
-Text Label 550  5700 0    50   ~ 0
+Text Label 700  5950 0    50   ~ 0
 ENABLE_STEPPER_MOTORS
-Text Label 550  5800 0    50   ~ 0
+Text Label 700  6050 0    50   ~ 0
 ENABLE_TOFS
-Text Label 550  5900 0    50   ~ 0
+Text Label 700  6150 0    50   ~ 0
 PWM_FAN
-Text Label 550  6100 0    50   ~ 0
+Text Label 700  6350 0    50   ~ 0
 VOLTAGE_PROBE_20V
-Text Label 550  6200 0    50   ~ 0
+Text Label 700  6450 0    50   ~ 0
 ENABLE_RAIL_20V
 Wire Wire Line
-	2700 6500 3600 6500
+	2850 6750 3750 6750
 Wire Wire Line
-	2700 6400 3600 6400
+	2850 6650 3750 6650
 Wire Wire Line
-	3600 6100 2700 6100
+	3750 6350 2850 6350
 Wire Wire Line
-	3600 6000 2700 6000
+	3750 6250 2850 6250
 Wire Wire Line
-	3600 5900 2700 5900
+	3750 6150 2850 6150
 Wire Wire Line
-	2700 5800 3600 5800
+	2850 6050 3750 6050
 Wire Wire Line
-	3600 5700 2700 5700
+	3750 5950 2850 5950
 Wire Wire Line
-	2700 5600 3600 5600
+	2850 5850 3750 5850
 Wire Wire Line
-	3600 5500 2700 5500
+	3750 5750 2850 5750
 Wire Wire Line
-	2700 5400 3600 5400
+	2850 5650 3750 5650
 Wire Wire Line
-	3600 5300 2700 5300
+	3750 5550 2850 5550
 Wire Wire Line
-	2700 5200 3600 5200
+	2850 5450 3750 5450
 Wire Wire Line
-	2700 5100 3600 5100
+	2850 5350 3750 5350
 Wire Wire Line
-	550  6700 1600 6700
+	700  6950 1750 6950
 Wire Wire Line
-	550  6600 1600 6600
+	700  6850 1750 6850
 Wire Wire Line
-	550  6300 1600 6300
+	700  6550 1750 6550
 Wire Wire Line
-	550  6200 1600 6200
+	700  6450 1750 6450
 Wire Wire Line
-	1600 6100 550  6100
+	700  6150 1750 6150
 Wire Wire Line
-	550  5900 1600 5900
+	700  6050 1750 6050
 Wire Wire Line
-	550  5800 1600 5800
+	1750 5950 700  5950
 Wire Wire Line
-	1600 5700 550  5700
+	700  5850 1750 5850
 Wire Wire Line
-	550  5600 1600 5600
+	1750 5750 700  5750
 Wire Wire Line
-	1600 5500 550  5500
-Wire Wire Line
-	550  5400 1600 5400
+	700  5650 1750 5650
 $Comp
-L power:GND #PWR?
+L power:GND #PWR01
 U 1 1 603FFDF1
-P 2000 7100
-F 0 "#PWR?" H 2000 6850 50  0001 C CNN
-F 1 "GND" H 2005 6927 50  0000 C CNN
-F 2 "" H 2000 7100 50  0001 C CNN
-F 3 "" H 2000 7100 50  0001 C CNN
-	1    2000 7100
+P 2150 7350
+F 0 "#PWR01" H 2150 7100 50  0001 C CNN
+F 1 "GND" H 2155 7177 50  0000 C CNN
+F 2 "" H 2150 7350 50  0001 C CNN
+F 3 "" H 2150 7350 50  0001 C CNN
+	1    2150 7350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x05 J?
+L Connector_Generic:Conn_01x05 J18
 U 1 1 60400166
 P 5300 6800
-F 0 "J?" H 5380 6842 50  0000 L CNN
+F 0 "J18" H 5380 6842 50  0000 L CNN
 F 1 "Conn_01x05" H 5380 6751 50  0000 L CNN
 F 2 "Connector_PinHeader_1.00mm:PinHeader_1x05_P1.00mm_Vertical" H 5300 6800 50  0001 C CNN
 F 3 "~" H 5300 6800 50  0001 C CNN
@@ -568,10 +560,10 @@ SWCLK
 Text Label 4700 7000 0    50   ~ 0
 MCU_RST
 $Comp
-L power:GND #PWR?
+L power:GND #PWR020
 U 1 1 60400A12
 P 5100 6700
-F 0 "#PWR?" H 5100 6450 50  0001 C CNN
+F 0 "#PWR020" H 5100 6450 50  0001 C CNN
 F 1 "GND" V 5105 6572 50  0000 R CNN
 F 2 "" H 5100 6700 50  0001 C CNN
 F 3 "" H 5100 6700 50  0001 C CNN
@@ -591,10 +583,10 @@ Wire Wire Line
 Wire Wire Line
 	950  1600 1500 1600
 $Comp
-L power:GND #PWR?
+L power:GND #PWR017
 U 1 1 6046B140
 P 4900 4050
-F 0 "#PWR?" H 4900 3800 50  0001 C CNN
+F 0 "#PWR017" H 4900 3800 50  0001 C CNN
 F 1 "GND" H 4905 3877 50  0000 C CNN
 F 2 "" H 4900 4050 50  0001 C CNN
 F 3 "" H 4900 4050 50  0001 C CNN
@@ -619,4 +611,29 @@ Connection ~ 4800 4300
 Wire Wire Line
 	4150 4400 5000 4400
 Connection ~ 5000 4400
+Text Label 7550 2700 0    50   ~ 0
+ENABLE_RAIL_5V
+Text Label 7550 2800 0    50   ~ 0
+PWM_FAN
+Text Label 7550 2900 0    50   ~ 0
+ENABLE_RAIL_20V
+Wire Wire Line
+	7550 2700 8250 2700
+Wire Wire Line
+	7550 2800 8250 2800
+Wire Wire Line
+	7550 2900 8250 2900
+$Comp
+L power:+24V #PWR?
+U 1 1 606D377E
+P 650 6350
+F 0 "#PWR?" H 650 6200 50  0001 C CNN
+F 1 "+24V" H 665 6523 50  0000 C CNN
+F 2 "" H 650 6350 50  0001 C CNN
+F 3 "" H 650 6350 50  0001 C CNN
+	1    650  6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	650  6350 1750 6350
 $EndSCHEMATC

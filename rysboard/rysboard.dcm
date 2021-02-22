@@ -64,6 +64,12 @@ D I2C ADC, 1ch 12bit 100ksps 2.7-5.5V
 F https://www.tme.eu/pl/details/mcp3221a5t-e_ot/przetworniki-a-d-uklady-scalone/microchip-technology/
 $ENDCMP
 #
+$CMP NST847BDP6T5G
+D NPN transistor, base/collector/emitter
+K transistor NPN
+F ~
+$ENDCMP
+#
 $CMP NTR2101P
 D -3.7A Id, -8V Vds, P-Channel MOSFET, SOT-23
 K P-Channel MOSFET
