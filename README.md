@@ -1,7 +1,7 @@
 # RobotElectronics
 This repo contains schematics and PCB layout for main board and modules. 
 
-#New Features
+##New Features
 1. New managment processor
 2. new power managment capabilities
 3. deep sleep 
