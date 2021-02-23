@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 4 7
 Title ""
 Date ""
 Rev ""
@@ -581,18 +581,6 @@ Wire Wire Line
 Wire Wire Line
 	1650 1750 1550 1750
 $Comp
-L rysboard:NST847BDP6T5G Q7
-U 1 1 606ABC18
-P 3800 2250
-F 0 "Q7" H 3990 2296 50  0000 L CNN
-F 1 "DMP3036SSD-13" H 3990 2205 50  0000 L CNN
-F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 4000 2350 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/70209/70209.pdf" H 3800 2250 50  0001 C CNN
-	1    3800 2250
-	1    0    0    -1  
-$EndComp
-Connection ~ 3900 2050
-$Comp
 L power:GND #PWR041
 U 1 1 606AC403
 P 3900 2450
@@ -657,5 +645,28 @@ F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 7650 2325 50  0001 L CIN
 F 3 "http://www.vishay.com/docs/70209/70209.pdf" H 7450 2400 50  0001 L CNN
 	2    7450 2400
 	1    0    0    1   
+$EndComp
+$Comp
+L rysboard:NST847BDP6T5G Q?
+U 1 1 606EA8D4
+P 3800 2250
+F 0 "Q?" H 3990 2296 50  0000 L CNN
+F 1 "NST847BDP6T5G" H 3990 2205 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-963" H 4000 2350 50  0001 C CNN
+F 3 "~" H 3800 2250 50  0001 C CNN
+	1    3800 2250
+	1    0    0    -1  
+$EndComp
+Connection ~ 3900 2050
+$Comp
+L power:GND #PWR?
+U 1 1 606EB25B
+P 4500 2050
+F 0 "#PWR?" H 4500 1800 50  0001 C CNN
+F 1 "GND" H 4505 1877 50  0000 C CNN
+F 2 "" H 4500 2050 50  0001 C CNN
+F 3 "" H 4500 2050 50  0001 C CNN
+	1    4500 2050
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

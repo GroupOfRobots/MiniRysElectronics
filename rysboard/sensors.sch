@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 5 7
 Title "rysboard"
 Date "2020-08-23"
 Rev "4.2"
@@ -13,10 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 5000 2600 0    100  ~ 0
-External SPI connector
-Text Notes 4575 4700 0    100  ~ 0
-I2C temperature sensor connector
 Text Notes 1350 6250 0    100  ~ 0
 6x ToF I2C connector
 $Comp
@@ -112,140 +108,51 @@ Text HLabel 2350 1350 2    50   BiDi ~ 0
 I2C_SDA_TOF0
 Text HLabel 2350 2950 2    50   Input ~ 0
 TOF3_EN
-$Comp
-L Connector_Generic:Conn_01x07 J14
-U 1 1 5EE60C8D
-P 5550 1850
-F 0 "J14" H 5550 1450 50  0000 C CNN
-F 1 "SPI" H 5550 2250 50  0000 C CNN
-F 2 "Connector_Molex:Molex_PicoBlade_53047-0710_1x07_P1.25mm_Vertical" H 5550 1850 50  0001 C CNN
-F 3 "~" H 5550 1850 50  0001 C CNN
-	1    5550 1850
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR026
-U 1 1 5EE683DA
-P 5800 2200
-F 0 "#PWR026" H 5800 1950 50  0001 C CNN
-F 1 "GND" H 5805 2027 50  0000 C CNN
-F 2 "" H 5800 2200 50  0001 C CNN
-F 3 "" H 5800 2200 50  0001 C CNN
-	1    5800 2200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5800 2200 5800 2150
-Wire Wire Line
-	5800 2150 5750 2150
-Wire Wire Line
-	5750 1550 5800 1550
-Wire Wire Line
-	5800 1550 5800 1500
-Wire Wire Line
-	5750 2050 5850 2050
-Wire Wire Line
-	5750 1950 5850 1950
-Wire Wire Line
-	5750 1850 5850 1850
-Wire Wire Line
-	5750 1750 5850 1750
-Wire Wire Line
-	5750 1650 5850 1650
-Text HLabel 5850 1650 2    50   Input ~ 0
-SPI_MOSI
-Text HLabel 5850 1750 2    50   Output ~ 0
-SPI_MISO
-Text HLabel 5850 1850 2    50   Input ~ 0
-SPI_CLK
-Text HLabel 5850 1950 2    50   Input ~ 0
-SPI_CS
-Text HLabel 5850 2050 2    50   Output ~ 0
-SPI_IRQ
-$Comp
-L Connector_Generic:Conn_01x05 J8
-U 1 1 5EE7DCB5
-P 5550 4000
-F 0 "J8" H 5550 3700 50  0000 C CNN
-F 1 "Temp" H 5550 4300 50  0000 C CNN
-F 2 "Connector_Molex:Molex_PicoBlade_53047-0510_1x05_P1.25mm_Vertical" H 5550 4000 50  0001 C CNN
-F 3 "~" H 5550 4000 50  0001 C CNN
-	1    5550 4000
-	-1   0    0    1   
-$EndComp
-Text HLabel 5850 4000 2    50   Input ~ 0
-I2C_SCL_TIMU
-Text HLabel 5850 3900 2    50   BiDi ~ 0
-I2C_SDA_TIMU
-Wire Wire Line
-	5750 3800 5800 3800
-Wire Wire Line
-	5800 3800 5800 3750
-$Comp
-L power:GND #PWR028
-U 1 1 5EE83D16
-P 5800 4250
-F 0 "#PWR028" H 5800 4000 50  0001 C CNN
-F 1 "GND" H 5805 4077 50  0000 C CNN
-F 2 "" H 5800 4250 50  0001 C CNN
-F 3 "" H 5800 4250 50  0001 C CNN
-	1    5800 4250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5800 4250 5800 4200
-Wire Wire Line
-	5800 4200 5750 4200
-Wire Wire Line
-	5750 4000 5850 4000
-Wire Wire Line
-	5750 3900 5850 3900
-NoConn ~ 5750 4100
-Text Notes 5075 6675 0    100  ~ 0
+Text Notes 3325 6275 0    100  ~ 0
 I2C IMU connector
 $Comp
 L Connector_Generic:Conn_01x05 J9
 U 1 1 5EE95D68
-P 5550 6000
-F 0 "J9" H 5550 5700 50  0000 C CNN
-F 1 "IMU" H 5550 6300 50  0000 C CNN
-F 2 "Connector_Molex:Molex_PicoBlade_53047-0510_1x05_P1.25mm_Vertical" H 5550 6000 50  0001 C CNN
-F 3 "~" H 5550 6000 50  0001 C CNN
-	1    5550 6000
+P 3800 5600
+F 0 "J9" H 3800 5300 50  0000 C CNN
+F 1 "IMU" H 3800 5900 50  0000 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53047-0510_1x05_P1.25mm_Vertical" H 3800 5600 50  0001 C CNN
+F 3 "~" H 3800 5600 50  0001 C CNN
+	1    3800 5600
 	-1   0    0    1   
 $EndComp
-Text HLabel 5850 6000 2    50   Input ~ 0
+Text HLabel 4100 5600 2    50   Input ~ 0
 I2C_SCL_TIMU
-Text HLabel 5850 5900 2    50   BiDi ~ 0
+Text HLabel 4100 5500 2    50   BiDi ~ 0
 I2C_SDA_TIMU
 Wire Wire Line
-	5750 5800 5800 5800
+	4000 5400 4050 5400
 Wire Wire Line
-	5800 5800 5800 5750
+	4050 5400 4050 5350
 $Comp
 L power:GND #PWR030
 U 1 1 5EE95D78
-P 5800 6250
-F 0 "#PWR030" H 5800 6000 50  0001 C CNN
-F 1 "GND" H 5805 6077 50  0000 C CNN
-F 2 "" H 5800 6250 50  0001 C CNN
-F 3 "" H 5800 6250 50  0001 C CNN
-	1    5800 6250
+P 4050 5850
+F 0 "#PWR030" H 4050 5600 50  0001 C CNN
+F 1 "GND" H 4055 5677 50  0000 C CNN
+F 2 "" H 4050 5850 50  0001 C CNN
+F 3 "" H 4050 5850 50  0001 C CNN
+	1    4050 5850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5800 6250 5800 6200
+	4050 5850 4050 5800
 Wire Wire Line
-	5800 6200 5750 6200
+	4050 5800 4000 5800
 Wire Wire Line
-	5750 6000 5850 6000
+	4000 5600 4100 5600
 Wire Wire Line
-	5750 5900 5850 5900
+	4000 5500 4100 5500
 Text HLabel 2300 3900 2    50   Input ~ 0
 I2C_SCL_TOF1
 Text HLabel 2300 3800 2    50   BiDi ~ 0
 I2C_SDA_TOF1
-NoConn ~ 5750 6100
+NoConn ~ 4000 5700
 $Comp
 L power:GND #PWR0110
 U 1 1 5F0EBE1A
@@ -258,42 +165,16 @@ F 3 "" H 2250 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0109
-U 1 1 5ECB9E16
-P 5800 3750
-F 0 "#PWR0109" H 5800 3600 50  0001 C CNN
-F 1 "+5V" H 5815 3923 50  0000 C CNN
-F 2 "" H 5800 3750 50  0001 C CNN
-F 3 "" H 5800 3750 50  0001 C CNN
-	1    5800 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0111
-U 1 1 5ECBB5E8
-P 5800 1500
-F 0 "#PWR0111" H 5800 1350 50  0001 C CNN
-F 1 "+5V" H 5815 1673 50  0000 C CNN
-F 2 "" H 5800 1500 50  0001 C CNN
-F 3 "" H 5800 1500 50  0001 C CNN
-	1    5800 1500
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR0112
 U 1 1 5ECBCED2
-P 5800 5750
-F 0 "#PWR0112" H 5800 5600 50  0001 C CNN
-F 1 "+5V" H 5815 5923 50  0000 C CNN
-F 2 "" H 5800 5750 50  0001 C CNN
-F 3 "" H 5800 5750 50  0001 C CNN
-	1    5800 5750
+P 4050 5350
+F 0 "#PWR0112" H 4050 5200 50  0001 C CNN
+F 1 "+5V" H 4065 5523 50  0000 C CNN
+F 2 "" H 4050 5350 50  0001 C CNN
+F 3 "" H 4050 5350 50  0001 C CNN
+	1    4050 5350
 	1    0    0    -1  
 $EndComp
-Text Notes 6350 1300 0    50   ~ 0
-Note: external sensor logic must be 3V3-level!
-Text GLabel 2200 3700 2    50   Input ~ 0
-TOF_5V
 Wire Wire Line
 	2300 3800 2100 3800
 Wire Wire Line
@@ -348,8 +229,6 @@ Wire Wire Line
 	1650 4400 2050 4400
 Wire Wire Line
 	2050 4400 2050 3700
-Wire Wire Line
-	2200 3700 2050 3700
 Connection ~ 2050 3700
 Wire Wire Line
 	2050 4400 2050 5150
@@ -394,8 +273,6 @@ Wire Wire Line
 Connection ~ 2150 1350
 Wire Wire Line
 	2150 1350 1650 1350
-Text GLabel 2350 1250 2    50   Input ~ 0
-TOF_5V
 Wire Wire Line
 	1650 1250 2100 1250
 Wire Wire Line
@@ -403,8 +280,6 @@ Wire Wire Line
 Wire Wire Line
 	2100 1950 1650 1950
 Connection ~ 2100 1250
-Wire Wire Line
-	2100 1250 2350 1250
 Wire Wire Line
 	2100 1950 2100 2650
 Wire Wire Line
@@ -420,4 +295,92 @@ Wire Wire Line
 Connection ~ 2200 2150
 Wire Wire Line
 	2200 2150 2200 2850
+Text Label 2650 1250 2    50   ~ 0
+TOF_5V
+Wire Wire Line
+	2100 1250 2650 1250
+Text Label 2600 3700 2    50   ~ 0
+TOF_5V
+Wire Wire Line
+	2050 3700 2600 3700
+$Comp
+L rysboard:DMP3036SSD-13 Q?
+U 1 1 6035FE64
+P 5250 1350
+F 0 "Q?" V 5592 1350 50  0000 C CNN
+F 1 "DMP3036SSD-13" V 5501 1350 50  0000 C CNN
+F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 5450 1275 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/70209/70209.pdf" H 5250 1350 50  0001 L CNN
+	1    5250 1350
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6036243F
+P 4700 1250
+F 0 "#PWR?" H 4700 1100 50  0001 C CNN
+F 1 "+5V" H 4715 1423 50  0000 C CNN
+F 2 "" H 4700 1250 50  0001 C CNN
+F 3 "" H 4700 1250 50  0001 C CNN
+	1    4700 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60362AB5
+P 4900 1950
+F 0 "#PWR?" H 4900 1700 50  0001 C CNN
+F 1 "GND" H 4905 1777 50  0000 C CNN
+F 2 "" H 4900 1950 50  0001 C CNN
+F 3 "" H 4900 1950 50  0001 C CNN
+	1    4900 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6036320A
+P 4900 1400
+F 0 "R?" H 4970 1446 50  0000 L CNN
+F 1 "R" H 4970 1355 50  0000 L CNN
+F 2 "" V 4830 1400 50  0001 C CNN
+F 3 "~" H 4900 1400 50  0001 C CNN
+	1    4900 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 1250 5050 1250
+Connection ~ 4900 1250
+Wire Wire Line
+	4900 1250 4700 1250
+$Comp
+L Device:R R?
+U 1 1 60366827
+P 4450 1750
+F 0 "R?" V 4243 1750 50  0000 C CNN
+F 1 "R" V 4334 1750 50  0000 C CNN
+F 2 "" V 4380 1750 50  0001 C CNN
+F 3 "~" H 4450 1750 50  0001 C CNN
+	1    4450 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 1550 4900 1550
+$Comp
+L rysboard:NST847BDP6T5G Q?
+U 2 1 60369052
+P 4800 1750
+F 0 "Q?" H 4990 1796 50  0000 L CNN
+F 1 "NST847BDP6T5G" H 4990 1705 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-963" H 5000 1850 50  0001 C CNN
+F 3 "~" H 4800 1750 50  0001 C CNN
+	2    4800 1750
+	1    0    0    -1  
+$EndComp
+Connection ~ 4900 1550
+Text HLabel 4300 1750 0    50   Output ~ 0
+EN_TOFS
+Text Label 5700 1250 0    50   ~ 0
+TOF_5V
+Wire Wire Line
+	5700 1250 5450 1250
 $EndSCHEMATC

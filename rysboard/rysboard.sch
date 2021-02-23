@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title "rysboard"
 Date "2020-12-19"
 Rev "5.01"
@@ -301,7 +301,7 @@ Wire Wire Line
 Connection ~ 4500 1375
 Text Notes 4175 1000 0    100  ~ 0
 Raspberry Pi 4\nmounting holes (GND)
-Text Notes 7950 5450 0    50   ~ 0
+Text Notes 8100 1100 0    50   ~ 0
 I2C Note:\nRPi4 has internal pull-ups for I2C-1 bus\nand the ToF sensor boards used have a set of pull-ups\neach for their respective buses (I2C-3 and -5);\nTherefore no additional pullups are required
 Wire Wire Line
 	2775 1200 3125 1200
@@ -526,8 +526,6 @@ Wire Wire Line
 Wire Wire Line
 	1750 5950 700  5950
 Wire Wire Line
-	700  5850 1750 5850
-Wire Wire Line
 	1750 5750 700  5750
 Wire Wire Line
 	700  5650 1750 5650
@@ -626,14 +624,51 @@ Wire Wire Line
 $Comp
 L power:+24V #PWR?
 U 1 1 606D377E
-P 650 6350
-F 0 "#PWR?" H 650 6200 50  0001 C CNN
-F 1 "+24V" H 665 6523 50  0000 C CNN
-F 2 "" H 650 6350 50  0001 C CNN
-F 3 "" H 650 6350 50  0001 C CNN
-	1    650  6350
+P 550 6350
+F 0 "#PWR?" H 550 6200 50  0001 C CNN
+F 1 "+24V" H 565 6523 50  0000 C CNN
+F 2 "" H 550 6350 50  0001 C CNN
+F 3 "" H 550 6350 50  0001 C CNN
+	1    550  6350
+	1    0    0    -1  
+$EndComp
+Text Label 7700 4500 0    50   ~ 0
+ENABLE_TOFS
+Wire Wire Line
+	7700 4500 8250 4500
+$Sheet
+S 8250 5100 1250 700 
+U 60370950
+F0 "Analog_Sensors" 50
+F1 "Analog_Sensors.sch" 50
+$EndSheet
+Text Label 7200 5450 0    50   ~ 0
+BOARD_TEMP_PROBE_2
+Text Label 7200 5550 0    50   ~ 0
+BOARD_TEMP_PROBE_3
+Text Label 7200 5350 0    50   ~ 0
+BOARD_TEMP_PROBE_1
+Text Label 7200 5250 0    50   ~ 0
+BAT_TEMP_3
+Text Label 7200 5150 0    50   ~ 0
+BAT_TEMP_2
+Text Label 7200 5050 0    50   ~ 0
+BAT_TEMP_1
+$Comp
+L power:+5V #PWR?
+U 1 1 603726EA
+P 550 5850
+F 0 "#PWR?" H 550 5700 50  0001 C CNN
+F 1 "+5V" H 565 6023 50  0000 C CNN
+F 2 "" H 550 5850 50  0001 C CNN
+F 3 "" H 550 5850 50  0001 C CNN
+	1    550  5850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	650  6350 1750 6350
+	550  5850 1750 5850
+Wire Wire Line
+	550  6350 1750 6350
+Text Notes 4750 6300 0    50   ~ 0
+Programming interface\n
 $EndSCHEMATC
