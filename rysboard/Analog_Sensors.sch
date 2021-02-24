@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 7 7
 Title ""
 Date ""
 Rev ""
@@ -13,4 +13,344 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text HLabel 1750 1300 0    50   Input ~ 0
+BAT_T_1
+Text HLabel 1750 1500 0    50   Input ~ 0
+BAT_T_2
+Text HLabel 1750 1700 0    50   Input ~ 0
+BAT_T_3
+Text HLabel 1750 2150 0    50   Input ~ 0
+BOARD_T_1
+Text HLabel 1750 2250 0    50   Input ~ 0
+BOARD_T_2
+Text HLabel 1750 2350 0    50   Input ~ 0
+BOARD_T_3
+Text HLabel 1700 4550 0    50   Input ~ 0
+V_P_20
+Text HLabel 2850 4550 0    50   Input ~ 0
+V_P_5
+Text HLabel 1600 5650 0    50   Input ~ 0
+BAT_CS
+Text HLabel 6150 4700 0    50   Input ~ 0
+V_BAT_C1
+Text HLabel 6150 4800 0    50   Input ~ 0
+V_BAT_C2
+Text HLabel 6150 4900 0    50   Input ~ 0
+V_BAT_C3
+$Comp
+L Device:R R?
+U 1 1 603E581F
+P 2650 1200
+F 0 "R?" H 2720 1246 50  0000 L CNN
+F 1 "R" H 2720 1155 50  0000 L CNN
+F 2 "" V 2580 1200 50  0001 C CNN
+F 3 "~" H 2650 1200 50  0001 C CNN
+	1    2650 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 603E5A74
+P 3450 1200
+F 0 "R?" H 3520 1246 50  0000 L CNN
+F 1 "R" H 3520 1155 50  0000 L CNN
+F 2 "" V 3380 1200 50  0001 C CNN
+F 3 "~" H 3450 1200 50  0001 C CNN
+	1    3450 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 603E5B7A
+P 4250 1200
+F 0 "R?" H 4320 1246 50  0000 L CNN
+F 1 "R" H 4320 1155 50  0000 L CNN
+F 2 "" V 4180 1200 50  0001 C CNN
+F 3 "~" H 4250 1200 50  0001 C CNN
+	1    4250 1200
+	1    0    0    -1  
+$EndComp
+Text GLabel 3450 1050 1    50   Output ~ 0
+MCU_3.3V
+Text GLabel 2650 1050 1    50   Output ~ 0
+MCU_3.3V
+Text GLabel 4250 1050 1    50   Output ~ 0
+MCU_3.3V
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 603EB5C9
+P 2650 1550
+F 0 "J?" V 2522 1630 50  0000 L CNN
+F 1 "Conn_01x02" V 2613 1630 50  0000 L CNN
+F 2 "" H 2650 1550 50  0001 C CNN
+F 3 "~" H 2650 1550 50  0001 C CNN
+	1    2650 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 603EBF1A
+P 3450 1550
+F 0 "J?" V 3322 1630 50  0000 L CNN
+F 1 "Conn_01x02" V 3413 1630 50  0000 L CNN
+F 2 "" H 3450 1550 50  0001 C CNN
+F 3 "~" H 3450 1550 50  0001 C CNN
+	1    3450 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 603EC2EC
+P 4250 1550
+F 0 "J?" V 4122 1630 50  0000 L CNN
+F 1 "Conn_01x02" V 4213 1630 50  0000 L CNN
+F 2 "" H 4250 1550 50  0001 C CNN
+F 3 "~" H 4250 1550 50  0001 C CNN
+	1    4250 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 603ED9D9
+P 2550 1350
+F 0 "#PWR?" H 2550 1100 50  0001 C CNN
+F 1 "GND" H 2555 1177 50  0000 C CNN
+F 2 "" H 2550 1350 50  0001 C CNN
+F 3 "" H 2550 1350 50  0001 C CNN
+	1    2550 1350
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 603EDE43
+P 3350 1350
+F 0 "#PWR?" H 3350 1100 50  0001 C CNN
+F 1 "GND" H 3355 1177 50  0000 C CNN
+F 2 "" H 3350 1350 50  0001 C CNN
+F 3 "" H 3350 1350 50  0001 C CNN
+	1    3350 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 603EE031
+P 4150 1350
+F 0 "#PWR?" H 4150 1100 50  0001 C CNN
+F 1 "GND" H 4155 1177 50  0000 C CNN
+F 2 "" H 4150 1350 50  0001 C CNN
+F 3 "" H 4150 1350 50  0001 C CNN
+	1    4150 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 603EEB5E
+P 2750 2200
+F 0 "R?" H 2820 2246 50  0000 L CNN
+F 1 "R" H 2820 2155 50  0000 L CNN
+F 2 "" V 2680 2200 50  0001 C CNN
+F 3 "~" H 2750 2200 50  0001 C CNN
+	1    2750 2200
+	1    0    0    -1  
+$EndComp
+Text GLabel 2600 2000 0    50   Output ~ 0
+MCU_3.3V
+$Comp
+L Device:R R?
+U 1 1 603EEFA0
+P 3400 2200
+F 0 "R?" H 3470 2246 50  0000 L CNN
+F 1 "R" H 3470 2155 50  0000 L CNN
+F 2 "" V 3330 2200 50  0001 C CNN
+F 3 "~" H 3400 2200 50  0001 C CNN
+	1    3400 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 603EF182
+P 4200 2200
+F 0 "R?" H 4270 2246 50  0000 L CNN
+F 1 "R" H 4270 2155 50  0000 L CNN
+F 2 "" V 4130 2200 50  0001 C CNN
+F 3 "~" H 4200 2200 50  0001 C CNN
+	1    4200 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2000 2750 2000
+Wire Wire Line
+	2750 2000 2750 2050
+Wire Wire Line
+	2750 2000 3400 2000
+Wire Wire Line
+	3400 2000 3400 2050
+Connection ~ 2750 2000
+Wire Wire Line
+	4200 2000 4200 2050
+Wire Wire Line
+	3400 2000 4200 2000
+Connection ~ 3400 2000
+$Comp
+L power:GND #PWR?
+U 1 1 603EF9F9
+P 2350 2750
+F 0 "#PWR?" H 2350 2500 50  0001 C CNN
+F 1 "GND" H 2355 2577 50  0000 C CNN
+F 2 "" H 2350 2750 50  0001 C CNN
+F 3 "" H 2350 2750 50  0001 C CNN
+	1    2350 2750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Thermistor_PTC TH?
+U 1 1 603F0105
+P 2750 2500
+F 0 "TH?" H 2848 2546 50  0000 L CNN
+F 1 "Thermistor_PTC" H 2848 2455 50  0000 L CNN
+F 2 "" H 2800 2300 50  0001 L CNN
+F 3 "~" H 2750 2500 50  0001 C CNN
+	1    2750 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Thermistor_PTC TH?
+U 1 1 603F0A30
+P 3400 2500
+F 0 "TH?" H 3498 2546 50  0000 L CNN
+F 1 "Thermistor_PTC" H 3498 2455 50  0000 L CNN
+F 2 "" H 3450 2300 50  0001 L CNN
+F 3 "~" H 3400 2500 50  0001 C CNN
+	1    3400 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Thermistor_PTC TH?
+U 1 1 603F0E2B
+P 4200 2500
+F 0 "TH?" H 4298 2546 50  0000 L CNN
+F 1 "Thermistor_PTC" H 4298 2455 50  0000 L CNN
+F 2 "" H 4250 2300 50  0001 L CNN
+F 3 "~" H 4200 2500 50  0001 C CNN
+	1    4200 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 2650 3400 2650
+Wire Wire Line
+	2350 2650 2350 2750
+Connection ~ 2750 2650
+Wire Wire Line
+	2750 2650 2350 2650
+Connection ~ 3400 2650
+Wire Wire Line
+	3400 2650 2750 2650
+$Comp
+L power:+24V #PWR?
+U 1 1 603F23C7
+P 2050 4250
+F 0 "#PWR?" H 2050 4100 50  0001 C CNN
+F 1 "+24V" H 2065 4423 50  0000 C CNN
+F 2 "" H 2050 4250 50  0001 C CNN
+F 3 "" H 2050 4250 50  0001 C CNN
+	1    2050 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 603F2BD7
+P 3150 4250
+F 0 "#PWR?" H 3150 4100 50  0001 C CNN
+F 1 "+5V" H 3165 4423 50  0000 C CNN
+F 2 "" H 3150 4250 50  0001 C CNN
+F 3 "" H 3150 4250 50  0001 C CNN
+	1    3150 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 4550 2850 4550
+Text GLabel 2050 5650 2    50   Output ~ 0
+Bat_Current_Pos
+Wire Wire Line
+	2050 5650 1600 5650
+Text GLabel 6950 4550 1    50   Output ~ 0
+V_CELL1
+Text GLabel 7250 4550 1    50   Output ~ 0
+V_CELL2
+Text GLabel 7550 4550 1    50   Output ~ 0
+V_CELL3
+$Comp
+L Device:R R?
+U 1 1 60405D8A
+P 2050 4400
+F 0 "R?" H 2120 4446 50  0000 L CNN
+F 1 "90KR0.5%" H 2120 4355 50  0000 L CNN
+F 2 "" V 1980 4400 50  0001 C CNN
+F 3 "~" H 2050 4400 50  0001 C CNN
+	1    2050 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60406110
+P 2050 4700
+F 0 "R?" H 1980 4654 50  0000 R CNN
+F 1 "10KR0.5%" H 1980 4745 50  0000 R CNN
+F 2 "" V 1980 4700 50  0001 C CNN
+F 3 "~" H 2050 4700 50  0001 C CNN
+	1    2050 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6040647E
+P 2050 4850
+F 0 "#PWR?" H 2050 4600 50  0001 C CNN
+F 1 "GND" H 2055 4677 50  0000 C CNN
+F 2 "" H 2050 4850 50  0001 C CNN
+F 3 "" H 2050 4850 50  0001 C CNN
+	1    2050 4850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 4550 2050 4550
+Connection ~ 2050 4550
+$Comp
+L Device:R R?
+U 1 1 60408D6C
+P 3150 4400
+F 0 "R?" H 3220 4446 50  0000 L CNN
+F 1 "R" H 3220 4355 50  0000 L CNN
+F 2 "" V 3080 4400 50  0001 C CNN
+F 3 "~" H 3150 4400 50  0001 C CNN
+	1    3150 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 604091C5
+P 3150 4700
+F 0 "R?" H 3220 4746 50  0000 L CNN
+F 1 "R" H 3220 4655 50  0000 L CNN
+F 2 "" V 3080 4700 50  0001 C CNN
+F 3 "~" H 3150 4700 50  0001 C CNN
+	1    3150 4700
+	1    0    0    -1  
+$EndComp
+Connection ~ 3150 4550
+$Comp
+L power:GND #PWR?
+U 1 1 604093E1
+P 3150 4850
+F 0 "#PWR?" H 3150 4600 50  0001 C CNN
+F 1 "GND" H 3155 4677 50  0000 C CNN
+F 2 "" H 3150 4850 50  0001 C CNN
+F 3 "" H 3150 4850 50  0001 C CNN
+	1    3150 4850
+	-1   0    0    -1  
+$EndComp
+Text Notes 3950 4850 0    50   ~ 0
+33v == 3.3v\n\nR=U/I\nI=U/R1+R2\nR1 =10KOhm\nR2 = 90KOhm\n\n9.9 == 3.3V\nR1 = 10KOhm\nR2 =  20 KOhm
+Text Notes 3900 3900 0    50   ~ 0
+TO DO:\nDouble check values\n
 $EndSCHEMATC
