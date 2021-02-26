@@ -348,7 +348,7 @@ F 3 "" H 3150 4850 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Text Notes 3950 4850 0    50   ~ 0
-33v == 3.3v\n\nR=U/I\nI=U/R1+R2\nR1 =10KOhm\nR2 = 90KOhm\n\n9.9 == 3.3V\nR1 = 10KOhm\nR2 =  20 KOhm
+33v == 3.3v\n\nR=U/I\nI=U/R1+R2\nR1 =90KOhm\nR2 = 10KOhm\n\n9.9 == 3.3V\nR1 = 10KOhm\nR2 =  5KOhm
 Text Notes 3900 3900 0    50   ~ 0
 TO DO:\nDouble check values\n
 $Comp

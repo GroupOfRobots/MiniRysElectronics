@@ -932,4 +932,108 @@ F 5 "https://www.tme.eu/pl/details/74hc2g00dp.125/bramki-inwertery/nexperia/" H 
 	2    4525 6125
 	1    0    0    -1  
 $EndComp
+$Comp
+L rysboard:DMP3036SSD-13 Q?
+U 1 1 603966B2
+P 2900 1050
+F 0 "Q?" V 3242 1050 50  0000 C CNN
+F 1 "DMP3036SSD-13" V 3151 1050 50  0000 C CNN
+F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 3100 975 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/70209/70209.pdf" H 2900 1050 50  0001 L CNN
+	1    2900 1050
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 603970BA
+P 3600 1100
+F 0 "C?" H 3600 1225 60  0000 R TNN
+F 1 "10u" H 3600 1050 60  0000 R TNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3500 1190 60  0001 C CNN
+F 3 "" H 3500 1190 60  0000 C CNN
+	1    3600 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60397388
+P 3850 1100
+F 0 "C?" H 3850 1225 60  0000 R TNN
+F 1 "10u" H 3850 1050 60  0000 R TNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3750 1190 60  0001 C CNN
+F 3 "" H 3750 1190 60  0000 C CNN
+	1    3850 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 950  3600 950 
+Connection ~ 3600 950 
+Wire Wire Line
+	3600 950  3850 950 
+$Comp
+L power:Vdrive #PWR?
+U 1 1 6039DE74
+P 4050 950
+F 0 "#PWR?" H 3850 800 50  0001 C CNN
+F 1 "Vdrive" H 4050 1125 50  0000 C CNN
+F 2 "" H 4050 950 50  0001 C CNN
+F 3 "" H 4050 950 50  0001 C CNN
+	1    4050 950 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4050 950  3850 950 
+Connection ~ 3850 950 
+$Comp
+L rysboard:NST847BDP6T5G Q?
+U 1 1 603A44DC
+P 2400 1450
+F 0 "Q?" H 2590 1496 50  0000 L CNN
+F 1 "NST847BDP6T5G" H 2590 1405 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-963" H 2600 1550 50  0001 C CNN
+F 3 "~" H 2400 1450 50  0001 C CNN
+	1    2400 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 603A5682
+P 2500 1650
+F 0 "#PWR?" H 2500 1400 50  0001 C CNN
+F 1 "GND" H 2505 1477 50  0000 C CNN
+F 2 "" H 2500 1650 50  0001 C CNN
+F 3 "" H 2500 1650 50  0001 C CNN
+	1    2500 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1250 2900 1250
+$Comp
+L Device:R R?
+U 1 1 603AB9BC
+P 2500 1100
+F 0 "R?" H 2570 1146 50  0000 L CNN
+F 1 "R" H 2570 1055 50  0000 L CNN
+F 2 "" V 2430 1100 50  0001 C CNN
+F 3 "~" H 2500 1100 50  0001 C CNN
+	1    2500 1100
+	1    0    0    -1  
+$EndComp
+Connection ~ 2500 1250
+Wire Wire Line
+	2700 950  2500 950 
+Connection ~ 2500 950 
+Wire Wire Line
+	2500 950  2200 950 
+$Comp
+L Device:R R?
+U 1 1 603B1D08
+P 2050 1450
+F 0 "R?" V 1843 1450 50  0000 C CNN
+F 1 "R" V 1934 1450 50  0000 C CNN
+F 2 "" V 1980 1450 50  0001 C CNN
+F 3 "~" H 2050 1450 50  0001 C CNN
+	1    2050 1450
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
