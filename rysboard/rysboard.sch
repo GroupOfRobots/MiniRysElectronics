@@ -44,33 +44,19 @@ Text Label 950  2700 0    50   ~ 0
 ~MOTOR_STBY
 Text Label 950  3200 0    50   ~ 0
 MOTOR_BUSY
-Wire Wire Line
-	8250 1775 7675 1775
-Text Label 7675 1775 0    50   ~ 0
+Text Label 7700 1800 0    50   ~ 0
 MOTOR_FLAG
-Wire Wire Line
-	8250 1575 7675 1575
-Text Label 7675 1575 0    50   ~ 0
+Text Label 7700 1600 0    50   ~ 0
 ~MOTOR_STBY
-Wire Wire Line
-	8250 1675 7675 1675
-Text Label 7675 1675 0    50   ~ 0
+Text Label 7700 1700 0    50   ~ 0
 MOTOR_BUSY
-Wire Wire Line
-	9225 1575 9675 1575
-Text Label 9675 1575 2    50   ~ 0
+Text Label 9650 1600 2    50   ~ 0
 SPI_MISO
-Wire Wire Line
-	9225 1675 9675 1675
-Text Label 9675 1675 2    50   ~ 0
+Text Label 9650 1700 2    50   ~ 0
 SPI_MOSI
-Wire Wire Line
-	9225 1775 9675 1775
-Text Label 9675 1775 2    50   ~ 0
+Text Label 9650 1800 2    50   ~ 0
 SPI_CLK
-Wire Wire Line
-	9225 1875 9675 1875
-Text Label 9675 1875 2    50   ~ 0
+Text Label 9650 1900 2    50   ~ 0
 ~SPI_CS0
 Text Label 7775 3450 0    50   ~ 0
 SPI_MISO
@@ -209,19 +195,6 @@ Text Notes 4400 4700 0    100  ~ 0
 UART connector
 Text Label 950  3000 0    50   ~ 0
 SPI_IRQEXT
-$Sheet
-S 8250 1500 975  600 
-U 5EB7428E
-F0 "Motor Drivers" 50
-F1 "motor_drivers.sch" 50
-F2 "~STBY" I L 8250 1575 50 
-F3 "~SPI_CS" I R 9225 1875 50 
-F4 "SPI_CLK" I R 9225 1775 50 
-F5 "SPI_MISO" O R 9225 1575 50 
-F6 "SPI_MOSI" I R 9225 1675 50 
-F7 "BUSY" O L 8250 1675 50 
-F8 "FLAG" O L 8250 1775 50 
-$EndSheet
 $Comp
 L power:PWR_FLAG #FLG0103
 U 1 1 5EE863F0
@@ -384,17 +357,6 @@ Wire Wire Line
 	950  3200 1500 3200
 NoConn ~ 1500 2900
 NoConn ~ 1500 2800
-$Comp
-L rysboard:STM32G030K8Tx U4
-U 1 1 6035F242
-P 2350 6050
-F 0 "U4" H 2300 6250 50  0000 C CNN
-F 1 "STM32G030K8Tx" H 2250 6600 50  0000 C CNN
-F 2 "Package_QFP:LQFP-32_7x7mm_P0.8mm" H 3050 4650 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00088500.pdf" H 2350 6050 50  0001 C CNN
-	1    2350 6050
-	1    0    0    -1  
-$EndComp
 Text GLabel 2300 4950 0    50   Input ~ 0
 MCU_3.3V
 Wire Wire Line
@@ -697,4 +659,52 @@ Wire Wire Line
 	7300 5200 8250 5200
 Wire Wire Line
 	8250 5100 7300 5100
+$Comp
+L rysboard:STM32G031K8Ux U4
+U 1 1 6039ADD9
+P 2350 6050
+F 0 "U4" H 2350 6000 50  0000 C CNN
+F 1 "STM32G031K8Ux" H 2200 6600 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm" H 3050 4650 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00088500.pdf" H 2350 6050 50  0001 C CNN
+	1    2350 6050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2850 6850
+NoConn ~ 2850 6550
+NoConn ~ 2850 6450
+NoConn ~ 1750 6750
+NoConn ~ 1750 6250
+Text Label 7200 1900 0    50   ~ 0
+ENABLE_STEPPER_MOTORS
+$Sheet
+S 8250 1500 1000 600 
+U 5EB7428E
+F0 "Motor Drivers" 50
+F1 "motor_drivers.sch" 50
+F2 "~STBY" I L 8250 1600 50 
+F3 "~SPI_CS" I R 9250 1900 50 
+F4 "SPI_CLK" I R 9250 1800 50 
+F5 "SPI_MISO" O R 9250 1600 50 
+F6 "SPI_MOSI" I R 9250 1700 50 
+F7 "BUSY" O L 8250 1700 50 
+F8 "FLAG" O L 8250 1800 50 
+F9 "MOT_EN" I L 8250 1900 50 
+$EndSheet
+Wire Wire Line
+	7700 1600 8250 1600
+Wire Wire Line
+	8250 1700 7700 1700
+Wire Wire Line
+	7700 1800 8250 1800
+Wire Wire Line
+	7200 1900 8250 1900
+Wire Wire Line
+	9250 1600 9650 1600
+Wire Wire Line
+	9650 1700 9250 1700
+Wire Wire Line
+	9650 1800 9250 1800
+Wire Wire Line
+	9650 1900 9250 1900
 $EndSCHEMATC

@@ -764,7 +764,7 @@ F 3 "" H 1950 3450 50  0001 C CNN
 $EndComp
 Connection ~ 1950 3450
 $Comp
-L Connector_Generic:Conn_01x02 J19
+L Connector_Generic:Conn_01x03 J19
 U 1 1 606189C6
 P 2950 3450
 F 0 "J19" H 3030 3442 50  0000 L CNN
