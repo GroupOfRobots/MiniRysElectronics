@@ -420,14 +420,9 @@ F 3 "~" H 2550 1100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3050 1100 2700 1100
-Connection ~ 3050 1100
-Wire Wire Line
 	2400 1100 2400 1400
 Wire Wire Line
 	3000 1400 3050 1400
-Wire Wire Line
-	3050 1400 3050 1100
 $Comp
 L power:GND #PWR018
 U 1 1 5E91776C
@@ -450,8 +445,6 @@ F 3 "~" H 2250 6550 50  0001 C CNN
 	1    2250 6550
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	3100 1100 3050 1100
 $Comp
 L Device:R R8
 U 1 1 5EC1A2DB
@@ -579,7 +572,6 @@ Wire Wire Line
 	2200 1800 1600 1800
 Wire Wire Line
 	3050 1400 3050 1850
-Connection ~ 3050 1400
 Connection ~ 3050 1850
 Wire Wire Line
 	3050 1850 3300 1850
@@ -878,4 +870,6 @@ Text GLabel 850  1500 0    50   Output ~ 0
 V_CELL2
 Text GLabel 850  1700 0    50   Output ~ 0
 V_CELL1
+Wire Wire Line
+	2700 1100 3100 1100
 $EndSCHEMATC

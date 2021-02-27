@@ -175,7 +175,7 @@ Wire Wire Line
 Wire Wire Line
 	7550 1250 6750 1250
 Wire Wire Line
-	7550 2200 8600 2200
+	7550 2200 8500 2200
 $Comp
 L Transistor_FET:2N7000 Q9
 U 1 1 5FF132A9
@@ -466,7 +466,7 @@ Wire Wire Line
 Text Label 9500 3450 0    50   ~ 0
 current_monitor
 Text Label 8600 2200 0    50   ~ 0
-load
+EL_LOAD
 $Comp
 L Device:R R42
 U 1 1 5FF29FC2
@@ -669,4 +669,20 @@ F 3 "" H 4500 2050 50  0001 C CNN
 	1    4500 2050
 	1    0    0    -1  
 $EndComp
+Text Notes 3050 1000 0    50   ~ 0
+REMOVE ADDITIONA L mosfet USE INTERNAL SHUDTOWN PIN
+$Comp
+L power:+12V #PWR?
+U 1 1 604387DC
+P 8500 2200
+F 0 "#PWR?" H 8500 2050 50  0001 C CNN
+F 1 "+12V" H 8515 2373 50  0000 C CNN
+F 2 "" H 8500 2200 50  0001 C CNN
+F 3 "" H 8500 2200 50  0001 C CNN
+	1    8500 2200
+	1    0    0    -1  
+$EndComp
+Connection ~ 8500 2200
+Wire Wire Line
+	8500 2200 8600 2200
 $EndSCHEMATC
