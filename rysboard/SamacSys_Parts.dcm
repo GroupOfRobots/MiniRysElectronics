@@ -1,0 +1,18 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DMP2075UFDB-7
+D MOSFET MOSFET BVDSS: 8V-24V
+F https://www.arrow.com/en/products/dmp2075ufdb-7/diodes-incorporated
+$ENDCMP
+#
+$CMP DMP2075UFDB-7-alt
+D MOSFET MOSFET BVDSS: 8V-24V
+F https://www.arrow.com/en/products/dmp2075ufdb-7/diodes-incorporated
+$ENDCMP
+#
+$CMP NE555DR
+D Single Precision Timer
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+#End Doc Library

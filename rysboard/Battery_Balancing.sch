@@ -18,12 +18,12 @@ V_CELL_3
 $Comp
 L Connector_Generic:Conn_01x02 J4
 U 1 1 5FE31971
-P 1200 1700
-F 0 "J4" H 1118 1375 50  0000 C CNN
-F 1 "Cell3" H 1118 1466 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0212_2x01_P3.00mm_Vertical" H 1200 1700 50  0001 C CNN
-F 3 "~" H 1200 1700 50  0001 C CNN
-	1    1200 1700
+P 1200 3350
+F 0 "J4" H 1118 3025 50  0000 C CNN
+F 1 "Cell3" H 1118 3116 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0212_2x01_P3.00mm_Vertical" H 1200 3350 50  0001 C CNN
+F 3 "~" H 1200 3350 50  0001 C CNN
+	1    1200 3350
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -40,12 +40,12 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J6
 U 1 1 5FE3211D
-P 1200 3350
-F 0 "J6" H 1118 3025 50  0000 C CNN
-F 1 "Cell1" H 1118 3116 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0212_2x01_P3.00mm_Vertical" H 1200 3350 50  0001 C CNN
-F 3 "~" H 1200 3350 50  0001 C CNN
-	1    1200 3350
+P 1200 1700
+F 0 "J6" H 1118 1375 50  0000 C CNN
+F 1 "Cell1" H 1118 1466 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0212_2x01_P3.00mm_Vertical" H 1200 1700 50  0001 C CNN
+F 3 "~" H 1200 1700 50  0001 C CNN
+	1    1200 1700
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -60,76 +60,16 @@ F 3 "~" H 4950 1000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L rysboard:DMP3036SSD U8
-U 1 1 5FE3F414
-P 2700 3200
-F 0 "U8" H 2700 2435 50  0000 C CNN
-F 1 "DMP3036SSD" H 2700 2526 50  0000 C CNN
-F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 2700 3200 50  0001 C CNN
-F 3 "https://eu.mouser.com/datasheet/2/115/DMP3036SSD-526266.pdf" H 2700 3200 50  0001 C CNN
-	1    2700 3200
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:R R15
 U 1 1 5FE43196
-P 1850 3300
-F 0 "R15" V 1643 3300 50  0000 C CNN
-F 1 "10KR" V 1734 3300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1780 3300 50  0001 C CNN
-F 3 "~" H 1850 3300 50  0001 C CNN
-	1    1850 3300
+P 2150 3300
+F 0 "R15" V 2050 3050 50  0000 C CNN
+F 1 "10KR" V 2150 3050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2080 3300 50  0001 C CNN
+F 3 "~" H 2150 3300 50  0001 C CNN
+	1    2150 3300
 	-1   0    0    1   
 $EndComp
-$Comp
-L rysboard:DMP3036SSD U7
-U 1 1 5FE44620
-P 2700 1650
-F 0 "U7" H 2700 885 50  0000 C CNN
-F 1 "DMP3036SSD" H 2700 976 50  0000 C CNN
-F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 2700 1650 50  0001 C CNN
-F 3 "https://eu.mouser.com/datasheet/2/115/DMP3036SSD-526266.pdf" H 2700 1650 50  0001 C CNN
-	1    2700 1650
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2400 1400 2400 1450
-Wire Wire Line
-	2400 1350 2400 1400
-Connection ~ 2400 1400
-$Comp
-L Device:D_Zener D15
-U 1 1 5FE47BF7
-P 3500 3450
-F 0 "D15" H 3500 3233 50  0000 C CNN
-F 1 "D_Zener" H 3500 3324 50  0000 C CNN
-F 2 "" H 3500 3450 50  0001 C CNN
-F 3 "~" H 3500 3450 50  0001 C CNN
-	1    3500 3450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:D_Zener D13
-U 1 1 5FE55708
-P 3500 1700
-F 0 "D13" H 3500 1917 50  0000 C CNN
-F 1 "D_Zener" H 3500 1826 50  0000 C CNN
-F 2 "" H 3500 1700 50  0001 C CNN
-F 3 "~" H 3500 1700 50  0001 C CNN
-	1    3500 1700
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2400 1250 2400 1150
-Wire Wire Line
-	3000 1450 3050 1450
-Wire Wire Line
-	3050 1450 3050 1250
-Wire Wire Line
-	3050 1250 3000 1250
-Connection ~ 3050 1450
-Text HLabel 2850 1700 0    50   Input ~ 0
-V_CELL_2
 Text HLabel 4300 3000 2    50   BiDi ~ 0
 V_CELL_1
 $Comp
@@ -154,16 +94,12 @@ F 3 "~" H 1600 2500 50  0001 C CNN
 	1    1600 2500
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2400 1250 2400 1350
-Connection ~ 2400 1250
-Connection ~ 2400 1350
 $Comp
 L Device:D_TVS D12
 U 1 1 5FE6C2AF
 P 1600 3300
-F 0 "D12" V 1554 3380 50  0000 L CNN
-F 1 "D_TVS" V 1645 3380 50  0000 L CNN
+F 0 "D12" V 1250 3250 50  0000 L CNN
+F 1 "D_TVS" V 1350 3200 50  0000 L CNN
 F 2 "Diode_SMD:D_SOD-128" H 1600 3300 50  0001 C CNN
 F 3 "~" H 1600 3300 50  0001 C CNN
 	1    1600 3300
@@ -200,23 +136,11 @@ Wire Wire Line
 Connection ~ 1600 3150
 Connection ~ 2400 3000
 Wire Wire Line
-	3000 2900 3250 2900
-Wire Wire Line
 	3250 3450 3150 3450
-Wire Wire Line
-	3250 3450 3350 3450
-Connection ~ 3250 3450
-Wire Wire Line
-	3650 3450 3650 3000
-Wire Wire Line
-	3650 3000 3000 3000
 Wire Wire Line
 	3250 2900 3250 3450
 Wire Wire Line
 	2850 3450 2700 3450
-Wire Wire Line
-	4300 3000 3650 3000
-Connection ~ 3650 3000
 Wire Wire Line
 	1400 2650 1400 3150
 Connection ~ 1400 2650
@@ -235,96 +159,12 @@ Wire Wire Line
 	2400 2700 2400 2800
 Text HLabel 2850 2300 0    50   Input ~ 0
 V_CELL_1
-$Comp
-L Device:D_Zener D14
-U 1 1 5FE8268E
-P 3500 2300
-F 0 "D14" H 3500 2083 50  0000 C CNN
-F 1 "D_Zener" H 3500 2174 50  0000 C CNN
-F 2 "" H 3500 2300 50  0001 C CNN
-F 3 "~" H 3500 2300 50  0001 C CNN
-	1    3500 2300
-	-1   0    0    1   
-$EndComp
 Text HLabel 4300 2800 2    50   BiDi ~ 0
 V_CELL_2
 Wire Wire Line
-	4300 2800 3650 2800
-Wire Wire Line
-	3650 2300 3650 2800
-Connection ~ 3650 2800
-Wire Wire Line
-	3650 2800 3000 2800
-Wire Wire Line
 	3150 2300 3250 2300
 Wire Wire Line
-	3000 2700 3250 2700
-Wire Wire Line
 	3250 2700 3250 2300
-Connection ~ 3250 2300
-Wire Wire Line
-	3250 2300 3350 2300
-Wire Wire Line
-	3150 1700 3250 1700
-Wire Wire Line
-	3250 1700 3250 1350
-Connection ~ 3250 1350
-Wire Wire Line
-	3250 1350 3250 1250
-Wire Wire Line
-	3000 1150 3250 1150
-Wire Wire Line
-	3000 1350 3250 1350
-Wire Wire Line
-	3350 1700 3250 1700
-Connection ~ 3250 1700
-Wire Wire Line
-	3650 1450 3650 1700
-$Comp
-L rysboard:DMP3036SSD U10
-U 1 1 5FE98C40
-P 4050 950
-F 0 "U10" H 4050 185 50  0000 C CNN
-F 1 "DMP3036SSD" H 4050 276 50  0000 C CNN
-F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 4050 950 50  0001 C CNN
-F 3 "https://eu.mouser.com/datasheet/2/115/DMP3036SSD-526266.pdf" H 4050 950 50  0001 C CNN
-	1    4050 950 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3750 1250 3700 1250
-Connection ~ 3250 1250
-Wire Wire Line
-	3250 1250 3250 1150
-Wire Wire Line
-	3750 1450 3700 1450
-Wire Wire Line
-	3700 1450 3700 1250
-Connection ~ 3700 1250
-Wire Wire Line
-	3700 1250 3250 1250
-Wire Wire Line
-	3750 1350 3500 1350
-Wire Wire Line
-	3500 1350 3500 1450
-Connection ~ 3500 1450
-Wire Wire Line
-	3500 1450 3650 1450
-Wire Wire Line
-	3500 1350 3500 1150
-Wire Wire Line
-	3500 1150 3750 1150
-Connection ~ 3500 1350
-Wire Wire Line
-	4350 1150 4350 1250
-Connection ~ 4350 1250
-Wire Wire Line
-	4350 1250 4350 1350
-Connection ~ 4350 1350
-Wire Wire Line
-	4350 1350 4350 1450
-Wire Wire Line
-	3050 1450 3500 1450
 Wire Wire Line
 	1600 1400 1600 1500
 Wire Wire Line
@@ -365,17 +205,6 @@ F 1 "10KR" V 2884 2300 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2930 2300 50  0001 C CNN
 F 3 "~" H 3000 2300 50  0001 C CNN
 	1    3000 2300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R22
-U 1 1 5FEB3E6A
-P 3000 1700
-F 0 "R22" V 2793 1700 50  0000 C CNN
-F 1 "10KR" V 2884 1700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2930 1700 50  0001 C CNN
-F 3 "~" H 3000 1700 50  0001 C CNN
-	1    3000 1700
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -992,78 +821,146 @@ Text HLabel 5600 7750 2    50   Output ~ 0
 PACK-
 Text HLabel 5400 1350 2    50   Output ~ 0
 PACK+
-$Comp
-L rysboard:DMP3036SSD-13 Q1
-U 1 1 604F9377
-P 3750 7650
-F 0 "Q1" V 3999 7650 50  0000 C CNN
-F 1 "DMP3036SSD-13" V 4090 7650 50  0000 C CNN
-F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 3950 7575 50  0001 L CIN
-F 3 "http://www.vishay.com/docs/70209/70209.pdf" H 3750 7650 50  0001 L CNN
-	1    3750 7650
-	0    -1   1    0   
-$EndComp
-$Comp
-L rysboard:DMP3036SSD-13 Q1
-U 2 1 604FB474
-P 4350 7650
-F 0 "Q1" V 4599 7650 50  0000 C CNN
-F 1 "DMP3036SSD-13" V 4690 7650 50  0000 C CNN
-F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 4550 7575 50  0001 L CIN
-F 3 "http://www.vishay.com/docs/70209/70209.pdf" H 4350 7650 50  0001 L CNN
-	2    4350 7650
-	0    1    1    0   
-$EndComp
-Connection ~ 4550 7750
-Connection ~ 3550 7750
-$Comp
-L rysboard:DMP3036SSD-13 Q2
-U 1 1 6050707B
-P 2150 3950
-F 0 "Q2" V 2100 3800 50  0000 C CNN
-F 1 "DMP3036SSD-13" V 2200 3850 50  0000 C CNN
-F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 2350 3875 50  0001 L CIN
-F 3 "http://www.vishay.com/docs/70209/70209.pdf" H 2150 3950 50  0001 L CNN
-	1    2150 3950
-	0    -1   1    0   
-$EndComp
-$Comp
-L rysboard:DMP3036SSD-13 Q2
-U 2 1 60577ED6
-P 2150 3550
-F 0 "Q2" V 2100 3400 50  0000 C CNN
-F 1 "DMP3036SSD-13" V 2200 3500 50  0000 C CNN
-F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 2350 3475 50  0001 L CIN
-F 3 "http://www.vishay.com/docs/70209/70209.pdf" H 2150 3550 50  0001 L CNN
-	2    2150 3550
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1950 3750 1950 3450
-Wire Wire Line
-	1600 3150 1850 3150
 Wire Wire Line
 	2350 3750 2700 3750
 Wire Wire Line
 	2700 3750 3700 3750
+$Comp
+L SamacSys_Parts:DMP2075UFDB-7-alt Q14
+U 1 1 60465A0F
+P 2400 2700
+F 0 "Q14" H 2950 2965 50  0000 C CNN
+F 1 "DMP2075UFDB-7-alt" H 2800 2200 50  0000 C CNN
+F 2 "SamacSys_Parts:DMP2075UFDB7" H 3350 2800 50  0001 L CNN
+F 3 "" H 3350 2700 50  0001 L CNN
+F 4 "MOSFET MOSFET BVDSS: 8V-24V" H 3350 2600 50  0001 L CNN "Description"
+F 5 "0.605" H 3350 2500 50  0001 L CNN "Height"
+F 6 "621-DMP2075UFDB-7" H 3350 2400 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/DMP2075UFDB-7/?qs=chTDxNqvsymSAMnBH8byng%3D%3D" H 3350 2300 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Diodes Inc." H 3350 2200 50  0001 L CNN "Manufacturer_Name"
+F 9 "DMP2075UFDB-7" H 3350 2100 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2400 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L rysboard:SI7997DP-T1-GE3 Q13
+U 2 1 604A1604
+P 3600 1300
+F 0 "Q13" V 3849 1300 50  0000 C CNN
+F 1 "SI7997DP-T1-GE3" V 3940 1300 50  0000 C CNN
+F 2 "Package_SO:PowerPAK_SO-8_Dual" H 3800 1225 50  0001 L CIN
+F 3 "" H 3600 1300 50  0001 L CNN
+	2    3600 1300
+	0    1    -1   0   
+$EndComp
+$Comp
+L rysboard:SI7997DP-T1-GE3 Q13
+U 1 1 604A2038
+P 3000 1300
+F 0 "Q13" V 3342 1300 50  0000 C CNN
+F 1 "SI7997DP-T1-GE3" V 3251 1300 50  0000 C CNN
+F 2 "Package_SO:PowerPAK_SO-8_Dual" H 3200 1225 50  0001 L CIN
+F 3 "" H 3000 1300 50  0001 L CNN
+	1    3000 1300
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
-	1950 3750 1950 4050
-Connection ~ 1950 3750
+	3200 2700 3250 2700
 Wire Wire Line
-	2350 4050 2350 3750
+	3200 2900 3250 2900
+$Comp
+L Device:R R22
+U 1 1 6044A95F
+P 2800 1850
+F 0 "R22" V 2593 1850 50  0000 C CNN
+F 1 "10KR" V 2684 1850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2730 1850 50  0001 C CNN
+F 3 "~" H 2800 1850 50  0001 C CNN
+	1    2800 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Zener D13
+U 1 1 6044AEC7
+P 3150 1850
+F 0 "D13" H 3150 2067 50  0000 C CNN
+F 1 "D_Zener" H 3150 1976 50  0000 C CNN
+F 2 "" H 3150 1850 50  0001 C CNN
+F 3 "~" H 3150 1850 50  0001 C CNN
+	1    3150 1850
+	-1   0    0    1   
+$EndComp
 Wire Wire Line
-	2350 3450 2350 3750
-Connection ~ 2350 3750
+	3200 1200 3300 1200
 Wire Wire Line
-	2150 3750 2000 3750
+	3300 1200 3300 1850
+Connection ~ 3300 1200
 Wire Wire Line
-	2000 3750 2000 3650
+	3300 1200 3400 1200
 Wire Wire Line
-	2000 3650 1850 3650
-Connection ~ 2150 3750
-Connection ~ 1850 3150
+	3000 1850 3000 1600
 Wire Wire Line
-	1850 3150 2400 3150
+	3000 1600 3600 1600
 Wire Wire Line
-	1850 3450 1850 3650
+	3600 1600 3600 1500
+Connection ~ 3000 1600
+Wire Wire Line
+	3000 1600 3000 1500
+Wire Wire Line
+	2950 1850 3000 1850
+Connection ~ 3000 1850
+Text HLabel 2650 1850 0    50   Input ~ 0
+V_CELL_2
+Wire Wire Line
+	3800 1200 4350 1200
+Wire Wire Line
+	4350 1200 4350 1350
+Wire Wire Line
+	2800 1200 2400 1200
+Wire Wire Line
+	2400 1200 2400 1400
+Wire Wire Line
+	3200 2800 4300 2800
+Wire Wire Line
+	3200 3000 4300 3000
+Connection ~ 2150 3150
+Wire Wire Line
+	2150 3150 2400 3150
+Wire Wire Line
+	1600 3150 2150 3150
+$Comp
+L rysboard:Si7938DP-T1-GE3 Q?
+U 1 1 605A83B7
+P 2150 3650
+F 0 "Q?" V 2399 3650 50  0000 C CNN
+F 1 "Si7938DP-T1-GE3" V 2490 3650 50  0000 C CNN
+F 2 "Package_SO:PowerPAK_SO-8_Dual" H 2350 3575 50  0001 L CIN
+F 3 "" H 2150 3650 50  0001 L CNN
+	1    2150 3650
+	0    -1   1    0   
+$EndComp
+Connection ~ 4550 7750
+$Comp
+L rysboard:DMP3036SSD-13 Q1
+U 2 1 6052B6DB
+P 4350 7650
+F 0 "Q1" V 4599 7650 50  0000 C CNN
+F 1 "DMP3036SSD-13" V 4690 7650 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 4550 7575 50  0001 L CIN
+F 3 "" H 4350 7650 50  0001 L CNN
+	2    4350 7650
+	0    1    1    0   
+$EndComp
+Connection ~ 3550 7750
+$Comp
+L rysboard:DMP3036SSD-13 Q1
+U 1 1 6052EF35
+P 3750 7650
+F 0 "Q1" V 3999 7650 50  0000 C CNN
+F 1 "DMP3036SSD-13" V 4090 7650 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 3950 7575 50  0001 L CIN
+F 3 "" H 3750 7650 50  0001 L CNN
+	1    3750 7650
+	0    -1   1    0   
+$EndComp
 $EndSCHEMATC

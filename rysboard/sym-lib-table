@@ -1,3 +1,5 @@
 (sym_lib_table
   (lib (name rysboard)(type Legacy)(uri ${KIPRJMOD}/rysboard.lib)(options "")(descr ""))
+  (lib (name rysboard-rescue)(type Legacy)(uri ${KIPRJMOD}/rysboard-rescue.lib)(options "")(descr ""))
+  (lib (name SamacSys_Parts)(type Legacy)(uri ${KIPRJMOD}/SamacSys_Parts.lib)(options "")(descr ""))
 )

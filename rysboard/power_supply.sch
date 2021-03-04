@@ -37,7 +37,7 @@ AR Path="/5E8FCBC6/5FD3869B" Ref="C15"  Part="1"
 F 0 "C15" H 2550 7125 60  0000 R TNN
 F 1 "1uF" H 2550 6950 60  0000 R TNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2450 7090 60  0001 C CNN
-F 3 "" H 2450 7090 60  0001 C CNN
+F 3 "~" H 2450 7090 60  0001 C CNN
 	1    2550 7000
 	1    0    0    -1  
 $EndComp
@@ -50,7 +50,7 @@ AR Path="/5E8FCBC6/5FD38F28" Ref="C23"  Part="1"
 F 0 "C23" H 3750 7125 60  0000 R TNN
 F 1 "100n" H 3750 6950 60  0000 R TNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3650 7090 60  0001 C CNN
-F 3 "" H 3650 7090 60  0001 C CNN
+F 3 "~" H 3650 7090 60  0001 C CNN
 	1    3750 7000
 	1    0    0    -1  
 $EndComp
@@ -129,7 +129,7 @@ AR Path="/5E8FCBC6/5EC37974" Ref="C20"  Part="1"
 F 0 "C20" H 9875 1925 60  0000 R TNN
 F 1 "10u" H 9875 1750 60  0000 R TNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 9775 1890 60  0001 C CNN
-F 3 "" H 9775 1890 60  0000 C CNN
+F 3 "~" H 9775 1890 60  0000 C CNN
 	1    9875 1800
 	1    0    0    -1  
 $EndComp
@@ -142,7 +142,7 @@ AR Path="/5E8FCBC6/5EC3797A" Ref="C21"  Part="1"
 F 0 "C21" H 10175 1925 60  0000 R TNN
 F 1 "10u" H 10175 1750 60  0000 R TNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 10075 1890 60  0001 C CNN
-F 3 "" H 10075 1890 60  0000 C CNN
+F 3 "~" H 10075 1890 60  0000 C CNN
 	1    10175 1800
 	1    0    0    -1  
 $EndComp
@@ -155,7 +155,7 @@ AR Path="/5E8FCBC6/5EC37980" Ref="C22"  Part="1"
 F 0 "C22" H 10475 1925 60  0000 R TNN
 F 1 "100n" H 10475 1750 60  0000 R TNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 10375 1890 60  0001 C CNN
-F 3 "" H 10375 1890 60  0001 C CNN
+F 3 "~" H 10375 1890 60  0001 C CNN
 	1    10475 1800
 	1    0    0    -1  
 $EndComp
@@ -295,7 +295,7 @@ AR Path="/5EB7428E/5EB77B7B" Ref="L1"  Part="1"
 F 0 "L1" V 9200 1350 50  0000 C CNN
 F 1 "3.3uH" V 9125 1350 50  0000 C CNN
 F 2 "rysboard:L_6.7x6.7_H2.2" H 9025 1350 50  0001 C CNN
-F 3 "https://www.tme.eu/pl/details/hpi0624-3r3/dlawiki-smd-mocy/ferrocore/" H 9025 1350 50  0001 C CNN
+F 3 "~" H 9025 1350 50  0001 C CNN
 F 4 "HPI0624-3R3" V 8975 1325 50  0000 C CNN "Model"
 	1    9025 1350
 	0    -1   -1   0   
@@ -363,7 +363,7 @@ AR Path="/5E8FCBC6/5EB81372" Ref="C18"  Part="1"
 F 0 "C18" H 7350 1925 60  0000 R TNN
 F 1 "100n" H 7350 1750 60  0000 R TNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7250 1890 60  0001 C CNN
-F 3 "" H 7250 1890 60  0001 C CNN
+F 3 "~" H 7250 1890 60  0001 C CNN
 	1    7350 1800
 	1    0    0    -1  
 $EndComp
@@ -376,7 +376,7 @@ AR Path="/5E8FCBC6/5EB7C944" Ref="C17"  Part="1"
 F 0 "C17" H 7050 1925 60  0000 R TNN
 F 1 "10u" H 7050 1750 60  0000 R TNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 6950 1890 60  0001 C CNN
-F 3 "" H 6950 1890 60  0000 C CNN
+F 3 "~" H 6950 1890 60  0000 C CNN
 	1    7050 1800
 	1    0    0    -1  
 $EndComp
@@ -389,7 +389,7 @@ AR Path="/5E8FCBC6/5EB7A8C9" Ref="C16"  Part="1"
 F 0 "C16" H 6750 1925 60  0000 R TNN
 F 1 "10u" H 6750 1750 60  0000 R TNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 6650 1890 60  0001 C CNN
-F 3 "" H 6650 1890 60  0000 C CNN
+F 3 "~" H 6650 1890 60  0000 C CNN
 	1    6750 1800
 	1    0    0    -1  
 $EndComp
@@ -435,17 +435,6 @@ F 3 "" H 2400 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Schottky D5
-U 1 1 5EC1A2D5
-P 2250 6550
-F 0 "D5" H 2250 6650 50  0000 C CNN
-F 1 "SK52" H 2250 6450 50  0000 C CNN
-F 2 "Diode_SMD:D_SMB" H 2250 6550 50  0001 C CNN
-F 3 "~" H 2250 6550 50  0001 C CNN
-	1    2250 6550
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:R R8
 U 1 1 5EC1A2DB
 P 2550 1400
@@ -471,17 +460,6 @@ $EndComp
 Wire Wire Line
 	2400 6850 2550 6850
 Connection ~ 2550 6850
-$Comp
-L Transistor_FET:Si7450DP Q5
-U 1 1 5FEC0C71
-P 3300 1200
-F 0 "Q5" V 3642 1200 50  0000 C CNN
-F 1 "DMP3036SSD-13" V 3551 1200 50  0000 C CNN
-F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 3500 1125 50  0001 L CIN
-F 3 "http://www.vishay.com/docs/70209/70209.pdf" H 3300 1200 50  0001 L CNN
-	1    3300 1200
-	0    1    -1   0   
-$EndComp
 $Comp
 L Device:R R10
 U 1 1 5FECF6D8
@@ -510,7 +488,6 @@ Wire Wire Line
 	3500 1100 3600 1100
 Wire Wire Line
 	3600 1400 3300 1400
-Connection ~ 3300 1400
 Wire Wire Line
 	4000 1100 3600 1100
 Connection ~ 3600 1100
@@ -518,17 +495,6 @@ Text Notes 3350 1500 0    20   ~ 0
 Dioda zenera musi miec\n napięcie odpowiednio wysokie\n, by mosfet się w pełni otworzył.
 Text Notes 2650 800  0    50   ~ 0
 Reverse Polarrity Protection and fuse\nMust be rated for 14A.\n
-$Comp
-L Device:D_Schottky D4
-U 1 1 5FE2C885
-P 2250 6250
-F 0 "D4" H 2250 6350 50  0000 C CNN
-F 1 "SK52" H 2250 6150 50  0000 C CNN
-F 2 "Diode_SMD:D_SMB" H 2250 6250 50  0001 C CNN
-F 3 "~" H 2250 6250 50  0001 C CNN
-	1    2250 6250
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	2400 6550 2550 6550
 Wire Wire Line
@@ -604,17 +570,6 @@ F 3 "" H 11000 1350 50  0001 C CNN
 	1    11000 1350
 	1    0    0    -1  
 $EndComp
-$Comp
-L rysboard:DMP3036SSD-13 Q4
-U 2 1 605CD694
-P 6000 1450
-F 0 "Q4" V 6342 1450 50  0000 C CNN
-F 1 "DMP3036SSD-13" V 6251 1450 50  0000 C CNN
-F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 6200 1375 50  0001 L CIN
-F 3 "http://www.vishay.com/docs/70209/70209.pdf" H 6000 1450 50  0001 L CNN
-	2    6000 1450
-	0    1    -1   0   
-$EndComp
 Wire Wire Line
 	6200 1350 6750 1350
 Connection ~ 6750 1350
@@ -645,8 +600,6 @@ Wire Wire Line
 Wire Wire Line
 	5600 1350 5400 1350
 Connection ~ 5600 1350
-Wire Wire Line
-	6000 1650 5600 1650
 $Comp
 L Device:R R11
 U 1 1 605E84D0
@@ -676,7 +629,6 @@ Wire Wire Line
 	7850 2150 8175 2150
 Wire Wire Line
 	6000 1650 6000 1750
-Connection ~ 6000 1650
 $Comp
 L power:GND #PWR036
 U 1 1 605FFC59
@@ -720,17 +672,6 @@ F 2 "Resistor_SMD:R_0603_1608Metric" V 1880 3650 50  0001 C CNN
 F 3 "~" H 1950 3650 50  0001 C CNN
 	1    1950 3650
 	1    0    0    -1  
-$EndComp
-$Comp
-L rysboard:DMP3036SSD-13 Q4
-U 1 1 60603F20
-P 2400 3550
-F 0 "Q4" V 2742 3550 50  0000 C CNN
-F 1 "DMP3036SSD-13" V 2651 3550 50  0000 C CNN
-F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 2600 3475 50  0001 L CIN
-F 3 "http://www.vishay.com/docs/70209/70209.pdf" H 2400 3550 50  0001 L CNN
-	1    2400 3550
-	0    1    -1   0   
 $EndComp
 Wire Wire Line
 	2400 3750 2400 3800
@@ -805,17 +746,6 @@ F 3 "" H 1950 6250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1950 6250 2100 6250
-$Comp
-L Device:D_Schottky D6
-U 1 1 6066D30E
-P 2250 6850
-F 0 "D6" H 2250 6950 50  0000 C CNN
-F 1 "SK52" H 2250 6750 50  0000 C CNN
-F 2 "Diode_SMD:D_SMB" H 2250 6850 50  0001 C CNN
-F 3 "~" H 2250 6850 50  0001 C CNN
-	1    2250 6850
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	2550 6550 2550 6250
 Wire Wire Line
@@ -872,4 +802,40 @@ Text GLabel 850  1700 0    50   Output ~ 0
 V_CELL1
 Wire Wire Line
 	2700 1100 3100 1100
+Wire Wire Line
+	5600 1650 6000 1650
+$Comp
+L rysboard:DMP3036SSD-13 Q4
+U 2 1 6051D51B
+P 3300 1200
+F 0 "Q4" V 3642 1200 50  0000 C CNN
+F 1 "DMP3036SSD-13" V 3551 1200 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 3500 1125 50  0001 L CIN
+F 3 "" H 3300 1200 50  0001 L CNN
+	2    3300 1200
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3300 1400
+$Comp
+L rysboard:DMP3036SSD-13 Q5
+U 1 1 6051EA37
+P 6000 1450
+F 0 "Q5" V 6342 1450 50  0000 C CNN
+F 1 "DMP3036SSD-13" V 6251 1450 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 6200 1375 50  0001 L CIN
+F 3 "" H 6000 1450 50  0001 L CNN
+	1    6000 1450
+	0    1    -1   0   
+$EndComp
+$Comp
+L rysboard:DMP2075UFDB Q?
+U 1 1 605E5DAF
+P 2400 3550
+F 0 "Q?" V 2742 3550 50  0000 C CNN
+F 1 "DMP2075UFDB" V 2651 3550 50  0000 C CNN
+F 2 "SamacSys_Parts:DMP2075UFDB7" H 2600 3475 50  0001 L CIN
+F 3 "" H 2400 3550 50  0001 L CNN
+	1    2400 3550
+	0    1    -1   0   
+$EndComp
 $EndSCHEMATC
