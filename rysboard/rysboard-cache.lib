@@ -612,6 +612,26 @@ X D2_2 8 0 -100 200 R 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
+# SamacSys_Parts_NSR20F30NXT5G
+#
+DEF SamacSys_Parts_NSR20F30NXT5G D 0 30 Y Y 1 F N
+F0 "D" 450 200 50 H V L CNN
+F1 "SamacSys_Parts_NSR20F30NXT5G" 450 100 50 H V L CNN
+F2 "DSN2_1" 450 0 50 H I L CNN
+F3 "http://www.onsemi.com/pub/Collateral/NSR20F30-D.PDF" 450 -100 50 H I L CNN
+F4 "ON SEMICONDUCTOR - NSR20F30NXT5G - DIODE, SCHOTTKY, 2A, 30V, 0603" 450 -200 50 H I L CNN "Description"
+F5 "863-NSR20F30NXT5G" 450 -400 50 H I L CNN "Mouser Part Number"
+F6 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/NSR20F30NXT5G/?qs=3ezCrKCRT5K%2FARb%252BJ8n8Hg%3D%3D" 450 -500 50 H I L CNN "Mouser Price/Stock"
+F7 "ON Semiconductor" 450 -600 50 H I L CNN "Manufacturer_Name"
+F8 "NSR20F30NXT5G" 450 -700 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 2 0 1 6 200 100 200 -100 N
+P 4 0 1 10 200 0 400 100 400 -100 200 0 F
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 600 0 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
 # power_+12V
 #
 DEF power_+12V #PWR 0 0 Y Y 1 F P
