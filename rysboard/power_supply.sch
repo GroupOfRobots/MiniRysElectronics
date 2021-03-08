@@ -914,7 +914,7 @@ Wire Wire Line
 Text HLabel 2300 2975 1    50   Input ~ 0
 FAN_TACHOMETER
 Wire Wire Line
-	2300 2975 2300 3350
+	2300 2975 2300 3125
 Wire Wire Line
 	2300 3350 2750 3350
 $Comp
@@ -941,4 +941,31 @@ F 3 "" H 5400 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 5400 1350
+$Comp
+L Device:C C?
+U 1 1 604492BA
+P 2150 3125
+AR Path="/5EB7428E/604492BA" Ref="C?"  Part="1" 
+AR Path="/5E8FCBC6/604492BA" Ref="C?"  Part="1" 
+F 0 "C?" H 2150 3250 60  0000 R TNN
+F 1 "100n" H 2150 3075 60  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2050 3215 60  0001 C CNN
+F 3 "~" H 2050 3215 60  0001 C CNN
+	1    2150 3125
+	0    1    1    0   
+$EndComp
+Connection ~ 2300 3125
+Wire Wire Line
+	2300 3125 2300 3350
+$Comp
+L power:GND #PWR?
+U 1 1 6044A19C
+P 2000 3125
+F 0 "#PWR?" H 2000 2875 50  0001 C CNN
+F 1 "GND" H 2005 2952 50  0000 C CNN
+F 2 "" H 2000 3125 50  0001 C CNN
+F 3 "" H 2000 3125 50  0001 C CNN
+	1    2000 3125
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
