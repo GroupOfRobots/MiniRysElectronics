@@ -19,7 +19,7 @@ Text HLabel 4100 1300 0    50   Input ~ 0
 BAT_T_3
 Text HLabel 2500 2525 0    50   Input ~ 0
 BOARD_T_1
-Text HLabel 6475 2650 0    50   Input ~ 0
+Text HLabel 6600 1275 0    50   Input ~ 0
 CHASSIS_T_2
 Text HLabel 1700 4550 0    50   Input ~ 0
 V_P_20
@@ -99,8 +99,6 @@ F 3 "" H 4250 1350 50  0001 C CNN
 	1    4250 1350
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	2350 2175 2500 2175
 Wire Wire Line
 	2500 2175 2500 2225
 $Comp
@@ -367,28 +365,14 @@ $EndComp
 Connection ~ 3150 4550
 Text GLabel 8625 1800 1    50   Output ~ 0
 MCU_3.3V
-Text Label 2350 2175 0    50   ~ 0
-MCU_Sensor_3.3V
-Text Label 1900 900  0    50   ~ 0
-MCU_Sensor_3.3V
-Wire Wire Line
-	1900 900  2550 900 
 Wire Wire Line
 	2550 900  2550 950 
-Text Label 2750 900  0    50   ~ 0
-MCU_Sensor_3.3V
-Wire Wire Line
-	2750 900  3350 900 
 Wire Wire Line
 	3350 900  3350 950 
-Text Label 3550 900  0    50   ~ 0
-MCU_Sensor_3.3V
-Wire Wire Line
-	3550 900  4150 900 
 Wire Wire Line
 	4150 900  4150 950 
-Text Label 9625 2300 0    50   ~ 0
-MCU_Sensor_3.3V
+Text Label 10550 2300 2    50   ~ 0
+MCU_Sensor_Voltage
 $Comp
 L Device:R R55
 U 1 1 603BD637
@@ -400,8 +384,6 @@ F 3 "~" H 2500 2375 50  0001 C CNN
 	1    2500 2375
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9625 2300 9225 2300
 Wire Wire Line
 	8625 1800 8775 1800
 Wire Wire Line
@@ -473,8 +455,6 @@ F 3 "~" H 4150 1100 50  0001 C CNN
 	1    4150 1100
 	1    0    0    -1  
 $EndComp
-Text HLabel 9425 2300 3    50   Input ~ 0
-3_3V_REF
 $Comp
 L rysboard:DMP2075UFDB Q10
 U 1 1 605EDFDE
@@ -486,84 +466,102 @@ F 3 "" H 9125 2100 50  0001 L CNN
 	1    9125 2100
 	1    0    0    1   
 $EndComp
-Text Label 5825 2250 0    50   ~ 0
-MCU_Sensor_3.3V
-Text Label 4750 2250 0    50   ~ 0
-MCU_Sensor_3.3V
 $Comp
 L Device:R R61
 U 1 1 604C3349
-P 6475 2400
-F 0 "R61" H 6545 2446 50  0000 L CNN
-F 1 "10KR" H 6545 2355 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6405 2400 50  0001 C CNN
-F 3 "~" H 6475 2400 50  0001 C CNN
-	1    6475 2400
+P 6600 1025
+F 0 "R61" H 6670 1071 50  0000 L CNN
+F 1 "10KR" H 6670 980 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6530 1025 50  0001 C CNN
+F 3 "~" H 6600 1025 50  0001 C CNN
+	1    6600 1025
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J23
 U 1 1 604C3809
-P 6575 2900
-F 0 "J23" V 6447 2980 50  0000 L CNN
-F 1 "BAT2_TH" V 6538 2980 50  0000 L CNN
-F 2 "" H 6575 2900 50  0001 C CNN
-F 3 "~" H 6575 2900 50  0001 C CNN
-	1    6575 2900
+P 6700 1525
+F 0 "J23" V 6572 1605 50  0000 L CNN
+F 1 "BAT2_TH" V 6663 1605 50  0000 L CNN
+F 2 "" H 6700 1525 50  0001 C CNN
+F 3 "~" H 6700 1525 50  0001 C CNN
+	1    6700 1525
 	0    1    1    0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J22
 U 1 1 604C3EA4
-P 5500 2900
-F 0 "J22" V 5372 2980 50  0000 L CNN
-F 1 "BAT2_TH" V 5463 2980 50  0000 L CNN
-F 2 "" H 5500 2900 50  0001 C CNN
-F 3 "~" H 5500 2900 50  0001 C CNN
-	1    5500 2900
+P 5625 1525
+F 0 "J22" V 5497 1605 50  0000 L CNN
+F 1 "BAT2_TH" V 5588 1605 50  0000 L CNN
+F 2 "" H 5625 1525 50  0001 C CNN
+F 3 "~" H 5625 1525 50  0001 C CNN
+	1    5625 1525
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R59
 U 1 1 604C4170
-P 5400 2400
-F 0 "R59" H 5470 2446 50  0000 L CNN
-F 1 "10KR" H 5470 2355 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 5330 2400 50  0001 C CNN
-F 3 "~" H 5400 2400 50  0001 C CNN
-	1    5400 2400
+P 5525 1025
+F 0 "R59" H 5595 1071 50  0000 L CNN
+F 1 "10KR" H 5595 980 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5455 1025 50  0001 C CNN
+F 3 "~" H 5525 1025 50  0001 C CNN
+	1    5525 1025
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4750 2250 5400 2250
-Wire Wire Line
-	5825 2250 6475 2250
-Wire Wire Line
-	6475 2550 6475 2700
-Text HLabel 5400 2625 0    50   Input ~ 0
+	6600 1175 6600 1325
+Text HLabel 5525 1250 0    50   Input ~ 0
 CHASSIS_T_1
 Wire Wire Line
-	5400 2550 5400 2700
+	5525 1175 5525 1325
 $Comp
 L power:GND #PWR0108
 U 1 1 604C7572
-P 6575 2700
-F 0 "#PWR0108" H 6575 2450 50  0001 C CNN
-F 1 "GND" H 6580 2527 50  0000 C CNN
-F 2 "" H 6575 2700 50  0001 C CNN
-F 3 "" H 6575 2700 50  0001 C CNN
-	1    6575 2700
+P 6700 1325
+F 0 "#PWR0108" H 6700 1075 50  0001 C CNN
+F 1 "GND" H 6705 1152 50  0000 C CNN
+F 2 "" H 6700 1325 50  0001 C CNN
+F 3 "" H 6700 1325 50  0001 C CNN
+	1    6700 1325
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0109
 U 1 1 604C77C4
-P 5500 2700
-F 0 "#PWR0109" H 5500 2450 50  0001 C CNN
-F 1 "GND" H 5505 2527 50  0000 C CNN
-F 2 "" H 5500 2700 50  0001 C CNN
-F 3 "" H 5500 2700 50  0001 C CNN
-	1    5500 2700
+P 5625 1325
+F 0 "#PWR0109" H 5625 1075 50  0001 C CNN
+F 1 "GND" H 5630 1152 50  0000 C CNN
+F 2 "" H 5625 1325 50  0001 C CNN
+F 3 "" H 5625 1325 50  0001 C CNN
+	1    5625 1325
 	0    -1   -1   0   
 $EndComp
+Text Label 1800 900  0    50   ~ 0
+MCU_Sensor_Voltage
+Text Label 2625 900  0    50   ~ 0
+MCU_Sensor_Voltage
+Text Label 3450 900  0    50   ~ 0
+MCU_Sensor_Voltage
+Text Label 4775 875  0    50   ~ 0
+MCU_Sensor_Voltage
+Text Label 5850 875  0    50   ~ 0
+MCU_Sensor_Voltage
+Wire Wire Line
+	5850 875  6600 875 
+Wire Wire Line
+	4775 875  5525 875 
+Wire Wire Line
+	3450 900  4150 900 
+Wire Wire Line
+	2625 900  3350 900 
+Wire Wire Line
+	1800 900  2550 900 
+Text Label 1775 2175 0    50   ~ 0
+MCU_Sensor_Voltage
+Wire Wire Line
+	1775 2175 2500 2175
+Wire Wire Line
+	9225 2300 10550 2300
 $EndSCHEMATC
