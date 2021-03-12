@@ -514,7 +514,7 @@ U 1 1 5FFA7BA0
 P 5100 5350
 F 0 "R35" V 4893 5350 50  0000 C CNN
 F 1 "10KR" V 4984 5350 50  0000 C CNN
-F 2 "" V 5030 5350 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5030 5350 50  0001 C CNN
 F 3 "~" H 5100 5350 50  0001 C CNN
 	1    5100 5350
 	0    1    1    0   
@@ -545,8 +545,8 @@ L Device:D_Zener D16
 U 1 1 5FFC3668
 P 4800 7600
 F 0 "D16" V 5200 7600 50  0000 C CNN
-F 1 "D_Zener" V 5100 7600 50  0000 C CNN
-F 2 "" H 4800 7600 50  0001 C CNN
+F 1 "TSZU52C10 RG" V 5100 7600 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 4800 7600 50  0001 C CNN
 F 3 "~" H 4800 7600 50  0001 C CNN
 	1    4800 7600
 	0    1    1    0   
@@ -644,7 +644,7 @@ Text Label 1350 9950 0    20   ~ 0
 V_BAT_AF_PROT-
 Text Notes 900  9100 0    50   ~ 0
 Current Measurement Filters\n
-Text GLabel 3750 9550 2    50   Input ~ 0
+Text GLabel 3475 9275 2    50   Input ~ 0
 Bat_Current_Pos
 $Comp
 L Device:C C27
@@ -774,49 +774,46 @@ Table 9-3 \nPage 17
 $Comp
 L Amplifier_Current:INA181 U9
 U 1 1 60015B2B
-P 3050 9550
-F 0 "U9" H 3394 9596 50  0000 L CNN
-F 1 "INA181" H 3394 9505 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 3100 9600 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ina181.pdf" H 3200 9700 50  0001 C CNN
-	1    3050 9550
+P 3000 9275
+F 0 "U9" H 3300 9325 50  0000 L CNN
+F 1 "INA181" H 3200 9225 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 3050 9325 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ina181.pdf" H 3150 9425 50  0001 C CNN
+	1    3000 9275
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3750 9550 3350 9550
-Text GLabel 3350 9250 2    50   Output ~ 0
-MCU_3.3V
-Text Label 2950 10000 3    50   ~ 0
+Text GLabel 3300 8975 2    50   Output ~ 0
+MCU_ANALOG_SENSOR_V
+Text Label 2900 9725 3    50   ~ 0
 V_BAT_AF_PROT-
 Wire Wire Line
-	2950 10000 2950 9850
+	2900 9725 2900 9575
 $Comp
 L Device:C C33
 U 1 1 600598E6
-P 3200 9100
-F 0 "C33" H 3085 9054 50  0000 R CNN
-F 1 "0.1uF10%" H 3085 9145 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3238 8950 50  0001 C CNN
-F 3 "~" H 3200 9100 50  0001 C CNN
-	1    3200 9100
+P 3150 8825
+F 0 "C33" H 3035 8779 50  0000 R CNN
+F 1 "0.1uF10%" H 3035 8870 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3188 8675 50  0001 C CNN
+F 3 "~" H 3150 8825 50  0001 C CNN
+	1    3150 8825
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3350 9250 3200 9250
-Connection ~ 3200 9250
+	3300 8975 3150 8975
+Connection ~ 3150 8975
 Wire Wire Line
-	3200 9250 2950 9250
-Text Label 3200 8950 0    50   ~ 0
+	3150 8975 2900 8975
+Text Label 3150 8675 0    50   ~ 0
 V_BAT_AF_PROT-
-Text Label 2450 9650 0    50   ~ 0
+Text Label 2400 9375 0    50   ~ 0
 SRN_C
-Text Label 2450 9450 0    50   ~ 0
+Text Label 2400 9175 0    50   ~ 0
 SRP_C
 Wire Wire Line
-	2450 9450 2750 9450
+	2400 9175 2700 9175
 Wire Wire Line
-	2450 9650 2750 9650
-NoConn ~ 3150 9850
+	2400 9375 2700 9375
 Text HLabel 5600 7750 2    50   Output ~ 0
 PACK-
 Text HLabel 5400 1350 2    50   Output ~ 0
@@ -946,4 +943,44 @@ $EndComp
 Connection ~ 4550 7750
 Wire Wire Line
 	3200 1200 3400 1200
+Wire Wire Line
+	3475 9275 3300 9275
+Text GLabel 3400 9575 2    50   Output ~ 0
+MCU_ANALOG_SENSOR_V
+$Comp
+L Device:R R40
+U 1 1 604D6224
+P 3250 9575
+F 0 "R40" V 3150 9575 50  0000 C CNN
+F 1 "10KR" V 3150 9750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3180 9575 50  0001 C CNN
+F 3 "~" H 3250 9575 50  0001 C CNN
+	1    3250 9575
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D15
+U 1 1 604D79E2
+P 3100 9725
+F 0 "D15" V 3054 9805 50  0000 L CNN
+F 1 "KDZVTR2.0B" V 3145 9805 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123F" H 3100 9725 50  0001 C CNN
+F 3 "~" H 3100 9725 50  0001 C CNN
+	1    3100 9725
+	0    1    1    0   
+$EndComp
+Connection ~ 3100 9575
+$Comp
+L power:GND #PWR017
+U 1 1 604D898C
+P 3100 9875
+F 0 "#PWR017" H 3100 9625 50  0001 C CNN
+F 1 "GND" H 3105 9702 50  0000 C CNN
+F 2 "" H 3100 9875 50  0001 C CNN
+F 3 "" H 3100 9875 50  0001 C CNN
+	1    3100 9875
+	1    0    0    -1  
+$EndComp
+Text Notes 3700 9900 0    50   ~ 0
+2V reference, for offset. \nUsed in ADC compensation,\n And measuring negative current
 $EndSCHEMATC

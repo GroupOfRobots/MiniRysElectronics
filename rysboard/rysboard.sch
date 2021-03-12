@@ -384,43 +384,43 @@ $EndComp
 Wire Wire Line
 	2600 3950 2600 3800
 Connection ~ 2600 3800
-Text Label 3750 6750 2    50   ~ 0
+Text Label 3825 6750 2    50   ~ 0
 SWCLK
-Text Label 3750 6650 2    50   ~ 0
+Text Label 3825 6650 2    50   ~ 0
 SWDIO
 Text Label 1400 5350 0    50   ~ 0
 MCU_RST
 Wire Wire Line
 	1400 5350 1750 5350
 Text Label 700  6550 0    50   ~ 0
-LED_INFO
+LED_R
 Text Label 700  6850 0    50   ~ 0
-LED_WARNING
+LED_G
 Text Label 700  6950 0    50   ~ 0
-LED_ERROR
-Text Label 3750 5350 2    50   ~ 0
-CURRENT_SENSE
-Text Label 3750 5450 2    50   ~ 0
+LED_B
+Text Label 3825 6450 2    50   ~ 0
+BAT_CURRENT
+Text Label 3825 6050 2    50   ~ 0
 VBAT_1
-Text Label 3750 5550 2    50   ~ 0
+Text Label 700  5650 0    50   ~ 0
 VBAT_2
-Text Label 3750 5650 2    50   ~ 0
+Text Label 700  5750 0    50   ~ 0
 VBAT_3
-Text Label 3750 5750 2    50   ~ 0
+Text Label 3825 5750 2    50   ~ 0
 BAT_TEMP_1
-Text Label 3750 5850 2    50   ~ 0
+Text Label 3825 5850 2    50   ~ 0
 BAT_TEMP_2
-Text Label 3750 5950 2    50   ~ 0
+Text Label 3825 5950 2    50   ~ 0
 BAT_TEMP_3
-Text Label 3750 6050 2    50   ~ 0
-BOARD_TEMP_PROBE_1
 Text Label 700  5850 0    50   ~ 0
+BOARD_TEMP_PROBE_1
+Text Label 3825 5450 2    50   ~ 0
 VOLTAGE_PROBE_5V
-Text Label 3750 6150 2    50   ~ 0
+Text Label 700  6750 0    50   ~ 0
 ENABLE_RAIL_5V
-Text Label 3750 6250 2    50   ~ 0
+Text Label 3825 6250 2    50   ~ 0
 MCU_USART_TX
-Text Label 3750 6350 2    50   ~ 0
+Text Label 3825 6350 2    50   ~ 0
 MCU_USART_RX
 Text Label 700  5950 0    50   ~ 0
 ENABLE_STEPPER_MOTORS
@@ -431,33 +431,7 @@ PWM_FAN
 Text Label 700  6350 0    50   ~ 0
 VOLTAGE_PROBE_20V
 Text Label 700  6450 0    50   ~ 0
-ENABLE_RAIL_20V
-Wire Wire Line
-	2850 6750 3750 6750
-Wire Wire Line
-	2850 6650 3750 6650
-Wire Wire Line
-	3750 6350 2850 6350
-Wire Wire Line
-	3750 6250 2850 6250
-Wire Wire Line
-	3750 6150 2850 6150
-Wire Wire Line
-	2850 6050 3750 6050
-Wire Wire Line
-	3750 5950 2850 5950
-Wire Wire Line
-	2850 5850 3750 5850
-Wire Wire Line
-	3750 5750 2850 5750
-Wire Wire Line
-	2850 5650 3750 5650
-Wire Wire Line
-	3750 5550 2850 5550
-Wire Wire Line
-	2850 5450 3750 5450
-Wire Wire Line
-	2850 5350 3750 5350
+ENABLE_CHARGING
 Wire Wire Line
 	700  6950 1750 6950
 Wire Wire Line
@@ -628,10 +602,6 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    0    0    -1  
 $EndComp
 NoConn ~ 2850 6850
-NoConn ~ 2850 6550
-NoConn ~ 2850 6450
-NoConn ~ 1750 6750
-NoConn ~ 1750 6250
 Text Label 7200 1750 0    50   ~ 0
 ENABLE_STEPPER_MOTORS
 $Sheet
@@ -665,7 +635,7 @@ Wire Wire Line
 Wire Wire Line
 	9650 1750 9250 1750
 Text Label 7300 5900 0    50   ~ 0
-SENSORS_ENABLE
+ENABLE_SENSORS
 Wire Wire Line
 	7300 5900 8250 5900
 $Comp
@@ -697,9 +667,9 @@ F 3 "" H 2600 5050 50  0001 C CNN
 	1    2600 5050
 	1    0    0    -1  
 $EndComp
-Text Label 700  5650 0    50   ~ 0
+Text Label 3825 5550 2    50   ~ 0
 CHASSIS_TEMP_PROBE_1
-Text Label 700  5750 0    50   ~ 0
+Text Label 3825 5650 2    50   ~ 0
 CHASSIS_TEMP_PROBE_2
 Wire Wire Line
 	4150 4300 5700 4300
@@ -707,4 +677,57 @@ Wire Wire Line
 	4150 4400 5700 4400
 Text Notes 2750 7400 0    50   ~ 0
 CHANGE WIRING\n
+Text Label 7550 2550 0    50   ~ 0
+ENABLE_CHARGING
+Wire Wire Line
+	7550 2550 8275 2550
+Text Label 10375 2450 2    50   ~ 0
+FAN_TACH
+Text Label 10375 2350 2    50   ~ 0
+CHG_CURRENT
+Wire Wire Line
+	9775 2450 10375 2450
+Wire Wire Line
+	9775 2350 10375 2350
+Text Label 3825 6550 2    50   ~ 0
+CHG_CURRENT
+Wire Wire Line
+	2850 5550 3825 5550
+Wire Wire Line
+	2850 5650 3825 5650
+Wire Wire Line
+	2850 6050 3825 6050
+Wire Wire Line
+	2850 5950 3825 5950
+Wire Wire Line
+	2850 5850 3825 5850
+Wire Wire Line
+	2850 5750 3825 5750
+Wire Wire Line
+	2850 5450 3825 5450
+Wire Wire Line
+	2850 6150 3825 6150
+Wire Wire Line
+	2850 6750 3825 6750
+Wire Wire Line
+	2850 6650 3825 6650
+Wire Wire Line
+	2850 6550 3825 6550
+Wire Wire Line
+	2850 6450 3825 6450
+Wire Wire Line
+	2850 6350 3825 6350
+Wire Wire Line
+	2850 6250 3825 6250
+Text Label 700  6250 0    50   ~ 0
+FAN_TACH
+Wire Wire Line
+	1750 6250 700  6250
+Wire Wire Line
+	700  6750 1750 6750
+NoConn ~ 3825 5350
+Wire Wire Line
+	2850 5350 3825 5350
+Text Label 3825 6150 2    50   ~ 0
+ENABLE_SENSORS
 $EndSCHEMATC
