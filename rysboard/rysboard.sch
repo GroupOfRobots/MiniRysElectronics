@@ -13,7 +13,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 1500 825  0    100  ~ 0
+Text Notes 1900 825  0    100  ~ 0
 Raspberry Pi 4 connector
 $Sheet
 S 8275 2200 1500 500 
@@ -26,25 +26,23 @@ F4 "ENABLE_CHARGING" I L 8275 2550 50
 F5 "CHG_CURRENT" O R 9775 2350 50 
 F6 "FAN_TACHOMETER" O R 9775 2450 50 
 $EndSheet
-Text Label 3575 2700 2    50   ~ 0
+Text Label 3975 2700 2    50   ~ 0
 ~SPI_CS0
-Text Label 3575 2600 2    50   ~ 0
-~SPI_CS1
-Text Label 3575 2800 2    50   ~ 0
+Text Label 3975 2800 2    50   ~ 0
 SPI_MISO
-Text Label 3575 2900 2    50   ~ 0
+Text Label 3975 2900 2    50   ~ 0
 SPI_MOSI
-Text Label 3575 3000 2    50   ~ 0
+Text Label 3975 3000 2    50   ~ 0
 SPI_CLK
-Text Label 3575 1900 2    50   ~ 0
+Text Label 3975 1900 2    50   ~ 0
 I2C1_SDA
-Text Label 3575 2000 2    50   ~ 0
+Text Label 3975 2000 2    50   ~ 0
 I2C1_SCL
-Text Label 950  2000 0    50   ~ 0
+Text Label 1350 2000 0    50   ~ 0
 MOTOR_FLAG
-Text Label 950  2700 0    50   ~ 0
+Text Label 1350 2700 0    50   ~ 0
 ~MOTOR_STBY
-Text Label 950  3200 0    50   ~ 0
+Text Label 1350 3200 0    50   ~ 0
 MOTOR_BUSY
 Text Label 7700 1650 0    50   ~ 0
 MOTOR_FLAG
@@ -60,22 +58,6 @@ Text Label 9650 1650 2    50   ~ 0
 SPI_CLK
 Text Label 9650 1750 2    50   ~ 0
 ~SPI_CS0
-Text Label 7775 3350 0    50   ~ 0
-SPI_MISO
-Text Label 7775 3450 0    50   ~ 0
-SPI_MOSI
-Text Label 7775 3550 0    50   ~ 0
-SPI_CLK
-Text Label 7775 3650 0    50   ~ 0
-~SPI_CS1
-Wire Wire Line
-	8250 3350 7775 3350
-Wire Wire Line
-	7775 3450 8250 3450
-Wire Wire Line
-	8250 3550 7775 3550
-Wire Wire Line
-	7775 3650 8250 3650
 Wire Wire Line
 	9500 3575 9975 3575
 Wire Wire Line
@@ -84,8 +66,6 @@ Text Label 9975 3575 2    50   ~ 0
 TOF1_EN
 Text Label 9975 3675 2    50   ~ 0
 TOF2_EN
-Text Label 7775 3250 0    50   ~ 0
-SPI_IRQEXT
 Wire Wire Line
 	9500 3775 9975 3775
 Text Label 9975 3775 2    50   ~ 0
@@ -102,49 +82,19 @@ Wire Wire Line
 	9500 3975 9975 3975
 Wire Wire Line
 	9500 4075 9975 4075
-NoConn ~ 3125 1700
-NoConn ~ 3125 1600
-Text Label 3575 2200 2    50   ~ 0
+NoConn ~ 3525 1700
+NoConn ~ 3525 1600
+Text Label 3975 2200 2    50   ~ 0
 I2C3_SDA
-Text Label 3575 2300 2    50   ~ 0
+Text Label 3975 2300 2    50   ~ 0
 I2C3_SCL
-Text Label 3575 3200 2    50   ~ 0
+Text Label 3975 3200 2    50   ~ 0
 I2C5_SDA
-Text Label 3575 3300 2    50   ~ 0
+Text Label 3975 3300 2    50   ~ 0
 I2C5_SCL
-Wire Wire Line
-	7775 3250 8250 3250
-$Sheet
-S 8250 2900 1250 1250
-U 5EA6D11C
-F0 "Sensors" 50
-F1 "sensors.sch" 50
-F2 "TOF6_EN" I R 9500 4075 50 
-F3 "TOF5_EN" I R 9500 3975 50 
-F4 "TOF4_EN" I R 9500 3875 50 
-F5 "TOF2_EN" I R 9500 3675 50 
-F6 "TOF1_EN" I R 9500 3575 50 
-F7 "TOF3_EN" I R 9500 3775 50 
-F8 "SPI_MOSI" I L 8250 3450 50 
-F9 "SPI_MISO" O L 8250 3350 50 
-F10 "SPI_CLK" I L 8250 3550 50 
-F11 "SPI_CS" I L 8250 3650 50 
-F12 "SPI_IRQ" O L 8250 3250 50 
-F13 "I2C_SCL_TOF0" I R 9500 3075 50 
-F14 "I2C_SDA_TOF0" B R 9500 2975 50 
-F15 "I2C_SCL_TIMU" I L 8250 3075 50 
-F16 "I2C_SDA_TIMU" B L 8250 2975 50 
-F17 "I2C_SCL_TOF1" I R 9500 3275 50 
-F18 "I2C_SDA_TOF1" B R 9500 3175 50 
-F19 "EN_TOFS" I L 8250 4050 50 
-$EndSheet
-Text Label 4150 4300 0    50   ~ 0
+Text Label 625  1600 0    50   ~ 0
 RPI_UART_TXD
-Text Label 4150 4400 0    50   ~ 0
-RPI_UART_RXD
-Text Label 950  1600 0    50   ~ 0
-RPI_UART_TXD
-Text Label 950  1700 0    50   ~ 0
+Text Label 625  1700 0    50   ~ 0
 RPI_UART_RXD
 Wire Wire Line
 	9500 2975 9975 2975
@@ -170,31 +120,27 @@ Text Label 9975 3175 2    50   ~ 0
 I2C5_SDA
 Text Label 9975 3275 2    50   ~ 0
 I2C5_SCL
-Text Label 3575 2400 2    50   ~ 0
+Text Label 3975 2400 2    50   ~ 0
 TOF1_EN
-Text Label 950  1900 0    50   ~ 0
+Text Label 1350 1900 0    50   ~ 0
 TOF2_EN
-Text Label 950  2300 0    50   ~ 0
+Text Label 1350 2300 0    50   ~ 0
 TOF3_EN
-Text Label 950  2400 0    50   ~ 0
+Text Label 1350 2400 0    50   ~ 0
 TOF4_EN
-Text Label 950  2500 0    50   ~ 0
+Text Label 1350 2500 0    50   ~ 0
 TOF5_EN
-Text Label 950  3100 0    50   ~ 0
+Text Label 1350 3100 0    50   ~ 0
 TOF6_EN
-Text Notes 4400 4700 0    100  ~ 0
-UART connector
-Text Label 950  3000 0    50   ~ 0
-SPI_IRQEXT
 $Comp
 L power:PWR_FLAG #FLG0103
 U 1 1 5EE863F0
-P 3125 1200
-F 0 "#FLG0103" H 3125 1275 50  0001 C CNN
-F 1 "PWR_FLAG" H 3125 1373 50  0000 C CNN
-F 2 "" H 3125 1200 50  0001 C CNN
-F 3 "~" H 3125 1200 50  0001 C CNN
-	1    3125 1200
+P 3525 1200
+F 0 "#FLG0103" H 3525 1275 50  0001 C CNN
+F 1 "PWR_FLAG" H 3525 1373 50  0000 C CNN
+F 2 "" H 3525 1200 50  0001 C CNN
+F 3 "~" H 3525 1200 50  0001 C CNN
+	1    3525 1200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -268,100 +214,83 @@ Raspberry Pi 4\nmounting holes (GND)
 Text Notes 8100 1100 0    50   ~ 0
 I2C Note:\nRPi4 has internal pull-ups for I2C-1 bus\nand the ToF sensor boards used have a set of pull-ups\neach for their respective buses (I2C-3 and -5);\nTherefore no additional pullups are required
 Wire Wire Line
-	2775 1200 3125 1200
-Connection ~ 2775 1200
+	3175 1200 3525 1200
+Connection ~ 3175 1200
 $Comp
 L power:+3V3 #PWR03
 U 1 1 5EB8D8B6
-P 2775 1200
-F 0 "#PWR03" H 2775 1050 50  0001 C CNN
-F 1 "+3V3" H 2790 1373 50  0000 C CNN
-F 2 "" H 2775 1200 50  0001 C CNN
-F 3 "" H 2775 1200 50  0001 C CNN
-	1    2775 1200
+P 3175 1200
+F 0 "#PWR03" H 3175 1050 50  0001 C CNN
+F 1 "+3V3" H 3190 1373 50  0000 C CNN
+F 2 "" H 3175 1200 50  0001 C CNN
+F 3 "" H 3175 1200 50  0001 C CNN
+	1    3175 1200
 	1    0    0    -1  
 $EndComp
-Text Label 1750 1200 0    50   ~ 0
+Text Label 2150 1200 0    50   ~ 0
 RPI_5V
 Wire Wire Line
-	1500 2500 950  2500
+	1900 2500 1350 2500
 Wire Wire Line
-	1500 2400 950  2400
+	1900 2400 1350 2400
 Wire Wire Line
-	1500 1900 950  1900
+	1900 1900 1350 1900
 Wire Wire Line
-	1500 2300 950  2300
-Connection ~ 2500 1200
+	1900 2300 1350 2300
+Connection ~ 2900 1200
 Wire Wire Line
-	1500 2700 950  2700
+	1900 2700 1350 2700
 Wire Wire Line
-	1500 2000 950  2000
+	1900 2000 1350 2000
 $Comp
 L Connector:Raspberry_Pi_2_3 J1
 U 1 1 5EA5D2E2
-P 2300 2500
-F 0 "J1" H 2300 3981 50  0000 C CNN
-F 1 "RPi4" H 2300 3890 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 2300 2500 50  0001 C CNN
-F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 2300 2500 50  0001 C CNN
-	1    2300 2500
+P 2700 2500
+F 0 "J1" H 2700 3981 50  0000 C CNN
+F 1 "RPi4" H 2700 3890 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 2700 2500 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 2700 2500 50  0001 C CNN
+	1    2700 2500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2200 1200 2100 1200
+	2600 1200 2500 1200
 Wire Wire Line
-	2500 1200 2775 1200
-Connection ~ 2100 1200
+	2900 1200 3175 1200
+Connection ~ 2500 1200
 Wire Wire Line
-	2100 1200 1750 1200
+	2500 1200 2150 1200
 Wire Wire Line
-	2400 1200 2500 1200
+	2800 1200 2900 1200
 Wire Wire Line
-	3100 1900 3575 1900
+	3500 1900 3975 1900
 Wire Wire Line
-	3100 2000 3575 2000
+	3500 2000 3975 2000
 Wire Wire Line
-	3100 2200 3575 2200
+	3500 2200 3975 2200
 Wire Wire Line
-	3100 2300 3575 2300
+	3500 2300 3975 2300
 Wire Wire Line
-	3100 2400 3575 2400
+	3500 2400 3975 2400
 Wire Wire Line
-	3100 2600 3575 2600
+	3500 2700 3975 2700
 Wire Wire Line
-	3100 2700 3575 2700
+	3500 2800 3975 2800
 Wire Wire Line
-	3100 2800 3575 2800
+	3500 2900 3975 2900
 Wire Wire Line
-	3100 2900 3575 2900
+	3500 3000 3975 3000
 Wire Wire Line
-	3100 3000 3575 3000
+	3500 3200 3975 3200
 Wire Wire Line
-	3100 3200 3575 3200
+	3500 3300 3975 3300
 Wire Wire Line
-	3100 3300 3575 3300
+	1350 3100 1900 3100
 Wire Wire Line
-	950  3000 1500 3000
-Wire Wire Line
-	950  3100 1500 3100
-Wire Wire Line
-	950  3200 1500 3200
-NoConn ~ 1500 2900
-NoConn ~ 1500 2800
+	1350 3200 1900 3200
+NoConn ~ 1900 2800
 Text GLabel 2900 4750 2    50   Input ~ 0
 MCU_3.3V
-Wire Wire Line
-	1900 3800 2000 3800
-Connection ~ 2000 3800
-Wire Wire Line
-	2000 3800 2100 3800
-Connection ~ 2100 3800
-Wire Wire Line
-	2100 3800 2200 3800
-Connection ~ 2200 3800
-Wire Wire Line
-	2200 3800 2300 3800
-Connection ~ 2300 3800
 Wire Wire Line
 	2300 3800 2400 3800
 Connection ~ 2400 3800
@@ -370,20 +299,32 @@ Wire Wire Line
 Connection ~ 2500 3800
 Wire Wire Line
 	2500 3800 2600 3800
+Connection ~ 2600 3800
+Wire Wire Line
+	2600 3800 2700 3800
+Connection ~ 2700 3800
+Wire Wire Line
+	2700 3800 2800 3800
+Connection ~ 2800 3800
+Wire Wire Line
+	2800 3800 2900 3800
+Connection ~ 2900 3800
+Wire Wire Line
+	2900 3800 3000 3800
 $Comp
 L power:GND #PWR02
 U 1 1 6036E13E
-P 2600 3950
-F 0 "#PWR02" H 2600 3700 50  0001 C CNN
-F 1 "GND" H 2605 3777 50  0000 C CNN
-F 2 "" H 2600 3950 50  0001 C CNN
-F 3 "" H 2600 3950 50  0001 C CNN
-	1    2600 3950
+P 3000 3950
+F 0 "#PWR02" H 3000 3700 50  0001 C CNN
+F 1 "GND" H 3005 3777 50  0000 C CNN
+F 2 "" H 3000 3950 50  0001 C CNN
+F 3 "" H 3000 3950 50  0001 C CNN
+	1    3000 3950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2600 3950 2600 3800
-Connection ~ 2600 3800
+	3000 3950 3000 3800
+Connection ~ 3000 3800
 Text Label 3825 6750 2    50   ~ 0
 SWCLK
 Text Label 3825 6650 2    50   ~ 0
@@ -461,50 +402,6 @@ F 3 "" H 2150 7350 50  0001 C CNN
 	1    2150 7350
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x05 J18
-U 1 1 60400166
-P 5300 6800
-F 0 "J18" H 5380 6842 50  0000 L CNN
-F 1 "Conn_01x05" H 5380 6751 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x05_P1.00mm_Vertical" H 5300 6800 50  0001 C CNN
-F 3 "~" H 5300 6800 50  0001 C CNN
-	1    5300 6800
-	1    0    0    -1  
-$EndComp
-Text Label 4700 6800 0    50   ~ 0
-SWDIO
-Text Label 4700 6900 0    50   ~ 0
-SWCLK
-Text Label 4700 7000 0    50   ~ 0
-MCU_RST
-$Comp
-L power:GND #PWR020
-U 1 1 60400A12
-P 5100 6700
-F 0 "#PWR020" H 5100 6450 50  0001 C CNN
-F 1 "GND" V 5105 6572 50  0000 R CNN
-F 2 "" H 5100 6700 50  0001 C CNN
-F 3 "" H 5100 6700 50  0001 C CNN
-	1    5100 6700
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4700 7000 5100 7000
-Wire Wire Line
-	5100 6900 4700 6900
-Wire Wire Line
-	4700 6800 5100 6800
-Text GLabel 5100 6600 0    50   Input ~ 0
-MCU_3.3V
-Wire Wire Line
-	950  1700 1500 1700
-Wire Wire Line
-	950  1600 1500 1600
-Text Label 5700 4300 2    50   ~ 0
-MCU_USART_RX
-Text Label 5700 4400 2    50   ~ 0
-MCU_USART_TX
 Text Label 7550 2350 0    50   ~ 0
 ENABLE_RAIL_5V
 Text Label 7550 2450 0    50   ~ 0
@@ -548,8 +445,6 @@ Text Label 7300 4800 0    50   ~ 0
 BAT_TEMP_2
 Text Label 7300 4700 0    50   ~ 0
 BAT_TEMP_1
-Text Notes 4750 6300 0    50   ~ 0
-Programming interface\n
 Text Label 7300 5300 0    50   ~ 0
 VOLTAGE_PROBE_20V
 Wire Wire Line
@@ -671,10 +566,6 @@ Text Label 3825 5550 2    50   ~ 0
 CHASSIS_TEMP_PROBE_1
 Text Label 3825 5650 2    50   ~ 0
 CHASSIS_TEMP_PROBE_2
-Wire Wire Line
-	4150 4300 5700 4300
-Wire Wire Line
-	4150 4400 5700 4400
 Text Notes 2750 7400 0    50   ~ 0
 CHANGE WIRING\n
 Text Label 7550 2550 0    50   ~ 0
@@ -730,4 +621,120 @@ Wire Wire Line
 	2850 5350 3825 5350
 Text Label 3825 6150 2    50   ~ 0
 ENABLE_SENSORS
+$Comp
+L Device:LED_ABRG D18
+U 1 1 6052D69F
+P 5450 7075
+F 0 "D18" H 5450 7572 50  0000 C CNN
+F 1 "LED_ABRG" H 5450 7481 50  0000 C CNN
+F 2 "rysboard:KRTBDWLM32.32-T4U6-JW+AAAB-J3+R4S6-5V" H 5450 7075 50  0001 C CNN
+F 3 "~" H 5450 7075 50  0001 C CNN
+	1    5450 7075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R75
+U 1 1 6052DE7F
+P 5100 7275
+F 0 "R75" V 4893 7275 50  0000 C CNN
+F 1 "1KR" V 4984 7275 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5030 7275 50  0001 C CNN
+F 3 "~" H 5100 7275 50  0001 C CNN
+	1    5100 7275
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R74
+U 1 1 6052E61E
+P 5100 7075
+F 0 "R74" V 4893 7075 50  0000 C CNN
+F 1 "1KR" V 4984 7075 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5030 7075 50  0001 C CNN
+F 3 "~" H 5100 7075 50  0001 C CNN
+	1    5100 7075
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R73
+U 1 1 6052E7EB
+P 5100 6875
+F 0 "R73" V 4893 6875 50  0000 C CNN
+F 1 "1KR" V 4984 6875 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5030 6875 50  0001 C CNN
+F 3 "~" H 5100 6875 50  0001 C CNN
+	1    5100 6875
+	0    1    1    0   
+$EndComp
+Text GLabel 5650 7075 2    50   Input ~ 0
+MCU_3.3V
+Text Label 4700 6875 0    50   ~ 0
+LED_R
+Text Label 4700 7075 0    50   ~ 0
+LED_G
+Wire Wire Line
+	4700 7075 4950 7075
+Wire Wire Line
+	4700 6875 4950 6875
+Text Label 4700 7275 0    50   ~ 0
+LED_B
+Wire Wire Line
+	4700 7275 4950 7275
+NoConn ~ 3500 2600
+$Sheet
+S 8250 2900 1250 1250
+U 5EA6D11C
+F0 "Sensors" 50
+F1 "sensors.sch" 50
+F2 "TOF6_EN" I R 9500 4075 50 
+F3 "TOF5_EN" I R 9500 3975 50 
+F4 "TOF4_EN" I R 9500 3875 50 
+F5 "TOF2_EN" I R 9500 3675 50 
+F6 "TOF1_EN" I R 9500 3575 50 
+F7 "TOF3_EN" I R 9500 3775 50 
+F8 "I2C_SCL_TOF0" I R 9500 3075 50 
+F9 "I2C_SDA_TOF0" B R 9500 2975 50 
+F10 "I2C_SCL_TIMU" I L 8250 3075 50 
+F11 "I2C_SDA_TIMU" B L 8250 2975 50 
+F12 "I2C_SCL_TOF1" I R 9500 3275 50 
+F13 "I2C_SDA_TOF1" B R 9500 3175 50 
+F14 "EN_TOFS" I L 8250 4050 50 
+$EndSheet
+Text Label 725  3000 0    50   ~ 0
+SWCLK
+Text Label 725  2900 0    50   ~ 0
+SWDIO
+Text Label 700  2100 0    50   ~ 0
+MCU_RST
+Wire Wire Line
+	700  2100 1900 2100
+Wire Wire Line
+	725  2900 1900 2900
+Wire Wire Line
+	725  3000 1900 3000
+Text Notes 600  3075 1    50   ~ 0
+STM32 Programming interface\n
+Wire Notes Line
+	500  3100 500  1875
+Wire Notes Line
+	500  1875 1125 1875
+Wire Notes Line
+	1125 1875 1125 3100
+Wire Notes Line
+	1125 3100 500  3100
+Wire Wire Line
+	625  1600 1900 1600
+Wire Wire Line
+	625  1700 1900 1700
+Text Notes 525  1500 0    50   ~ 0
+STM32 UART Interface\n
+Wire Notes Line
+	500  1775 500  1400
+Wire Notes Line
+	500  1400 1400 1400
+Wire Notes Line
+	1400 1400 1400 1775
+Wire Notes Line
+	1400 1775 500  1775
+Text Notes 5100 6375 0    50   ~ 0
+Status LED
 $EndSCHEMATC

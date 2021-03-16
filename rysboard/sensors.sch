@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 7
+Sheet 7 7
 Title "rysboard"
 Date "2020-08-23"
 Rev "4.2"
@@ -383,4 +383,6 @@ F 3 "~" H 4450 1750 50  0001 C CNN
 	1    4450 1750
 	0    1    1    0   
 $EndComp
+Text Notes 4725 825  0    50   ~ 0
+Power Delivery\n
 $EndSCHEMATC
