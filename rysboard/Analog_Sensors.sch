@@ -13,10 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 3325 1300 0    50   Input ~ 0
-BAT_T_2
-Text HLabel 4100 1300 0    50   Input ~ 0
-BAT_T_3
 Text HLabel 3150 2875 0    50   Input ~ 0
 BOARD_T_1
 Text HLabel 6150 1275 0    50   Input ~ 0
@@ -33,72 +29,6 @@ Text HLabel 7050 4550 0    50   Input ~ 0
 V_BAT_C2
 Text HLabel 7850 4550 0    50   Input ~ 0
 V_BAT_C3
-$Comp
-L Connector_Generic:Conn_01x02 J8
-U 1 1 603EB5C9
-P 2500 1550
-F 0 "J8" V 2372 1630 50  0000 L CNN
-F 1 "BAT1_TH" V 2463 1630 50  0000 L CNN
-F 2 "" H 2500 1550 50  0001 C CNN
-F 3 "~" H 2500 1550 50  0001 C CNN
-	1    2500 1550
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J14
-U 1 1 603EBF1A
-P 3475 1550
-F 0 "J14" V 3347 1630 50  0000 L CNN
-F 1 "BAT2_TH" V 3438 1630 50  0000 L CNN
-F 2 "" H 3475 1550 50  0001 C CNN
-F 3 "~" H 3475 1550 50  0001 C CNN
-	1    3475 1550
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J21
-U 1 1 603EC2EC
-P 4250 1550
-F 0 "J21" V 4122 1630 50  0000 L CNN
-F 1 "BAT3_TH" V 4213 1630 50  0000 L CNN
-F 2 "" H 4250 1550 50  0001 C CNN
-F 3 "~" H 4250 1550 50  0001 C CNN
-	1    4250 1550
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR050
-U 1 1 603ED9D9
-P 2500 1350
-F 0 "#PWR050" H 2500 1100 50  0001 C CNN
-F 1 "GND" H 2505 1177 50  0000 C CNN
-F 2 "" H 2500 1350 50  0001 C CNN
-F 3 "" H 2500 1350 50  0001 C CNN
-	1    2500 1350
-	0    -1   1    0   
-$EndComp
-$Comp
-L power:GND #PWR053
-U 1 1 603EDE43
-P 3475 1350
-F 0 "#PWR053" H 3475 1100 50  0001 C CNN
-F 1 "GND" H 3480 1177 50  0000 C CNN
-F 2 "" H 3475 1350 50  0001 C CNN
-F 3 "" H 3475 1350 50  0001 C CNN
-	1    3475 1350
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR054
-U 1 1 603EE031
-P 4250 1350
-F 0 "#PWR054" H 4250 1100 50  0001 C CNN
-F 1 "GND" H 4255 1177 50  0000 C CNN
-F 2 "" H 4250 1350 50  0001 C CNN
-F 3 "" H 4250 1350 50  0001 C CNN
-	1    4250 1350
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	3150 2525 3150 2575
 $Comp
@@ -295,29 +225,6 @@ Text Notes 6950 3650 0    50   ~ 0
 0-9.9V\n
 Text Notes 7750 3650 0    50   ~ 0
 0-15.086V\n
-Text HLabel 2350 1300 0    50   Input ~ 0
-BAT_T_1
-Wire Wire Line
-	2350 1300 2400 1300
-Wire Wire Line
-	2400 1300 2400 1350
-Wire Wire Line
-	2400 1300 2400 1250
-Connection ~ 2400 1300
-Wire Wire Line
-	3325 1300 3375 1300
-Wire Wire Line
-	3375 1300 3375 1250
-Wire Wire Line
-	3375 1300 3375 1350
-Connection ~ 3375 1300
-Wire Wire Line
-	4100 1300 4150 1300
-Wire Wire Line
-	4150 1300 4150 1250
-Wire Wire Line
-	4150 1300 4150 1350
-Connection ~ 4150 1300
 $Comp
 L Device:R R70
 U 1 1 603B8902
@@ -365,10 +272,6 @@ $EndComp
 Connection ~ 3875 4375
 Text GLabel 8625 1800 1    50   Output ~ 0
 MCU_3.3V
-Wire Wire Line
-	2400 900  2400 950 
-Wire Wire Line
-	4150 900  4150 950 
 $Comp
 L Device:R R55
 U 1 1 603BD637
@@ -418,39 +321,6 @@ Wire Wire Line
 	8325 2100 8475 2100
 Text Notes 8450 1000 0    50   ~ 0
 When not used, thermistors do not need to be powered on.
-$Comp
-L Device:R R54
-U 1 1 603FD549
-P 2400 1100
-F 0 "R54" H 2470 1146 50  0000 L CNN
-F 1 "10KR" H 2470 1055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2330 1100 50  0001 C CNN
-F 3 "~" H 2400 1100 50  0001 C CNN
-	1    2400 1100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R58
-U 1 1 603FD808
-P 3375 1100
-F 0 "R58" H 3445 1146 50  0000 L CNN
-F 1 "10KR" H 3445 1055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3305 1100 50  0001 C CNN
-F 3 "~" H 3375 1100 50  0001 C CNN
-	1    3375 1100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R60
-U 1 1 603FDA2E
-P 4150 1100
-F 0 "R60" H 4220 1146 50  0000 L CNN
-F 1 "10KR" H 4220 1055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4080 1100 50  0001 C CNN
-F 3 "~" H 4150 1100 50  0001 C CNN
-	1    4150 1100
-	1    0    0    -1  
-$EndComp
 $Comp
 L rysboard:DMP2075UFDB Q10
 U 1 1 605EDFDE
@@ -508,8 +378,6 @@ F 3 "~" H 5250 1050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6150 1225 6150 1375
-Text HLabel 5250 1275 0    50   Input ~ 0
-CHASSIS_T_1
 Wire Wire Line
 	5250 1200 5250 1350
 $Comp
@@ -542,16 +410,10 @@ Text GLabel 6150 925  2    50   Input ~ 0
 MCU_ANALOG_SENSOR_V
 Text GLabel 5250 750  2    50   Input ~ 0
 MCU_ANALOG_SENSOR_V
-Text GLabel 4150 900  2    50   Input ~ 0
-MCU_ANALOG_SENSOR_V
-Text GLabel 3375 750  2    50   Input ~ 0
-MCU_ANALOG_SENSOR_V
-Wire Wire Line
-	3375 750  3375 950 
-Text GLabel 2400 900  2    50   Input ~ 0
-MCU_ANALOG_SENSOR_V
 Wire Wire Line
 	5250 750  5250 900 
 Text GLabel 3150 2525 0    50   Input ~ 0
 MCU_ANALOG_SENSOR_V
+Text HLabel 5250 1275 0    50   Input ~ 0
+CHASSIS_T_1
 $EndSCHEMATC
