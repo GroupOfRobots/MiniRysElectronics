@@ -559,8 +559,6 @@ Wire Wire Line
 	9775 2450 10375 2450
 Wire Wire Line
 	9775 2350 10375 2350
-Text Label 3825 6550 2    50   ~ 0
-CHG_CURRENT
 Wire Wire Line
 	2850 5550 3825 5550
 Wire Wire Line
@@ -575,8 +573,6 @@ Wire Wire Line
 	2850 6750 3825 6750
 Wire Wire Line
 	2850 6650 3825 6650
-Wire Wire Line
-	2850 6550 3825 6550
 Wire Wire Line
 	2850 6450 3825 6450
 Wire Wire Line
@@ -710,4 +706,5 @@ Wire Notes Line
 	1400 1775 500  1775
 Text Notes 5100 6375 0    50   ~ 0
 Status LED
+NoConn ~ 2850 6550
 $EndSCHEMATC
