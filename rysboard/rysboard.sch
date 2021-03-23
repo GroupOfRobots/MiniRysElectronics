@@ -227,8 +227,6 @@ F 3 "" H 3175 1200 50  0001 C CNN
 	1    3175 1200
 	1    0    0    -1  
 $EndComp
-Text Label 2150 1200 0    50   ~ 0
-RPI_5V
 Wire Wire Line
 	1900 2500 1350 2500
 Wire Wire Line
@@ -258,8 +256,6 @@ Wire Wire Line
 Wire Wire Line
 	2900 1200 3175 1200
 Connection ~ 2500 1200
-Wire Wire Line
-	2500 1200 2150 1200
 Wire Wire Line
 	2800 1200 2900 1200
 Wire Wire Line
@@ -339,8 +335,6 @@ Text Label 700  6850 0    50   ~ 0
 LED_G
 Text Label 700  6950 0    50   ~ 0
 LED_B
-Text Label 3825 6450 2    50   ~ 0
-BAT_CURRENT
 Text Label 3825 6050 2    50   ~ 0
 VBAT_1
 Text Label 700  5650 0    50   ~ 0
@@ -707,4 +701,17 @@ Wire Notes Line
 Text Notes 5100 6375 0    50   ~ 0
 Status LED
 NoConn ~ 2850 6550
+Text Label 3825 6450 2    50   ~ 0
+CURRENT_SENSE
+$Comp
+L power:+5V #PWR?
+U 1 1 605ECA22
+P 2500 1200
+F 0 "#PWR?" H 2500 1050 50  0001 C CNN
+F 1 "+5V" H 2515 1373 50  0000 C CNN
+F 2 "" H 2500 1200 50  0001 C CNN
+F 3 "" H 2500 1200 50  0001 C CNN
+	1    2500 1200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
