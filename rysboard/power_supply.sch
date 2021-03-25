@@ -1005,4 +1005,10 @@ Wire Wire Line
 Connection ~ 6000 1650
 Wire Wire Line
 	2925 1475 3225 1475
+Text Label 8800 1350 0    50   ~ 0
+SW
+Text Label 8825 1550 0    50   ~ 0
+FB
+Text Label 6725 1350 0    50   ~ 0
+ST_Down_12V
 $EndSCHEMATC

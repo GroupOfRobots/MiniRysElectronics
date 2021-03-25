@@ -322,10 +322,10 @@ Wire Wire Line
 Text Notes 8450 1000 0    50   ~ 0
 When not used, thermistors do not need to be powered on.
 $Comp
-L rysboard:DMP2075UFDB Q10
+L rysboard:DMP2075UFDB Q2
 U 1 1 605EDFDE
 P 9125 2100
-F 0 "Q10" H 9330 2054 50  0000 L CNN
+F 0 "Q2" H 9330 2054 50  0000 L CNN
 F 1 "DMP2075UFDB" H 9330 2145 50  0000 L CNN
 F 2 "SamacSys_Parts:DMP2075UFDB7" H 9325 2025 50  0001 L CIN
 F 3 "" H 9125 2100 50  0001 L CNN

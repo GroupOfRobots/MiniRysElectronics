@@ -73,52 +73,6 @@ Wire Wire Line
 Text Notes 3050 1000 0    50   ~ 0
 REMOVE ADDITIONA L mosfet USE INTERNAL SHUDTOWN PIN
 $Comp
-L Device:R R72
-U 1 1 6047C363
-P 3200 2675
-F 0 "R72" V 2993 2675 50  0000 C CNN
-F 1 "10KR" V 3084 2675 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3130 2675 50  0001 C CNN
-F 3 "~" H 3200 2675 50  0001 C CNN
-	1    3200 2675
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR065
-U 1 1 6047C8D4
-P 3650 2875
-F 0 "#PWR065" H 3650 2625 50  0001 C CNN
-F 1 "GND" H 3655 2702 50  0000 C CNN
-F 2 "" H 3650 2875 50  0001 C CNN
-F 3 "" H 3650 2875 50  0001 C CNN
-	1    3650 2875
-	1    0    0    -1  
-$EndComp
-Text HLabel 3050 2675 0    50   Output ~ 0
-ENABLE_CHARGING
-$Comp
-L rysboard:NST847BDP6T5G Q16
-U 2 1 6047E1C9
-P 3550 2675
-F 0 "Q16" H 3740 2721 50  0000 L CNN
-F 1 "NST847BDP6T5G" H 3675 2625 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-963" H 3750 2775 50  0001 C CNN
-F 3 "~" H 3550 2675 50  0001 C CNN
-	2    3550 2675
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R30
-U 1 1 6057BE19
-P 3650 2325
-F 0 "R30" H 3720 2371 50  0000 L CNN
-F 1 "10KR" H 3720 2280 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3580 2325 50  0001 C CNN
-F 3 "~" H 3650 2325 50  0001 C CNN
-	1    3650 2325
-	1    0    0    -1  
-$EndComp
-$Comp
 L Power_Management:LM74700 U8
 U 1 1 6056EF72
 P 4750 2275
@@ -140,7 +94,6 @@ Wire Wire Line
 Wire Wire Line
 	5050 1475 5050 1875
 Connection ~ 5050 1475
-Connection ~ 3650 2475
 Connection ~ 4450 1475
 $Comp
 L power:GND #PWR040
@@ -166,8 +119,6 @@ F 3 "~" H 6625 2300 50  0001 C CNN
 	1    6625 2300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3650 2175 3650 1475
 Wire Wire Line
 	3650 1475 4450 1475
 Wire Wire Line
@@ -260,6 +211,10 @@ F 1 "Si7938DP-T1-GE3" V 5001 1575 50  0000 C CNN
 F 2 "Package_SO:PowerPAK_SO-8_Dual" H 4950 1500 50  0001 L CIN
 F 3 "" H 4750 1575 50  0001 L CNN
 	1    4750 1575
-	0    -1   -1   0   
+	0    1    -1   0   
 $EndComp
+Text Notes 2375 2200 0    50   ~ 0
+TODO -16 V Vmax\n
+Wire Wire Line
+	3650 1475 3650 2475
 $EndSCHEMATC
