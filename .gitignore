@@ -7,6 +7,8 @@
 *.bak
 *.bck
 *.kicad_pcb-bak
+*.kicad_sch-bak
+*.kicad_prl
 *.sch-bak
 *~
 _autosave-*
@@ -21,6 +23,10 @@ fp-info-cache
 # Autorouter files (exported from Pcbnew)
 *.dsn
 *.ses
+
+# Exported BOM files
+*.xml
+*.csv
 
 ## Ignores for FreeCAD
 *.FCStd[0-9]*
