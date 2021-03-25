@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP bionik_logo_small
+D Bionik logo (small; silkscreen only)
+K bionik logo silkscreen
+$ENDCMP
+#
+#End Doc Library

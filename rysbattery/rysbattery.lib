@@ -1,0 +1,18 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# bionik_logo_small
+#
+DEF bionik_logo_small LOGO 0 40 Y Y 1 F N
+F0 "LOGO" 0 0 50 H V C CNN
+F1 "bionik_logo_small" 0 0 50 H V C CNN
+F2 "rysbattery:bionik_logo_small" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S 50 50 -50 -50 0 1 0 N
+P 2 0 1 0 -50 -50 50 50 N
+P 2 0 1 0 50 -50 -50 50 N
+ENDDRAW
+ENDDEF
+#
+#End Library
