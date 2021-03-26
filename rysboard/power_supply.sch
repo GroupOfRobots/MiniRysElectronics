@@ -419,8 +419,6 @@ F 3 "" H 2175 1825 50  0001 C CNN
 	1    2175 1825
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2400 6850 2550 6850
 Connection ~ 2550 6850
 Text Notes 2725 825  0    50   ~ 0
 Reverse Polarrity Protection and fuse\nMust be rated for 14A.\n
@@ -619,21 +617,6 @@ $EndComp
 Wire Wire Line
 	1650 6200 1800 6200
 $Comp
-L power:+24V #PWR025
-U 1 1 606699BF
-P 1650 5700
-F 0 "#PWR025" H 1650 5550 50  0001 C CNN
-F 1 "+24V" H 1665 5873 50  0000 C CNN
-F 2 "" H 1650 5700 50  0001 C CNN
-F 3 "" H 1650 5700 50  0001 C CNN
-	1    1650 5700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1650 5700 1800 5700
-Wire Wire Line
-	2550 5700 2400 5700
-$Comp
 L power:+5V #PWR029
 U 1 1 6067B267
 P 1650 6625
@@ -703,25 +686,6 @@ F 3 "" H 6000 1450 50  0001 L CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L SamacSys_Parts:NSR20F30NXT5G D4
-U 1 1 60433DC9
-P 2400 5700
-F 0 "D4" H 2700 5433 50  0000 C CNN
-F 1 "NSR20F30NXT5G" H 2700 5524 50  0000 C CNN
-F 2 "SamacSys_Parts:DSN2_1" H 2850 5700 50  0001 L CNN
-F 3 "http://www.onsemi.com/pub/Collateral/NSR20F30-D.PDF" H 2850 5600 50  0001 L CNN
-F 4 "ON SEMICONDUCTOR - NSR20F30NXT5G - DIODE, SCHOTTKY, 2A, 30V, 0603" H 2850 5500 50  0001 L CNN "Description"
-F 5 "" H 2850 5400 50  0001 L CNN "Height"
-F 6 "863-NSR20F30NXT5G" H 2850 5300 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/NSR20F30NXT5G/?qs=3ezCrKCRT5K%2FARb%252BJ8n8Hg%3D%3D" H 2850 5200 50  0001 L CNN "Mouser Price/Stock"
-F 8 "ON Semiconductor" H 2850 5100 50  0001 L CNN "Manufacturer_Name"
-F 9 "NSR20F30NXT5G" H 2850 5000 50  0001 L CNN "Manufacturer_Part_Number"
-	1    2400 5700
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2550 5700 2550 6200
-$Comp
 L SamacSys_Parts:NSR20F30NXT5G D5
 U 1 1 6044F2F9
 P 2400 6200
@@ -757,7 +721,6 @@ F 9 "NSR20F30NXT5G" H 2850 5925 50  0001 L CNN "Manufacturer_Part_Number"
 $EndComp
 Wire Wire Line
 	2400 6200 2550 6200
-Connection ~ 2550 6200
 Wire Wire Line
 	2550 6200 2550 6625
 Wire Wire Line
@@ -1011,4 +974,6 @@ Text Label 8825 1550 0    50   ~ 0
 FB
 Text Label 6725 1350 0    50   ~ 0
 ST_Down_12V
+Text Label 2525 3925 3    50   ~ 0
+Fan_12V
 $EndSCHEMATC

@@ -19,7 +19,7 @@ U 1 1 5FEFA283
 P 2075 1575
 F 0 "J7" H 1993 1250 50  0000 C CNN
 F 1 "Conn_01x02" H 1993 1341 50  0000 C CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0212_2x01_P3.00mm_Vertical" H 2075 1575 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2075 1575 50  0001 C CNN
 F 3 "~" H 2075 1575 50  0001 C CNN
 	1    2075 1575
 	-1   0    0    1   
