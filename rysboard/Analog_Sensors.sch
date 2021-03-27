@@ -226,17 +226,6 @@ Text Notes 6950 3650 0    50   ~ 0
 Text Notes 7750 3650 0    50   ~ 0
 0-15.086V\n
 $Comp
-L Device:R R70
-U 1 1 603B8902
-P 7050 4400
-F 0 "R70" H 7120 4446 50  0000 L CNN
-F 1 "10KR" H 7120 4355 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6980 4400 50  0001 C CNN
-F 3 "~" H 7050 4400 50  0001 C CNN
-	1    7050 4400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R71
 U 1 1 603B8D2E
 P 7850 4400
@@ -349,7 +338,7 @@ U 1 1 604C3809
 P 6250 1575
 F 0 "J23" V 6122 1655 50  0000 L CNN
 F 1 "CH2_T" V 6213 1655 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6250 1575 50  0001 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 6250 1575 50  0001 C CNN
 F 3 "~" H 6250 1575 50  0001 C CNN
 	1    6250 1575
 	0    1    1    0   
@@ -360,7 +349,7 @@ U 1 1 604C3EA4
 P 5350 1550
 F 0 "J22" V 5222 1630 50  0000 L CNN
 F 1 "CH1_T" V 5313 1630 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5350 1550 50  0001 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 5350 1550 50  0001 C CNN
 F 3 "~" H 5350 1550 50  0001 C CNN
 	1    5350 1550
 	0    1    1    0   
@@ -416,4 +405,46 @@ Text GLabel 3150 2525 0    50   Input ~ 0
 MCU_ANALOG_SENSOR_V
 Text HLabel 5250 1275 0    50   Input ~ 0
 CHASSIS_T_1
+$Comp
+L Device:R R70
+U 1 1 603B8902
+P 7050 4400
+F 0 "R70" H 7120 4446 50  0000 L CNN
+F 1 "10KR" H 7120 4355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6980 4400 50  0001 C CNN
+F 3 "~" H 7050 4400 50  0001 C CNN
+	1    7050 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Thermistor_PTC TH?
+U 1 1 6063752B
+P 3975 3025
+F 0 "TH?" H 4073 3071 50  0000 L CNN
+F 1 "Thermistor_PTC" H 4073 2980 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4025 2825 50  0001 L CNN
+F 3 "~" H 3975 3025 50  0001 C CNN
+	1    3975 3025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3975 3175 3150 3175
+Connection ~ 3150 3175
+$Comp
+L Device:R R?
+U 1 1 6063841E
+P 3975 2700
+F 0 "R?" H 4045 2746 50  0000 L CNN
+F 1 "10KR" H 4045 2655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3905 2700 50  0001 C CNN
+F 3 "~" H 3975 2700 50  0001 C CNN
+	1    3975 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 2525 3975 2525
+Wire Wire Line
+	3975 2525 3975 2550
+Wire Wire Line
+	3975 2875 3975 2850
 $EndSCHEMATC

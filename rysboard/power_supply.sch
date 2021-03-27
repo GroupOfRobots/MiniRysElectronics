@@ -18,17 +18,6 @@ Text Notes 2900 6100 0    100  ~ 0
 Text Notes 5850 3450 0    100  ~ 0
 12.6V Constant Current / Constant Voltage Supply\n\n
 $Comp
-L Regulator_Linear:L78L33_SO8 U6
-U 1 1 5FD37A28
-P 3150 6850
-F 0 "U6" H 3150 7092 50  0000 C CNN
-F 1 "L78L33_SO8" H 3150 7001 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3250 7050 50  0001 C CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf" H 3350 6850 50  0001 C CNN
-	1    3150 6850
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C?
 U 1 1 5FD3869B
 P 2550 7000
@@ -54,11 +43,6 @@ F 3 "~" H 3650 7090 60  0001 C CNN
 	1    3750 7000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3750 7150 3150 7150
-Connection ~ 3150 7150
-Wire Wire Line
-	3150 7150 2550 7150
 Wire Wire Line
 	2550 6850 2850 6850
 Wire Wire Line
@@ -976,4 +960,20 @@ Text Label 6725 1350 0    50   ~ 0
 ST_Down_12V
 Text Label 2525 3925 3    50   ~ 0
 Fan_12V
+$Comp
+L Regulator_Linear:L78L33_SOT89 U10
+U 1 1 605FC97E
+P 3150 6850
+F 0 "U10" H 3150 7092 50  0000 C CNN
+F 1 "L78L33_SOT89" H 3150 7001 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-89-3" H 3150 7050 50  0001 C CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf" H 3150 6800 50  0001 C CNN
+	1    3150 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 7150 3150 7150
+Connection ~ 3150 7150
+Wire Wire Line
+	3150 7150 3750 7150
 $EndSCHEMATC
