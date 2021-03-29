@@ -22,9 +22,9 @@ F0 "Power Supply" 50
 F1 "power_supply.sch" 50
 F2 "ENABLE_RAIL_5V" I L 8275 2350 50 
 F3 "PWM_FAN" I L 8275 2450 50 
-F4 "ENABLE_CHARGING" I L 8275 2550 50 
-F5 "CHG_CURRENT" O R 9775 2350 50 
-F6 "FAN_TACHOMETER" O R 9775 2450 50 
+F4 "CHG_CURRENT" O R 9775 2350 50 
+F5 "FAN_TACHOMETER" O R 9775 2450 50 
+F6 "ENABLE_RAIL_12V" I R 9775 2550 50 
 $EndSheet
 Text Label 3975 2700 2    50   ~ 0
 ~SPI_CS0
@@ -329,23 +329,13 @@ Text Label 1400 5350 0    50   ~ 0
 MCU_RST
 Wire Wire Line
 	1400 5350 1750 5350
-Text Label 700  6550 0    50   ~ 0
+Text Label 700  5850 0    50   ~ 0
 LED_R
-Text Label 700  6850 0    50   ~ 0
-LED_G
-Text Label 700  6950 0    50   ~ 0
-LED_B
-Text Label 3825 6050 2    50   ~ 0
-VBAT_1
 Text Label 700  5650 0    50   ~ 0
 VBAT_2
 Text Label 700  5750 0    50   ~ 0
 VBAT_3
-Text Label 700  5850 0    50   ~ 0
-BOARD_TEMP_PROBE_1
-Text Label 3825 5450 2    50   ~ 0
-VOLTAGE_PROBE_5V
-Text Label 700  6750 0    50   ~ 0
+Text Label 700  6450 0    50   ~ 0
 ENABLE_RAIL_5V
 Text Label 3825 6250 2    50   ~ 0
 MCU_USART_TX
@@ -357,10 +347,10 @@ Text Label 700  6050 0    50   ~ 0
 ENABLE_TOFS
 Text Label 700  6150 0    50   ~ 0
 PWM_FAN
-Text Label 700  6350 0    50   ~ 0
+Text Label 3825 5350 2    50   ~ 0
 VOLTAGE_PROBE_20V
-Text Label 700  6450 0    50   ~ 0
-ENABLE_CHARGING
+Text Label 700  6350 0    50   ~ 0
+ENABLE_RAIL_12V
 Wire Wire Line
 	700  6950 1750 6950
 Wire Wire Line
@@ -407,7 +397,7 @@ S 8250 4400 1250 1600
 U 60370950
 F0 "Analog_Sensors" 50
 F1 "Analog_Sensors.sch" 50
-F2 "BOARD_T_1" O L 8250 5000 50 
+F2 "BOARD_T_1" O L 8250 4825 50 
 F3 "CHASSIS_T_1" O L 8250 5100 50 
 F4 "CHASSIS_T_2" O L 8250 5200 50 
 F5 "V_P_20" O L 8250 5300 50 
@@ -417,12 +407,13 @@ F8 "V_BAT_C1" O L 8250 5600 50
 F9 "V_BAT_C2" O L 8250 5700 50 
 F10 "V_BAT_C3" O L 8250 5800 50 
 F11 "S_E" I L 8250 5900 50 
+F12 "BOARD_T_2" O L 8250 4925 50 
 $EndSheet
 Text Label 7300 5100 0    50   ~ 0
 CHASSIS_TEMP_PROBE_1
 Text Label 7300 5200 0    50   ~ 0
 CHASSIS_TEMP_PROBE_2
-Text Label 7300 5000 0    50   ~ 0
+Text Label 7325 4825 0    50   ~ 0
 BOARD_TEMP_PROBE_1
 Text Label 7300 5300 0    50   ~ 0
 VOLTAGE_PROBE_20V
@@ -456,8 +447,6 @@ Wire Wire Line
 	7300 5200 8250 5200
 Wire Wire Line
 	8250 5100 7300 5100
-Wire Wire Line
-	7300 5000 8250 5000
 $Comp
 L rysboard:STM32G031K8Ux U4
 U 1 1 6039ADD9
@@ -469,7 +458,6 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    2350 6050
 	1    0    0    -1  
 $EndComp
-NoConn ~ 2850 6850
 Text Label 7200 1750 0    50   ~ 0
 ENABLE_STEPPER_MOTORS
 $Sheet
@@ -535,16 +523,8 @@ F 3 "" H 2600 5050 50  0001 C CNN
 	1    2600 5050
 	1    0    0    -1  
 $EndComp
-Text Label 3825 5550 2    50   ~ 0
-CHASSIS_TEMP_PROBE_1
-Text Label 3825 5650 2    50   ~ 0
-CHASSIS_TEMP_PROBE_2
 Text Notes 2750 7400 0    50   ~ 0
 CHANGE WIRING\n
-Text Label 7550 2550 0    50   ~ 0
-ENABLE_CHARGING
-Wire Wire Line
-	7550 2550 8275 2550
 Text Label 10375 2450 2    50   ~ 0
 FAN_TACH
 Text Label 10375 2350 2    50   ~ 0
@@ -579,10 +559,9 @@ Wire Wire Line
 	1750 6250 700  6250
 Wire Wire Line
 	700  6750 1750 6750
-NoConn ~ 3825 5350
 Wire Wire Line
 	2850 5350 3825 5350
-Text Label 3825 6150 2    50   ~ 0
+Text Label 3825 6850 2    50   ~ 0
 ENABLE_SENSORS
 $Comp
 L Device:LED_ABRG D18
@@ -700,8 +679,7 @@ Wire Notes Line
 	1400 1775 500  1775
 Text Notes 5100 6375 0    50   ~ 0
 Status LED
-NoConn ~ 2850 6550
-Text Label 3825 6450 2    50   ~ 0
+Text Label 3825 6550 2    50   ~ 0
 CURRENT_SENSE
 $Comp
 L power:+5V #PWR0106
@@ -715,6 +693,42 @@ F 3 "" H 2500 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 2850 5950
-NoConn ~ 2850 5850
-NoConn ~ 2850 5750
+Text Label 10425 2550 2    50   ~ 0
+ENABLE_RAIL_12V
+Wire Wire Line
+	9775 2550 10425 2550
+Wire Wire Line
+	7325 4825 8250 4825
+Text Label 7325 4925 0    50   ~ 0
+BOARD_TEMP_PROBE_2
+Wire Wire Line
+	7325 4925 8250 4925
+Text Label 3825 6050 2    50   ~ 0
+VBAT_1
+Text Label 3825 5650 2    50   ~ 0
+CHASSIS_TEMP_PROBE_2
+Text Label 3825 5550 2    50   ~ 0
+CHASSIS_TEMP_PROBE_1
+Text Label 3825 5450 2    50   ~ 0
+VOLTAGE_PROBE_5V
+Text Label 3825 5750 2    50   ~ 0
+BOARD_TEMP_PROBE_1
+Wire Wire Line
+	3825 5750 2850 5750
+Text Label 3825 5850 2    50   ~ 0
+BOARD_TEMP_PROBE_2
+Wire Wire Line
+	3825 5850 2850 5850
+Wire Wire Line
+	2850 6550 3825 6550
+NoConn ~ 3825 6450
+Wire Wire Line
+	3825 6850 2850 6850
+NoConn ~ 700  6550
+NoConn ~ 700  6850
+NoConn ~ 700  6950
+Text Label 3825 6150 2    50   ~ 0
+LED_B
+Text Label 700  6750 0    50   ~ 0
+LED_G
 $EndSCHEMATC

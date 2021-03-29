@@ -434,8 +434,7 @@ S 7400 3800 1250 900
 U 5FEF8E8A
 F0 "Batterry_Charging_Powes_Spply" 50
 F1 "batterry_charging_power_upply.sch" 50
-F2 "ENABLE_CHARGING" I L 7400 4300 50 
-F3 "CHG_CURRENT" O L 7400 4500 50 
+F2 "CHG_CURRENT" O L 7400 4500 50 
 $EndSheet
 $Comp
 L power:+BATT #PWR034
@@ -629,10 +628,10 @@ F 3 "~" H 5900 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L rysboard:NST847BDP6T5G Q3
+L rysboard:NST847BDP6T5G Q7
 U 1 1 606E8E92
 P 2175 4525
-F 0 "Q3" H 2365 4571 50  0000 L CNN
+F 0 "Q7" H 2365 4571 50  0000 L CNN
 F 1 "NST847BDP6T5G" H 2365 4480 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-963" H 2375 4625 50  0001 C CNN
 F 3 "~" H 2175 4525 50  0001 C CNN
@@ -712,10 +711,6 @@ Wire Wire Line
 Connection ~ 2550 6625
 Wire Wire Line
 	2550 6625 2550 6850
-Text HLabel 7250 4300 0    50   Output ~ 0
-ENABLE_CHARGING
-Wire Wire Line
-	7250 4300 7400 4300
 $Comp
 L Device:D_Zener D14
 U 1 1 604A195B
@@ -976,4 +971,6 @@ Wire Wire Line
 Connection ~ 3150 7150
 Wire Wire Line
 	3150 7150 3750 7150
+Text HLabel 3050 1875 0    50   Output ~ 0
+ENABLE_RAIL_12V
 $EndSCHEMATC
