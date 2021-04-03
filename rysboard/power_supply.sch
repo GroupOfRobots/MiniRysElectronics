@@ -44,8 +44,6 @@ F 3 "~" H 3650 7090 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2550 6850 2850 6850
-Wire Wire Line
 	3450 6850 3750 6850
 $Comp
 L power:GND #PWR032
@@ -60,9 +58,6 @@ F 3 "" H 2550 7150 50  0001 C CNN
 $EndComp
 Connection ~ 2550 7150
 Wire Wire Line
-	10475 1350 10700 1350
-Connection ~ 10475 1350
-Wire Wire Line
 	9175 1550 9575 1550
 Connection ~ 9575 1350
 Wire Wire Line
@@ -72,38 +67,13 @@ Wire Wire Line
 Wire Wire Line
 	9575 1350 9875 1350
 Wire Wire Line
-	9575 2150 9875 2150
-Wire Wire Line
 	9875 1350 10175 1350
 Wire Wire Line
 	9875 2150 10175 2150
-Wire Wire Line
-	10175 2150 10475 2150
-Wire Wire Line
-	9175 2150 9575 2150
-Wire Wire Line
-	10475 2150 10700 2150
-Connection ~ 10475 2150
 Connection ~ 10175 2150
-Wire Wire Line
-	10175 1350 10475 1350
 Connection ~ 10175 1350
 Connection ~ 9875 2150
 Connection ~ 9875 1350
-Connection ~ 9575 2150
-$Comp
-L Device:C C?
-U 1 1 5EC0EC4E
-P 9575 1800
-AR Path="/5EB7428E/5EC0EC4E" Ref="C?"  Part="1" 
-AR Path="/5E8FCBC6/5EC0EC4E" Ref="C19"  Part="1" 
-F 0 "C19" H 9475 1875 50  0000 L CNN
-F 1 "10n" H 9550 1750 50  0000 R TNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9613 1650 50  0001 C CNN
-F 3 "~" H 9575 1800 50  0001 C CNN
-	1    9575 1800
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C?
 U 1 1 5EC37974
@@ -130,38 +100,16 @@ F 3 "~" H 10075 1890 60  0000 C CNN
 	1    10175 1800
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C?
-U 1 1 5EC37980
-P 10475 1800
-AR Path="/5EB7428E/5EC37980" Ref="C?"  Part="1" 
-AR Path="/5E8FCBC6/5EC37980" Ref="C22"  Part="1" 
-F 0 "C22" H 10475 1925 60  0000 R TNN
-F 1 "100n" H 10475 1750 60  0000 R TNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 10375 1890 60  0001 C CNN
-F 3 "~" H 10375 1890 60  0001 C CNN
-	1    10475 1800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9575 1550 9575 1350
-Wire Wire Line
-	9575 1650 9575 1550
-Connection ~ 9575 1550
 Wire Wire Line
 	9875 1350 9875 1650
 Wire Wire Line
 	10175 1350 10175 1650
 Wire Wire Line
-	10475 1350 10475 1650
-Wire Wire Line
-	9575 2150 9575 1950
-Wire Wire Line
 	9875 2150 9875 1950
 Wire Wire Line
 	10175 2150 10175 1950
-Wire Wire Line
-	10475 2150 10475 1950
 $Comp
 L Device:LED D9
 U 1 1 5EE415A5
@@ -403,7 +351,6 @@ F 3 "" H 2175 1825 50  0001 C CNN
 	1    2175 1825
 	1    0    0    -1  
 $EndComp
-Connection ~ 2550 6850
 Text Notes 2725 825  0    50   ~ 0
 Reverse Polarrity Protection and fuse\nMust be rated for 14A.\n
 Text Notes 2750 6400 0    50   ~ 0
@@ -434,7 +381,6 @@ S 7400 3800 1250 900
 U 5FEF8E8A
 F0 "Batterry_Charging_Powes_Spply" 50
 F1 "batterry_charging_power_upply.sch" 50
-F2 "CHG_CURRENT" O L 7400 4500 50 
 $EndSheet
 $Comp
 L power:+BATT #PWR034
@@ -705,7 +651,7 @@ $EndComp
 Wire Wire Line
 	2400 6200 2550 6200
 Wire Wire Line
-	2550 6200 2550 6625
+	2550 6200 2550 6550
 Wire Wire Line
 	2400 6625 2550 6625
 Connection ~ 2550 6625
@@ -800,10 +746,6 @@ F 3 "" H 1875 3600 50  0001 C CNN
 	1    1875 3600
 	0    1    1    0   
 $EndComp
-Text HLabel 7250 4500 0    50   Input ~ 0
-CHG_CURRENT
-Wire Wire Line
-	7250 4500 7400 4500
 Text HLabel 2175 3450 2    50   Input ~ 0
 FAN_TACHOMETER
 Wire Notes Line
@@ -955,22 +897,33 @@ Text Label 6725 1350 0    50   ~ 0
 ST_Down_12V
 Text Label 2525 3925 3    50   ~ 0
 Fan_12V
+Text HLabel 3050 1875 0    50   Output ~ 0
+ENABLE_RAIL_12V
 $Comp
-L Regulator_Linear:L78L33_SOT89 U10
-U 1 1 605FC97E
+L Reference_Voltage:MAX6035xxUR50 U6
+U 1 1 60692F05
 P 3150 6850
-F 0 "U10" H 3150 7092 50  0000 C CNN
-F 1 "L78L33_SOT89" H 3150 7001 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-89-3" H 3150 7050 50  0001 C CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf" H 3150 6800 50  0001 C CNN
+F 0 "U6" H 2921 6896 50  0000 R CNN
+F 1 "AP7381-33SA-7 " H 2921 6805 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3250 6550 50  0001 C CIN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX6035.pdf" H 3250 6500 50  0001 C CIN
 	1    3150 6850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2550 7150 3150 7150
-Connection ~ 3150 7150
+	2550 7150 3050 7150
+Connection ~ 3050 7150
 Wire Wire Line
-	3150 7150 3750 7150
-Text HLabel 3050 1875 0    50   Output ~ 0
-ENABLE_RAIL_12V
+	3050 7150 3750 7150
+Wire Wire Line
+	3050 6550 2550 6550
+Connection ~ 2550 6550
+Wire Wire Line
+	2550 6550 2550 6625
+Wire Wire Line
+	10175 2150 10700 2150
+Wire Wire Line
+	10175 1350 10700 1350
+Wire Wire Line
+	9175 2150 9875 2150
 $EndSCHEMATC

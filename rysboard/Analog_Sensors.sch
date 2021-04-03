@@ -300,17 +300,6 @@ Wire Wire Line
 Text Notes 8450 1000 0    50   ~ 0
 When not used, thermistors do not need to be powered on.
 $Comp
-L rysboard:DMP2075UFDB Q2
-U 1 1 605EDFDE
-P 9125 2100
-F 0 "Q2" H 9330 2054 50  0000 L CNN
-F 1 "DMP2075UFDB" H 9330 2145 50  0000 L CNN
-F 2 "SamacSys_Parts:DMP2075UFDB7" H 9325 2025 50  0001 L CIN
-F 3 "" H 9125 2100 50  0001 L CNN
-	1    9125 2100
-	1    0    0    1   
-$EndComp
-$Comp
 L Device:R R61
 U 1 1 604C3349
 P 6150 1075
@@ -383,7 +372,7 @@ $EndComp
 Text GLabel 9850 2300 2    50   Input ~ 0
 MCU_ANALOG_SENSOR_V
 Wire Wire Line
-	9850 2300 9225 2300
+	9850 2300 9600 2300
 Text GLabel 6150 925  2    50   Input ~ 0
 MCU_ANALOG_SENSOR_V
 Text GLabel 5250 750  2    50   Input ~ 0
@@ -449,4 +438,40 @@ F 3 "" H 2775 4075 50  0001 C CNN
 $EndComp
 Text HLabel 3975 2875 0    50   Input ~ 0
 BOARD_T_2
+$Comp
+L rysboard:DMP2075UFDB Q2
+U 1 1 605EDFDE
+P 9125 2100
+F 0 "Q2" H 9330 2054 50  0000 L CNN
+F 1 "DMP2075UFDB" H 9330 2145 50  0000 L CNN
+F 2 "SamacSys_Parts:DMP2075UFDB7" H 9325 2025 50  0001 L CIN
+F 3 "" H 9125 2100 50  0001 L CNN
+	1    9125 2100
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C C32
+U 1 1 6069F647
+P 9600 2450
+F 0 "C32" H 9715 2496 50  0000 L CNN
+F 1 "0,1uF" H 9715 2405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9638 2300 50  0001 C CNN
+F 3 "~" H 9600 2450 50  0001 C CNN
+	1    9600 2450
+	1    0    0    -1  
+$EndComp
+Connection ~ 9600 2300
+Wire Wire Line
+	9600 2300 9225 2300
+$Comp
+L power:GND #PWR0116
+U 1 1 6069FD9A
+P 9600 2600
+F 0 "#PWR0116" H 9600 2350 50  0001 C CNN
+F 1 "GND" H 9605 2427 50  0000 C CNN
+F 2 "" H 9600 2600 50  0001 C CNN
+F 3 "" H 9600 2600 50  0001 C CNN
+	1    9600 2600
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
