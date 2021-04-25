@@ -172,37 +172,6 @@ Wire Wire Line
 Text Notes 3750 3775 0    50   ~ 0
 ISO 7637-2 and ISO 16750-2 Compliant\n
 $Comp
-L Device:C C30
-U 1 1 605A31DC
-P 5950 2300
-F 0 "C30" H 5800 2400 50  0000 L CNN
-F 1 "47uF" H 5625 2300 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D" H 5988 2150 50  0001 C CNN
-F 3 "~" H 5950 2300 50  0001 C CNN
-	1    5950 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6250 1475 5950 1475
-Wire Wire Line
-	5950 1475 5950 2150
-Wire Wire Line
-	5050 1475 5950 1475
-Connection ~ 5950 1475
-$Comp
-L power:GND #PWR041
-U 1 1 605ADEA3
-P 5950 2900
-F 0 "#PWR041" H 5950 2650 50  0001 C CNN
-F 1 "GND" H 5955 2727 50  0000 C CNN
-F 2 "" H 5950 2900 50  0001 C CNN
-F 3 "" H 5950 2900 50  0001 C CNN
-	1    5950 2900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5950 2900 5950 2450
-$Comp
 L rysboard:Si7938DP-T1-GE3 Q6
 U 1 1 6056F7A8
 P 4750 1575
@@ -217,4 +186,6 @@ Text Notes 2375 2200 0    50   ~ 0
 TODO -16 V Vmax\n
 Wire Wire Line
 	3650 1475 3650 2475
+Wire Wire Line
+	5050 1475 6250 1475
 $EndSCHEMATC

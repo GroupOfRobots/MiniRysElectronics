@@ -81,8 +81,8 @@ Wire Wire Line
 	9500 3975 9975 3975
 Wire Wire Line
 	9500 4075 9975 4075
-NoConn ~ 3525 1700
-NoConn ~ 3525 1600
+NoConn ~ 3500 1700
+NoConn ~ 3500 1600
 Text Label 3975 2200 2    50   ~ 0
 I2C3_SDA
 Text Label 3975 2300 2    50   ~ 0
