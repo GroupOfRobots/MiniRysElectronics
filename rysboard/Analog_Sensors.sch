@@ -474,4 +474,15 @@ F 3 "" H 9600 2600 50  0001 C CNN
 	1    9600 2600
 	-1   0    0    -1  
 $EndComp
+$Comp
+L Transistor_FET:AO3401A Q?
+U 1 1 608D8760
+P 8125 2825
+F 0 "Q?" H 8330 2871 50  0000 L CNN
+F 1 "AO3401A" H 8330 2780 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8325 2750 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 8125 2825 50  0001 L CNN
+	1    8125 2825
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
