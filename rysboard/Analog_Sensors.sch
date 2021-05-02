@@ -316,7 +316,7 @@ U 1 1 604C3809
 P 6250 1575
 F 0 "J23" V 6122 1655 50  0000 L CNN
 F 1 "CH2_T" V 6213 1655 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 6250 1575 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 6250 1575 50  0001 C CNN
 F 3 "~" H 6250 1575 50  0001 C CNN
 	1    6250 1575
 	0    1    1    0   
@@ -327,7 +327,7 @@ U 1 1 604C3EA4
 P 5350 1550
 F 0 "J22" V 5222 1630 50  0000 L CNN
 F 1 "CH1_T" V 5313 1630 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 5350 1550 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 5350 1550 50  0001 C CNN
 F 3 "~" H 5350 1550 50  0001 C CNN
 	1    5350 1550
 	0    1    1    0   
@@ -439,17 +439,6 @@ $EndComp
 Text HLabel 3975 2875 0    50   Input ~ 0
 BOARD_T_2
 $Comp
-L rysboard:DMP2075UFDB Q2
-U 1 1 605EDFDE
-P 9125 2100
-F 0 "Q2" H 9330 2054 50  0000 L CNN
-F 1 "DMP2075UFDB" H 9330 2145 50  0000 L CNN
-F 2 "SamacSys_Parts:DMP2075UFDB7" H 9325 2025 50  0001 L CIN
-F 3 "" H 9125 2100 50  0001 L CNN
-	1    9125 2100
-	1    0    0    1   
-$EndComp
-$Comp
 L Device:C C32
 U 1 1 6069F647
 P 9600 2450
@@ -475,14 +464,14 @@ F 3 "" H 9600 2600 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:AO3401A Q?
+L Transistor_FET:AO3401A Q10
 U 1 1 608D8760
-P 8125 2825
-F 0 "Q?" H 8330 2871 50  0000 L CNN
-F 1 "AO3401A" H 8330 2780 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 8325 2750 50  0001 L CIN
-F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 8125 2825 50  0001 L CNN
-	1    8125 2825
-	1    0    0    -1  
+P 9125 2100
+F 0 "Q10" H 9330 2054 50  0000 L CNN
+F 1 "AO3401A" H 9330 2145 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9325 2025 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 9125 2100 50  0001 L CNN
+	1    9125 2100
+	1    0    0    1   
 $EndComp
 $EndSCHEMATC

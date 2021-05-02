@@ -10,6 +10,16 @@ D MOSFET MOSFET BVDSS: 8V-24V
 F https://www.arrow.com/en/products/dmp2075ufdb-7/diodes-incorporated
 $ENDCMP
 #
+$CMP FDG6304P
+D Mosfet Array 2 P-Channel (Dual) 25V 410mA 300mW Surface Mount SC-70-6
+F https://componentsearchengine.com/Datasheets/1/FDG6304P.pdf
+$ENDCMP
+#
+$CMP LM74801QDRRRQ1
+D 3-V TO 65-V, AUTOMOTIVE IDEAL DI
+F https://www.ti.com/lit/gpn/LM7480-Q1
+$ENDCMP
+#
 $CMP NE555DR
 D Single Precision Timer
 F http://www.ti.com/lit/ds/symlink/ne555.pdf
@@ -17,7 +27,6 @@ $ENDCMP
 #
 $CMP NSR20F30NXT5G
 D ON SEMICONDUCTOR - NSR20F30NXT5G - DIODE, SCHOTTKY, 2A, 30V, 0603
-K
 F http://www.onsemi.com/pub/Collateral/NSR20F30-D.PDF
 $ENDCMP
 #
