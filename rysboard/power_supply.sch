@@ -331,7 +331,7 @@ U 1 1 5E89E53A
 P 8275 1450
 F 0 "U3" H 8275 1792 50  0000 C CNN
 F 1 "ST1S10" H 8275 1701 50  0000 C CNN
-F 2 "Package_DFN_QFN:DFN-8-1EP_4x4mm_P0.8mm_EP2.3x3.24mm" H 8400 1100 50  0001 L CIN
+F 2 "Package_SO:TI_SO-PowerPAD-8" H 8400 1100 50  0001 L CIN
 F 3 "http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00169322.pdf" H 8275 1450 50  0001 C CNN
 F 4 " ST1S10PHR" H 8275 1450 50  0001 C CNN "PartID"
 F 5 "https://www.tme.eu/pl/details/st1s10phr/regulatory-napiecia-uklady-dc-dc/stmicroelectronics/" H 8275 1450 50  0001 C CNN "TME"
