@@ -30,4 +30,10 @@ D ON SEMICONDUCTOR - NSR20F30NXT5G - DIODE, SCHOTTKY, 2A, 30V, 0603
 F http://www.onsemi.com/pub/Collateral/NSR20F30-D.PDF
 $ENDCMP
 #
+$CMP L7986A
+D 
+K
+F http://www.st.com/web/en/resource/technical/document/datasheet/DM00041568.pdf
+$ENDCMP
+#
 #End Doc Library
