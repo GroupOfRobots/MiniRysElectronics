@@ -177,17 +177,6 @@ Wire Wire Line
 	3250 1475 4375 1475
 NoConn ~ 4400 2800
 $Comp
-L Device:R R32
-U 1 1 60A1425A
-P 4075 2550
-F 0 "R32" H 4145 2596 50  0000 L CNN
-F 1 "100R" H 4145 2505 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4005 2550 50  0001 C CNN
-F 3 "~" H 4075 2550 50  0001 C CNN
-	1    4075 2550
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GND #PWR025
 U 1 1 60A14B90
 P 4250 3125
@@ -199,15 +188,9 @@ F 3 "" H 4250 3125 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4225 2550 4375 2550
-Wire Wire Line
-	3525 2550 3925 2550
-Wire Wire Line
 	4250 3125 4250 3050
 Wire Wire Line
 	4250 3050 4400 3050
-Text GLabel 3525 2550 0    50   Input ~ 0
-DC_IN_Voltage
 Wire Wire Line
 	5400 1750 6275 1750
 Wire Wire Line
@@ -260,4 +243,21 @@ Wire Wire Line
 	2425 825  2375 825 
 Wire Wire Line
 	2375 825  2375 1475
+Wire Wire Line
+	4225 2550 4375 2550
+Wire Wire Line
+	3525 2550 3925 2550
+Text GLabel 3525 2550 0    50   Input ~ 0
+DC_IN_Voltage
+$Comp
+L Device:R R32
+U 1 1 60A1425A
+P 4075 2550
+F 0 "R32" H 4145 2596 50  0000 L CNN
+F 1 "100R" H 4145 2505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4005 2550 50  0001 C CNN
+F 3 "~" H 4075 2550 50  0001 C CNN
+	1    4075 2550
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

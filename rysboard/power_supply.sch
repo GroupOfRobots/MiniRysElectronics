@@ -784,10 +784,10 @@ Wire Wire Line
 Wire Wire Line
 	2175 1625 1675 1625
 $Comp
-L Transistor_FET:AO3401A Q?
+L Transistor_FET:AO3401A Q1
 U 1 1 60967BD5
 P 2275 4025
-F 0 "Q?" V 2617 4025 50  0000 C CNN
+F 0 "Q1" V 2617 4025 50  0000 C CNN
 F 1 "PMV28XPEAR" V 2526 4025 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 2475 3950 50  0001 L CIN
 F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 2275 4025 50  0001 L CNN
@@ -795,10 +795,10 @@ F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 2275 4025 50  0001 L CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R36
 U 1 1 6096D04C
 P 2275 4475
-F 0 "R?" V 2355 4475 50  0000 C CNN
+F 0 "R36" V 2355 4475 50  0000 C CNN
 F 1 "1k" V 2275 4475 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2205 4475 50  0001 C CNN
 F 3 "~" H 2275 4475 50  0001 C CNN
