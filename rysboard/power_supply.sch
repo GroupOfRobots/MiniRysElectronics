@@ -258,11 +258,6 @@ Wire Wire Line
 	7725 1550 7725 1850
 Wire Wire Line
 	7775 1550 7725 1550
-Connection ~ 8275 1850
-Wire Wire Line
-	8175 1850 8275 1850
-Wire Wire Line
-	8375 1850 8275 1850
 Connection ~ 7050 2150
 Wire Wire Line
 	7350 2150 7350 1950
@@ -323,19 +318,6 @@ F 1 "10u" H 6750 1750 60  0000 R TNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 6650 1890 60  0001 C CNN
 F 3 "~" H 6650 1890 60  0000 C CNN
 	1    6750 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Regulator_Switching:ST1S10PHR U3
-U 1 1 5E89E53A
-P 8275 1450
-F 0 "U3" H 8275 1792 50  0000 C CNN
-F 1 "ST1S10" H 8275 1701 50  0000 C CNN
-F 2 "Package_SO:TI_SO-PowerPAD-8" H 8400 1100 50  0001 L CIN
-F 3 "http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00169322.pdf" H 8275 1450 50  0001 C CNN
-F 4 " ST1S10PHR" H 8275 1450 50  0001 C CNN "PartID"
-F 5 "https://www.tme.eu/pl/details/st1s10phr/regulatory-napiecia-uklady-dc-dc/stmicroelectronics/" H 8275 1450 50  0001 C CNN "TME"
-	1    8275 1450
 	1    0    0    -1  
 $EndComp
 Text Notes 7050 2600 0    100  ~ 0
@@ -805,4 +787,6 @@ F 3 "~" H 2275 4475 50  0001 C CNN
 	1    2275 4475
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	8175 1850 8375 1850
 $EndSCHEMATC
