@@ -275,29 +275,6 @@ F 3 "~" H 2475 5950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	725  6600 2475 6600
-$Comp
-L Device:C C29
-U 1 1 6059B38B
-P 7250 5275
-F 0 "C29" H 7425 5275 50  0000 C CNN
-F 1 "47uF" H 7425 5200 50  0000 C CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D" H 7288 5125 50  0001 C CNN
-F 3 "~" H 7250 5275 50  0001 C CNN
-	1    7250 5275
-	-1   0    0    1   
-$EndComp
-Connection ~ 7250 4725
-Wire Wire Line
-	7250 4725 7325 4725
-Text Notes 7450 5250 0    50   ~ 0
-Or More
-Wire Wire Line
-	7050 6600 7250 6600
-Connection ~ 7250 6600
-Wire Wire Line
-	7250 6600 7350 6600
-Wire Wire Line
-	7250 4725 7250 5125
 Wire Wire Line
 	2825 8525 2875 8525
 $Comp
@@ -517,8 +494,6 @@ Connection ~ 3600 4750
 Wire Wire Line
 	3600 4750 3775 4750
 Wire Wire Line
-	6225 4725 7250 4725
-Wire Wire Line
 	5025 4750 5600 4750
 Wire Wire Line
 	6225 4750 6225 4725
@@ -661,8 +636,6 @@ Connection ~ 4375 6600
 Connection ~ 5250 6600
 Wire Wire Line
 	6325 7075 6325 6975
-Wire Wire Line
-	7250 5425 7250 6600
 Connection ~ 2475 6600
 Wire Wire Line
 	2475 6100 2475 6600
@@ -687,4 +660,8 @@ F 3 "~" H 3425 8375 50  0001 C CNN
 	1    3425 8375
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7050 6600 7350 6600
+Wire Wire Line
+	6225 4725 7325 4725
 $EndSCHEMATC

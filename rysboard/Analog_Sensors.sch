@@ -23,7 +23,7 @@ Text HLabel 3575 4375 0    50   Input ~ 0
 V_P_5
 Text HLabel 1600 5650 0    50   Input ~ 0
 BAT_CS
-Text HLabel 6250 4550 0    50   Input ~ 0
+Text HLabel 6025 4550 0    50   Input ~ 0
 V_BAT_C1
 Text HLabel 7050 4550 0    50   Input ~ 0
 V_BAT_C2
@@ -464,67 +464,6 @@ F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 9125 2100 50  0001 L CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:R R34
-U 1 1 6090FB78
-P 9100 4425
-F 0 "R34" H 9170 4471 50  0000 L CNN
-F 1 "10k1%" H 9170 4380 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9030 4425 50  0001 C CNN
-F 3 "~" H 9100 4425 50  0001 C CNN
-	1    9100 4425
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R35
-U 1 1 6090FD40
-P 9100 4725
-F 0 "R35" H 9170 4771 50  0000 L CNN
-F 1 "2.8KR" H 9170 4680 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9030 4725 50  0001 C CNN
-F 3 "~" H 9100 4725 50  0001 C CNN
-	1    9100 4725
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0117
-U 1 1 609100DD
-P 9100 4875
-F 0 "#PWR0117" H 9100 4625 50  0001 C CNN
-F 1 "GND" H 9105 4702 50  0000 C CNN
-F 2 "" H 9100 4875 50  0001 C CNN
-F 3 "" H 9100 4875 50  0001 C CNN
-	1    9100 4875
-	-1   0    0    -1  
-$EndComp
-Text GLabel 9100 4275 1    50   Input ~ 0
-DC_IN_Voltage
-Text HLabel 8750 4575 0    50   Input ~ 0
-V_IN_DIV
-Wire Wire Line
-	8750 4575 8875 4575
-Connection ~ 9100 4575
-Connection ~ 8875 4575
-Wire Wire Line
-	8875 4575 9100 4575
-Wire Wire Line
-	8875 4875 9100 4875
-Connection ~ 9100 4875
-Text Notes 8900 3625 0    50   ~ 0
-0-15.086V\n
-Text Notes 8350 5225 0    50   ~ 0
-3.6V zener diode prot\n
-$Comp
-L Device:D_Zener D7
-U 1 1 6092677E
-P 8875 4725
-F 0 "D7" V 8829 4805 50  0000 L CNN
-F 1 "CD0603-Z3" V 8975 4200 50  0000 L CNN
-F 2 "Diode_SMD:D_0603_1608Metric" H 8875 4725 50  0001 C CNN
-F 3 "~" H 8875 4725 50  0001 C CNN
-	1    8875 4725
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:R R71
 U 1 1 603B8D2E
 P 7850 4400
@@ -535,4 +474,7 @@ F 3 "~" H 7850 4400 50  0001 C CNN
 	1    7850 4400
 	1    0    0    -1  
 $EndComp
+Connection ~ 6250 4550
+Wire Wire Line
+	6025 4550 6250 4550
 $EndSCHEMATC

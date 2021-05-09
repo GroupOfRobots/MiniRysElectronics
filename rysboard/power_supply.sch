@@ -70,7 +70,6 @@ Wire Wire Line
 	9875 1350 10175 1350
 Wire Wire Line
 	9875 2150 10175 2150
-Connection ~ 10175 2150
 Connection ~ 10175 1350
 Connection ~ 9875 2150
 Connection ~ 9875 1350
@@ -110,18 +109,6 @@ Wire Wire Line
 	9875 2150 9875 1950
 Wire Wire Line
 	10175 2150 10175 1950
-$Comp
-L Device:LED D9
-U 1 1 5EE415A5
-P 10700 1550
-F 0 "D9" H 10700 1475 50  0000 C CNN
-F 1 "GREEN" H 10700 1650 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 10700 1550 50  0001 C CNN
-F 3 "~" H 10700 1550 50  0001 C CNN
-F 4 "5VGOOD" H 10700 1400 50  0000 C CNN "Comment"
-	1    10700 1550
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	7350 1350 7350 1300
 $Comp
@@ -148,24 +135,7 @@ F 3 "~" H 10700 1300 50  0001 C CNN
 	1    10700 1300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10700 1700 10700 1800
 Connection ~ 10700 1350
-Wire Wire Line
-	10700 1400 10700 1350
-Wire Wire Line
-	10700 2150 10700 2100
-$Comp
-L Device:R R27
-U 1 1 5EE4159D
-P 10700 1950
-F 0 "R27" V 10780 1950 50  0000 C CNN
-F 1 "680R" V 10625 1950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 10630 1950 50  0001 C CNN
-F 3 "~" H 10700 1950 50  0001 C CNN
-	1    10700 1950
-	1    0    0    -1  
-$EndComp
 Text Notes 8625 1050 0    50   ~ 0
 V_out = V_FB * (1 + R13/R14)\nR13 = R14 x (V_out - V_FB) / V_FB\nV_out ~= 5.0V\nV_FB = 0.8V (typ); +-24mV\nR14 = 21k & R13 = 110k -> V_out = 4.99V
 Wire Wire Line
@@ -395,7 +365,7 @@ F 3 "" H 11000 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6200 1350 6275 1350
+	6200 1350 6250 1350
 Connection ~ 6750 1350
 $Comp
 L Device:R R12
@@ -637,25 +607,11 @@ Connection ~ 2550 6625
 Wire Wire Line
 	2550 6625 2550 6850
 Wire Wire Line
-	1575 3950 1575 3925
-Wire Wire Line
 	1575 3925 1825 3925
 Wire Wire Line
 	2175 3450 2175 3600
 Wire Wire Line
 	2175 3825 2625 3825
-$Comp
-L power:+12V #PWR0104
-U 1 1 604BD223
-P 1575 3925
-F 0 "#PWR0104" H 1575 3775 50  0001 C CNN
-F 1 "+12V" H 1590 4098 50  0000 C CNN
-F 2 "" H 1575 3925 50  0001 C CNN
-F 3 "" H 1575 3925 50  0001 C CNN
-	1    1575 3925
-	1    0    0    -1  
-$EndComp
-Connection ~ 1575 3925
 $Comp
 L power:+12V #PWR0105
 U 1 1 604BD987
@@ -776,8 +732,6 @@ Connection ~ 2550 6550
 Wire Wire Line
 	2550 6550 2550 6625
 Wire Wire Line
-	10175 2150 10700 2150
-Wire Wire Line
 	10175 1350 10700 1350
 Wire Wire Line
 	9175 2150 9875 2150
@@ -818,4 +772,127 @@ F 3 "~" H 6425 1350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6575 1350 6750 1350
+$Comp
+L Reference_Voltage:MAX6035xxUR50 U7
+U 1 1 60988D12
+P 9625 5675
+F 0 "U7" H 9396 5721 50  0000 R CNN
+F 1 "AP7381-33SA-7 " H 9396 5630 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9725 5375 50  0001 C CIN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX6035.pdf" H 9725 5325 50  0001 C CIN
+	1    9625 5675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60989B90
+P 10300 5825
+AR Path="/5EB7428E/60989B90" Ref="C?"  Part="1" 
+AR Path="/5E8FCBC6/60989B90" Ref="C22"  Part="1" 
+F 0 "C22" H 10300 5950 60  0000 R TNN
+F 1 "100n" H 10300 5775 60  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10200 5915 60  0001 C CNN
+F 3 "~" H 10200 5915 60  0001 C CNN
+	1    10300 5825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6098A077
+P 8550 5750
+AR Path="/5EB7428E/6098A077" Ref="C?"  Part="1" 
+AR Path="/5E8FCBC6/6098A077" Ref="C19"  Part="1" 
+F 0 "C19" H 8550 5875 60  0000 R TNN
+F 1 "1uF" H 8550 5700 60  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8450 5840 60  0001 C CNN
+F 3 "~" H 8450 5840 60  0001 C CNN
+	1    8550 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 6098A31C
+P 9525 5975
+F 0 "#PWR0118" H 9525 5725 50  0001 C CNN
+F 1 "GND" H 9530 5802 50  0000 C CNN
+F 2 "" H 9525 5975 50  0001 C CNN
+F 3 "" H 9525 5975 50  0001 C CNN
+	1    9525 5975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 5975 8550 5900
+Wire Wire Line
+	8550 5975 9525 5975
+Connection ~ 9525 5975
+Wire Wire Line
+	9525 5975 10300 5975
+Wire Wire Line
+	10300 5675 9925 5675
+Wire Wire Line
+	9525 5375 8550 5375
+Wire Wire Line
+	8550 5375 8550 5600
+$Comp
+L power:+5V #PWR0119
+U 1 1 60996850
+P 8550 5375
+F 0 "#PWR0119" H 8550 5225 50  0001 C CNN
+F 1 "+5V" H 8565 5548 50  0000 C CNN
+F 2 "" H 8550 5375 50  0001 C CNN
+F 3 "" H 8550 5375 50  0001 C CNN
+	1    8550 5375
+	1    0    0    -1  
+$EndComp
+Connection ~ 8550 5375
+$Comp
+L power:+3.3V #PWR0120
+U 1 1 609AC99B
+P 10300 5675
+F 0 "#PWR0120" H 10300 5525 50  0001 C CNN
+F 1 "+3.3V" H 10315 5848 50  0000 C CNN
+F 2 "" H 10300 5675 50  0001 C CNN
+F 3 "" H 10300 5675 50  0001 C CNN
+	1    10300 5675
+	1    0    0    -1  
+$EndComp
+Connection ~ 10300 5675
+$Comp
+L Device:C C?
+U 1 1 609BA1EE
+P 6250 1825
+AR Path="/5EB7428E/609BA1EE" Ref="C?"  Part="1" 
+AR Path="/5E8FCBC6/609BA1EE" Ref="C29"  Part="1" 
+F 0 "C29" H 6250 1950 60  0000 R TNN
+F 1 "47uF" H 6250 1775 60  0000 R TNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D" H 6150 1915 60  0001 C CNN
+F 3 "~" H 6150 1915 60  0000 C CNN
+	1    6250 1825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 1675 6250 1350
+Connection ~ 6250 1350
+Wire Wire Line
+	6250 1350 6275 1350
+Wire Wire Line
+	6750 2150 6250 2150
+Wire Wire Line
+	6250 2150 6250 1975
+Connection ~ 6750 2150
+Text Label 6250 1350 1    50   ~ 0
+ST_Down_12V_Cap
+Text Label 2675 6550 0    50   ~ 0
+MCU_REG_IN
+$Comp
+L power:+BATT #PWR0104
+U 1 1 60A28B27
+P 1575 3925
+F 0 "#PWR0104" H 1575 3775 50  0001 C CNN
+F 1 "+BATT" H 1590 4098 50  0000 C CNN
+F 2 "" H 1575 3925 50  0001 C CNN
+F 3 "" H 1575 3925 50  0001 C CNN
+	1    1575 3925
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

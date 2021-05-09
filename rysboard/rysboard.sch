@@ -132,17 +132,6 @@ TOF5_EN
 Text Label 1350 3100 0    50   ~ 0
 TOF6_EN
 $Comp
-L power:PWR_FLAG #FLG0103
-U 1 1 5EE863F0
-P 3525 1200
-F 0 "#FLG0103" H 3525 1275 50  0001 C CNN
-F 1 "PWR_FLAG" H 3525 1373 50  0000 C CNN
-F 2 "" H 3525 1200 50  0001 C CNN
-F 3 "~" H 3525 1200 50  0001 C CNN
-	1    3525 1200
-	1    0    0    -1  
-$EndComp
-$Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 5F1ECD3F
 P 4600 1200
@@ -213,20 +202,6 @@ Raspberry Pi 4\nmounting holes (GND)
 Text Notes 8100 1100 0    50   ~ 0
 I2C Note:\nRPi4 has internal pull-ups for I2C-1 bus\nand the ToF sensor boards used have a set of pull-ups\neach for their respective buses (I2C-3 and -5);\nTherefore no additional pullups are required
 Wire Wire Line
-	3175 1200 3525 1200
-Connection ~ 3175 1200
-$Comp
-L power:+3V3 #PWR03
-U 1 1 5EB8D8B6
-P 3175 1200
-F 0 "#PWR03" H 3175 1050 50  0001 C CNN
-F 1 "+3V3" H 3190 1373 50  0000 C CNN
-F 2 "" H 3175 1200 50  0001 C CNN
-F 3 "" H 3175 1200 50  0001 C CNN
-	1    3175 1200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	1900 2500 1350 2500
 Wire Wire Line
 	1900 2400 1350 2400
@@ -234,7 +209,6 @@ Wire Wire Line
 	1900 1900 1350 1900
 Wire Wire Line
 	1900 2300 1350 2300
-Connection ~ 2900 1200
 Wire Wire Line
 	1900 2700 1350 2700
 Wire Wire Line
@@ -252,11 +226,7 @@ F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/r
 $EndComp
 Wire Wire Line
 	2600 1200 2500 1200
-Wire Wire Line
-	2900 1200 3175 1200
 Connection ~ 2500 1200
-Wire Wire Line
-	2800 1200 2900 1200
 Wire Wire Line
 	3500 1900 3975 1900
 Wire Wire Line
@@ -746,4 +716,6 @@ Wire Wire Line
 	7350 4550 8250 4550
 Text Label 3825 5950 2    50   ~ 0
 V_AUX
+NoConn ~ 2900 1200
+NoConn ~ 2800 1200
 $EndSCHEMATC
