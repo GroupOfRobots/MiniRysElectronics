@@ -362,7 +362,7 @@ U 1 1 60976C7B
 P 7025 3500
 F 0 "J2" V 7087 3544 50  0000 L CNN
 F 1 "Conn_01x02_Male" V 7178 3544 50  0000 L CNN
-F 2 "Diode_THT:D_T-1_P2.54mm_Vertical_AnodeUp" H 7025 3500 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7025 3500 50  0001 C CNN
 F 3 "~" H 7025 3500 50  0001 C CNN
 	1    7025 3500
 	-1   0    0    1   
@@ -388,7 +388,7 @@ U 1 1 6097A326
 P 850 2700
 F 0 "J1" V 912 2744 50  0000 L CNN
 F 1 "Conn_01x02_Male" V 1003 2744 50  0000 L CNN
-F 2 "Diode_THT:D_T-1_P2.54mm_Vertical_AnodeUp" H 850 2700 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 850 2700 50  0001 C CNN
 F 3 "~" H 850 2700 50  0001 C CNN
 	1    850  2700
 	1    0    0    -1  
