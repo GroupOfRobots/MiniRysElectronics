@@ -359,29 +359,25 @@ Connection ~ 5025 3400
 $Comp
 L Connector:Conn_01x02_Male J2
 U 1 1 60976C7B
-P 7025 3500
-F 0 "J2" V 7087 3544 50  0000 L CNN
-F 1 "Conn_01x02_Male" V 7178 3544 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7025 3500 50  0001 C CNN
-F 3 "~" H 7025 3500 50  0001 C CNN
-	1    7025 3500
-	-1   0    0    1   
+P 6925 3400
+F 0 "J2" V 6987 3444 50  0000 L CNN
+F 1 "Conn_01x02_Male" V 7078 3444 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6925 3400 50  0001 C CNN
+F 3 "~" H 6925 3400 50  0001 C CNN
+	1    6925 3400
+	1    0    0    -1  
 $EndComp
-Text Label 6825 3400 2    50   ~ 0
-VOUT
 $Comp
 L power:GND #PWR0101
 U 1 1 60979499
-P 6725 3500
-F 0 "#PWR0101" H 6725 3250 50  0001 C CNN
-F 1 "GND" H 6730 3327 50  0000 C CNN
-F 2 "" H 6725 3500 50  0001 C CNN
-F 3 "" H 6725 3500 50  0001 C CNN
-	1    6725 3500
-	1    0    0    -1  
+P 7350 3400
+F 0 "#PWR0101" H 7350 3150 50  0001 C CNN
+F 1 "GND" H 7355 3227 50  0000 C CNN
+F 2 "" H 7350 3400 50  0001 C CNN
+F 3 "" H 7350 3400 50  0001 C CNN
+	1    7350 3400
+	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	6725 3500 6825 3500
 $Comp
 L Connector:Conn_01x02_Male J1
 U 1 1 6097A326
@@ -408,4 +404,10 @@ F 3 "" H 1050 2800 50  0001 C CNN
 	1    1050 2800
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7350 3400 7125 3400
+Wire Wire Line
+	7350 3500 7125 3500
+Text Label 7350 3500 2    50   ~ 0
+VOUT
 $EndSCHEMATC
