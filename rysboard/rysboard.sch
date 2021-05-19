@@ -801,4 +801,6 @@ Wire Wire Line
 Wire Wire Line
 	5475 5325 5475 5625
 Connection ~ 5475 5625
+Text Notes 5100 4775 0    50   ~ 0
+To 
 $EndSCHEMATC

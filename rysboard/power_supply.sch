@@ -13,10 +13,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 2900 6100 0    100  ~ 0
+Text Notes 3125 5600 0    100  ~ 0
 3.3V Voltage regulator\n
-Text Notes 5850 3450 0    100  ~ 0
-12.6V Constant Current / Constant Voltage Supply\n\n
 $Comp
 L Device:C C?
 U 1 1 5FD3869B
@@ -43,8 +41,6 @@ F 3 "~" H 3650 7090 60  0001 C CNN
 	1    3750 7000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3450 6850 3750 6850
 $Comp
 L power:GND #PWR032
 U 1 1 5FD3F0D5
@@ -323,7 +319,7 @@ F 3 "" H 2175 1825 50  0001 C CNN
 $EndComp
 Text Notes 2725 825  0    50   ~ 0
 Reverse Polarrity Protection and fuse\nMust be rated for 14A.\n
-Text Notes 2750 6400 0    50   ~ 0
+Text Notes 2825 5775 0    50   ~ 0
 MCU will be active if one  or more of three lines is active.\n
 Wire Wire Line
 	1075 1525 925  1525
@@ -347,12 +343,6 @@ Text GLabel 3750 6850 2    50   Input ~ 0
 MCU_3.3V
 Wire Wire Line
 	1675 1175 2150 1175
-$Sheet
-S 7400 3800 1250 900 
-U 5FEF8E8A
-F0 "Batterry_Charging_Powes_Spply" 50
-F1 "batterry_charging_power_upply.sch" 50
-$EndSheet
 $Comp
 L power:+5V #PWR038
 U 1 1 605BCEEF
@@ -563,44 +553,8 @@ F 3 "" H 6000 1450 50  0001 L CNN
 	1    6000 1450
 	0    1    -1   0   
 $EndComp
-$Comp
-L SamacSys_Parts:NSR20F30NXT5G D5
-U 1 1 6044F2F9
-P 2400 6200
-F 0 "D5" H 2700 5933 50  0000 C CNN
-F 1 "NSR20F30NXT5G" H 2700 6024 50  0000 C CNN
-F 2 "SamacSys_Parts:DSN2_1" H 2850 6200 50  0001 L CNN
-F 3 "http://www.onsemi.com/pub/Collateral/NSR20F30-D.PDF" H 2850 6100 50  0001 L CNN
-F 4 "ON SEMICONDUCTOR - NSR20F30NXT5G - DIODE, SCHOTTKY, 2A, 30V, 0603" H 2850 6000 50  0001 L CNN "Description"
-F 5 "" H 2850 5900 50  0001 L CNN "Height"
-F 6 "863-NSR20F30NXT5G" H 2850 5800 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/NSR20F30NXT5G/?qs=3ezCrKCRT5K%2FARb%252BJ8n8Hg%3D%3D" H 2850 5700 50  0001 L CNN "Mouser Price/Stock"
-F 8 "ON Semiconductor" H 2850 5600 50  0001 L CNN "Manufacturer_Name"
-F 9 "NSR20F30NXT5G" H 2850 5500 50  0001 L CNN "Manufacturer_Part_Number"
-	1    2400 6200
-	-1   0    0    1   
-$EndComp
-$Comp
-L SamacSys_Parts:NSR20F30NXT5G D6
-U 1 1 6044F644
-P 2400 6625
-F 0 "D6" H 2700 6358 50  0000 C CNN
-F 1 "NSR20F30NXT5G" H 2700 6449 50  0000 C CNN
-F 2 "SamacSys_Parts:DSN2_1" H 2850 6625 50  0001 L CNN
-F 3 "http://www.onsemi.com/pub/Collateral/NSR20F30-D.PDF" H 2850 6525 50  0001 L CNN
-F 4 "ON SEMICONDUCTOR - NSR20F30NXT5G - DIODE, SCHOTTKY, 2A, 30V, 0603" H 2850 6425 50  0001 L CNN "Description"
-F 5 "" H 2850 6325 50  0001 L CNN "Height"
-F 6 "863-NSR20F30NXT5G" H 2850 6225 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/NSR20F30NXT5G/?qs=3ezCrKCRT5K%2FARb%252BJ8n8Hg%3D%3D" H 2850 6125 50  0001 L CNN "Mouser Price/Stock"
-F 8 "ON Semiconductor" H 2850 6025 50  0001 L CNN "Manufacturer_Name"
-F 9 "NSR20F30NXT5G" H 2850 5925 50  0001 L CNN "Manufacturer_Part_Number"
-	1    2400 6625
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	2400 6200 2550 6200
-Wire Wire Line
-	2550 6200 2550 6550
 Wire Wire Line
 	2400 6625 2550 6625
 Connection ~ 2550 6625
@@ -710,27 +664,6 @@ Text Label 2525 3925 3    50   ~ 0
 Fan_12V
 Text HLabel 2175 1625 2    50   Output ~ 0
 ENABLE_RAIL_12V
-$Comp
-L Reference_Voltage:MAX6035xxUR50 U6
-U 1 1 60692F05
-P 3150 6850
-F 0 "U6" H 2921 6896 50  0000 R CNN
-F 1 "AP7381-33SA-7 " H 2921 6805 50  0000 R CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 3250 6550 50  0001 C CIN
-F 3 "https://datasheets.maximintegrated.com/en/ds/MAX6035.pdf" H 3250 6500 50  0001 C CIN
-	1    3150 6850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2550 7150 3050 7150
-Connection ~ 3050 7150
-Wire Wire Line
-	3050 7150 3750 7150
-Wire Wire Line
-	3050 6550 2550 6550
-Connection ~ 2550 6550
-Wire Wire Line
-	2550 6550 2550 6625
 Wire Wire Line
 	10175 1350 10700 1350
 Wire Wire Line
@@ -772,17 +705,6 @@ F 3 "~" H 6425 1350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6575 1350 6750 1350
-$Comp
-L Reference_Voltage:MAX6035xxUR50 U7
-U 1 1 60988D12
-P 9625 5675
-F 0 "U7" H 9396 5721 50  0000 R CNN
-F 1 "AP7381-33SA-7 " H 9396 5630 50  0000 R CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 9725 5375 50  0001 C CIN
-F 3 "https://datasheets.maximintegrated.com/en/ds/MAX6035.pdf" H 9725 5325 50  0001 C CIN
-	1    9625 5675
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C?
 U 1 1 60989B90
@@ -827,36 +749,28 @@ Wire Wire Line
 Connection ~ 9525 5975
 Wire Wire Line
 	9525 5975 10300 5975
-Wire Wire Line
-	10300 5675 9925 5675
-Wire Wire Line
-	9525 5375 8550 5375
-Wire Wire Line
-	8550 5375 8550 5600
 $Comp
 L power:+5V #PWR0119
 U 1 1 60996850
-P 8550 5375
-F 0 "#PWR0119" H 8550 5225 50  0001 C CNN
-F 1 "+5V" H 8565 5548 50  0000 C CNN
-F 2 "" H 8550 5375 50  0001 C CNN
-F 3 "" H 8550 5375 50  0001 C CNN
-	1    8550 5375
-	1    0    0    -1  
+P 8550 4875
+F 0 "#PWR0119" H 8550 4725 50  0001 C CNN
+F 1 "+5V" H 8565 5048 50  0000 C CNN
+F 2 "" H 8550 4875 50  0001 C CNN
+F 3 "" H 8550 4875 50  0001 C CNN
+	1    8550 4875
+	0    -1   -1   0   
 $EndComp
-Connection ~ 8550 5375
 $Comp
 L power:+3.3V #PWR0120
 U 1 1 609AC99B
-P 10300 5675
-F 0 "#PWR0120" H 10300 5525 50  0001 C CNN
-F 1 "+3.3V" H 10315 5848 50  0000 C CNN
-F 2 "" H 10300 5675 50  0001 C CNN
-F 3 "" H 10300 5675 50  0001 C CNN
-	1    10300 5675
+P 10325 4800
+F 0 "#PWR0120" H 10325 4650 50  0001 C CNN
+F 1 "+3.3V" H 10340 4973 50  0000 C CNN
+F 2 "" H 10325 4800 50  0001 C CNN
+F 3 "" H 10325 4800 50  0001 C CNN
+	1    10325 4800
 	1    0    0    -1  
 $EndComp
-Connection ~ 10300 5675
 $Comp
 L Device:C C?
 U 1 1 609BA1EE
@@ -882,7 +796,7 @@ Wire Wire Line
 Connection ~ 6750 2150
 Text Label 6250 1350 1    50   ~ 0
 ST_Down_12V_Cap
-Text Label 2675 6550 0    50   ~ 0
+Text Label 2550 6025 0    50   ~ 0
 MCU_REG_IN
 $Comp
 L power:+BATT #PWR0104
@@ -895,4 +809,112 @@ F 3 "" H 1575 3925 50  0001 C CNN
 	1    1575 3925
 	1    0    0    -1  
 $EndComp
+$Comp
+L SamacSys_Parts:MCP1812AT-033_TT IC3
+U 1 1 60A59992
+P 3150 6050
+F 0 "IC3" V 3654 6178 50  0000 L CNN
+F 1 "MCP1812AT-033_TT" V 3745 6178 50  0000 L CNN
+F 2 "SOT95P237X112-3N" H 4100 6150 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MCP1811A-11B-12A-12B-Data-Sheet-20006088B.pdf" H 4100 6050 50  0001 L CNN
+F 4 "MICROCHIP - MCP1812AT-033/TT - LDO, FIXED, 3.3V, 0.3A, -40 TO 85DEG C" H 4100 5950 50  0001 L CNN "Description"
+F 5 "1.12" H 4100 5850 50  0001 L CNN "Height"
+F 6 "579-MCP1812AT-033/TT" H 4100 5750 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/MCP1812AT-033-TT?qs=byeeYqUIh0OYc3EsjlWrlQ%3D%3D" H 4100 5650 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Microchip" H 4100 5550 50  0001 L CNN "Manufacturer_Name"
+F 9 "MCP1812AT-033/TT" H 4100 5450 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3150 6050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2550 7150 3150 7150
+$Comp
+L SamacSys_Parts:NSR20F30NXT5G D5
+U 1 1 60A5DBE7
+P 2400 6200
+F 0 "D5" H 2700 5933 50  0000 C CNN
+F 1 "NSR20F30NXT5G" H 2700 6024 50  0000 C CNN
+F 2 "DSN2_1" H 2850 6200 50  0001 L CNN
+F 3 "http://www.onsemi.com/pub/Collateral/NSR20F30-D.PDF" H 2850 6100 50  0001 L CNN
+F 4 "ON SEMICONDUCTOR - NSR20F30NXT5G - DIODE, SCHOTTKY, 2A, 30V, 0603" H 2850 6000 50  0001 L CNN "Description"
+F 5 "863-NSR20F30NXT5G" H 2850 5800 50  0001 L CNN "Mouser Part Number"
+F 6 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/NSR20F30NXT5G/?qs=3ezCrKCRT5K%2FARb%252BJ8n8Hg%3D%3D" H 2850 5700 50  0001 L CNN "Mouser Price/Stock"
+F 7 "ON Semiconductor" H 2850 5600 50  0001 L CNN "Manufacturer_Name"
+F 8 "NSR20F30NXT5G" H 2850 5500 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2400 6200
+	-1   0    0    1   
+$EndComp
+$Comp
+L SamacSys_Parts:NSR20F30NXT5G D6
+U 1 1 60A5E885
+P 2400 6625
+F 0 "D6" H 2700 6358 50  0000 C CNN
+F 1 "NSR20F30NXT5G" H 2700 6449 50  0000 C CNN
+F 2 "DSN2_1" H 2850 6625 50  0001 L CNN
+F 3 "http://www.onsemi.com/pub/Collateral/NSR20F30-D.PDF" H 2850 6525 50  0001 L CNN
+F 4 "ON SEMICONDUCTOR - NSR20F30NXT5G - DIODE, SCHOTTKY, 2A, 30V, 0603" H 2850 6425 50  0001 L CNN "Description"
+F 5 "863-NSR20F30NXT5G" H 2850 6225 50  0001 L CNN "Mouser Part Number"
+F 6 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/NSR20F30NXT5G/?qs=3ezCrKCRT5K%2FARb%252BJ8n8Hg%3D%3D" H 2850 6125 50  0001 L CNN "Mouser Price/Stock"
+F 7 "ON Semiconductor" H 2850 6025 50  0001 L CNN "Manufacturer_Name"
+F 8 "NSR20F30NXT5G" H 2850 5925 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2400 6625
+	-1   0    0    1   
+$EndComp
+Connection ~ 3150 7150
+Wire Wire Line
+	3150 7150 3750 7150
+Wire Wire Line
+	2550 6200 2550 6625
+Wire Wire Line
+	2550 6200 2550 6025
+Connection ~ 2550 6200
+Wire Wire Line
+	2550 6025 3050 6025
+Wire Wire Line
+	3050 6025 3050 6050
+Wire Wire Line
+	3150 6050 3150 6025
+Wire Wire Line
+	3150 6025 3750 6025
+Wire Wire Line
+	3750 6025 3750 6850
+$Comp
+L SamacSys_Parts:MCP1812AT-033_TT IC4
+U 1 1 60A69A29
+P 9525 4875
+F 0 "IC4" V 10029 5003 50  0000 L CNN
+F 1 "MCP1812AT-033_TT" V 10120 5003 50  0000 L CNN
+F 2 "SOT95P237X112-3N" H 10475 4975 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MCP1811A-11B-12A-12B-Data-Sheet-20006088B.pdf" H 10475 4875 50  0001 L CNN
+F 4 "MICROCHIP - MCP1812AT-033/TT - LDO, FIXED, 3.3V, 0.3A, -40 TO 85DEG C" H 10475 4775 50  0001 L CNN "Description"
+F 5 "1.12" H 10475 4675 50  0001 L CNN "Height"
+F 6 "579-MCP1812AT-033/TT" H 10475 4575 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/MCP1812AT-033-TT?qs=byeeYqUIh0OYc3EsjlWrlQ%3D%3D" H 10475 4475 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Microchip" H 10475 4375 50  0001 L CNN "Manufacturer_Name"
+F 9 "MCP1812AT-033/TT" H 10475 4275 50  0001 L CNN "Manufacturer_Part_Number"
+	1    9525 4875
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9525 4875 10300 4875
+Wire Wire Line
+	10325 4875 10325 4800
+Wire Wire Line
+	10300 5675 10300 4875
+Connection ~ 10300 4875
+Wire Wire Line
+	10300 4875 10325 4875
+Wire Wire Line
+	9425 4875 8550 4875
+Connection ~ 8550 4875
+Wire Wire Line
+	8550 4875 8550 5600
+Text Notes 5650 3575 0    100  ~ 0
+DC IN  Rail Protection\n\n
+$Sheet
+S 5750 3725 1250 900 
+U 5FEF8E8A
+F0 "Batterry_Charging_Powes_Spply" 50
+F1 "batterry_charging_power_upply.sch" 50
+$EndSheet
 $EndSCHEMATC

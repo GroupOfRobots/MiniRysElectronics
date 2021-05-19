@@ -36,4 +36,10 @@ K
 F http://www.st.com/web/en/resource/technical/document/datasheet/DM00041568.pdf
 $ENDCMP
 #
+$CMP MCP1812AT-033_TT
+D MICROCHIP - MCP1812AT-033/TT - LDO, FIXED, 3.3V, 0.3A, -40 TO 85DEG C
+K
+F http://ww1.microchip.com/downloads/en/DeviceDoc/MCP1811A-11B-12A-12B-Data-Sheet-20006088B.pdf
+$ENDCMP
+#
 #End Doc Library
