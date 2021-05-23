@@ -318,7 +318,7 @@ F 3 "" H 2175 1825 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 2725 825  0    50   ~ 0
-Reverse Polarrity Protection and fuse\nMust be rated for 14A.\n
+Reverse Polarrity Protection and fuse\nMust be rated for 3A.\n
 Text Notes 2825 5775 0    50   ~ 0
 MCU will be active if one  or more of three lines is active.\n
 Wire Wire Line

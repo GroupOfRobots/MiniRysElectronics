@@ -377,7 +377,6 @@ F9 "V_BAT_C2" O L 8250 5700 50
 F10 "V_BAT_C3" O L 8250 5800 50 
 F11 "S_E" I L 8250 5900 50 
 F12 "BOARD_T_2" O L 8250 4925 50 
-F13 "V_IN_DIV" O L 8250 4550 50 
 $EndSheet
 Text Label 7300 5100 0    50   ~ 0
 CHASSIS_TEMP_PROBE_1
@@ -710,12 +709,8 @@ Wire Wire Line
 	2325 4450 1150 4450
 Wire Wire Line
 	3825 5950 2850 5950
-Text Label 7350 4550 0    50   ~ 0
-V_AUX
-Wire Wire Line
-	7350 4550 8250 4550
 Text Label 3825 5950 2    50   ~ 0
-V_AUX
+POWER_SW
 NoConn ~ 2900 1200
 NoConn ~ 2800 1200
 $Comp
@@ -801,6 +796,32 @@ Wire Wire Line
 Wire Wire Line
 	5475 5325 5475 5625
 Connection ~ 5475 5625
-Text Notes 5100 4775 0    50   ~ 0
-To 
+Text Notes 4575 5000 0    50   ~ 0
+Jumpers for better Ground connection\n
+$Comp
+L Connector:Conn_01x02_Male J8
+U 1 1 60AB41F1
+P 6125 6225
+F 0 "J8" H 6233 6406 50  0000 C CNN
+F 1 "POWER SW" H 6233 6315 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 6125 6225 50  0001 C CNN
+F 3 "~" H 6125 6225 50  0001 C CNN
+	1    6125 6225
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 60AB4AA1
+P 6325 6325
+F 0 "#PWR0122" H 6325 6075 50  0001 C CNN
+F 1 "GND" H 6330 6152 50  0000 C CNN
+F 2 "" H 6325 6325 50  0001 C CNN
+F 3 "" H 6325 6325 50  0001 C CNN
+	1    6325 6325
+	1    0    0    -1  
+$EndComp
+Text Label 6675 6225 2    50   ~ 0
+POWER_SW
+Wire Wire Line
+	6675 6225 6325 6225
 $EndSCHEMATC
