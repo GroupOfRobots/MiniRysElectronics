@@ -958,4 +958,18 @@ X D1 6 100 200 100 D 50 50 2 1 P
 ENDDRAW
 ENDDEF
 #
+# rysboard_ext_bionik_logo
+#
+DEF rysboard_ext_bionik_logo LOGO 0 40 Y Y 1 F N
+F0 "LOGO" 0 0 50 H V C CNN
+F1 "rysboard_ext_bionik_logo" 0 0 50 H V C CNN
+F2 "rysboard:bionik_logo" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -50 50 50 -50 0 1 0 N
+P 2 0 1 0 -50 -50 50 50 N
+P 2 0 1 0 50 -50 -50 50 N
+ENDDRAW
+ENDDEF
+#
 #End Library

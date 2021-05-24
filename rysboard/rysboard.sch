@@ -824,4 +824,15 @@ Text Label 6675 6225 2    50   ~ 0
 POWER_SW
 Wire Wire Line
 	6675 6225 6325 6225
+$Comp
+L rysboard_ext:bionik_logo LOGO1
+U 1 1 60AD88B5
+P 6675 4250
+F 0 "LOGO1" H 6753 4296 50  0000 L CNN
+F 1 "bionik_logo" H 6753 4205 50  0000 L CNN
+F 2 "rysboard:bionik_logo" H 6675 4250 50  0001 C CNN
+F 3 "" H 6675 4250 50  0001 C CNN
+	1    6675 4250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
