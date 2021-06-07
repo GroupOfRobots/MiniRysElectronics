@@ -516,7 +516,7 @@ F 1 "100n" H 10200 3825 60  0000 L BNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 10000 3990 60  0001 C CNN
 F 3 "~" H 10000 3990 60  0001 C CNN
 	1    10100 3900
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	9525 3550 9525 3450
