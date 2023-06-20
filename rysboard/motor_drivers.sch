@@ -250,19 +250,6 @@ F 3 "" H 2075 5925 50  0001 C CNN
 	1    2075 5925
 	1    0    0    -1  
 $EndComp
-Text HLabel 1475 6325 3    50   Input ~ 0
-~STBY
-$Comp
-L Device:R R1
-U 1 1 5E81E277
-P 1475 6125
-F 0 "R1" H 1525 6160 60  0000 L BNN
-F 1 "40k" H 1525 6035 60  0000 L BNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1385 6075 60  0001 C CNN
-F 3 "" H 1385 6075 60  0000 C CNN
-	1    1475 6125
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R R2
 U 1 1 5E829DAD
@@ -278,10 +265,6 @@ Wire Wire Line
 	2075 5975 2075 5925
 Wire Wire Line
 	1775 6275 1775 6575
-Wire Wire Line
-	1475 6275 1475 6325
-Text Notes 975  6725 0    50   ~ 0
-Pull-ups for ~STANDBY~, ~BUSY~ and ~FLAG~ flags (active low)
 $Comp
 L rysboard:ST_L6470_HTSSOP28 U1
 U 1 1 5EB9B7B6
@@ -756,11 +739,6 @@ Text Label 9075 2900 2    50   ~ 0
 SPI_BRIDGE
 Wire Wire Line
 	2075 6275 2075 6575
-Wire Wire Line
-	1775 5975 2075 5975
-Connection ~ 1775 5975
-Wire Wire Line
-	1475 5975 1775 5975
 $Comp
 L Device:R R26
 U 1 1 5ECB66DC
@@ -932,4 +910,36 @@ F 5 "https://www.tme.eu/pl/details/74hc2g00dp.125/bramki-inwertery/nexperia/" H 
 	2    4525 6125
 	1    0    0    -1  
 $EndComp
+Text HLabel 1365 5934 1    50   Input ~ 0
+~STBY
+Wire Wire Line
+	1365 5984 1365 5934
+$Comp
+L power:GND #PWR0115
+U 1 1 624CBDD1
+P 1365 6390
+F 0 "#PWR0115" H 1365 6140 50  0001 C CNN
+F 1 "GND" H 1370 6217 50  0000 C CNN
+F 2 "" H 1365 6390 50  0001 C CNN
+F 3 "" H 1365 6390 50  0001 C CNN
+	1    1365 6390
+	1    0    0    -1  
+$EndComp
+Text Notes 932  6882 0    50   ~ 0
+Pull-ups for ~STANDBY~, ~BUSY~ and ~FLAG~ flags (active low)
+Wire Wire Line
+	1775 5975 2075 5975
+$Comp
+L Device:R R1
+U 1 1 5E81E277
+P 1365 6134
+F 0 "R1" H 1415 6169 60  0000 L BNN
+F 1 "40k" H 1415 6044 60  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1275 6084 60  0001 C CNN
+F 3 "" H 1275 6084 60  0000 C CNN
+	1    1365 6134
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1365 6284 1365 6390
 $EndSCHEMATC

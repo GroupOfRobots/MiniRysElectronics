@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 1 4
 Title "rysboard"
 Date "2020-08-23"
 Rev "4.2"
@@ -776,4 +776,149 @@ Wire Wire Line
 Connection ~ 7625 2300
 Wire Wire Line
 	7625 2300 7850 2300
+$Comp
+L Device:C C?
+U 1 1 624CD2B0
+P 7875 4700
+AR Path="/5EB7428E/624CD2B0" Ref="C?"  Part="1" 
+AR Path="/5E8FCBC6/624CD2B0" Ref="C23"  Part="1" 
+AR Path="/624CD2B0" Ref="C?"  Part="1" 
+F 0 "C23" H 7875 4825 60  0000 R TNN
+F 1 "100nF" H 7875 4650 60  0000 R TNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 7775 4790 60  0001 C CNN
+F 3 "" H 7775 4790 60  0000 C CNN
+	1    7875 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 624D977C
+P 7550 4700
+F 0 "R16" V 7630 4700 50  0000 C CNN
+F 1 "NC" V 7450 4700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7480 4700 50  0001 C CNN
+F 3 "~" H 7550 4700 50  0001 C CNN
+	1    7550 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 4850 7550 5000
+Wire Wire Line
+	7550 5000 7875 5000
+Wire Wire Line
+	7875 4850 7875 5000
+Connection ~ 7875 5000
+Wire Wire Line
+	7875 5000 8550 5000
+Connection ~ 8550 5000
+Wire Wire Line
+	8550 5000 8550 5106
+Wire Wire Line
+	9586 5000 9586 4850
+Wire Wire Line
+	8550 5000 9286 5000
+Wire Wire Line
+	9286 4850 9286 5000
+Connection ~ 9286 5000
+Wire Wire Line
+	9286 5000 9586 5000
+Wire Wire Line
+	9286 4400 9286 4550
+Wire Wire Line
+	8550 4700 8550 5000
+$Comp
+L power:GND #PWR0116
+U 1 1 624B67A4
+P 8550 5106
+F 0 "#PWR0116" H 8550 4856 50  0001 C CNN
+F 1 "GND" H 8555 4933 50  0000 C CNN
+F 2 "" H 8550 5106 50  0001 C CNN
+F 3 "" H 8550 5106 50  0001 C CNN
+	1    8550 5106
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:AMS1117-3.3 U6
+U 1 1 624B437E
+P 8550 4400
+F 0 "U6" H 8550 4642 50  0000 C CNN
+F 1 "AMS1117-3.3" H 8550 4551 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 8550 4600 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 8650 4150 50  0001 C CNN
+	1    8550 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 624D9782
+P 9586 4700
+F 0 "R17" V 9666 4700 50  0000 C CNN
+F 1 "NC" V 9486 4700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9516 4700 50  0001 C CNN
+F 3 "~" H 9586 4700 50  0001 C CNN
+	1    9586 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 624D03B0
+P 9286 4700
+AR Path="/5EB7428E/624D03B0" Ref="C?"  Part="1" 
+AR Path="/5E8FCBC6/624D03B0" Ref="C24"  Part="1" 
+AR Path="/624D03B0" Ref="C?"  Part="1" 
+F 0 "C24" H 9186 4775 50  0000 L CNN
+F 1 "47uF" H 9261 4650 50  0000 R TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9324 4550 50  0001 C CNN
+F 3 "~" H 9286 4700 50  0001 C CNN
+	1    9286 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 4400 9286 4400
+Wire Wire Line
+	7875 4550 7875 4400
+Wire Wire Line
+	7875 4400 8250 4400
+Wire Wire Line
+	7550 4550 7550 4400
+Connection ~ 7875 4400
+Wire Wire Line
+	9586 4550 9586 4400
+Wire Wire Line
+	9586 4400 9286 4400
+Connection ~ 9286 4400
+$Comp
+L power:+3V3 #PWR0117
+U 1 1 62628BD6
+P 10055 4350
+F 0 "#PWR0117" H 10055 4200 50  0001 C CNN
+F 1 "+3V3" H 10070 4523 50  0000 C CNN
+F 2 "" H 10055 4350 50  0001 C CNN
+F 3 "" H 10055 4350 50  0001 C CNN
+	1    10055 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7081 4350 7081 4400
+Wire Wire Line
+	7081 4400 7550 4400
+Connection ~ 7550 4400
+Wire Wire Line
+	7550 4400 7875 4400
+Wire Wire Line
+	10055 4400 9586 4400
+Connection ~ 9586 4400
+Wire Wire Line
+	10055 4350 10055 4400
+$Comp
+L power:+5V #PWR0118
+U 1 1 62676872
+P 7081 4350
+F 0 "#PWR0118" H 7081 4200 50  0001 C CNN
+F 1 "+5V" H 7096 4523 50  0000 C CNN
+F 2 "" H 7081 4350 50  0001 C CNN
+F 3 "" H 7081 4350 50  0001 C CNN
+	1    7081 4350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

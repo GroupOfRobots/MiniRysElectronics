@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name rysboard)(type KiCad)(uri ${KIPRJMOD}/rysboard.pretty)(options "")(descr ""))
+  (lib (name models)(type KiCad)(uri "F:/STUDIA v2.0/Politechnika Warszawska/Praca dyplomowa/RysBoard/RobotElectronics/rysboard/models")(options "")(descr ""))
 )

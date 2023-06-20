@@ -1,0 +1,11 @@
+Info: Output directory '/home/mathew/PW_dyplom/Rysboard/RobotElectronics/rysboard/generated output/gerber/pcbway' created.
+Plotted to '/home/mathew/PW_dyplom/Rysboard/RobotElectronics/rysboard/generated output/gerber/pcbway/rysboard-F_Cu.gtl'.
+Plotted to '/home/mathew/PW_dyplom/Rysboard/RobotElectronics/rysboard/generated output/gerber/pcbway/rysboard-B_Cu.gbl'.
+Plotted to '/home/mathew/PW_dyplom/Rysboard/RobotElectronics/rysboard/generated output/gerber/pcbway/rysboard-F_Paste.gtp'.
+Plotted to '/home/mathew/PW_dyplom/Rysboard/RobotElectronics/rysboard/generated output/gerber/pcbway/rysboard-B_Paste.gbp'.
+Plotted to '/home/mathew/PW_dyplom/Rysboard/RobotElectronics/rysboard/generated output/gerber/pcbway/rysboard-F_Silkscreen.gto'.
+Plotted to '/home/mathew/PW_dyplom/Rysboard/RobotElectronics/rysboard/generated output/gerber/pcbway/rysboard-B_Silkscreen.gbo'.
+Plotted to '/home/mathew/PW_dyplom/Rysboard/RobotElectronics/rysboard/generated output/gerber/pcbway/rysboard-F_Mask.gts'.
+Plotted to '/home/mathew/PW_dyplom/Rysboard/RobotElectronics/rysboard/generated output/gerber/pcbway/rysboard-B_Mask.gbs'.
+Plotted to '/home/mathew/PW_dyplom/Rysboard/RobotElectronics/rysboard/generated output/gerber/pcbway/rysboard-Edge_Cuts.gm1'.
+Info: Done.
