@@ -1,5 +1,7 @@
-# RobotElectronics
+# MiniRysElectronics
 This repo contains schematics and PCB layouts for all the custom boards used by the MiniRyś robot.
+
+supervisor: Kamil Jabłoński
 
 Boards:
 * RysBoard
