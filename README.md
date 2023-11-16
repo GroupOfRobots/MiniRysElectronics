@@ -10,4 +10,4 @@ Boards:
 * dwm1000_addon (obsolete)
 
 ## RPi Hat Branch - work in progress
-This branch will contain RPi Hat project files
+This branch contains the most recent version of RPi Hat RysBoard
