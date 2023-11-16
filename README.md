@@ -10,6 +10,6 @@ Boards:
 * dwm1000_addon (obsolete)
 
 ## Power Supply Unit prototypes branch
-This branch contains two psu designs:
-model_24V8A - finished design ; unused in further designs
-model_24V2A - unfinished, missing component alignment and missing traces ; used in the RPi Hat project
+This branch contains two psu designs:  
+* model_24V8A - finished design ; unused in further designs  
+* model_24V2A - unfinished, missing component alignment and missing traces ; used in the RPi Hat project
