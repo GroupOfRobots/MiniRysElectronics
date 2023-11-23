@@ -5,149 +5,13 @@
   (paper "A4")
 
   (title_block
-    (title "Power Supply Module with 24V+5V output")
-    (date "2023-10-29")
+    (title "24V Supply")
+    (date "2023-11-23")
     (rev "0.7")
     (company "Kamil Adam Jabłoński")
   )
 
   (lib_symbols
-    (symbol "Connector:Conn_01x01_Pin" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "J" (at 0 2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "Conn_01x01_Pin" (at 0 -2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_locked" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "ki_keywords" "connector" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Generic connector, single row, 01x01, script generated" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Conn_01x01_Pin_1_1"
-        (polyline
-          (pts
-            (xy 1.27 0)
-            (xy 0.8636 0)
-          )
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start 0.8636 0.127) (end 0 -0.127)
-          (stroke (width 0.1524) (type default))
-          (fill (type outline))
-        )
-        (pin passive line (at 5.08 0 180) (length 3.81)
-          (name "Pin_1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Connector:Conn_01x04_Pin" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "J" (at 0 5.08 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "Conn_01x04_Pin" (at 0 -7.62 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_locked" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "ki_keywords" "connector" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Generic connector, single row, 01x04, script generated" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Conn_01x04_Pin_1_1"
-        (polyline
-          (pts
-            (xy 1.27 -5.08)
-            (xy 0.8636 -5.08)
-          )
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.27 -2.54)
-            (xy 0.8636 -2.54)
-          )
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.27 0)
-            (xy 0.8636 0)
-          )
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.27 2.54)
-            (xy 0.8636 2.54)
-          )
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start 0.8636 -4.953) (end 0 -5.207)
-          (stroke (width 0.1524) (type default))
-          (fill (type outline))
-        )
-        (rectangle (start 0.8636 -2.413) (end 0 -2.667)
-          (stroke (width 0.1524) (type default))
-          (fill (type outline))
-        )
-        (rectangle (start 0.8636 0.127) (end 0 -0.127)
-          (stroke (width 0.1524) (type default))
-          (fill (type outline))
-        )
-        (rectangle (start 0.8636 2.667) (end 0 2.413)
-          (stroke (width 0.1524) (type default))
-          (fill (type outline))
-        )
-        (pin passive line (at 5.08 2.54 180) (length 3.81)
-          (name "Pin_1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 5.08 0 180) (length 3.81)
-          (name "Pin_2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 5.08 -2.54 180) (length 3.81)
-          (name "Pin_3" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 5.08 -5.08 180) (length 3.81)
-          (name "Pin_4" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
     (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762) hide) (in_bom yes) (on_board yes)
       (property "Reference" "TP" (at 0 6.858 0)
         (effects (font (size 1.27 1.27)))
@@ -791,22 +655,22 @@
   (junction (at 232.41 20.32) (diameter 0) (color 0 0 0 0)
     (uuid 18afdb63-8c76-496b-85b5-07e19346919c)
   )
-  (junction (at 251.46 104.14) (diameter 0) (color 0 0 0 0)
+  (junction (at 251.46 100.33) (diameter 0) (color 0 0 0 0)
     (uuid 1fb3bb79-3a88-4c97-ad58-cbe6c4512485)
   )
   (junction (at 180.34 52.07) (diameter 0) (color 0 0 0 0)
     (uuid 54bc3576-9b8a-4724-b8af-c4ab4aa8c28a)
   )
-  (junction (at 266.7 104.14) (diameter 0) (color 0 0 0 0)
+  (junction (at 266.7 100.33) (diameter 0) (color 0 0 0 0)
     (uuid 56f64b76-2f56-421a-9f6f-d55c79e9eee2)
   )
-  (junction (at 241.3 104.14) (diameter 0) (color 0 0 0 0)
+  (junction (at 241.3 100.33) (diameter 0) (color 0 0 0 0)
     (uuid 5845bdf6-7cd4-4859-ab64-9d098b1e832f)
   )
   (junction (at 193.04 41.91) (diameter 0) (color 0 0 0 0)
     (uuid 5bb424d5-ab76-4759-a3f0-4f41ceabdac4)
   )
-  (junction (at 241.3 148.59) (diameter 0) (color 0 0 0 0)
+  (junction (at 274.32 143.51) (diameter 0) (color 0 0 0 0)
     (uuid 60758a83-e72d-4a0f-8ea1-0d282eee920d)
   )
   (junction (at 223.52 30.48) (diameter 0) (color 0 0 0 0)
@@ -821,7 +685,7 @@
   (junction (at 237.49 26.67) (diameter 0) (color 0 0 0 0)
     (uuid 73fc9fb2-e351-470e-90b1-c14cd25f9974)
   )
-  (junction (at 262.89 104.14) (diameter 0) (color 0 0 0 0)
+  (junction (at 262.89 100.33) (diameter 0) (color 0 0 0 0)
     (uuid 868b3ec1-60e4-41da-8a10-3b0d68046b4a)
   )
   (junction (at 208.28 109.22) (diameter 0) (color 0 0 0 0)
@@ -866,7 +730,7 @@
   (junction (at 177.8 52.07) (diameter 0) (color 0 0 0 0)
     (uuid b8947221-6f48-4e0a-a175-97d25892e9d6)
   )
-  (junction (at 156.21 101.6) (diameter 0) (color 0 0 0 0)
+  (junction (at 201.93 142.24) (diameter 0) (color 0 0 0 0)
     (uuid c008bd84-f2d8-42fd-a916-58c2fc63049f)
   )
   (junction (at 34.29 60.96) (diameter 0) (color 0 0 0 0)
@@ -899,7 +763,7 @@
   (junction (at 196.85 41.91) (diameter 0) (color 0 0 0 0)
     (uuid ed9d5e86-96eb-4962-8dff-03682d21031f)
   )
-  (junction (at 220.98 148.59) (diameter 0) (color 0 0 0 0)
+  (junction (at 254 143.51) (diameter 0) (color 0 0 0 0)
     (uuid f127572c-b2ec-472d-a4c6-4d9dacd1ec35)
   )
   (junction (at 269.24 57.15) (diameter 0) (color 0 0 0 0)
@@ -916,7 +780,7 @@
     (stroke (width 0) (type default))
     (uuid 01573760-4b6d-436f-b4c1-94323f748716)
   )
-  (wire (pts (xy 156.21 101.6) (xy 156.21 107.95))
+  (wire (pts (xy 201.93 142.24) (xy 201.93 148.59))
     (stroke (width 0) (type default))
     (uuid 01a9830c-0b41-4a30-b3da-28486431428b)
   )
@@ -927,10 +791,6 @@
   (wire (pts (xy 246.38 76.2) (xy 246.38 74.93))
     (stroke (width 0) (type default))
     (uuid 05a03122-8473-43b2-acd0-dfa6b39a9eb2)
-  )
-  (wire (pts (xy 191.77 16.51) (xy 207.01 16.51))
-    (stroke (width 0) (type default))
-    (uuid 0775e6a4-dd30-4611-8607-b089e79334ff)
   )
   (wire (pts (xy 246.38 66.04) (xy 246.38 67.31))
     (stroke (width 0) (type default))
@@ -960,10 +820,6 @@
     (stroke (width 0) (type default))
     (uuid 10405e73-f26b-4ad7-b6a4-54e253661af2)
   )
-  (wire (pts (xy 270.51 148.59) (xy 270.51 149.86))
-    (stroke (width 0) (type default))
-    (uuid 105c0f40-5983-4cf7-b85c-36e359f340e4)
-  )
   (wire (pts (xy 237.49 48.26) (xy 237.49 52.07))
     (stroke (width 0) (type default))
     (uuid 106028db-eead-4368-8555-0f54ef4fdef3)
@@ -972,7 +828,7 @@
     (stroke (width 0) (type default))
     (uuid 1291071f-bba4-483b-80fa-3537e7a51fea)
   )
-  (wire (pts (xy 241.3 113.03) (xy 241.3 114.3))
+  (wire (pts (xy 241.3 109.22) (xy 241.3 110.49))
     (stroke (width 0) (type default))
     (uuid 161e5cbb-cba9-4f28-ab03-d7a447e32a48)
   )
@@ -980,7 +836,7 @@
     (stroke (width 0) (type default))
     (uuid 1687994b-aad4-4f08-b18e-abae1a104a6f)
   )
-  (wire (pts (xy 262.89 104.14) (xy 266.7 104.14))
+  (wire (pts (xy 262.89 100.33) (xy 266.7 100.33))
     (stroke (width 0) (type default))
     (uuid 17036483-ce56-451a-9af2-78c158a3a7fe)
   )
@@ -992,7 +848,7 @@
     (stroke (width 0) (type default))
     (uuid 190f9c61-2e2b-4b79-9115-2959a1d0121a)
   )
-  (wire (pts (xy 151.13 101.6) (xy 156.21 101.6))
+  (wire (pts (xy 196.85 142.24) (xy 201.93 142.24))
     (stroke (width 0) (type default))
     (uuid 19f238ea-ade8-48d6-bb41-d71abce740ef)
   )
@@ -1000,11 +856,11 @@
     (stroke (width 0) (type default))
     (uuid 1a44fee9-400b-4266-9079-12136b6634c3)
   )
-  (wire (pts (xy 241.3 140.97) (xy 234.95 140.97))
+  (wire (pts (xy 274.32 135.89) (xy 267.97 135.89))
     (stroke (width 0) (type default))
     (uuid 1dad2114-660f-47c7-8840-afd93bb11c8c)
   )
-  (wire (pts (xy 242.57 149.86) (xy 242.57 148.59))
+  (wire (pts (xy 275.59 144.78) (xy 275.59 143.51))
     (stroke (width 0) (type default))
     (uuid 1e6f11f0-c955-420e-b084-e77c99874ebe)
   )
@@ -1024,15 +880,11 @@
     (stroke (width 0) (type default))
     (uuid 25032b5b-417c-4822-bc4c-b8ec4b2f16bb)
   )
-  (wire (pts (xy 265.43 146.05) (xy 270.51 146.05))
-    (stroke (width 0) (type default))
-    (uuid 2740536e-02fa-4fa0-ae9c-7f07214266e5)
-  )
   (wire (pts (xy 163.83 55.88) (xy 163.83 27.94))
     (stroke (width 0) (type default))
     (uuid 278cd87b-3bdd-4aec-a5d2-82538849d1c1)
   )
-  (wire (pts (xy 166.37 107.95) (xy 168.91 107.95))
+  (wire (pts (xy 212.09 148.59) (xy 214.63 148.59))
     (stroke (width 0) (type default))
     (uuid 27f3e9cc-ece3-4b3b-9388-81171f8827c5)
   )
@@ -1040,7 +892,7 @@
     (stroke (width 0) (type default))
     (uuid 287d4fdb-e8fc-4245-91bd-8b9cfddc83ba)
   )
-  (wire (pts (xy 220.98 148.59) (xy 222.25 148.59))
+  (wire (pts (xy 254 143.51) (xy 255.27 143.51))
     (stroke (width 0) (type default))
     (uuid 28f85c6b-92a6-4a5a-af10-440b5e5f0322)
   )
@@ -1060,15 +912,15 @@
     (stroke (width 0) (type default))
     (uuid 2c2f7482-af0c-465a-bb2e-0ef790dd3498)
   )
-  (wire (pts (xy 266.7 105.41) (xy 266.7 104.14))
+  (wire (pts (xy 266.7 101.6) (xy 266.7 100.33))
     (stroke (width 0) (type default))
     (uuid 2c46c1e8-f0d9-4fb3-b622-9b35c0f1d18e)
   )
-  (wire (pts (xy 168.91 107.95) (xy 168.91 109.22))
+  (wire (pts (xy 214.63 148.59) (xy 214.63 149.86))
     (stroke (width 0) (type default))
     (uuid 30d4d705-86cf-4ad1-9c67-99233bafacd1)
   )
-  (wire (pts (xy 241.3 93.98) (xy 241.3 95.25))
+  (wire (pts (xy 241.3 90.17) (xy 241.3 91.44))
     (stroke (width 0) (type default))
     (uuid 34562d58-4495-448e-83c3-56f2dafef90e)
   )
@@ -1108,11 +960,11 @@
     (stroke (width 0) (type default))
     (uuid 3ba7a44e-2901-4159-85ca-c3ab248b35fa)
   )
-  (wire (pts (xy 156.21 95.25) (xy 158.75 95.25))
+  (wire (pts (xy 201.93 135.89) (xy 204.47 135.89))
     (stroke (width 0) (type default))
     (uuid 3c308797-94d0-4543-8cf5-b31817483ec6)
   )
-  (wire (pts (xy 220.98 148.59) (xy 220.98 140.97))
+  (wire (pts (xy 254 143.51) (xy 254 135.89))
     (stroke (width 0) (type default))
     (uuid 3e0788db-1b64-43de-83bc-d21996172920)
   )
@@ -1120,11 +972,7 @@
     (stroke (width 0) (type default))
     (uuid 3e5e4c7e-bbf8-42e1-b0d6-02e64ff4fb94)
   )
-  (wire (pts (xy 191.77 24.13) (xy 199.39 24.13))
-    (stroke (width 0) (type default))
-    (uuid 3e6a8bee-05d8-4c71-b2a7-b36a47501262)
-  )
-  (wire (pts (xy 242.57 148.59) (xy 241.3 148.59))
+  (wire (pts (xy 275.59 143.51) (xy 274.32 143.51))
     (stroke (width 0) (type default))
     (uuid 3f9551d9-606b-45fd-8853-bebc86a97627)
   )
@@ -1140,9 +988,17 @@
     (stroke (width 0) (type default))
     (uuid 48d105df-8bb1-40a2-901a-aac072b8881a)
   )
-  (wire (pts (xy 241.3 104.14) (xy 241.3 105.41))
+  (wire (pts (xy 57.15 120.65) (xy 57.15 133.35))
+    (stroke (width 0) (type default))
+    (uuid 4aee61a6-721f-486e-9132-1000b5ece834)
+  )
+  (wire (pts (xy 241.3 100.33) (xy 241.3 101.6))
     (stroke (width 0) (type default))
     (uuid 4cfae8ac-969b-4d93-b12e-3527daa12252)
+  )
+  (wire (pts (xy 54.61 120.65) (xy 57.15 120.65))
+    (stroke (width 0) (type default))
+    (uuid 4e1c0f5b-3dac-4245-94d3-2bcc9c9f5583)
   )
   (wire (pts (xy 240.03 17.78) (xy 269.24 17.78))
     (stroke (width 0) (type default))
@@ -1159,6 +1015,10 @@
   (wire (pts (xy 218.44 88.9) (xy 208.28 88.9))
     (stroke (width 0) (type default))
     (uuid 50ba4485-c7e1-4c4b-9126-87c981588a84)
+  )
+  (wire (pts (xy 201.93 16.51) (xy 207.01 16.51))
+    (stroke (width 0) (type default))
+    (uuid 51028999-f5a8-49d8-a095-616cedd9c807)
   )
   (wire (pts (xy 208.28 109.22) (xy 218.44 109.22))
     (stroke (width 0) (type default))
@@ -1180,7 +1040,7 @@
     (stroke (width 0) (type default))
     (uuid 55f8b8bb-14e9-4e86-936f-91f0f3b55f7e)
   )
-  (wire (pts (xy 156.21 101.6) (xy 156.21 95.25))
+  (wire (pts (xy 201.93 142.24) (xy 201.93 135.89))
     (stroke (width 0) (type default))
     (uuid 566f0493-fa6c-43d9-bfbb-cacbaae93e17)
   )
@@ -1196,7 +1056,7 @@
     (stroke (width 0) (type default))
     (uuid 5a75cc2b-c156-48d4-a91d-1e73e644c865)
   )
-  (wire (pts (xy 262.89 97.79) (xy 262.89 104.14))
+  (wire (pts (xy 262.89 93.98) (xy 262.89 100.33))
     (stroke (width 0) (type default))
     (uuid 5b510485-3e1c-4d9e-b027-2f5695ccdc74)
   )
@@ -1216,7 +1076,7 @@
     (stroke (width 0) (type default))
     (uuid 5ef7f4c4-4c34-4e31-8537-348e3f0b0552)
   )
-  (wire (pts (xy 241.3 102.87) (xy 241.3 104.14))
+  (wire (pts (xy 241.3 99.06) (xy 241.3 100.33))
     (stroke (width 0) (type default))
     (uuid 61922d55-92a7-4bb9-9415-21009ef9bfd2)
   )
@@ -1224,17 +1084,13 @@
     (stroke (width 0) (type default))
     (uuid 61c603f0-a1eb-4898-8ffe-3da969a5212a)
   )
-  (wire (pts (xy 220.98 140.97) (xy 227.33 140.97))
+  (wire (pts (xy 254 135.89) (xy 260.35 135.89))
     (stroke (width 0) (type default))
     (uuid 61e63bfb-5006-451e-a681-bee1aca2c8b3)
   )
-  (wire (pts (xy 266.7 116.84) (xy 266.7 113.03))
+  (wire (pts (xy 266.7 113.03) (xy 266.7 109.22))
     (stroke (width 0) (type default))
     (uuid 62fe4a42-f4dd-43c9-ba9b-d63ea9dcd09d)
-  )
-  (wire (pts (xy 266.7 151.13) (xy 265.43 151.13))
-    (stroke (width 0) (type default))
-    (uuid 648ee673-e6cc-421d-a4dd-0e22bfcb11ba)
   )
   (wire (pts (xy 267.97 41.91) (xy 269.24 41.91))
     (stroke (width 0) (type default))
@@ -1264,10 +1120,6 @@
     (stroke (width 0) (type default))
     (uuid 6c9b871b-31aa-400d-8de0-a2d9cd6e763a)
   )
-  (wire (pts (xy 265.43 156.21) (xy 266.7 156.21))
-    (stroke (width 0) (type default))
-    (uuid 6d762ed0-9c72-4cae-ad26-74f7b9edbbe0)
-  )
   (wire (pts (xy 74.93 17.78) (xy 72.39 17.78))
     (stroke (width 0) (type default))
     (uuid 6d8067ab-ea35-4aca-b3ac-12d36bc0bf77)
@@ -1275,10 +1127,6 @@
   (wire (pts (xy 85.09 17.78) (xy 97.79 17.78))
     (stroke (width 0) (type default))
     (uuid 72ccb59d-08b5-4b32-a097-24379d62b8ea)
-  )
-  (wire (pts (xy 191.77 21.59) (xy 195.58 21.59))
-    (stroke (width 0) (type default))
-    (uuid 73be25c8-4d98-4250-a5ee-3a22aee68440)
   )
   (wire (pts (xy 64.77 81.28) (xy 64.77 86.36))
     (stroke (width 0) (type default))
@@ -1296,7 +1144,7 @@
     (stroke (width 0) (type default))
     (uuid 79512aac-8343-4761-8434-36c6a618d916)
   )
-  (wire (pts (xy 34.29 87.63) (xy 34.29 86.36))
+  (wire (pts (xy 147.32 93.98) (xy 147.32 92.71))
     (stroke (width 0) (type default))
     (uuid 7b091c5c-ac1a-47ae-a3ed-d1bd485dbd70)
   )
@@ -1312,11 +1160,11 @@
     (stroke (width 0) (type default))
     (uuid 81073fcc-ee0d-412c-bd31-a7b2dd16bc47)
   )
-  (wire (pts (xy 251.46 105.41) (xy 251.46 104.14))
+  (wire (pts (xy 251.46 101.6) (xy 251.46 100.33))
     (stroke (width 0) (type default))
     (uuid 8126be8e-fd21-48cb-9ef3-9a2a3f1a9d34)
   )
-  (wire (pts (xy 240.03 148.59) (xy 241.3 148.59))
+  (wire (pts (xy 273.05 143.51) (xy 274.32 143.51))
     (stroke (width 0) (type default))
     (uuid 81b8d503-16d0-468d-a83c-24993be7c00e)
   )
@@ -1340,7 +1188,7 @@
     (stroke (width 0) (type default))
     (uuid 84e61c48-3bbb-408c-89c0-420c4a576f5b)
   )
-  (wire (pts (xy 34.29 91.44) (xy 33.02 91.44))
+  (wire (pts (xy 147.32 97.79) (xy 146.05 97.79))
     (stroke (width 0) (type default))
     (uuid 86441349-9b5e-46d8-8841-c4319cea074c)
   )
@@ -1376,7 +1224,7 @@
     (stroke (width 0) (type default))
     (uuid 8d5fc33c-766f-4949-9c09-3b697246b1d7)
   )
-  (wire (pts (xy 229.87 148.59) (xy 232.41 148.59))
+  (wire (pts (xy 262.89 143.51) (xy 265.43 143.51))
     (stroke (width 0) (type default))
     (uuid 8fd1a86f-4610-457d-bf25-ef86857fd908)
   )
@@ -1391,10 +1239,6 @@
   (wire (pts (xy 200.66 99.06) (xy 204.47 99.06))
     (stroke (width 0) (type default))
     (uuid 923a1012-f5a9-4c7d-a03d-bb70126cc062)
-  )
-  (wire (pts (xy 270.51 140.97) (xy 270.51 143.51))
-    (stroke (width 0) (type default))
-    (uuid 925e5fc9-1e9c-4d8a-acec-d859433b7dd2)
   )
   (wire (pts (xy 105.41 60.96) (xy 106.68 60.96))
     (stroke (width 0) (type default))
@@ -1440,7 +1284,7 @@
     (stroke (width 0) (type default))
     (uuid a42b8bca-93c0-43d0-8616-512c685d3340)
   )
-  (wire (pts (xy 241.3 104.14) (xy 251.46 104.14))
+  (wire (pts (xy 241.3 100.33) (xy 251.46 100.33))
     (stroke (width 0) (type default))
     (uuid a46a17d2-51dc-47a0-9be4-795ffe0ed851)
   )
@@ -1464,7 +1308,7 @@
     (stroke (width 0) (type default))
     (uuid a90a897d-8088-43a3-b7b6-22bcf8c74804)
   )
-  (wire (pts (xy 266.7 102.87) (xy 266.7 104.14))
+  (wire (pts (xy 266.7 99.06) (xy 266.7 100.33))
     (stroke (width 0) (type default))
     (uuid a931a279-555f-42eb-a996-ca70780fefb0)
   )
@@ -1476,7 +1320,7 @@
     (stroke (width 0) (type default))
     (uuid ac7e12a7-7402-492f-9c26-8de95b50a3e7)
   )
-  (wire (pts (xy 33.02 87.63) (xy 34.29 87.63))
+  (wire (pts (xy 146.05 93.98) (xy 147.32 93.98))
     (stroke (width 0) (type default))
     (uuid aec9a716-4800-4d81-9d6b-7f3c4600b544)
   )
@@ -1488,11 +1332,11 @@
     (stroke (width 0) (type default))
     (uuid b47f319f-c31b-42e4-9011-c0b4543733fd)
   )
-  (wire (pts (xy 265.43 116.84) (xy 266.7 116.84))
+  (wire (pts (xy 265.43 113.03) (xy 266.7 113.03))
     (stroke (width 0) (type default))
     (uuid b4f9682a-1a16-4001-8388-7f97297932b2)
   )
-  (wire (pts (xy 166.37 95.25) (xy 168.91 95.25))
+  (wire (pts (xy 212.09 135.89) (xy 214.63 135.89))
     (stroke (width 0) (type default))
     (uuid b881b6b3-e691-4549-9376-34999af31f83)
   )
@@ -1508,7 +1352,7 @@
     (stroke (width 0) (type default))
     (uuid bc8bccaa-6106-4aa8-9598-c5f5536bb153)
   )
-  (wire (pts (xy 241.3 148.59) (xy 241.3 140.97))
+  (wire (pts (xy 274.32 143.51) (xy 274.32 135.89))
     (stroke (width 0) (type default))
     (uuid bcebe3e0-29e8-4cfa-ba3f-50b4b02b8493)
   )
@@ -1520,17 +1364,9 @@
     (stroke (width 0) (type default))
     (uuid bde20d6e-426b-425d-b106-a9f7e622ae92)
   )
-  (wire (pts (xy 194.31 19.05) (xy 191.77 19.05))
+  (wire (pts (xy 57.15 133.35) (xy 54.61 133.35))
     (stroke (width 0) (type default))
-    (uuid bdf5cc74-73f0-49f8-a7ea-2a0cfd6f8a6b)
-  )
-  (wire (pts (xy 265.43 148.59) (xy 270.51 148.59))
-    (stroke (width 0) (type default))
-    (uuid be5a009e-a223-4545-888a-1efea752e255)
-  )
-  (wire (pts (xy 266.7 156.21) (xy 266.7 151.13))
-    (stroke (width 0) (type default))
-    (uuid bf767f90-8453-443d-b367-0a3477b6d6cf)
+    (uuid bf139c56-d2cf-496d-8ac2-163023174ad7)
   )
   (wire (pts (xy 77.47 86.36) (xy 80.01 86.36))
     (stroke (width 0) (type default))
@@ -1564,7 +1400,7 @@
     (stroke (width 0) (type default))
     (uuid c3ef563f-e505-46b1-bc43-b08c5dbdcda0)
   )
-  (wire (pts (xy 156.21 107.95) (xy 158.75 107.95))
+  (wire (pts (xy 201.93 148.59) (xy 204.47 148.59))
     (stroke (width 0) (type default))
     (uuid c5612cb5-63ce-4735-9a8e-c1d082898645)
   )
@@ -1588,7 +1424,7 @@
     (stroke (width 0) (type default))
     (uuid d48c5ae5-b6e6-43d5-89de-81bac6b77c9e)
   )
-  (wire (pts (xy 217.17 148.59) (xy 220.98 148.59))
+  (wire (pts (xy 250.19 143.51) (xy 254 143.51))
     (stroke (width 0) (type default))
     (uuid d7f06f49-451b-456c-9f9e-0f6bbc5e630a)
   )
@@ -1624,7 +1460,7 @@
     (stroke (width 0) (type default))
     (uuid e8de0b79-2e8a-4f8f-9684-99aa9d6253df)
   )
-  (wire (pts (xy 266.7 104.14) (xy 273.05 104.14))
+  (wire (pts (xy 266.7 100.33) (xy 273.05 100.33))
     (stroke (width 0) (type default))
     (uuid e9ee19ff-374f-4c08-abf4-22c1b505659a)
   )
@@ -1632,7 +1468,7 @@
     (stroke (width 0) (type default))
     (uuid ea4d958e-d69f-4d8e-861a-1b7bb9e1e66c)
   )
-  (wire (pts (xy 266.7 95.25) (xy 269.24 95.25))
+  (wire (pts (xy 266.7 91.44) (xy 269.24 91.44))
     (stroke (width 0) (type default))
     (uuid ea6567b7-78d2-4ff6-af93-d183759792c7)
   )
@@ -1648,7 +1484,7 @@
     (stroke (width 0) (type default))
     (uuid eb607a30-ee81-4b70-b98c-d5af0fa509f1)
   )
-  (wire (pts (xy 251.46 113.03) (xy 251.46 114.3))
+  (wire (pts (xy 251.46 109.22) (xy 251.46 110.49))
     (stroke (width 0) (type default))
     (uuid ec260f94-bb8f-497f-8325-f330eef16a9c)
   )
@@ -1668,7 +1504,7 @@
     (stroke (width 0) (type default))
     (uuid edce569c-0a60-41c4-96ab-0f0ba4eaae4f)
   )
-  (wire (pts (xy 251.46 104.14) (xy 255.27 104.14))
+  (wire (pts (xy 251.46 100.33) (xy 255.27 100.33))
     (stroke (width 0) (type default))
     (uuid ee7ecbd7-60a2-48f5-b46f-26186951e4fe)
   )
@@ -1692,10 +1528,6 @@
     (stroke (width 0) (type default))
     (uuid f5903f34-b97a-49cf-8505-fbc2b59e7804)
   )
-  (wire (pts (xy 270.51 143.51) (xy 265.43 143.51))
-    (stroke (width 0) (type default))
-    (uuid f64d401b-af74-417a-9461-8ab2b0e10d55)
-  )
   (wire (pts (xy 236.22 17.78) (xy 236.22 20.32))
     (stroke (width 0) (type default))
     (uuid f70004f0-0832-4fc6-bc29-963b10caf700)
@@ -1712,7 +1544,7 @@
     (stroke (width 0) (type default))
     (uuid f9ea65cf-4e9b-446f-b6d5-75aab30f25ea)
   )
-  (wire (pts (xy 34.29 92.71) (xy 34.29 91.44))
+  (wire (pts (xy 147.32 99.06) (xy 147.32 97.79))
     (stroke (width 0) (type default))
     (uuid fdcb25d3-7292-4418-97b3-8808e4a3a955)
   )
@@ -1725,7 +1557,7 @@
     (uuid fec7edb6-e613-4479-ab67-712a99f431f9)
   )
 
-  (rectangle (start 15.24 114.3) (end 52.07 142.24)
+  (rectangle (start 15.24 114.3) (end 63.5 142.24)
     (stroke (width 0) (type default))
     (fill (type none))
     (uuid 21cdddbe-84d1-4887-a7a6-de16f9d2c6a1)
@@ -1740,22 +1572,17 @@
     (fill (type none))
     (uuid 4284f723-f2f2-47d8-8d1f-0310f9ffb714)
   )
-  (rectangle (start 254 134.62) (end 281.94 158.75)
-    (stroke (width 0) (type default))
-    (fill (type none))
-    (uuid 503494a5-fde3-4d4d-87b6-11cd63d926c8)
-  )
-  (rectangle (start 134.62 85.09) (end 182.88 118.11)
+  (rectangle (start 187.96 125.73) (end 229.87 158.75)
     (stroke (width 0) (type default))
     (fill (type none))
     (uuid 5598cb7d-76a5-445b-917b-48de04042c7a)
   )
-  (rectangle (start 17.78 78.74) (end 40.64 100.33)
+  (rectangle (start 130.81 85.09) (end 153.67 106.68)
     (stroke (width 0) (type default))
     (fill (type none))
     (uuid 8295f965-bd22-4d15-85f5-65ee24d2478a)
   )
-  (rectangle (start 208.28 130.81) (end 248.92 158.75)
+  (rectangle (start 234.95 125.73) (end 281.94 153.67)
     (stroke (width 0) (type default))
     (fill (type none))
     (uuid 89f3bb1d-624d-4569-a018-e55f7dee404c)
@@ -1765,7 +1592,7 @@
     (fill (type none))
     (uuid c9a3a184-fea2-4fff-b640-81c83f7c7494)
   )
-  (rectangle (start 234.95 85.09) (end 281.94 123.19)
+  (rectangle (start 234.95 82.55) (end 281.94 118.11)
     (stroke (width 0) (type default))
     (fill (type none))
     (uuid dbdffe99-159e-4dc7-b5af-0dd796687aea)
@@ -1807,21 +1634,17 @@
     (uuid c5c54579-c777-4a17-8277-7bb5985d66b6)
   )
 
-  (text "** Flags for ERC **" (at 19.05 102.87 0)
+  (text "** Flags for ERC **" (at 132.08 109.22 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 070baf0f-ca45-4d05-a42a-21efa69689b8)
-  )
-  (text "MCU Connector" (at 254 161.29 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 5a44176c-7dd3-4b9f-a228-70f2b92cc89e)
   )
   (text "Circuit Subsections" (at 15.24 144.78 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 5b43c62e-aa63-478e-8090-c7b4f34d1ead)
   )
-  (text "Line Undervoltage Lockout\nOptional: Connect to BIAS-skip\nV_normal: 9V\nV_low: 8V"
-    (at 281.94 132.08 0)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
+  (text "Line Undervoltage Lockout\nOptional: Connect to BIAS-skip\nV_normal: 9V	V_low: 8V"
+    (at 234.95 124.46 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 6e22aadd-e889-4822-95c4-a26d540ef034)
   )
   (text "Driver IC" (at 15.24 109.22 0)
@@ -1833,12 +1656,12 @@
     (uuid 7ec80ae0-84b6-44cb-87da-cb26c3b4f5cf)
   )
   (text "Light load switching mode selection\nFWPM - pin connected to VCC_DRIVER\nDEM - pin connected to GND"
-    (at 134.62 124.46 0)
+    (at 187.96 165.1 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid a9bfc7da-bb68-446a-9246-d9f064d4d2e3)
   )
   (text "Type-2 Loop Compensation Network\nCrossover frequency: 2.4kHz"
-    (at 208.28 163.83 0)
+    (at 234.95 158.75 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid aa9c0aa4-89b7-4581-84f4-661c1ae5c4c5)
   )
@@ -1847,7 +1670,7 @@
     (uuid abcebc03-7496-40ef-a7e8-adfe9eace75e)
   )
 
-  (label "MODE" (at 151.13 101.6 180) (fields_autoplaced)
+  (label "MODE" (at 196.85 142.24 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 05b88310-8ea5-44db-bb9b-728588b38f63)
   )
@@ -1858,10 +1681,6 @@
   (label "VOUT" (at 46.99 58.42 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 08eb26ff-4d19-4b09-b557-764cc9d70d24)
-  )
-  (label "VCC_MCU" (at 270.51 146.05 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 0c8034cf-0060-4c8f-a19a-f52a4c452cb7)
   )
   (label "PGND" (at 85.09 81.28 270) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
@@ -1899,23 +1718,15 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 48f9b5eb-7aa2-4875-a9ed-319b79a5c96c)
   )
-  (label "5V" (at 194.31 19.05 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 5a64d88b-bb19-409b-b48a-e3f2c82072e3)
-  )
   (label "CSN" (at 55.88 55.88 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 6d541424-ed57-4927-9923-d2705ab4c4a2)
-  )
-  (label "MCU_EN" (at 265.43 156.21 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 6e1b7bbe-305b-4a67-bfcb-1572406411aa)
   )
   (label "MODE" (at 106.68 60.96 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 70d4eb40-dd49-48d2-b3aa-88dba2dc6052)
   )
-  (label "BIAS" (at 269.24 95.25 0) (fields_autoplaced)
+  (label "BIAS" (at 269.24 91.44 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 7542d61a-0073-4a3f-86c5-6e6b8a5e2ee5)
   )
@@ -1943,11 +1754,11 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 9fb85713-2dc0-4322-810f-e9b0bd7162d3)
   )
-  (label "COMP" (at 217.17 148.59 180) (fields_autoplaced)
+  (label "COMP" (at 250.19 143.51 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid a059b1fa-2bde-4ae5-9270-3f2090b3dcf9)
   )
-  (label "MCU_EN" (at 265.43 116.84 180) (fields_autoplaced)
+  (label "MCU_EN" (at 265.43 113.03 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid a4d8683d-3250-4182-91d0-1fb919969f58)
   )
@@ -1963,15 +1774,11 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid bf4de90d-22c5-41f0-a3d5-6b699f0fa6a3)
   )
-  (label "PGOOD" (at 270.51 140.97 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid c35c916d-68d4-4e9c-90bb-f4da8a961f84)
-  )
-  (label "UVLO" (at 273.05 104.14 0) (fields_autoplaced)
+  (label "UVLO" (at 273.05 100.33 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid c64615c4-9a87-4e08-8bf5-d87701415c8a)
   )
-  (label "VCC_DRIVER" (at 168.91 95.25 0) (fields_autoplaced)
+  (label "VCC_DRIVER" (at 214.63 135.89 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid c6f389e0-e07d-47b0-b572-eaf9c82f44a8)
   )
@@ -1996,24 +1803,24 @@
     (uuid f9999513-f8d9-413e-91da-3083fbc9b717)
   )
 
-  (symbol (lib_id "power:GND") (at 242.57 149.86 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 275.59 144.78 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 01aa3561-a269-4141-b100-0a03d125713e)
-    (property "Reference" "#PWR08" (at 242.57 156.21 0)
+    (property "Reference" "#PWR08" (at 275.59 151.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 242.57 154.94 0)
+    (property "Value" "GND" (at 275.59 149.86 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 242.57 149.86 0)
+    (property "Footprint" "" (at 275.59 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 242.57 149.86 0)
+    (property "Datasheet" "" (at 275.59 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 6661ce1b-772e-474e-955e-7e4e002cf836))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "#PWR08") (unit 1)
         )
@@ -2021,25 +1828,25 @@
     )
   )
 
-  (symbol (lib_id "Device:R") (at 266.7 99.06 180) (unit 1)
+  (symbol (lib_id "Device:R") (at 266.7 95.25 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 04c2b71c-92e3-4d66-b4b0-3b1bee863209)
-    (property "Reference" "R11" (at 269.24 97.79 0)
+    (property "Reference" "R11" (at 269.24 93.98 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "0R" (at 269.24 100.33 0)
+    (property "Value" "0R" (at 269.24 96.52 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 268.478 99.06 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 268.478 95.25 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.koaspeer.com/pdfs/RK73Z.pdf" (at 266.7 99.06 0)
+    (property "Datasheet" "https://www.koaspeer.com/pdfs/RK73Z.pdf" (at 266.7 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid c340ce64-e7de-45ce-b3d3-5840f8c1e9ad))
     (pin "2" (uuid 60e4cb35-6da9-4bf5-b3b0-d0ba9cca486e))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "R11") (unit 1)
         )
@@ -2080,7 +1887,7 @@
     (pin "1" (uuid d324f9b7-4d5b-4258-895c-835b2030850b))
     (pin "2" (uuid 157efb01-1852-4128-8d07-9eeb06cb7cf6))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "L1") (unit 1)
         )
@@ -2088,24 +1895,24 @@
     )
   )
 
-  (symbol (lib_id "power:VCC") (at 34.29 86.36 0) (unit 1)
+  (symbol (lib_id "power:VCC") (at 147.32 92.71 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0bbd7a54-aa8f-4645-bf00-96285673e7e2)
-    (property "Reference" "#PWR019" (at 34.29 90.17 0)
+    (property "Reference" "#PWR019" (at 147.32 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "VCC" (at 34.29 81.28 0)
+    (property "Value" "VCC" (at 147.32 87.63 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 34.29 86.36 0)
+    (property "Footprint" "" (at 147.32 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 34.29 86.36 0)
+    (property "Datasheet" "" (at 147.32 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid ed08cba3-fa59-412a-b828-2205963f5481))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "#PWR019") (unit 1)
         )
@@ -2131,7 +1938,7 @@
     (pin "1" (uuid abb11b90-ceea-4bb6-aac2-77e5b8bcc519))
     (pin "2" (uuid 4a49b872-fa4e-4760-8172-e24c5b1b017d))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "R6") (unit 1)
         )
@@ -2156,7 +1963,7 @@
     )
     (pin "1" (uuid 1e94df81-30ab-454e-b26a-b63ba5c12d0b))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "#PWR016") (unit 1)
         )
@@ -2164,25 +1971,25 @@
     )
   )
 
-  (symbol (lib_id "Device:R") (at 162.56 107.95 90) (unit 1)
+  (symbol (lib_id "Device:R") (at 208.28 148.59 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0ec16d05-5540-41cb-914c-4866ab1f6670)
-    (property "Reference" "R4" (at 162.56 101.6 90)
+    (property "Reference" "R4" (at 208.28 142.24 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "0R" (at 162.56 104.14 90)
+    (property "Value" "0R" (at 208.28 144.78 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 162.56 109.728 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 208.28 150.368 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.koaspeer.com/pdfs/RK73Z.pdf" (at 162.56 107.95 0)
+    (property "Datasheet" "https://www.koaspeer.com/pdfs/RK73Z.pdf" (at 208.28 148.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 3ca7b606-32d1-4fb2-bab9-6403a53c54e0))
     (pin "2" (uuid 00275195-5961-4a71-8747-1eae4c72db3a))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "R4") (unit 1)
         )
@@ -2208,7 +2015,7 @@
     (pin "1" (uuid a92f141c-d6a5-49e8-b13d-306a38927b13))
     (pin "2" (uuid 793ba45b-8c95-4b9b-b2e4-07cc6a40f13a))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "C1") (unit 1)
         )
@@ -2216,25 +2023,25 @@
     )
   )
 
-  (symbol (lib_id "Device:R") (at 162.56 95.25 90) (unit 1)
+  (symbol (lib_id "Device:R") (at 208.28 135.89 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1445b867-ec6e-4ff0-807a-f573ef0c6062)
-    (property "Reference" "R3" (at 162.56 88.9 90)
+    (property "Reference" "R3" (at 208.28 129.54 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "0R" (at 162.56 91.44 90)
+    (property "Value" "0R" (at 208.28 132.08 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 162.56 97.028 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 208.28 137.668 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.koaspeer.com/pdfs/RK73Z.pdf" (at 162.56 95.25 0)
+    (property "Datasheet" "https://www.koaspeer.com/pdfs/RK73Z.pdf" (at 208.28 135.89 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 98218ca9-9732-47f6-8d12-90b82ae3b61e))
     (pin "2" (uuid 25b1d3f7-e422-4187-85b1-a8416cc2bdcd))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "R3") (unit 1)
         )
@@ -2281,7 +2088,7 @@
     (pin "7" (uuid f0a25e3a-7da5-4b14-8aaf-9ee96510f96f))
     (pin "8" (uuid fd5ced48-90b5-4245-a1e6-dbeea8dc5ec8))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "Q1") (unit 1)
         )
@@ -2307,7 +2114,7 @@
     (pin "1" (uuid 13cb68de-008e-4d13-820a-2d5105d42ca1))
     (pin "2" (uuid 1e2ba356-e33a-45cc-8724-b9e1add52fb6))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "C3") (unit 1)
         )
@@ -2315,25 +2122,25 @@
     )
   )
 
-  (symbol (lib_id "Device:R") (at 241.3 109.22 0) (unit 1)
+  (symbol (lib_id "Device:R") (at 241.3 105.41 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2692ed5b-6751-4e57-b65d-b38a56257aca)
-    (property "Reference" "R9" (at 243.84 107.95 0)
+    (property "Reference" "R9" (at 243.84 104.14 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "12k" (at 243.84 110.49 0)
+    (property "Value" "12k" (at 243.84 106.68 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 239.522 109.22 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 239.522 105.41 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.koaspeer.com/pdfs/RK73H.pdf" (at 241.3 109.22 0)
+    (property "Datasheet" "https://www.koaspeer.com/pdfs/RK73H.pdf" (at 241.3 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid eb001dff-a703-49f0-88ed-dc1d35eaf78f))
     (pin "2" (uuid e766f228-bfb0-4d15-a401-ecb610cd5cdf))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "R9") (unit 1)
         )
@@ -2358,7 +2165,7 @@
     )
     (pin "1" (uuid 1331967e-7a5f-4d07-85ca-92f118f41e53))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "#PWR012") (unit 1)
         )
@@ -2383,7 +2190,7 @@
     )
     (pin "1" (uuid bb36dd2d-b4da-47b0-9ab7-ff4c8bddfc4f))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "#PWR07") (unit 1)
         )
@@ -2408,7 +2215,7 @@
     )
     (pin "1" (uuid f0fd9707-5f24-4048-a525-4f689954fa26))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "#PWR015") (unit 1)
         )
@@ -2434,7 +2241,7 @@
     (pin "1" (uuid c52c9c71-7194-4690-895c-bcd38a22f180))
     (pin "2" (uuid 29973a87-a0ee-4ad1-828c-741b198f7315))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "C7") (unit 1)
         )
@@ -2460,7 +2267,7 @@
     (pin "1" (uuid 06ac25b0-0f96-4392-b479-0f597c8fb795))
     (pin "2" (uuid 0acc28c6-79c8-4452-951e-4315a383ec6a))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "C10") (unit 1)
         )
@@ -2468,24 +2275,24 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 241.3 114.3 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 241.3 110.49 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 410b9ea1-d8dc-47f0-beb0-f127fb477db9)
-    (property "Reference" "#PWR011" (at 241.3 120.65 0)
+    (property "Reference" "#PWR011" (at 241.3 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 241.3 119.38 0)
+    (property "Value" "GND" (at 241.3 115.57 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 241.3 114.3 0)
+    (property "Footprint" "" (at 241.3 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 241.3 114.3 0)
+    (property "Datasheet" "" (at 241.3 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid daa0f0b5-6a4f-4a74-bf42-66a1e004cd03))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "#PWR011") (unit 1)
         )
@@ -2493,24 +2300,24 @@
     )
   )
 
-  (symbol (lib_id "Connector:TestPoint") (at 262.89 97.79 0) (unit 1)
+  (symbol (lib_id "Connector:TestPoint") (at 262.89 93.98 0) (unit 1)
     (in_bom no) (on_board yes) (dnp no)
     (uuid 416b91a7-fe90-48d4-b8b2-f679e07571f5)
-    (property "Reference" "TP4" (at 251.46 88.9 0)
+    (property "Reference" "TP4" (at 251.46 85.09 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "TestPoint_UVLO" (at 251.46 91.44 0)
+    (property "Value" "TestPoint_UVLO" (at 251.46 87.63 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm" (at 267.97 97.79 0)
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm" (at 267.97 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 267.97 97.79 0)
+    (property "Datasheet" "~" (at 267.97 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid fc5df0db-1556-4142-afcb-32395b8882ff))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "TP4") (unit 1)
         )
@@ -2518,25 +2325,25 @@
     )
   )
 
-  (symbol (lib_id "Device:C") (at 251.46 109.22 0) (unit 1)
+  (symbol (lib_id "Device:C") (at 251.46 105.41 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 417cc2d6-df89-4e4f-bd1c-e8569db25d41)
-    (property "Reference" "C8" (at 255.27 107.95 0)
+    (property "Reference" "C8" (at 255.27 104.14 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "330nF" (at 255.27 110.49 0)
+    (property "Value" "330nF" (at 255.27 106.68 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 252.4252 113.03 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 252.4252 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.mouser.pl/datasheet/2/585/MLCC-1837944.pdf" (at 251.46 109.22 0)
+    (property "Datasheet" "https://www.mouser.pl/datasheet/2/585/MLCC-1837944.pdf" (at 251.46 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 37e3bcdd-da4b-400d-a8da-86ba4801e2f0))
     (pin "2" (uuid e2869a28-70e5-4666-a84a-ec73705eda4b))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "C8") (unit 1)
         )
@@ -2561,7 +2368,7 @@
     )
     (pin "1" (uuid 78361283-fbec-4587-9725-db4e83e2a600))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "#PWR01") (unit 1)
         )
@@ -2586,7 +2393,7 @@
     )
     (pin "1" (uuid a238dd03-b2ee-42c6-a293-64d8afdf3011))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "#PWR017") (unit 1)
         )
@@ -2612,34 +2419,9 @@
     (pin "1" (uuid c3b0409a-7186-4d98-9cb7-ecbbbe941c10))
     (pin "2" (uuid e0ba21ec-8bc8-4bb3-b656-08d53e8287d1))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "C4") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:VCC") (at 199.39 24.13 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 4eb2c7e0-ae59-4586-9fbd-4450b1b05910)
-    (property "Reference" "#PWR022" (at 195.58 24.13 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "VCC" (at 203.2 24.13 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 199.39 24.13 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 199.39 24.13 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 5a17f05e-cd47-44f8-a203-96d33746c580))
-    (instances
-      (project "PSU_module_minirys"
-        (path "/83ec67aa-411e-440d-8530-858fb57a6552"
-          (reference "#PWR022") (unit 1)
         )
       )
     )
@@ -2678,7 +2460,7 @@
     (pin "1" (uuid e3548a40-28eb-456d-9c9e-884c948c1d77))
     (pin "2" (uuid 1cc54b03-7e15-49df-a116-11abbd5d8f49))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "R13") (unit 1)
         )
@@ -2686,49 +2468,24 @@
     )
   )
 
-  (symbol (lib_id "Connector:Conn_01x01_Pin") (at 186.69 16.51 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 517d2935-6be1-4f0b-a8f0-0996aa2744bd)
-    (property "Reference" "J1" (at 184.15 16.51 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "Conn_01x01_Pin" (at 187.325 13.97 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Footprint" "TestPoint:TestPoint_Pad_2.0x2.0mm" (at 186.69 16.51 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 186.69 16.51 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid eb9f07bb-88cc-4307-9517-a0560700d2d1))
-    (instances
-      (project "PSU_module_minirys"
-        (path "/83ec67aa-411e-440d-8530-858fb57a6552"
-          (reference "J1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 251.46 114.3 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 251.46 110.49 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 561e8bf2-477e-47fd-a207-f95c0afef9de)
-    (property "Reference" "#PWR013" (at 251.46 120.65 0)
+    (property "Reference" "#PWR013" (at 251.46 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 251.46 119.38 0)
+    (property "Value" "GND" (at 251.46 115.57 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 251.46 114.3 0)
+    (property "Footprint" "" (at 251.46 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 251.46 114.3 0)
+    (property "Datasheet" "" (at 251.46 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 043f47ce-b825-4323-b5e0-4dc3e4d68748))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "#PWR013") (unit 1)
         )
@@ -2753,7 +2510,7 @@
     )
     (pin "1" (uuid 1b74408d-fa45-4898-960e-7d784d5e83dd))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "#PWR02") (unit 1)
         )
@@ -2761,49 +2518,24 @@
     )
   )
 
-  (symbol (lib_id "Connector:Conn_01x01_Pin") (at 186.69 19.05 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 5def2c81-8b1b-4fe3-b3ee-f3d5e0dee86c)
-    (property "Reference" "J2" (at 184.15 19.05 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "Conn_01x01_Pin" (at 187.325 16.51 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Footprint" "TestPoint:TestPoint_Pad_2.0x2.0mm" (at 186.69 19.05 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 186.69 19.05 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid d800c5c6-6aa0-4657-9e36-3e0362ce8788))
-    (instances
-      (project "PSU_module_minirys"
-        (path "/83ec67aa-411e-440d-8530-858fb57a6552"
-          (reference "J2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:VCC") (at 241.3 93.98 0) (mirror y) (unit 1)
+  (symbol (lib_id "power:VCC") (at 241.3 90.17 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 68d8a382-421a-41f0-8f30-0f8efcf7745e)
-    (property "Reference" "#PWR010" (at 241.3 97.79 0)
+    (property "Reference" "#PWR010" (at 241.3 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "VCC" (at 241.3 88.9 0)
+    (property "Value" "VCC" (at 241.3 85.09 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 241.3 93.98 0)
+    (property "Footprint" "" (at 241.3 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 241.3 93.98 0)
+    (property "Datasheet" "" (at 241.3 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid c5485ba9-f7bb-40c1-8b85-8480be02f67e))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "#PWR010") (unit 1)
         )
@@ -2828,7 +2560,7 @@
     )
     (pin "1" (uuid 0b80a165-d972-4459-94d9-2af67067321e))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "#PWR05") (unit 1)
         )
@@ -2853,7 +2585,7 @@
     )
     (pin "1" (uuid e4564cfc-3e45-47dc-bc1a-5fe6b338edab))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "#PWR03") (unit 1)
         )
@@ -2861,50 +2593,25 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 270.51 149.86 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 6e071f8d-3cd2-463d-8dd4-992e9dd3656a)
-    (property "Reference" "#PWR025" (at 270.51 156.21 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 270.51 154.94 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 270.51 149.86 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 270.51 149.86 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 3094f99c-e400-4f18-977a-c77468301305))
-    (instances
-      (project "PSU_module_minirys"
-        (path "/83ec67aa-411e-440d-8530-858fb57a6552"
-          (reference "#PWR025") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 259.08 104.14 270) (unit 1)
+  (symbol (lib_id "Device:R") (at 259.08 100.33 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 74371bf8-b0ed-41af-8625-0ffcc31a9f7d)
-    (property "Reference" "R10" (at 260.35 99.06 90)
+    (property "Reference" "R10" (at 260.35 95.25 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "0R" (at 260.35 101.6 90)
+    (property "Value" "0R" (at 260.35 97.79 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 259.08 102.362 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 259.08 98.552 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.koaspeer.com/pdfs/RK73Z.pdf" (at 259.08 104.14 0)
+    (property "Datasheet" "https://www.koaspeer.com/pdfs/RK73Z.pdf" (at 259.08 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid f21431a6-e5de-443a-8878-3568d85c28b4))
     (pin "2" (uuid 28c47d9b-5bcb-420a-b83a-e5c7fc27f5da))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "R10") (unit 1)
         )
@@ -2964,7 +2671,7 @@
     (pin "8" (uuid f0342092-ab8f-4d3e-a39f-2fd1e1bddb5e))
     (pin "9" (uuid 4a9233ed-d0c7-4ae9-8692-49d1f7dca44f))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "IC1") (unit 1)
         )
@@ -2990,7 +2697,7 @@
     (pin "1" (uuid fd2bb418-01e2-4bdd-b1db-ca5e92fe8c4c))
     (pin "2" (uuid c15e6c32-5f62-497a-a493-71168a888ac4))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "R2") (unit 1)
         )
@@ -3015,7 +2722,7 @@
     )
     (pin "1" (uuid 893b433b-5a53-4a76-b0e2-4e8251a57f03))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "#PWR024") (unit 1)
         )
@@ -3023,25 +2730,25 @@
     )
   )
 
-  (symbol (lib_id "Device:R") (at 266.7 109.22 180) (unit 1)
+  (symbol (lib_id "Device:R") (at 266.7 105.41 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 921d0f9b-2154-4832-a6bc-08a01b96699a)
-    (property "Reference" "R12" (at 269.24 107.95 0)
+    (property "Reference" "R12" (at 269.24 104.14 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "0R" (at 269.24 110.49 0)
+    (property "Value" "0R" (at 269.24 106.68 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 268.478 109.22 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 268.478 105.41 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.koaspeer.com/pdfs/RK73Z.pdf" (at 266.7 109.22 0)
+    (property "Datasheet" "https://www.koaspeer.com/pdfs/RK73Z.pdf" (at 266.7 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 3548c8bf-b467-4030-8762-69e71a522b8e))
     (pin "2" (uuid 3544e68b-9b71-469a-8344-585d2b2a7e5a))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "R12") (unit 1)
         )
@@ -3067,7 +2774,7 @@
     (pin "1" (uuid 72453f0f-6b98-4ecc-af1a-0fc7aca0009e))
     (pin "2" (uuid 63e26b48-280a-436d-b21d-d12cf0f691b7))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "R14") (unit 1)
         )
@@ -3093,7 +2800,7 @@
     (pin "1" (uuid 0f405df5-b79c-43e6-b0f8-7b7a15240a71))
     (pin "2" (uuid 75130365-4e7d-482c-9904-305a9432075c))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "C11") (unit 1)
         )
@@ -3101,25 +2808,25 @@
     )
   )
 
-  (symbol (lib_id "Device:C") (at 236.22 148.59 90) (mirror x) (unit 1)
+  (symbol (lib_id "Device:C") (at 269.24 143.51 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9c044d7e-9073-407a-8027-da7f7543ccd9)
-    (property "Reference" "C6" (at 236.22 156.21 90)
+    (property "Reference" "C6" (at 269.24 151.13 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "6.8nF" (at 236.22 153.67 90)
+    (property "Value" "6.8nF" (at 269.24 148.59 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 240.03 149.5552 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 273.05 144.4752 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.mouser.pl/datasheet/2/585/MLCC-1837944.pdf" (at 236.22 148.59 0)
+    (property "Datasheet" "https://www.mouser.pl/datasheet/2/585/MLCC-1837944.pdf" (at 269.24 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid b8be0947-238a-4533-a57b-d250528c4cd9))
     (pin "2" (uuid 3ba825d6-4232-47c9-81a5-fb1038e64105))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "C6") (unit 1)
         )
@@ -3144,7 +2851,7 @@
     )
     (pin "1" (uuid 4617c862-ff39-4089-8a39-4f9f535d2671))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "#PWR06") (unit 1)
         )
@@ -3169,7 +2876,7 @@
     )
     (pin "1" (uuid d547c234-e3a0-4448-93d3-785c8f44ad2e))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "#PWR018") (unit 1)
         )
@@ -3177,52 +2884,24 @@
     )
   )
 
-  (symbol (lib_id "Connector:Conn_01x04_Pin") (at 260.35 146.05 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid a7f245da-0782-4401-bf0b-52882624137d)
-    (property "Reference" "J6" (at 261.62 137.16 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "MCU_Connector" (at 261.62 139.7 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" (at 260.35 146.05 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 260.35 146.05 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 715cabf7-da99-4e0d-8d87-833251d4d33e))
-    (pin "2" (uuid 2d91507d-5a7c-4fe3-98a2-599d3c378539))
-    (pin "3" (uuid b77114aa-5a95-4474-b3de-d835123c69ff))
-    (pin "4" (uuid d47ab89f-3465-41ad-b26d-86315d82badf))
-    (instances
-      (project "PSU_module_minirys"
-        (path "/83ec67aa-411e-440d-8530-858fb57a6552"
-          (reference "J6") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 34.29 92.71 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 147.32 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a859e456-803b-4832-b2f2-5fc76e12d84e)
-    (property "Reference" "#PWR021" (at 34.29 99.06 0)
+    (property "Reference" "#PWR021" (at 147.32 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 34.29 97.79 0)
+    (property "Value" "GND" (at 147.32 104.14 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 34.29 92.71 0)
+    (property "Footprint" "" (at 147.32 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 34.29 92.71 0)
+    (property "Datasheet" "" (at 147.32 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 1e65eeb8-2a87-4db2-aca2-856762c2b65b))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "#PWR021") (unit 1)
         )
@@ -3247,7 +2926,7 @@
     )
     (pin "1" (uuid 3da1817b-cebd-4af9-8295-0c85d00d4911))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "TP1") (unit 1)
         )
@@ -3273,7 +2952,7 @@
     (pin "1" (uuid fa9cab3d-d720-4150-9bcd-e7a972395e2b))
     (pin "2" (uuid 6f671fa6-7138-420e-9e3e-86da3f71d953))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "C2") (unit 1)
         )
@@ -3299,7 +2978,7 @@
     (pin "1" (uuid e62e5d5b-1957-42e6-9a22-b66123f88533))
     (pin "2" (uuid 2dad3b08-acea-420c-9644-84e48986f21e))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "C9") (unit 1)
         )
@@ -3324,7 +3003,7 @@
     )
     (pin "1" (uuid c98e9d52-b78a-4ca8-8689-df244e1e7d03))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "TP2") (unit 1)
         )
@@ -3349,34 +3028,9 @@
     )
     (pin "1" (uuid 231413b2-ece5-4dfe-9a6f-dce1bf3b4a7f))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "TP3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 195.58 21.59 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid bb6f434e-8946-4f98-9a10-1d3dcb8f4ed6)
-    (property "Reference" "#PWR020" (at 201.93 21.59 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 199.39 21.59 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 195.58 21.59 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 195.58 21.59 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 08941d77-dcf7-44a6-b33f-c09f8c07418a))
-    (instances
-      (project "PSU_module_minirys"
-        (path "/83ec67aa-411e-440d-8530-858fb57a6552"
-          (reference "#PWR020") (unit 1)
         )
       )
     )
@@ -3400,34 +3054,9 @@
     (pin "1" (uuid eefb3ead-6029-40e1-bb63-e871d4c4891a))
     (pin "2" (uuid 07452d65-7222-4692-8620-5877ceecb7a3))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "R7") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:Conn_01x01_Pin") (at 186.69 21.59 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid c52f515d-5a8e-4dd7-bd78-beb56044f4cb)
-    (property "Reference" "J3" (at 184.15 21.59 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "Conn_01x01_Pin" (at 187.325 19.05 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Footprint" "TestPoint:TestPoint_Pad_2.0x2.0mm" (at 186.69 21.59 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 186.69 21.59 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 46775265-a1fb-44d5-bbe6-89d766fa9196))
-    (instances
-      (project "PSU_module_minirys"
-        (path "/83ec67aa-411e-440d-8530-858fb57a6552"
-          (reference "J3") (unit 1)
         )
       )
     )
@@ -3451,7 +3080,7 @@
     (pin "1" (uuid cb1113b3-74d2-48fe-a18e-24dddd7fb6ec))
     (pin "2" (uuid 82ba200f-b0cd-4640-8ac8-0dfefe478ecd))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "C13") (unit 1)
         )
@@ -3459,24 +3088,24 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 168.91 109.22 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 214.63 149.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c9073c71-ed35-4401-90b2-092cb6896658)
-    (property "Reference" "#PWR09" (at 168.91 115.57 0)
+    (property "Reference" "#PWR09" (at 214.63 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 168.91 114.3 0)
+    (property "Value" "GND" (at 214.63 154.94 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 168.91 109.22 0)
+    (property "Footprint" "" (at 214.63 149.86 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 168.91 109.22 0)
+    (property "Datasheet" "" (at 214.63 149.86 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 15a01190-9743-442f-8423-697161826afd))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "#PWR09") (unit 1)
         )
@@ -3502,7 +3131,7 @@
     (pin "1" (uuid 80ebb03c-a52e-4c13-852a-b4ccfedc7d76))
     (pin "2" (uuid 0f3fdc8d-f31d-4ef2-a3a2-6f1bb5be6ba8))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "R1") (unit 1)
         )
@@ -3528,7 +3157,7 @@
     (pin "1" (uuid cc9f8142-2918-48a4-81b2-cbc84b426fa5))
     (pin "2" (uuid c7ccb655-1dfe-4859-b5a2-afee3a10ab65))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "C14") (unit 1)
         )
@@ -3553,7 +3182,7 @@
     )
     (pin "1" (uuid edbe6daf-1670-45a3-a9c9-c6049eb99c5c))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "TP5") (unit 1)
         )
@@ -3561,25 +3190,25 @@
     )
   )
 
-  (symbol (lib_id "Device:R") (at 226.06 148.59 90) (unit 1)
+  (symbol (lib_id "Device:R") (at 259.08 143.51 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid dd111526-2df0-4037-bc5a-818d7489129d)
-    (property "Reference" "R5" (at 226.06 154.94 90)
+    (property "Reference" "R5" (at 259.08 149.86 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "38.3k" (at 226.06 152.4 90)
+    (property "Value" "38.3k" (at 259.08 147.32 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 226.06 150.368 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 259.08 145.288 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 226.06 148.59 0)
+    (property "Datasheet" "~" (at 259.08 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 365b7979-852a-4cd6-9e2e-9ee981d3b297))
     (pin "2" (uuid 2f76b16e-e8cb-4a95-9d4b-fc1a4a7ba9b3))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "R5") (unit 1)
         )
@@ -3587,25 +3216,25 @@
     )
   )
 
-  (symbol (lib_id "Device:C") (at 231.14 140.97 90) (unit 1)
+  (symbol (lib_id "Device:C") (at 264.16 135.89 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid df6027dc-9ec0-4bbc-a6e6-1d7d9da20f6b)
-    (property "Reference" "C5" (at 231.14 133.35 90)
+    (property "Reference" "C5" (at 264.16 128.27 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "100pF" (at 231.14 135.89 90)
+    (property "Value" "100pF" (at 264.16 130.81 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 234.95 140.0048 0)
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 267.97 134.9248 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.mouser.pl/datasheet/2/585/MLCC-1837944.pdf" (at 231.14 140.97 0)
+    (property "Datasheet" "https://www.mouser.pl/datasheet/2/585/MLCC-1837944.pdf" (at 264.16 135.89 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid b3685bf6-4181-4d7c-a0af-27c2697456b7))
     (pin "2" (uuid 6c65807b-9736-4ee7-914e-05233ea39ca1))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "C5") (unit 1)
         )
@@ -3613,49 +3242,24 @@
     )
   )
 
-  (symbol (lib_id "Connector:Conn_01x01_Pin") (at 186.69 24.13 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid e0a7efdc-96f5-4127-8aca-1b6ba1fdb3ef)
-    (property "Reference" "J4" (at 184.15 24.13 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "Conn_01x01_Pin" (at 187.325 21.59 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Footprint" "TestPoint:TestPoint_Pad_2.0x2.0mm" (at 186.69 24.13 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 186.69 24.13 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a5998e4e-3e0f-4f9e-9cd4-440653ef1cea))
-    (instances
-      (project "PSU_module_minirys"
-        (path "/83ec67aa-411e-440d-8530-858fb57a6552"
-          (reference "J4") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:PWR_FLAG") (at 33.02 87.63 90) (unit 1)
+  (symbol (lib_id "power:PWR_FLAG") (at 146.05 93.98 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e2c9bfb3-a3fa-41c2-8bd6-6ba82c0897a0)
-    (property "Reference" "#FLG01" (at 31.115 87.63 0)
+    (property "Reference" "#FLG01" (at 144.145 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "PWR_FLAG" (at 29.21 87.63 90)
+    (property "Value" "PWR_FLAG" (at 142.24 93.98 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 33.02 87.63 0)
+    (property "Footprint" "" (at 146.05 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 33.02 87.63 0)
+    (property "Datasheet" "~" (at 146.05 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid e7df3afd-50a9-4775-8dc5-f4471304a83b))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "#FLG01") (unit 1)
         )
@@ -3663,25 +3267,25 @@
     )
   )
 
-  (symbol (lib_id "Device:R") (at 241.3 99.06 0) (unit 1)
+  (symbol (lib_id "Device:R") (at 241.3 95.25 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e5a49c62-0d5f-4c71-bb64-74fb7ef0f665)
-    (property "Reference" "R8" (at 243.84 97.79 0)
+    (property "Reference" "R8" (at 243.84 93.98 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "80.6k" (at 243.84 100.33 0)
+    (property "Value" "80.6k" (at 243.84 96.52 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 239.522 99.06 90)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 239.522 95.25 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.koaspeer.com/pdfs/RK73H.pdf" (at 241.3 99.06 0)
+    (property "Datasheet" "https://www.koaspeer.com/pdfs/RK73H.pdf" (at 241.3 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid caa9766d-487d-46e6-8513-9efd92818624))
     (pin "2" (uuid e8a63446-cd2d-473b-a8a9-4ce1733c104e))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "R8") (unit 1)
         )
@@ -3689,24 +3293,24 @@
     )
   )
 
-  (symbol (lib_id "power:PWR_FLAG") (at 33.02 91.44 90) (unit 1)
+  (symbol (lib_id "power:PWR_FLAG") (at 146.05 97.79 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e8c186cc-eff5-42fd-846e-4aba2185abe5)
-    (property "Reference" "#FLG02" (at 31.115 91.44 0)
+    (property "Reference" "#FLG02" (at 144.145 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "PWR_FLAG" (at 29.21 91.44 90)
+    (property "Value" "PWR_FLAG" (at 142.24 97.79 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 33.02 91.44 0)
+    (property "Footprint" "" (at 146.05 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 33.02 91.44 0)
+    (property "Datasheet" "~" (at 146.05 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 6723f9c4-4954-45cf-a2a0-06b98c456eca))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "#FLG02") (unit 1)
         )
@@ -3753,7 +3357,7 @@
     (pin "7" (uuid d8dda1ac-ce6c-4b2d-829d-95ef2ee39fca))
     (pin "8" (uuid 3751c228-cbd9-4c33-a5fa-68c8f37ba03b))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "Q2") (unit 1)
         )
@@ -3778,7 +3382,7 @@
     )
     (pin "1" (uuid c5d05072-3099-4100-93be-51a3e9fba905))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "#PWR014") (unit 1)
         )
@@ -3804,7 +3408,7 @@
     (pin "1" (uuid 9de413ef-2cd4-41a0-92df-e65c3d2a057c))
     (pin "2" (uuid 2bc73ab5-33d3-4001-9328-1e91b3aedd60))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "C12") (unit 1)
         )
@@ -3829,7 +3433,7 @@
     )
     (pin "1" (uuid e54848f6-d626-4d2d-8548-da2c941f8284))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
           (reference "#PWR04") (unit 1)
         )
@@ -3837,18 +3441,22 @@
     )
   )
 
-  (sheet (at 17.78 130.81) (size 30.48 6.35) (fields_autoplaced)
+  (sheet (at 24.13 130.81) (size 30.48 6.35) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
     (fill (color 0 0 0 0.0000))
     (uuid 623856e4-ac9c-4239-8cfe-b647ec8c6926)
-    (property "Sheetname" "RPi_Connectors" (at 17.78 130.0984 0)
+    (property "Sheetname" "Connectors" (at 24.13 130.0984 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheetfile" "rpi_connectors.kicad_sch" (at 17.78 137.7446 0)
+    (property "Sheetfile" "connectors.kicad_sch" (at 24.13 137.7446 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
+    (pin "+5V" input (at 54.61 133.35 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid d3f5ab02-bf44-47de-9fde-af18898ae964)
+    )
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552" (page "4"))
       )
     )
@@ -3858,10 +3466,10 @@
     (stroke (width 0.1524) (type solid))
     (fill (color 0 0 0 0.0000))
     (uuid b7e05ae9-10ae-4e40-bf45-15568b55f371)
-    (property "Sheetname" "Capacitor_Banks" (at 133.35 52.6284 0)
+    (property "Sheetname" "Supply_24V_Capacitor_Banks" (at 133.35 52.6284 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheetfile" "capacitor_banks.kicad_sch" (at 133.35 66.6246 0)
+    (property "Sheetfile" "s24v_capacitor_banks.kicad_sch" (at 133.35 66.6246 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (pin "VOUT_CAP_BANK_NEGATIVE" passive (at 161.29 58.42 0)
@@ -3881,30 +3489,34 @@
       (uuid 1d5eb08d-af03-43f7-aaf5-853781fa6873)
     )
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552" (page "2"))
       )
     )
   )
 
-  (sheet (at 17.78 118.11) (size 30.48 6.35) (fields_autoplaced)
+  (sheet (at 24.13 118.11) (size 30.48 6.35) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
     (fill (color 0 0 0 0.0000))
     (uuid eeb2755d-fcb9-485d-956d-83c372a71240)
-    (property "Sheetname" "5V_Logic_Power" (at 17.78 117.3984 0)
+    (property "Sheetname" "Supply_5V" (at 24.13 117.3984 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheetfile" "5v_logic_power.kicad_sch" (at 17.78 125.0446 0)
+    (property "Sheetfile" "supply_5v.kicad_sch" (at 24.13 125.0446 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
+    (pin "+5V" output (at 54.61 120.65 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 43ed05b9-a2d2-4841-aafa-c8ee1fda4c7f)
+    )
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552" (page "3"))
       )
     )
   )
 
   (sheet_instances
-    (path "/" (page "1"))
+    (path "/" (page "3"))
   )
 )

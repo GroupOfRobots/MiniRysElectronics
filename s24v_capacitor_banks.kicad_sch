@@ -529,7 +529,7 @@
     (pin "1" (uuid 98a7e1b3-feec-4a43-afa6-0f35e7dd79c7))
     (pin "2" (uuid ffa90637-9d06-4495-9185-36dd96f18306))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/b7e05ae9-10ae-4e40-bf45-15568b55f371"
           (reference "C22") (unit 1)
         )
@@ -555,7 +555,7 @@
     (pin "1" (uuid 7e947f61-bde4-4307-96c1-297fa706d481))
     (pin "2" (uuid c81ccda7-ded7-4b50-a0ae-fb0362cfb918))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/b7e05ae9-10ae-4e40-bf45-15568b55f371"
           (reference "C27") (unit 1)
         )
@@ -581,7 +581,7 @@
     (pin "1" (uuid ab2262f4-0b4e-4073-9e81-6a90168d0b94))
     (pin "2" (uuid 0d70c1d5-f461-45a0-8fd7-5b6267580ddb))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/b7e05ae9-10ae-4e40-bf45-15568b55f371"
           (reference "C20") (unit 1)
         )
@@ -607,7 +607,7 @@
     (pin "1" (uuid 1f96c653-e659-493e-98b9-c709c3d4ba0d))
     (pin "2" (uuid bb236c13-2747-4752-8eb2-8489902d68b8))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/b7e05ae9-10ae-4e40-bf45-15568b55f371"
           (reference "C18") (unit 1)
         )
@@ -633,7 +633,7 @@
     (pin "1" (uuid 524fb7cb-f7ab-4f05-9ef6-8b3aeb7324e3))
     (pin "2" (uuid 35409b06-90e8-4284-8f1e-822733cffd2d))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/b7e05ae9-10ae-4e40-bf45-15568b55f371"
           (reference "C19") (unit 1)
         )
@@ -659,7 +659,7 @@
     (pin "1" (uuid e66d9bc8-d44e-470a-ae79-521982aa1bf8))
     (pin "2" (uuid 20f02100-32b1-4459-8f1b-431ddf30e3bb))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/b7e05ae9-10ae-4e40-bf45-15568b55f371"
           (reference "C21") (unit 1)
         )
@@ -685,7 +685,7 @@
     (pin "1" (uuid 47455834-e3d9-4022-baa7-8f69d82ea2cd))
     (pin "2" (uuid 9b69f37b-a65b-4789-b5c0-fc0addc63a55))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/b7e05ae9-10ae-4e40-bf45-15568b55f371"
           (reference "C15") (unit 1)
         )
@@ -711,7 +711,7 @@
     (pin "1" (uuid 7909b0d3-cadf-4abe-96b3-a02ce65523f7))
     (pin "2" (uuid 7d10a961-59a0-4704-afbd-cae7ae51c77e))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/b7e05ae9-10ae-4e40-bf45-15568b55f371"
           (reference "C17") (unit 1)
         )
@@ -737,7 +737,7 @@
     (pin "1" (uuid 37c1c8d3-4e7b-41e1-8160-c58dea23e05c))
     (pin "2" (uuid dfc6a913-9d57-432f-8bf4-b7cb15f34dbe))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/b7e05ae9-10ae-4e40-bf45-15568b55f371"
           (reference "C24") (unit 1)
         )
@@ -763,7 +763,7 @@
     (pin "1" (uuid 4f31bfce-192b-4cd7-ae57-61b36a8994e5))
     (pin "2" (uuid 5a97e87f-9c82-4e4d-b893-bddada7108fc))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/b7e05ae9-10ae-4e40-bf45-15568b55f371"
           (reference "C16") (unit 1)
         )
@@ -789,7 +789,7 @@
     (pin "1" (uuid 03a6ca9f-a16e-41c9-8c2d-46825287458c))
     (pin "2" (uuid 94aebd40-e91c-4b4b-aabf-dafc00578dce))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/b7e05ae9-10ae-4e40-bf45-15568b55f371"
           (reference "C29") (unit 1)
         )
@@ -815,7 +815,7 @@
     (pin "1" (uuid 0e1e3757-b2ce-4b59-a6d6-8a35da979741))
     (pin "2" (uuid bac4fc71-1226-48ae-bc8a-80b2d09ab42f))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/b7e05ae9-10ae-4e40-bf45-15568b55f371"
           (reference "C28") (unit 1)
         )
@@ -841,7 +841,7 @@
     (pin "1" (uuid e9627e67-d296-4b5e-b7a1-5f25c885e2e6))
     (pin "2" (uuid 67ffab10-7353-47c3-82a7-72835937c452))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/b7e05ae9-10ae-4e40-bf45-15568b55f371"
           (reference "C31") (unit 1)
         )
@@ -867,7 +867,7 @@
     (pin "1" (uuid 955216c6-6d7c-4a0d-aebb-7c7fca204df0))
     (pin "2" (uuid 2eff3f90-7172-4087-9834-b787b0ddcffb))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/b7e05ae9-10ae-4e40-bf45-15568b55f371"
           (reference "C32") (unit 1)
         )
@@ -893,7 +893,7 @@
     (pin "1" (uuid efeb97fc-59af-49d1-9c53-8285bf4dc43d))
     (pin "2" (uuid 0efd8828-bba9-4c73-9462-cc8fff363d2b))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/b7e05ae9-10ae-4e40-bf45-15568b55f371"
           (reference "C25") (unit 1)
         )
@@ -919,7 +919,7 @@
     (pin "1" (uuid ade816bb-aa2d-4f50-99f6-72fa311a423f))
     (pin "2" (uuid 5779047c-7e37-4073-950e-adc3fab5c9e0))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/b7e05ae9-10ae-4e40-bf45-15568b55f371"
           (reference "C23") (unit 1)
         )
@@ -945,7 +945,7 @@
     (pin "1" (uuid 417fe153-5ae6-4d09-8e24-607145ebb061))
     (pin "2" (uuid becfcc82-a42e-48cd-bea8-9d6121cef39e))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/b7e05ae9-10ae-4e40-bf45-15568b55f371"
           (reference "C26") (unit 1)
         )
@@ -971,7 +971,7 @@
     (pin "1" (uuid ee87e868-24df-43eb-b5af-78809b86b947))
     (pin "2" (uuid 3be440f4-2a34-401a-b773-6d332a16851d))
     (instances
-      (project "PSU_module_minirys"
+      (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/b7e05ae9-10ae-4e40-bf45-15568b55f371"
           (reference "C30") (unit 1)
         )

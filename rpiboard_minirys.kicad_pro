@@ -418,7 +418,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "PSU_module_minirys.kicad_pro",
+    "filename": "rpiboard_minirys.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -503,20 +503,20 @@
   },
   "sheets": [
     [
+      "b7e05ae9-10ae-4e40-bf45-15568b55f371",
+      "Supply_24V_Capacitor_Banks"
+    ],
+    [
       "83ec67aa-411e-440d-8530-858fb57a6552",
       ""
     ],
     [
-      "b7e05ae9-10ae-4e40-bf45-15568b55f371",
-      "Capacitor_Banks"
-    ],
-    [
       "eeb2755d-fcb9-485d-956d-83c372a71240",
-      "5V_Logic_Power"
+      "Supply_5V"
     ],
     [
       "623856e4-ac9c-4239-8cfe-b647ec8c6926",
-      "RPi_Connectors"
+      "Connectors"
     ]
   ],
   "text_variables": {}
