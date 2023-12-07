@@ -6,8 +6,8 @@
 
   (title_block
     (title "5V Supply")
-    (date "2023-11-23")
-    (rev "0.1")
+    (date "2023-11-29")
+    (rev "1.0")
   )
 
   (lib_symbols
@@ -218,6 +218,58 @@
         (pin passive line (at 27.94 -5.08 180) (length 5.08)
           (name "FB" (effects (font (size 1.27 1.27))))
           (number "6" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "power:+5V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "+5V" (at 0 3.556 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "global power" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Power symbol creates a global label with name \"+5V\"" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "+5V_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "+5V_1_1"
+        (pin power_in line (at 0 0 90) (length 0) hide
+          (name "+5V" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
         )
       )
     )
@@ -503,6 +555,10 @@
     (stroke (width 0) (type default))
     (uuid a7b6967f-a494-4aef-9fdd-fa3eb52a8b7b)
   )
+  (wire (pts (xy 29.21 50.8) (xy 29.21 53.34))
+    (stroke (width 0) (type default))
+    (uuid a8c8d227-0862-4cea-822c-d90be666d2eb)
+  )
   (wire (pts (xy 55.88 53.34) (xy 63.5 53.34))
     (stroke (width 0) (type default))
     (uuid b2673c0a-345a-4d2a-8891-e447e13224b6)
@@ -575,11 +631,6 @@
     (uuid a39b2863-63cc-4988-b798-049317640e60)
   )
 
-  (hierarchical_label "+5V" (shape output) (at 29.21 53.34 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 3fa70a96-bc2a-40be-bb23-b291bf64e145)
-  )
-
   (symbol (lib_id "Device:C") (at 55.88 57.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2226c9a6-f864-4460-bc84-f36728cf60c2)
@@ -595,8 +646,8 @@
     (property "Datasheet" "~" (at 55.88 57.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 70177d3f-4cb1-46ee-a15a-4453dd27b4d1))
-    (pin "2" (uuid dadba8f6-1fc0-4251-889c-e3f3d279e3e5))
+    (pin "1" (uuid 31c0674c-092e-4537-b1a9-c07de34eb485))
+    (pin "2" (uuid 5414ec79-1da1-483a-abf5-5f75970a9a00))
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
@@ -604,6 +655,31 @@
         )
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/eeb2755d-fcb9-485d-956d-83c372a71240"
           (reference "C38") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+5V") (at 29.21 50.8 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 41e33d2d-9f3f-4631-a91e-7eb00b9d309e)
+    (property "Reference" "#PWR032" (at 29.21 54.61 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+5V" (at 29.21 45.72 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 29.21 50.8 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 29.21 50.8 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid f42bf817-72ed-4ddd-bdd6-3c6b937c1479))
+    (instances
+      (project "rpiboard_minirys"
+        (path "/83ec67aa-411e-440d-8530-858fb57a6552/eeb2755d-fcb9-485d-956d-83c372a71240"
+          (reference "#PWR032") (unit 1)
         )
       )
     )
@@ -624,8 +700,8 @@
     (property "Datasheet" "~" (at 66.04 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 917a8d38-6b5f-45e1-a428-eed7bed5c2a2))
-    (pin "2" (uuid 8e7dbc72-f193-4301-a73f-cc83c32339f3))
+    (pin "1" (uuid 75ab527e-b968-4200-9824-67d9acc3a541))
+    (pin "2" (uuid fbe157f3-a93b-44cc-b5c6-76a5ed2540e7))
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
@@ -653,7 +729,7 @@
     (property "Datasheet" "" (at 53.34 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d2b9bdaa-f8a0-4260-a1c3-e6a7c2fcf9fa))
+    (pin "1" (uuid 86d0a45b-a72f-407b-b559-4aa519a10e59))
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
@@ -681,8 +757,8 @@
     (property "Datasheet" "~" (at 31.75 57.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0893888f-4c76-4c00-b948-e5179237ba3b))
-    (pin "2" (uuid d7b2e420-776c-46b2-a52b-5bdb37524ca9))
+    (pin "1" (uuid 3cc82654-7035-4cac-b553-128cb064436d))
+    (pin "2" (uuid ec56e180-1c11-4b2c-ad96-204e978e9761))
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
@@ -710,8 +786,8 @@
     (property "Datasheet" "~" (at 132.08 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 89ae4401-e95a-47b6-8cc4-7102cd31ab18))
-    (pin "2" (uuid cbc76fc6-f684-40ae-a3a4-aa3e29f412d6))
+    (pin "1" (uuid 1e9390ad-16f4-4c7f-b399-37532c8b0385))
+    (pin "2" (uuid 777c582c-edd2-4ba4-a281-6890ffbc28bd))
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
@@ -739,7 +815,7 @@
     (property "Datasheet" "" (at 36.83 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 86feefba-ccaf-461f-b461-a776f38526dd))
+    (pin "1" (uuid 551d3543-f1da-4cf3-a442-c8c370e04e97))
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
@@ -767,8 +843,8 @@
     (property "Datasheet" "~" (at 132.08 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 21229374-2895-4084-829c-91b380e22d0e))
-    (pin "2" (uuid cd0925df-9b95-453b-9844-5fc54d7ff63a))
+    (pin "1" (uuid 211a5250-ae81-4319-a6d5-55fde5d1f83c))
+    (pin "2" (uuid ac21104a-5d44-4cf5-9398-5978678b6224))
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
@@ -796,7 +872,7 @@
     (property "Datasheet" "" (at 127 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 8a9b308d-d064-41a9-a9e7-a9afd01b59bd))
+    (pin "1" (uuid 13e7c0ce-1313-4ca9-898a-ccc7bcddd418))
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
@@ -824,8 +900,8 @@
     (property "Datasheet" "~" (at 110.49 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ee755a59-3340-4d46-a16b-75e859d748a1))
-    (pin "2" (uuid f1ec4c1a-44ea-49de-8854-35c4fc6ca43e))
+    (pin "1" (uuid efa8a972-8651-486c-a36f-b3c331d027c4))
+    (pin "2" (uuid d0273ee3-d05c-4a79-92a3-1d2ab885c669))
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
@@ -853,8 +929,8 @@
     (property "Datasheet" "~" (at 60.96 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 281085a1-a55c-4c39-8c11-b2831af7dc73))
-    (pin "2" (uuid 72458df4-991e-47e9-9ede-011f1675ab97))
+    (pin "1" (uuid 45778711-5bf4-4a20-b8c6-fd6f03ffafa7))
+    (pin "2" (uuid 94df901d-c75b-4ea5-9bfb-e94f203c7edf))
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
@@ -882,8 +958,8 @@
     (property "Datasheet" "~" (at 66.04 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 041998f9-fc10-4475-b26b-99448d541eff))
-    (pin "2" (uuid c7fd8722-594e-4f9e-b8e9-5b3212ca4129))
+    (pin "1" (uuid 102212df-5152-4f2c-a038-bf081151ba67))
+    (pin "2" (uuid 6b7bfb98-b0ed-4cbc-91ed-629739a952be))
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
@@ -926,8 +1002,8 @@
     (property "Manufacturer_Part_Number" "SRP6050CA-1R8M" (at 85.09 844.45 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
-    (pin "1" (uuid 0b4f215d-d470-494c-9fdc-eef6737d1768))
-    (pin "2" (uuid 201e142b-e817-4807-be44-57c3ecec44cb))
+    (pin "1" (uuid 1395d53d-7c2d-4459-9ffe-b754c44d0c64))
+    (pin "2" (uuid ecd4d3ac-2945-48d4-8e49-46447aaf1d91))
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
@@ -955,7 +1031,7 @@
     (property "Datasheet" "" (at 31.75 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ea230049-3bde-40df-96e0-a169dbc1056a))
+    (pin "1" (uuid f58b20a3-f024-4c92-8ce9-64e4271412bc))
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
@@ -983,8 +1059,8 @@
     (property "Datasheet" "~" (at 72.39 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 84f17e0b-9b49-49ca-97f4-84f6a5c1f33b))
-    (pin "2" (uuid 489592f8-d5b7-4a65-854d-c7378cacdd5b))
+    (pin "1" (uuid 7480c895-6243-4c21-8538-250d4f82b35a))
+    (pin "2" (uuid b5055a6a-fad6-4bfd-aea2-0fbf7944e53c))
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
@@ -1012,8 +1088,8 @@
     (property "Datasheet" "~" (at 44.45 57.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f9225ce7-b8c2-4060-901a-91c30d431d53))
-    (pin "2" (uuid cff14ff4-e46c-4495-acf0-df7d9379a13d))
+    (pin "1" (uuid d3ce34b3-01dc-4e5a-bed1-ce528a595abf))
+    (pin "2" (uuid 57cb909f-6142-4e21-b44d-1a3a7961cf64))
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
@@ -1041,8 +1117,8 @@
     (property "Datasheet" "~" (at 49.53 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 07c8f5de-2d51-4994-9575-7f0313d71769))
-    (pin "2" (uuid 5df0799d-b45b-40bb-bfd7-af6de3dc5485))
+    (pin "1" (uuid 8359032c-8a23-45be-a472-304f2c50f371))
+    (pin "2" (uuid fb275734-14dd-46c7-8076-fc66e23c2681))
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
@@ -1085,12 +1161,12 @@
     (property "Manufacturer_Part_Number" "TPS564242DRLR" (at 120.65 840.64 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
-    (pin "1" (uuid 10a922b2-18b3-4525-b38e-60d809eec5af))
-    (pin "2" (uuid 15f8ff08-2f63-4c44-a215-8f6aa89eaddb))
-    (pin "3" (uuid 043ab4ab-db60-43d7-935c-5c4135d6a36a))
-    (pin "4" (uuid 87b3cd76-dfec-4efb-b995-7a02b3456ee2))
-    (pin "5" (uuid 87618866-eec3-4ebc-bbe1-2b11f26fce2f))
-    (pin "6" (uuid 04e76223-e922-45ff-a6b5-9e1be6120c6c))
+    (pin "1" (uuid f10c2418-86c8-43b0-af27-d157e7e2d7d1))
+    (pin "2" (uuid 7b915039-9dfc-42a8-be0a-c0341a71b516))
+    (pin "3" (uuid b153f819-d379-4793-8b6b-b4613839837f))
+    (pin "4" (uuid 02b3e604-7fe6-422b-8546-cf780d30e897))
+    (pin "5" (uuid cc65054a-daf6-4a05-969e-bd5c420abb23))
+    (pin "6" (uuid 9146be91-0c9d-408f-9775-fbbfc9b3de65))
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
@@ -1118,7 +1194,7 @@
     (property "Datasheet" "" (at 132.08 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 270be258-54fe-406f-89f7-0976931d9a29))
+    (pin "1" (uuid d3b01eab-99d9-448e-a88b-d7c47dc4f2ad))
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"
@@ -1146,7 +1222,7 @@
     (property "Datasheet" "" (at 66.04 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid be0dc23b-0fd0-49c0-81f0-66ca09eb9404))
+    (pin "1" (uuid fe94cd26-31bf-4941-b24b-640061874679))
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552"

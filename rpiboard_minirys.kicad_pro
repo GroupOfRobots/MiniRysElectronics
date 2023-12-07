@@ -446,7 +446,12 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Default",
+        "pattern": "+5V"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -503,16 +508,24 @@
   },
   "sheets": [
     [
-      "b7e05ae9-10ae-4e40-bf45-15568b55f371",
-      "Supply_24V_Capacitor_Banks"
-    ],
-    [
       "83ec67aa-411e-440d-8530-858fb57a6552",
       ""
     ],
     [
+      "6952b547-6ca1-4f8a-92dd-aedcfe54773f",
+      "Supply_24V"
+    ],
+    [
       "eeb2755d-fcb9-485d-956d-83c372a71240",
       "Supply_5V"
+    ],
+    [
+      "5ea3db34-fb98-4d93-9a2f-b6923f5ab769",
+      "Motor_Controllers"
+    ],
+    [
+      "00586568-8772-4c90-848b-1a0bf93621fb",
+      "Peripherals"
     ],
     [
       "623856e4-ac9c-4239-8cfe-b647ec8c6926",
