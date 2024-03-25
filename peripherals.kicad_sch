@@ -6,8 +6,8 @@
 
   (title_block
     (title "Additional Circuitry")
-    (date "2023-12-07")
-    (rev "0.1")
+    (date "2024-01-27")
+    (rev "1.0")
   )
 
   (lib_symbols
@@ -703,6 +703,9 @@
   (junction (at 100.33 49.53) (diameter 0) (color 0 0 0 0)
     (uuid b6ad7ca5-7f7e-4cbe-84c7-c21168498981)
   )
+  (junction (at 105.41 111.76) (diameter 0) (color 0 0 0 0)
+    (uuid b7b9acc6-d092-4b35-b707-63f47eb78098)
+  )
   (junction (at 147.32 58.42) (diameter 0) (color 0 0 0 0)
     (uuid cc520420-e643-4ff0-8343-6c054ec77f32)
   )
@@ -714,6 +717,9 @@
   )
   (junction (at 115.57 125.73) (diameter 0) (color 0 0 0 0)
     (uuid eeccd610-142f-4621-b812-9163253efcb8)
+  )
+  (junction (at 115.57 118.11) (diameter 0) (color 0 0 0 0)
+    (uuid f3cbf4bc-acc2-49bb-97e1-79a368bb56a6)
   )
 
   (wire (pts (xy 105.41 128.27) (xy 106.68 128.27))
@@ -740,6 +746,10 @@
     (stroke (width 0) (type default))
     (uuid 1311cba0-7f47-43d1-b187-adc1819a4e4d)
   )
+  (wire (pts (xy 114.3 111.76) (xy 115.57 111.76))
+    (stroke (width 0) (type default))
+    (uuid 15a77570-138e-45e9-8a05-261319f92a1b)
+  )
   (wire (pts (xy 83.82 49.53) (xy 90.17 49.53))
     (stroke (width 0) (type default))
     (uuid 1d011d2c-f239-43e8-a5d5-3c037e30889c)
@@ -756,7 +766,7 @@
     (stroke (width 0) (type default))
     (uuid 223cd70a-8161-459f-b7de-8f4a95a787f8)
   )
-  (wire (pts (xy 105.41 109.22) (xy 105.41 118.11))
+  (wire (pts (xy 105.41 109.22) (xy 105.41 111.76))
     (stroke (width 0) (type default))
     (uuid 22ee6d4c-0596-4e89-ab42-b2503e97dd49)
   )
@@ -792,6 +802,10 @@
     (stroke (width 0) (type default))
     (uuid 3f2945f3-30c5-4330-836d-4bf910e074ef)
   )
+  (wire (pts (xy 105.41 111.76) (xy 106.68 111.76))
+    (stroke (width 0) (type default))
+    (uuid 40b3bfa4-ddf5-4c2a-8a9a-bba8e183da2c)
+  )
   (wire (pts (xy 52.07 83.82) (xy 52.07 87.63))
     (stroke (width 0) (type default))
     (uuid 48c76ce5-58bc-4a83-83c1-a11c95405b26)
@@ -800,7 +814,7 @@
     (stroke (width 0) (type default))
     (uuid 4f2faa08-6cfa-4bc9-84e6-622989abe585)
   )
-  (wire (pts (xy 165.1 40.64) (xy 165.1 43.18))
+  (wire (pts (xy 165.1 41.91) (xy 165.1 43.18))
     (stroke (width 0) (type default))
     (uuid 524bb5c3-a9a6-44b7-a92f-2ec84e61d288)
   )
@@ -843,6 +857,10 @@
   (wire (pts (xy 105.41 130.81) (xy 106.68 130.81))
     (stroke (width 0) (type default))
     (uuid 7a970c80-2c07-41dc-9f30-e19192aec193)
+  )
+  (wire (pts (xy 115.57 111.76) (xy 115.57 118.11))
+    (stroke (width 0) (type default))
+    (uuid 7bd54122-e1d6-41b8-a8c9-b62e40a8e6c3)
   )
   (wire (pts (xy 55.88 139.7) (xy 55.88 142.24))
     (stroke (width 0) (type default))
@@ -952,6 +970,10 @@
     (stroke (width 0) (type default))
     (uuid c4e42337-4f55-442e-9997-50ab99921d78)
   )
+  (wire (pts (xy 105.41 111.76) (xy 105.41 118.11))
+    (stroke (width 0) (type default))
+    (uuid c68378e0-1beb-4ab1-874b-1bc34bd9d38e)
+  )
   (wire (pts (xy 110.49 72.39) (xy 113.03 72.39))
     (stroke (width 0) (type default))
     (uuid c6ca8f58-b355-4dae-9c40-edee4e27e224)
@@ -1026,7 +1048,7 @@
     (fill (type none))
     (uuid 7d2a91ae-e4a7-4ca1-b713-ad5bd3584cf3)
   )
-  (rectangle (start 133.35 25.4) (end 184.15 77.47)
+  (rectangle (start 133.35 25.4) (end 184.15 78.74)
     (stroke (width 0) (type default))
     (fill (type none))
     (uuid acab1695-db8a-4ae5-9645-3a27d445fd0e)
@@ -1037,8 +1059,8 @@
     (uuid b1bba0b2-62f0-40a7-a1a7-a04ef9bfe2d3)
   )
 
-  (text_box "Flyback Diode must be as\nclose as possible to the connector\n(doesn't matter with BLDC fans)"
-    (at 134.62 26.67 0) (size 36.83 7.62)
+  (text_box "Flyback Diode must be as\nclose as possible to the connector\n(though it doesn't matter with BLDC fans)"
+    (at 134.62 26.67 0) (size 43.18 7.62)
     (stroke (width 0) (type default))
     (fill (type color) (color 255 255 80 1))
     (effects (font (size 1.27 1.27)) (justify left top))
@@ -1051,8 +1073,15 @@
     (effects (font (size 1.27 1.27)) (justify left top))
     (uuid 2e5b746b-495d-4a90-8221-74e126f189fd)
   )
+  (text_box "The device's analog and digital ground planes should be separated and connected together at a \"star point\""
+    (at 86.36 142.24 0) (size 40.64 7.62)
+    (stroke (width 0) (type default))
+    (fill (type color) (color 255 255 80 1))
+    (effects (font (size 1.27 1.27)) (justify left top))
+    (uuid fb1b55e2-f8dd-46ee-8305-000b682d7385)
+  )
 
-  (text "External Fan" (at 133.35 80.01 0)
+  (text "External Fan" (at 133.35 81.28 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 1408c2da-7592-4a2e-8fdb-41f068c050ca)
   )
@@ -1105,7 +1134,7 @@
   (symbol (lib_id "power:GND") (at 147.32 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 03f87063-a013-4614-959a-c6cbdbf7b384)
-    (property "Reference" "#PWR0157" (at 147.32 77.47 0)
+    (property "Reference" "#PWR0158" (at 147.32 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 147.32 76.2 0)
@@ -1121,7 +1150,7 @@
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/00586568-8772-4c90-848b-1a0bf93621fb"
-          (reference "#PWR0157") (unit 1)
+          (reference "#PWR0158") (unit 1)
         )
       )
     )
@@ -1130,7 +1159,7 @@
   (symbol (lib_id "Device:R") (at 93.98 54.61 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2a6fed09-1835-4b39-a45f-9214bf28eb2a)
-    (property "Reference" "R41" (at 93.98 58.42 90)
+    (property "Reference" "R31" (at 93.98 58.42 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "150R" (at 93.98 60.96 90)
@@ -1147,7 +1176,7 @@
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/00586568-8772-4c90-848b-1a0bf93621fb"
-          (reference "R41") (unit 1)
+          (reference "R31") (unit 1)
         )
       )
     )
@@ -1156,7 +1185,7 @@
   (symbol (lib_id "Device:Q_NMOS_GSD") (at 95.25 72.39 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2d099082-9832-4b7a-b10b-2c89661cb012)
-    (property "Reference" "Q6" (at 88.9 71.12 0)
+    (property "Reference" "Q5" (at 88.9 71.12 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "DMG1012T-7" (at 88.9 73.66 0)
@@ -1174,7 +1203,7 @@
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/00586568-8772-4c90-848b-1a0bf93621fb"
-          (reference "Q6") (unit 1)
+          (reference "Q5") (unit 1)
         )
       )
     )
@@ -1183,7 +1212,7 @@
   (symbol (lib_id "Device:R") (at 38.1 118.11 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4d71ba25-1b46-47a0-9dd7-5bc32ac65f9d)
-    (property "Reference" "R31" (at 40.64 116.84 0)
+    (property "Reference" "R36" (at 40.64 116.84 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "15k" (at 40.64 119.38 0)
@@ -1200,32 +1229,32 @@
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/00586568-8772-4c90-848b-1a0bf93621fb"
-          (reference "R31") (unit 1)
+          (reference "R36") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:+5V") (at 165.1 40.64 0) (unit 1)
+  (symbol (lib_id "power:+5V") (at 165.1 41.91 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5daa8f4f-af1e-4e3e-a245-34dc0cf7a9ff)
-    (property "Reference" "#PWR0156" (at 165.1 44.45 0)
+    (property "Reference" "#PWR0159" (at 165.1 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+5V" (at 165.1 35.56 0)
+    (property "Value" "+5V" (at 165.1 36.83 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 165.1 40.64 0)
+    (property "Footprint" "" (at 165.1 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 165.1 40.64 0)
+    (property "Datasheet" "" (at 165.1 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 23cd2e1c-d3df-49ff-aa44-c84f071a12da))
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/00586568-8772-4c90-848b-1a0bf93621fb"
-          (reference "#PWR0156") (unit 1)
+          (reference "#PWR0159") (unit 1)
         )
       )
     )
@@ -1234,7 +1263,7 @@
   (symbol (lib_id "Device:R") (at 110.49 78.74 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 64714dbd-b4e0-4681-8f0e-c43f96323b11)
-    (property "Reference" "R43" (at 113.03 77.47 0)
+    (property "Reference" "R33" (at 113.03 77.47 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100k" (at 113.03 80.01 0)
@@ -1251,7 +1280,7 @@
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/00586568-8772-4c90-848b-1a0bf93621fb"
-          (reference "R43") (unit 1)
+          (reference "R33") (unit 1)
         )
       )
     )
@@ -1260,7 +1289,7 @@
   (symbol (lib_id "Device:R") (at 55.88 135.89 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 68dae270-0e23-4bbb-acb6-e15e1308524d)
-    (property "Reference" "R36" (at 58.42 134.62 0)
+    (property "Reference" "R41" (at 58.42 134.62 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 58.42 137.16 0)
@@ -1277,7 +1306,7 @@
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/00586568-8772-4c90-848b-1a0bf93621fb"
-          (reference "R36") (unit 1)
+          (reference "R41") (unit 1)
         )
       )
     )
@@ -1286,7 +1315,7 @@
   (symbol (lib_id "Device:R") (at 46.99 118.11 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6c8d720b-2418-4be5-96aa-c2adb52aa886)
-    (property "Reference" "R33" (at 49.53 116.84 0)
+    (property "Reference" "R38" (at 49.53 116.84 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "36k" (at 49.53 119.38 0)
@@ -1303,7 +1332,7 @@
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/00586568-8772-4c90-848b-1a0bf93621fb"
-          (reference "R33") (unit 1)
+          (reference "R38") (unit 1)
         )
       )
     )
@@ -1312,7 +1341,7 @@
   (symbol (lib_id "power:+3.3V") (at 105.41 109.22 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 71af545c-ba43-40c2-b04b-ae7654e19e5d)
-    (property "Reference" "#PWR0152" (at 105.41 113.03 0)
+    (property "Reference" "#PWR0154" (at 105.41 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 105.41 104.14 0)
@@ -1328,7 +1357,7 @@
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/00586568-8772-4c90-848b-1a0bf93621fb"
-          (reference "#PWR0152") (unit 1)
+          (reference "#PWR0154") (unit 1)
         )
       )
     )
@@ -1337,7 +1366,7 @@
   (symbol (lib_id "power:GND") (at 52.07 87.63 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 76576a0c-2667-4d7d-9125-4277ecf62898)
-    (property "Reference" "#PWR0155" (at 52.07 93.98 0)
+    (property "Reference" "#PWR0157" (at 52.07 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 52.07 92.71 0)
@@ -1353,7 +1382,7 @@
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/00586568-8772-4c90-848b-1a0bf93621fb"
-          (reference "#PWR0155") (unit 1)
+          (reference "#PWR0157") (unit 1)
         )
       )
     )
@@ -1362,7 +1391,7 @@
   (symbol (lib_id "Device:Q_NMOS_GSD") (at 55.88 72.39 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7d456326-4eca-4ed2-a0c8-d55fb46b7c54)
-    (property "Reference" "Q5" (at 62.23 71.12 0)
+    (property "Reference" "Q4" (at 62.23 71.12 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "DMG1012T-7" (at 62.23 73.66 0)
@@ -1380,7 +1409,7 @@
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/00586568-8772-4c90-848b-1a0bf93621fb"
-          (reference "Q5") (unit 1)
+          (reference "Q4") (unit 1)
         )
       )
     )
@@ -1389,7 +1418,7 @@
   (symbol (lib_id "Device:R") (at 55.88 118.11 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7fe9a371-f54c-4099-9650-e7838ec8ec25)
-    (property "Reference" "R35" (at 58.42 116.84 0)
+    (property "Reference" "R40" (at 58.42 116.84 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "56k" (at 58.42 119.38 0)
@@ -1406,7 +1435,7 @@
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/00586568-8772-4c90-848b-1a0bf93621fb"
-          (reference "R35") (unit 1)
+          (reference "R40") (unit 1)
         )
       )
     )
@@ -1415,7 +1444,7 @@
   (symbol (lib_id "Device:R") (at 105.41 72.39 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 81efa90c-79a7-4710-8cc1-1825f87fffb6)
-    (property "Reference" "R42" (at 105.41 66.04 90)
+    (property "Reference" "R32" (at 105.41 66.04 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "150R" (at 105.41 68.58 90)
@@ -1432,7 +1461,7 @@
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/00586568-8772-4c90-848b-1a0bf93621fb"
-          (reference "R42") (unit 1)
+          (reference "R32") (unit 1)
         )
       )
     )
@@ -1444,17 +1473,17 @@
     (property "Reference" "D3" (at 167.64 45.4025 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "STPST1H100AF" (at 167.64 47.9425 90)
+    (property "Value" "BAT54GWX" (at 167.64 47.9425 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "parts:SODFL4724X103N" (at 165.1 46.99 0)
+    (property "Footprint" "parts:SOD123" (at 165.1 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 165.1 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 04b18004-0ca5-4846-ad5d-58bec0dd4ded))
-    (pin "2" (uuid dcdb691d-dfbc-4f23-aaed-a3c1828a2d74))
+    (pin "1" (uuid 1172da85-df13-41eb-a6db-20595b8f2034))
+    (pin "2" (uuid ea50318f-f60a-474a-ae6f-fff5e8eb9969))
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/00586568-8772-4c90-848b-1a0bf93621fb"
@@ -1467,7 +1496,7 @@
   (symbol (lib_id "power:GND") (at 124.46 127 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 981c4019-33f3-49f1-be2c-301c98afda95)
-    (property "Reference" "#PWR0153" (at 124.46 133.35 0)
+    (property "Reference" "#PWR0155" (at 124.46 133.35 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 124.46 132.08 0)
@@ -1483,7 +1512,7 @@
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/00586568-8772-4c90-848b-1a0bf93621fb"
-          (reference "#PWR0153") (unit 1)
+          (reference "#PWR0155") (unit 1)
         )
       )
     )
@@ -1492,7 +1521,7 @@
   (symbol (lib_id "power:GND") (at 38.1 143.51 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 98f80089-0074-4a21-9135-ea769c08c444)
-    (property "Reference" "#PWR0151" (at 38.1 149.86 0)
+    (property "Reference" "#PWR0153" (at 38.1 149.86 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 38.1 148.59 0)
@@ -1508,7 +1537,7 @@
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/00586568-8772-4c90-848b-1a0bf93621fb"
-          (reference "#PWR0151") (unit 1)
+          (reference "#PWR0153") (unit 1)
         )
       )
     )
@@ -1517,7 +1546,7 @@
   (symbol (lib_id "Device:R") (at 93.98 49.53 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9d189b81-0b6e-4455-a559-ccec0d9e460b)
-    (property "Reference" "R40" (at 93.98 43.18 90)
+    (property "Reference" "R30" (at 93.98 43.18 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "150R" (at 93.98 45.72 90)
@@ -1534,7 +1563,7 @@
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/00586568-8772-4c90-848b-1a0bf93621fb"
-          (reference "R40") (unit 1)
+          (reference "R30") (unit 1)
         )
       )
     )
@@ -1569,12 +1598,12 @@
   )
 
   (symbol (lib_id "Device:C") (at 110.49 118.11 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid be5a129b-ee1f-43ad-a601-d36f96310762)
-    (property "Reference" "C35" (at 110.49 110.49 90)
+    (property "Reference" "C44" (at 110.49 121.92 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "100nF" (at 110.49 113.03 90)
+    (property "Value" "100nF" (at 110.49 124.46 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 114.3 117.1448 0)
@@ -1588,7 +1617,7 @@
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/00586568-8772-4c90-848b-1a0bf93621fb"
-          (reference "C35") (unit 1)
+          (reference "C44") (unit 1)
         )
       )
     )
@@ -1597,7 +1626,7 @@
   (symbol (lib_id "Device:Q_NMOS_GSD") (at 162.56 58.42 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bf83b7c6-a461-41c2-ae3e-7d751d1d07a8)
-    (property "Reference" "Q4" (at 168.91 57.15 0)
+    (property "Reference" "Q6" (at 168.91 57.15 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "DMG1012T-7" (at 168.91 59.69 0)
@@ -1615,7 +1644,7 @@
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/00586568-8772-4c90-848b-1a0bf93621fb"
-          (reference "Q4") (unit 1)
+          (reference "Q6") (unit 1)
         )
       )
     )
@@ -1624,7 +1653,7 @@
   (symbol (lib_id "Device:R") (at 152.4 58.42 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bfed458d-3fce-43af-b70c-2a4619f2f3cf)
-    (property "Reference" "R30" (at 152.4 52.07 90)
+    (property "Reference" "R35" (at 152.4 52.07 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "150R" (at 152.4 54.61 90)
@@ -1641,7 +1670,7 @@
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/00586568-8772-4c90-848b-1a0bf93621fb"
-          (reference "R30") (unit 1)
+          (reference "R35") (unit 1)
         )
       )
     )
@@ -1650,7 +1679,7 @@
   (symbol (lib_id "power:+5V") (at 100.33 46.99 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c2d2608a-ce2d-41a6-9dc3-dd1ac5d2d2b1)
-    (property "Reference" "#PWR0154" (at 100.33 50.8 0)
+    (property "Reference" "#PWR0156" (at 100.33 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 100.33 41.91 0)
@@ -1666,7 +1695,7 @@
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/00586568-8772-4c90-848b-1a0bf93621fb"
-          (reference "#PWR0154") (unit 1)
+          (reference "#PWR0156") (unit 1)
         )
       )
     )
@@ -1675,7 +1704,7 @@
   (symbol (lib_id "Device:R") (at 38.1 135.89 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cc107bc9-d1a8-4287-bb62-73e65225bce6)
-    (property "Reference" "R32" (at 40.64 134.62 0)
+    (property "Reference" "R37" (at 40.64 134.62 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 40.64 137.16 0)
@@ -1692,7 +1721,7 @@
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/00586568-8772-4c90-848b-1a0bf93621fb"
-          (reference "R32") (unit 1)
+          (reference "R37") (unit 1)
         )
       )
     )
@@ -1748,7 +1777,7 @@
   (symbol (lib_id "Device:R") (at 46.99 135.89 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d63df07f-3737-47a4-bc5c-ea0554b534b9)
-    (property "Reference" "R34" (at 49.53 134.62 0)
+    (property "Reference" "R39" (at 49.53 134.62 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 49.53 137.16 0)
@@ -1765,7 +1794,7 @@
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/00586568-8772-4c90-848b-1a0bf93621fb"
-          (reference "R34") (unit 1)
+          (reference "R39") (unit 1)
         )
       )
     )
@@ -1774,7 +1803,7 @@
   (symbol (lib_id "Device:R") (at 45.72 72.39 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d7de059c-55ab-4de9-99ef-3c6a645340ef)
-    (property "Reference" "R39" (at 45.72 66.04 90)
+    (property "Reference" "R29" (at 45.72 66.04 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "150R" (at 45.72 68.58 90)
@@ -1791,7 +1820,39 @@
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/00586568-8772-4c90-848b-1a0bf93621fb"
-          (reference "R39") (unit 1)
+          (reference "R29") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:C") (at 110.49 111.76 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid e198fc9c-b4a2-464e-90cb-0065ce347996)
+    (property "Reference" "C4" (at 115.57 106.68 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "4.7uF" (at 115.57 109.22 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 114.3 110.7948 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.mouser.pl/datasheet/2/585/MLCC-1837944.pdf" (at 110.49 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 93dccb9f-c9f0-4853-b6e4-5b4b2bf14898))
+    (pin "2" (uuid af65bee6-7858-4aea-9eb3-44e8ab936e5d))
+    (instances
+      (project "rpiboard_minirys"
+        (path "/83ec67aa-411e-440d-8530-858fb57a6552"
+          (reference "C4") (unit 1)
+        )
+        (path "/83ec67aa-411e-440d-8530-858fb57a6552/6952b547-6ca1-4f8a-92dd-aedcfe54773f"
+          (reference "C3") (unit 1)
+        )
+        (path "/83ec67aa-411e-440d-8530-858fb57a6552/00586568-8772-4c90-848b-1a0bf93621fb"
+          (reference "C43") (unit 1)
         )
       )
     )
@@ -1800,7 +1861,7 @@
   (symbol (lib_id "Device:R") (at 40.64 78.74 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e877ecfb-7d12-4e7a-b3cf-8c6f23f14ed7)
-    (property "Reference" "R38" (at 43.18 77.47 0)
+    (property "Reference" "R28" (at 43.18 77.47 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100k" (at 43.18 80.01 0)
@@ -1817,7 +1878,7 @@
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/00586568-8772-4c90-848b-1a0bf93621fb"
-          (reference "R38") (unit 1)
+          (reference "R28") (unit 1)
         )
       )
     )
@@ -1826,7 +1887,7 @@
   (symbol (lib_id "Device:R") (at 147.32 64.77 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f3a3a640-6cac-41f8-a2e6-7f72aadfdd5e)
-    (property "Reference" "R29" (at 149.86 63.5 0)
+    (property "Reference" "R34" (at 149.86 63.5 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100k" (at 149.86 66.04 0)
@@ -1843,7 +1904,7 @@
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/00586568-8772-4c90-848b-1a0bf93621fb"
-          (reference "R29") (unit 1)
+          (reference "R34") (unit 1)
         )
       )
     )
@@ -1852,7 +1913,7 @@
   (symbol (lib_id "Device:R") (at 64.77 135.89 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f80f70d1-4e53-496c-8cfd-68510947d275)
-    (property "Reference" "R37" (at 67.31 134.62 0)
+    (property "Reference" "R42" (at 67.31 134.62 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 67.31 137.16 0)
@@ -1869,7 +1930,7 @@
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/00586568-8772-4c90-848b-1a0bf93621fb"
-          (reference "R37") (unit 1)
+          (reference "R42") (unit 1)
         )
       )
     )
