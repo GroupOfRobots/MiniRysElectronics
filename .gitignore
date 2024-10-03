@@ -1,2 +1,3 @@
 rpiboard_minirys-backups/
 *.lck
+*.kicad_prl
