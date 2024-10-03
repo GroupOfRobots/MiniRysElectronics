@@ -6512,8 +6512,8 @@
     (property "Datasheet" "~" (at 134.62 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5a0ecafd-272b-459f-8491-1d3f751014a5))
-    (pin "2" (uuid 9c6c625a-7aba-48e5-bdce-bae538a5c4f9))
+    (pin "1" (uuid 87e0271d-42fb-4be8-b73d-b511bf2864f7))
+    (pin "2" (uuid 4f85f67a-d3b0-4553-a7e0-3c71100fe93d))
     (instances
       (project "rpiboard_minirys"
         (path "/83ec67aa-411e-440d-8530-858fb57a6552/623856e4-ac9c-4239-8cfe-b647ec8c6926"
@@ -7492,7 +7492,7 @@
     (property "Value" "Temp_Sensor" (at 39.37 179.07 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "parts:SHDR5W27P0X125_1X5_800X320X440P" (at 31.75 179.07 0)
+    (property "Footprint" "parts:530470510" (at 31.75 179.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 31.75 179.07 0)

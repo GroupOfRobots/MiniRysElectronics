@@ -1927,7 +1927,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 9b663612-90bf-49bd-9634-b7cfd19e977b)
   )
-  (text "Light load switching mode selection\nFWPM - pin connected to VCC_REG\nDEM - pin connected to GND"
+  (text "Light load switching mode selection\nFPWM - pin connected to VCC_REG\nDEM - pin connected to GND"
     (at 132.08 170.18 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid a8742aae-06dc-4624-80fc-ef65237e1a55)
